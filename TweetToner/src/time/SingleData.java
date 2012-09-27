@@ -1,13 +1,15 @@
 package time;
 
+import java.util.Comparator;
+
 import com.google.common.collect.TreeMultiset;
 public class SingleData {
 	Float t_count;
 	Float fsq_count;
 	TreeMultiset<String> categories = TreeMultiset.create();
 	TreeMultiset<String> parentCategories = TreeMultiset.create();
-	private Boolean hasCats = false;
-	private Boolean hasParentCats = false;
+	Boolean hasCats = false;
+	Boolean hasParentCats = false;
 	
 	public SingleData(String date, Float t_count, Float fsq_count, String cat_parents, String cat){
 		this.t_count = t_count;
