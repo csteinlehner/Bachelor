@@ -57,39 +57,24 @@ public class TimeV1 extends PApplet{
 		 
 //		fill(0,150,0);
 		
-		float tCountRadius = 150;
-		fill(200,150,150);
+		float tCountRadius = 100;
+		stroke(200,150,150);
+		noFill();
 		pushMatrix();
+//		strokeCap(SQUARE);
 		translate(width/2,height/2);
 		rotate(-HALF_PI);
-		beginShape();
-		curveVertex(cos(step*0) * (tCountRadius+data.get(0).t_count*0.1f),sin(step*0) * (tCountRadius+data.get(0).t_count*0.1f));
+		float lastx = cos(0) * tCountRadius;
+		float lasty = sin(0) * tCountRadius;
 		for (int i = start; i < end; i++) {
-			 float offset = data.get(i).t_count * 0.1f;
-			  float x = cos(step*i) * (tCountRadius+offset);
-			  float y = sin(step*i) * (tCountRadius+offset);
-			curveVertex(x,y);
+			  float offset = data.get(i).t_count * 0.1f;
+			  strokeWeight(offset);
+			  float x = cos(step*i) * (tCountRadius);
+			  float y = sin(step*i) * (tCountRadius);
+			  line(lastx,lasty,x,y);
+			  lastx = x;
+			  lasty = y;
 		}
-//		curveVertex(cos(step*end) * (tCountRadius+data.get(end).t_count*0.1f),sin(step*end) * (tCountRadius+data.get(end).t_count*0.1f));
-		curveVertex(cos(step*0) * (tCountRadius+data.get(0).t_count*0.1f),sin(step*0) * (tCountRadius+data.get(0).t_count*0.1f));
-		endShape();
-		popMatrix();
-		
-		fill(220,230,220);
-		noStroke();
-		pushMatrix();
-		translate(width/2,height/2);
-		rotate(-HALF_PI);
-		beginShape();
-		curveVertex(cos(step*0) * (tCountRadius+data.get(0).t_count*0.1f),sin(step*0) * (tCountRadius+data.get(0).t_count*0.1f));
-		for (int i = start; i < end; i++) {
-			float offset = data.get(i).t_count * 0.1f;
-			  float x = cos(step*i) * (tCountRadius-offset);
-			  float y = sin(step*i) * (tCountRadius-offset);
-			curveVertex(x,y);
-		}
-		curveVertex(cos(step*0) * (tCountRadius+data.get(0).t_count*0.1f),sin(step*0) * (tCountRadius+data.get(0).t_count*0.1f));
-		endShape();
 		popMatrix();
 		
 		float radius = 200;
