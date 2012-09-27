@@ -72,6 +72,7 @@
 	<classpathentry kind="lib" path="lib/user/javacsv.jar"/>
 	<classpathentry kind="lib" path="lib/user/batikfont.jar"/>
 	<classpathentry kind="lib" path="lib/user/geomerative.jar"/>
+	<classpathentry kind="lib" path="lib/user/guava-13.0.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

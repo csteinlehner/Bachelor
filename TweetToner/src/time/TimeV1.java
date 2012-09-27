@@ -48,33 +48,29 @@ public class TimeV1 extends PApplet{
 		int start = 0;
 		int end = 24;
 		float step = 2*PI/(end-start);
-		noStroke();
-		fill(40,30,30);
 		rectMode(CENTER);
+		noStroke();
 		for (int i = start; i < end; i++) {
 			pushMatrix();
 			translate(width/2,height/2);
 			rotate(step*i);
-			translate(0,-200);
-			float size = 10*sqrt(data.get(i).fsq_count);
-			rect(0,0,size,size);
+			translate(0,-400);
+			float sizeA = 10*sqrt(data.get(i).t_count);
+			fill(140,130,130);
+			rect(0,0,sizeA,sizeA);
+
 			popMatrix();
 		}
-		stroke(255);
-		strokeWeight(3);
-		noFill();
-		pushMatrix();
-		translate(width/2,height/2);
-		rotate(-HALF_PI);
-		beginShape();
-//		float r = 10;
 		for (int i = start; i < end; i++) {
-			  float x = cos(step*i) * data.get(i).t_count;
-			  float y = sin(step*i) * data.get(i).t_count;
-			vertex(x,y);
+			pushMatrix();
+			translate(width/2,height/2);
+			rotate(step*i);
+			translate(0,-300);
+			float sizeB = 10*sqrt(data.get(i).fsq_count);
+			fill(40,30,30);
+			rect(0,0,sizeB,sizeB);
+			popMatrix();
 		}
-		endShape(CLOSE);
-		popMatrix();
 	}
 	public static void main(String args[])
 	{
