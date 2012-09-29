@@ -1,0 +1,169 @@
+time,count,fsq_count,CategorieParents,Categories
+Mon Sep 03 00:00:00 UTC 2012,10,0,"",""
+Mon Sep 03 01:00:00 UTC 2012,4,0,"",""
+Mon Sep 03 02:00:00 UTC 2012,5,0,"",""
+Mon Sep 03 03:00:00 UTC 2012,3,0,"",""
+Mon Sep 03 04:00:00 UTC 2012,5,0,"",""
+Mon Sep 03 05:00:00 UTC 2012,0,0,"",""
+Mon Sep 03 06:00:00 UTC 2012,0,0,"",""
+Mon Sep 03 07:00:00 UTC 2012,1,0,"",""
+Mon Sep 03 08:00:00 UTC 2012,4,1,"",""
+Mon Sep 03 09:00:00 UTC 2012,10,0,"",""
+Mon Sep 03 10:00:00 UTC 2012,3,0,"",""
+Mon Sep 03 11:00:00 UTC 2012,8,1,"",""
+Mon Sep 03 12:00:00 UTC 2012,8,3,Shops & Services=1_Professional & Other Places=1,Japanese Restaurant=1_Office=1
+Mon Sep 03 13:00:00 UTC 2012,8,1,"",""
+Mon Sep 03 14:00:00 UTC 2012,2,0,"",""
+Mon Sep 03 15:00:00 UTC 2012,0,0,"",""
+Mon Sep 03 16:00:00 UTC 2012,22,1,"",""
+Mon Sep 03 17:00:00 UTC 2012,14,4,Food=1,Japanese Restaurant=1
+Mon Sep 03 18:00:00 UTC 2012,23,0,"",""
+Mon Sep 03 19:00:00 UTC 2012,19,0,"",""
+Mon Sep 03 20:00:00 UTC 2012,36,3,Food=1_Food & Drink Shops=1_Shops & Services=1,Greek Restaurant=1_Bowling Alley=1
+Mon Sep 03 21:00:00 UTC 2012,14,0,"",""
+Mon Sep 03 22:00:00 UTC 2012,17,0,"",""
+Mon Sep 03 23:00:00 UTC 2012,6,0,"",""
+Tue Sep 04 00:00:00 UTC 2012,7,1,"",""
+Tue Sep 04 01:00:00 UTC 2012,3,0,"",""
+Tue Sep 04 02:00:00 UTC 2012,6,0,"",""
+Tue Sep 04 03:00:00 UTC 2012,2,0,"",""
+Tue Sep 04 04:00:00 UTC 2012,8,0,"",""
+Tue Sep 04 05:00:00 UTC 2012,3,0,"",""
+Tue Sep 04 06:00:00 UTC 2012,0,0,"",""
+Tue Sep 04 07:00:00 UTC 2012,8,1,Professional & Other Places=1,""
+Tue Sep 04 08:00:00 UTC 2012,6,1,"",""
+Tue Sep 04 09:00:00 UTC 2012,15,2,Professional & Other Places=1,Office=1
+Tue Sep 04 10:00:00 UTC 2012,12,0,"",""
+Tue Sep 04 11:00:00 UTC 2012,10,1,"",""
+Tue Sep 04 12:00:00 UTC 2012,26,3,Medical Centers=1_Food=1,Office=1_Vietnamese Restaurant=1
+Tue Sep 04 13:00:00 UTC 2012,16,1,"",""
+Tue Sep 04 14:00:00 UTC 2012,16,4,Travel & Transport=1,Hotel=1
+Tue Sep 04 15:00:00 UTC 2012,14,2,Nightlife Spots=1,College Classroom=1
+Tue Sep 04 16:00:00 UTC 2012,17,0,"",""
+Tue Sep 04 17:00:00 UTC 2012,18,2,"",""
+Tue Sep 04 18:00:00 UTC 2012,11,3,Outdoors & Recreation=1,Park=1_Bank=1
+Tue Sep 04 19:00:00 UTC 2012,7,2,Shops & Services=1,Steakhouse=1
+Tue Sep 04 20:00:00 UTC 2012,9,1,"",""
+Tue Sep 04 21:00:00 UTC 2012,14,1,"",""
+Tue Sep 04 22:00:00 UTC 2012,29,0,"",""
+Tue Sep 04 23:00:00 UTC 2012,21,1,"",""
+Wed Sep 05 00:00:00 UTC 2012,10,0,"",""
+Wed Sep 05 01:00:00 UTC 2012,2,0,"",""
+Wed Sep 05 02:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 03:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 04:00:00 UTC 2012,2,0,"",""
+Wed Sep 05 05:00:00 UTC 2012,2,0,"",""
+Wed Sep 05 06:00:00 UTC 2012,2,1,"",""
+Wed Sep 05 07:00:00 UTC 2012,5,0,"",""
+Wed Sep 05 08:00:00 UTC 2012,5,0,"",""
+Wed Sep 05 09:00:00 UTC 2012,27,0,"",""
+Wed Sep 05 10:00:00 UTC 2012,29,0,"",""
+Wed Sep 05 11:00:00 UTC 2012,33,4,Gyms or Fitness Centers=1_Shops & Services=1_Food=1,BBQ Joint=1_Gym=1
+Wed Sep 05 12:00:00 UTC 2012,32,2,"",""
+Wed Sep 05 13:00:00 UTC 2012,12,1,"",""
+Wed Sep 05 14:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 15:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 16:00:00 UTC 2012,10,0,"",""
+Wed Sep 05 17:00:00 UTC 2012,27,4,Residences=1_Professional & Other Places=1,Ramen /  Noodle House=1_Sandwich Place=1_Coffee Shop=1
+Wed Sep 05 18:00:00 UTC 2012,12,0,"",""
+Wed Sep 05 19:00:00 UTC 2012,20,2,"",Coffee Shop=1
+Wed Sep 05 20:00:00 UTC 2012,15,2,Residences=1,Falafel Restaurant=1
+Wed Sep 05 21:00:00 UTC 2012,16,2,Nightlife Spots=1,Coffee Shop=1
+Wed Sep 05 22:00:00 UTC 2012,28,0,"",""
+Wed Sep 05 23:00:00 UTC 2012,11,0,"",""
+Thu Sep 06 00:00:00 UTC 2012,1,0,"",""
+Thu Sep 06 01:00:00 UTC 2012,4,0,"",""
+Thu Sep 06 02:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 03:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 04:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 05:00:00 UTC 2012,1,0,"",""
+Thu Sep 06 06:00:00 UTC 2012,8,0,"",""
+Thu Sep 06 07:00:00 UTC 2012,13,0,"",""
+Thu Sep 06 08:00:00 UTC 2012,4,0,"",""
+Thu Sep 06 09:00:00 UTC 2012,11,1,Athletics & Sports=1,Other Great Outdoors=1
+Thu Sep 06 10:00:00 UTC 2012,28,2,Offices=1_Professional & Other Places=1,Café=1
+Thu Sep 06 11:00:00 UTC 2012,29,2,Professional & Other Places=1,Office=1
+Thu Sep 06 12:00:00 UTC 2012,19,4,Professional & Other Places=1,Pizza Place=1_Sandwich Place=1_Building=1
+Thu Sep 06 13:00:00 UTC 2012,14,2,Food & Drink Shops=1_Shops & Services=1,Korean Restaurant=1
+Thu Sep 06 14:00:00 UTC 2012,12,1,Professional & Other Places=1,""
+Thu Sep 06 15:00:00 UTC 2012,22,1,"",""
+Thu Sep 06 16:00:00 UTC 2012,12,1,"",""
+Thu Sep 06 17:00:00 UTC 2012,17,1,"",""
+Thu Sep 06 18:00:00 UTC 2012,16,0,"",""
+Thu Sep 06 19:00:00 UTC 2012,22,3,Residences=1_Shops & Services=1_Outdoors & Recreation=1,Home (private)=1_Park=1
+Thu Sep 06 20:00:00 UTC 2012,25,6,Travel & Transport=2_Residences=1,Chinese Restaurant=1_Coffee Shop=1_Moving Target=1
+Thu Sep 06 21:00:00 UTC 2012,44,2,Nightlife Spots=1,Bar=1
+Thu Sep 06 22:00:00 UTC 2012,43,1,"",""
+Thu Sep 06 23:00:00 UTC 2012,31,1,"",""
+Fri Sep 07 00:00:00 UTC 2012,30,1,"",""
+Fri Sep 07 01:00:00 UTC 2012,10,0,"",""
+Fri Sep 07 02:00:00 UTC 2012,3,0,"",""
+Fri Sep 07 03:00:00 UTC 2012,4,0,"",""
+Fri Sep 07 04:00:00 UTC 2012,1,0,"",""
+Fri Sep 07 05:00:00 UTC 2012,1,0,"",""
+Fri Sep 07 06:00:00 UTC 2012,7,0,"",""
+Fri Sep 07 07:00:00 UTC 2012,13,0,"",""
+Fri Sep 07 08:00:00 UTC 2012,12,0,"",""
+Fri Sep 07 09:00:00 UTC 2012,20,2,"",Breakfast Spot=1
+Fri Sep 07 10:00:00 UTC 2012,16,0,"",""
+Fri Sep 07 11:00:00 UTC 2012,31,1,"",""
+Fri Sep 07 12:00:00 UTC 2012,28,2,"",Sandwich Place=1
+Fri Sep 07 13:00:00 UTC 2012,35,3,Shops & Services=1_Professional & Other Places=1,Fast Food Restaurant=1_Office=1
+Fri Sep 07 14:00:00 UTC 2012,17,0,"",""
+Fri Sep 07 15:00:00 UTC 2012,31,1,"",""
+Fri Sep 07 16:00:00 UTC 2012,15,2,Professional & Other Places=1,Office=1
+Fri Sep 07 17:00:00 UTC 2012,16,2,Nightlife Spots=1,Winery=1
+Fri Sep 07 18:00:00 UTC 2012,8,2,"",Café=1
+Fri Sep 07 19:00:00 UTC 2012,7,1,"",""
+Fri Sep 07 20:00:00 UTC 2012,14,1,"",""
+Fri Sep 07 21:00:00 UTC 2012,12,1,"",""
+Fri Sep 07 22:00:00 UTC 2012,13,0,"",""
+Fri Sep 07 23:00:00 UTC 2012,17,2,Nightlife Spots=1,Café=1
+Sat Sep 08 00:00:00 UTC 2012,10,0,"",""
+Sat Sep 08 01:00:00 UTC 2012,11,0,"",""
+Sat Sep 08 02:00:00 UTC 2012,10,0,"",""
+Sat Sep 08 03:00:00 UTC 2012,11,0,"",""
+Sat Sep 08 04:00:00 UTC 2012,7,0,"",""
+Sat Sep 08 05:00:00 UTC 2012,3,0,"",""
+Sat Sep 08 06:00:00 UTC 2012,4,1,"",""
+Sat Sep 08 07:00:00 UTC 2012,15,1,"",""
+Sat Sep 08 08:00:00 UTC 2012,5,1,"",""
+Sat Sep 08 09:00:00 UTC 2012,6,2,"",Breakfast Spot=1
+Sat Sep 08 10:00:00 UTC 2012,4,1,"",""
+Sat Sep 08 11:00:00 UTC 2012,6,1,"",""
+Sat Sep 08 12:00:00 UTC 2012,5,0,"",""
+Sat Sep 08 13:00:00 UTC 2012,14,2,Food & Drink Shops=1_Shops & Services=1,Café=1
+Sat Sep 08 14:00:00 UTC 2012,8,2,Gyms or Fitness Centers=1_Shops & Services=1,Pizza Place=1
+Sat Sep 08 15:00:00 UTC 2012,10,1,Shops & Services=1,""
+Sat Sep 08 16:00:00 UTC 2012,10,1,"",""
+Sat Sep 08 17:00:00 UTC 2012,13,2,Shops & Services=1_Professional & Other Places=1,Office=1
+Sat Sep 08 18:00:00 UTC 2012,5,0,"",""
+Sat Sep 08 19:00:00 UTC 2012,18,1,"",""
+Sat Sep 08 20:00:00 UTC 2012,9,1,"",""
+Sat Sep 08 21:00:00 UTC 2012,12,2,Residences=1,Coffee Shop=1
+Sat Sep 08 22:00:00 UTC 2012,7,3,Movie Theaters=1_Arts & Entertainment=1,Multiplex=1
+Sat Sep 08 23:00:00 UTC 2012,11,0,"",""
+Sun Sep 09 00:00:00 UTC 2012,9,0,"",""
+Sun Sep 09 01:00:00 UTC 2012,34,0,"",""
+Sun Sep 09 02:00:00 UTC 2012,6,0,"",""
+Sun Sep 09 03:00:00 UTC 2012,1,0,"",""
+Sun Sep 09 04:00:00 UTC 2012,0,0,"",""
+Sun Sep 09 05:00:00 UTC 2012,0,0,"",""
+Sun Sep 09 06:00:00 UTC 2012,1,0,"",""
+Sun Sep 09 07:00:00 UTC 2012,1,0,"",""
+Sun Sep 09 08:00:00 UTC 2012,9,0,"",""
+Sun Sep 09 09:00:00 UTC 2012,4,0,"",""
+Sun Sep 09 10:00:00 UTC 2012,15,0,"",""
+Sun Sep 09 11:00:00 UTC 2012,31,2,Professional & Other Places=1,Office=1
+Sun Sep 09 12:00:00 UTC 2012,12,3,Athletics & Sports=1_Outdoors & Recreation=1,BBQ Joint=1_Coffee Shop=1
+Sun Sep 09 13:00:00 UTC 2012,30,2,Shops & Services=1_Professional & Other Places=1,Office=1
+Sun Sep 09 14:00:00 UTC 2012,16,1,"",""
+Sun Sep 09 15:00:00 UTC 2012,12,4,Arts & Entertainment=1_Professional & Other Places=1,Gym / Fitness Center=1_Department Store=1_Office=1
+Sun Sep 09 16:00:00 UTC 2012,13,1,Movie Theaters=1,""
+Sun Sep 09 17:00:00 UTC 2012,10,2,Outdoors & Recreation=1,Other Great Outdoors=1
+Sun Sep 09 18:00:00 UTC 2012,14,2,Outdoors & Recreation=1,Playground=1
+Sun Sep 09 19:00:00 UTC 2012,14,2,"",Steakhouse=1
+Sun Sep 09 20:00:00 UTC 2012,12,1,"",""
+Sun Sep 09 21:00:00 UTC 2012,18,0,"",""
+Sun Sep 09 22:00:00 UTC 2012,12,0,"",""
+Sun Sep 09 23:00:00 UTC 2012,4,1,"",""

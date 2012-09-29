@@ -52,29 +52,30 @@ public class TimeV1 extends PApplet{
 	public void draw(){
 		background(220,230,220);
 		int start = 0;
-		int end = start+24;
+		int end = start+23;
 		float step = 2*PI/(end-start);
 		 
 //		fill(0,150,0);
 		
-		float tCountRadius = 100;
+//		float tCountRadius = 100;
 		stroke(200,150,150);
 		noFill();
+		strokeWeight(2);
+//		noStroke();
 		pushMatrix();
 //		strokeCap(SQUARE);
 		translate(width/2,height/2);
 		rotate(-HALF_PI);
-		float lastx = cos(0) * tCountRadius;
-		float lasty = sin(0) * tCountRadius;
+		beginShape();
+		curveVertex(cos(step)*data.get(0).t_count * 0.5f,0);
 		for (int i = start; i < end; i++) {
-			  float offset = data.get(i).t_count * 0.1f;
-			  strokeWeight(offset);
-			  float x = cos(step*i) * (tCountRadius);
-			  float y = sin(step*i) * (tCountRadius);
-			  line(lastx,lasty,x,y);
-			  lastx = x;
-			  lasty = y;
+			  float offset = data.get(i).t_count * 0.5f;
+			  float x = cos(step*i) * offset;
+			  float y = sin(step*i) * offset;
+			  curveVertex(x,y);
 		}
+		curveVertex(cos(step)*data.get(0).t_count * 0.5f,0);
+		endShape();
 		popMatrix();
 		
 		float radius = 200;
