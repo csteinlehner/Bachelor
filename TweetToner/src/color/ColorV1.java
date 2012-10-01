@@ -1,4 +1,4 @@
-package time;
+package color;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,20 +12,20 @@ import foursquare.FoursquarePoint;
 import processing.core.PApplet;
 import processing.core.PFont;
 
-public class TimeV1 extends PApplet{
+public class ColorV1 extends PApplet{
 	
 	private static final String CITY = "berlin";
 	
-	private static String csvPath = "data/fsq_timecount_60_"+CITY+".csv";
+	private static String csvPath = "data/instagram_top_color_time_"+CITY+".csv";
 	
 	private PFont font;
 	
 	private float fontSize = 12f;
 	
-	Vector<SingleData> data = new Vector<SingleData>();
-	
 	int start = 0;
 	int end = start+24;
+	
+	Vector<SingleData> data = new Vector<SingleData>();
 	
 	public void setup(){
 		size(1200,900);
@@ -40,7 +40,7 @@ public class TimeV1 extends PApplet{
 
 			while (csvData.readRecord())
 			{
-				data.add(new SingleData(csvData.get("time"), Float.parseFloat(csvData.get("count")), Float.parseFloat(csvData.get("fsq_count")), csvData.get("CategorieParents"),csvData.get("Categories")));
+				data.add(new SingleData(csvData.get("time"), Float.parseFloat(csvData.get("count")), csvData.get("red"), csvData.get("green"),csvData.get("blue")));
 			}
 	
 			csvData.close();
@@ -55,6 +55,7 @@ public class TimeV1 extends PApplet{
 	
 	public void draw(){
 		background(220,230,220);
+		
 		float step = 2*PI/(end-start);
 		 
 		// skala
@@ -74,6 +75,20 @@ public class TimeV1 extends PApplet{
 		}
 		popMatrix();
 		
+		pushMatrix();
+		translate(width/2,height/2);
+		int cRadius = 150;
+		int j = 0;
+		for (int i = start; i < end; i++, j++) {
+			  float x1 = cos(step*j) * cRadius;
+			  float y1 = sin(step*j) * cRadius;
+			  SingleData d = data.get(i);
+			  if(d.hasColor){
+			  fill(d.red, d.green, d.red);
+			  ellipse(x1,y1,20,20);
+			  }
+		}
+		popMatrix();
 		
 //		fill(0,150,0);
 		
@@ -82,31 +97,31 @@ public class TimeV1 extends PApplet{
 		noFill();
 		strokeWeight(1);
 //		noStroke();
-		pushMatrix();
-//		strokeCap(SQUARE);
-		translate(width/2,height/2);
-		rotate(-HALF_PI);
-		float tweetCRadius = 100;
-		int j = 0;
-		for (int i = start; i < end; i++, j++) {
-			  float t_offset = map(data.get(i).t_count,0,300,0,500);
-			  float fsq_offset = t_offset-map(data.get(i).fsq_count,0,300,0,500);
-			  float x = cos(step) * t_offset;
-			  float y = sin(step) * t_offset;
-			  arc(0,0,t_offset,t_offset,step*j,step*(j+1));
-			  arc(0,0,fsq_offset,fsq_offset,step*j,step*(j+1));
-			  line(0,0,cos(step*j) * (t_offset/2),sin(step*j) * (t_offset/2));
-			  line(0,0,cos(step*(j+1)) * (t_offset/2),sin(step*(j+1)) * (t_offset/2));
-//			  ellipse(x,y,10,10);
-		}
-		popMatrix();
+//		pushMatrix();
+////		strokeCap(SQUARE);
+//		translate(width/2,height/2);
+//		rotate(-HALF_PI);
+//		float tweetCRadius = 100;
+//		int j = 0;
+//		for (int i = start; i < end; i++, j++) {
+//			  float t_offset = map(data.get(i).t_count,0,300,0,500);
+//			  float fsq_offset = t_offset-map(data.get(i).fsq_count,0,300,0,500);
+//			  float x = cos(step) * t_offset;
+//			  float y = sin(step) * t_offset;
+//			  arc(0,0,t_offset,t_offset,step*j,step*(j+1));
+//			  arc(0,0,fsq_offset,fsq_offset,step*j,step*(j+1));
+//			  line(0,0,cos(step*j) * (t_offset/2),sin(step*j) * (t_offset/2));
+//			  line(0,0,cos(step*(j+1)) * (t_offset/2),sin(step*(j+1)) * (t_offset/2));
+////			  ellipse(x,y,10,10);
+//		}
+//		popMatrix();
 
 
 	}
 	public static void main(String args[])
 	{
 		//PApplet.main(new String[] { "--present", mailgod.MailGod.class.getName()});
-		PApplet.main(new String[] {  time.TimeV1.class.getName()});
+		PApplet.main(new String[] {  color.ColorV1.class.getName()});
 	}
 	public void keyPressed() {
 		  if (key == CODED) {
