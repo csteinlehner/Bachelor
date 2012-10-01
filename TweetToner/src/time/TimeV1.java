@@ -85,67 +85,21 @@ public class TimeV1 extends PApplet{
 //		strokeCap(SQUARE);
 		translate(width/2,height/2);
 		rotate(-HALF_PI);
-		rotate(step/2);
 		float tweetCRadius = 100;
-		ellipse(0,0,tweetCRadius*2,tweetCRadius*2);
-		beginShape();
-		curveVertex(cos(step)*( map(data.get(0).t_count,0,400,0,100))+tweetCRadius,0);
 		int j = 0;
 		for (int i = start; i < end; i++, j++) {
-			  float offset = map(data.get(i).t_count,0,300,0,100) + tweetCRadius;
-			  float x = cos(step*j) * offset;
-			  float y = sin(step*j) * offset;
-			  curveVertex(x,y);
+			  float t_offset = map(data.get(i).t_count,0,300,0,500);
+			  float fsq_offset = t_offset-map(data.get(i).fsq_count,0,300,0,500);
+			  float x = cos(step) * t_offset;
+			  float y = sin(step) * t_offset;
+			  arc(0,0,t_offset,t_offset,step*j,step*(j+1));
+			  arc(0,0,fsq_offset,fsq_offset,step*j,step*(j+1));
+			  line(0,0,cos(step*j) * (t_offset/2),sin(step*j) * (t_offset/2));
+			  line(0,0,cos(step*(j+1)) * (t_offset/2),sin(step*(j+1)) * (t_offset/2));
 //			  ellipse(x,y,10,10);
 		}
-		curveVertex(cos(step*end) * ( map(data.get(end).fsq_count,0,400,0,100)+tweetCRadius),sin(step*end) * (map(data.get(end).fsq_count,0,400,0,100)+tweetCRadius));
-		endShape();
-		beginShape();
-		curveVertex(cos(step)*( map(data.get(0).fsq_count,0,400,0,100))+tweetCRadius,0);
-		j = 0;
-		for (int i = start; i < end; i++, j++) {
-			  float offset = map(data.get(i).fsq_count,0,300,0,100) + tweetCRadius;
-			  float x = cos(step*j) * offset;
-			  float y = sin(step*j) * offset;
-			  curveVertex(x,y);
-//			  ellipse(x,y,10,10);
-		}
-		curveVertex(cos(step*end) * ( map(data.get(end).fsq_count,0,400,0,100)+tweetCRadius),sin(step*end) * (map(data.get(end).fsq_count,0,400,0,100)+tweetCRadius));
-		endShape();
 		popMatrix();
-		
-		float radius = 200;
-		// foursquare cat names
-//		noStroke();
-//		for (int i = start; i < end; i++) {
-//			SingleData dp = data.get(i);
-//			pushMatrix();
-//			translate(width/2,height/2);
-//			rotate(step*i);
-//			translate(0,-radius);
-////			float sizeB = 10*sqrt(data.get(i).fsq_count);
-//			fill(40,30,30);
-//			if(dp.hasCats){
-//				rotate(-HALF_PI);
-//				float sizeF = sqrt(dp.categories.descendingMultiset().firstEntry().getCount())*10;
-//				textSize(fontSize+sizeF);
-//				text(dp.categories.descendingMultiset().firstEntry().getElement(),0,0);
-//			}
-//			popMatrix();
-//		}
-		// foursquare quads
-//		rectMode(CENTER);
-//		noStroke();
-//		for (int i = start; i < end; i++) {
-//			pushMatrix();
-//			translate(width/2,height/2);
-//			rotate(step*i);
-//			translate(0,-150);
-//			float sizeB = 7*sqrt(data.get(i).fsq_count);
-//			fill(40,30,30);
-//			rect(0,0,sizeB,sizeB);
-//			popMatrix();
-//		}
+
 
 	}
 	public static void main(String args[])
