@@ -84,8 +84,12 @@ public class ColorV1 extends PApplet{
 			  float y1 = sin(step*j) * cRadius;
 			  SingleData d = data.get(i);
 			  if(d.hasColor){
-			  fill(d.red, d.green, d.red);
-			  ellipse(x1,y1,20,20);
+			  stroke(d.red, d.green, d.red);
+			  strokeWeight(20);
+			  strokeCap(SQUARE);
+			  noFill();
+			  arc(0,0,300,300,step*j,step*(j+1));
+//			  ellipse(x1,y1,20,20);
 			  }
 		}
 		popMatrix();
@@ -96,26 +100,6 @@ public class ColorV1 extends PApplet{
 		stroke(200,150,150);
 		noFill();
 		strokeWeight(1);
-//		noStroke();
-//		pushMatrix();
-////		strokeCap(SQUARE);
-//		translate(width/2,height/2);
-//		rotate(-HALF_PI);
-//		float tweetCRadius = 100;
-//		int j = 0;
-//		for (int i = start; i < end; i++, j++) {
-//			  float t_offset = map(data.get(i).t_count,0,300,0,500);
-//			  float fsq_offset = t_offset-map(data.get(i).fsq_count,0,300,0,500);
-//			  float x = cos(step) * t_offset;
-//			  float y = sin(step) * t_offset;
-//			  arc(0,0,t_offset,t_offset,step*j,step*(j+1));
-//			  arc(0,0,fsq_offset,fsq_offset,step*j,step*(j+1));
-//			  line(0,0,cos(step*j) * (t_offset/2),sin(step*j) * (t_offset/2));
-//			  line(0,0,cos(step*(j+1)) * (t_offset/2),sin(step*(j+1)) * (t_offset/2));
-////			  ellipse(x,y,10,10);
-//		}
-//		popMatrix();
-
 
 	}
 	public static void main(String args[])
