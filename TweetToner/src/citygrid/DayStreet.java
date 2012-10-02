@@ -22,7 +22,6 @@ public class DayStreet {
 	public void draw(){
 		CityGrid.p5.pushMatrix();
 		// moves out of the middle
-		CityGrid.p5.translate(100, 0);
 		CityGrid.p5.line(0,0,PApplet.map(t_count,0,5000,0,400),0);
 		CityGrid.p5.pushMatrix();
 		float streetmove = PApplet.map(t_count,0,5000,0,400)/(24-1);

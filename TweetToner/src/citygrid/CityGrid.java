@@ -70,14 +70,18 @@ public class CityGrid extends PApplet{
 		float weekstep = 2*PI/7;
 		
 		pushMatrix();
-		translate(width/2,height/2);
-		rotate(-HALF_PI);
+	translate(100,height/4);
+//		rotate(HALF_PI);
 		stroke(0);
 		noFill();
 		for (int i = 0; i < 7; i++) {
 //			WeekDay d = weekdaydata.get(i);
-			rotate(weekstep);
+//			rotate(weekstep);
+			pushMatrix();
+			rotate(HALF_PI);
 			daystreets.get(i).draw();
+			popMatrix();
+			CityGrid.p5.translate(140,0);
 		}
 		popMatrix();
 		
