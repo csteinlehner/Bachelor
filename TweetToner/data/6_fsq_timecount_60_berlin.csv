@@ -1,0 +1,25 @@
+time,count,fsq_count,CategorieParents,Categories
+Sat Sep 08 00:00:00 UTC 2012,173,8,Arts & Entertainment=2_Residences=2_Hotels=1,General Entertainment=1_Concert Hall=1_Motel=1
+Sat Sep 08 01:00:00 UTC 2012,113,9,Nightlife Spots=3_Food=1_Outdoors & Recreation=1,Bar=2_Italian Restaurant=1_Garden=1
+Sat Sep 08 02:00:00 UTC 2012,154,8,Professional & Other Places=1_Arts & Entertainment=1_Residences=1,Gay Bar=1_Office=1_Music Venue=1
+Sat Sep 08 03:00:00 UTC 2012,98,5,Residences=2_Travel & Transport=1,Home (private)=2_Airport=1
+Sat Sep 08 04:00:00 UTC 2012,74,1,"",""
+Sat Sep 08 05:00:00 UTC 2012,76,2,Travel & Transport=1,Other Great Outdoors=1
+Sat Sep 08 06:00:00 UTC 2012,53,2,"",Train Station=1
+Sat Sep 08 07:00:00 UTC 2012,40,4,Shops & Services=1_Government Buildings=1_Food & Drink Shops=1,Office=1_Hotel=1_Fire Station=1
+Sat Sep 08 08:00:00 UTC 2012,72,13,Shops & Services=3_Outdoors & Recreation=2_Train Stations=1,Plaza=2_Food & Drink Shop=1_Grocery Store=1
+Sat Sep 08 09:00:00 UTC 2012,137,18,Travel & Transport=5_Food & Drink Shops=4_Professional & Other Places=2,Home (private)=2_Train Station=2_General Entertainment=1
+Sat Sep 08 10:00:00 UTC 2012,169,17,Food=5_Hotels=2_Outdoors & Recreation=2,Plaza=2_Bakery=1_College Academic Building=1
+Sat Sep 08 11:00:00 UTC 2012,164,24,Outdoors & Recreation=4_Arts & Entertainment=4_Food=3,Home (private)=2_Plaza=2_Burger Joint=1
+Sat Sep 08 12:00:00 UTC 2012,182,28,Outdoors & Recreation=7_Food=3_Shops & Services=3,Subway=3_Plaza=3_Airport Gate=2
+Sat Sep 08 13:00:00 UTC 2012,224,27,Shops & Services=7_Travel & Transport=5_Arts & Entertainment=4,American Restaurant=2_Airport=2_Train Station=2
+Sat Sep 08 14:00:00 UTC 2012,180,24,Shops & Services=5_Arts & Entertainment=4_Residences=2,Grocery Store=2_Subway=2_Music Venue=2
+Sat Sep 08 15:00:00 UTC 2012,214,40,Shops & Services=9_Arts & Entertainment=6_Food & Drink Shops=5,Coffee Shop=3_Music Venue=3_Pizza Place=2
+Sat Sep 08 16:00:00 UTC 2012,209,36,Arts & Entertainment=7_Professional & Other Places=6_Government Buildings=4,Monument / Landmark=3_Italian Restaurant=2_Park=2
+Sat Sep 08 17:00:00 UTC 2012,163,24,Food=6_Arts & Entertainment=4_Residences=2,Music Venue=3_Home (private)=2_Monument / Landmark=2
+Sat Sep 08 18:00:00 UTC 2012,225,24,Arts & Entertainment=5_Food=4_Outdoors & Recreation=3,Light Rail=3_Breakfast Spot=2_Bridge=2
+Sat Sep 08 19:00:00 UTC 2012,279,37,Arts & Entertainment=9_Travel & Transport=6_Outdoors & Recreation=5,Light Rail=3_General Entertainment=3_Pizza Place=2
+Sat Sep 08 20:00:00 UTC 2012,197,18,Nightlife Spots=5_Arts & Entertainment=2_Professional & Other Places=2,Dive Bar=2_Office=2_Burger Joint=1
+Sat Sep 08 21:00:00 UTC 2012,228,13,Arts & Entertainment=2_Nightlife Spots=2_Outdoors & Recreation=1,American Restaurant=1_Nightclub=1_Park=1
+Sat Sep 08 22:00:00 UTC 2012,191,18,Shops & Services=4_Outdoors & Recreation=2_Residences=2,Bar=2_Middle Eastern Restaurant=2_Home (private)=2
+Sat Sep 08 23:00:00 UTC 2012,232,15,Food=4_Arts & Entertainment=2_Residences=1,Snack Place=1_Café=1_Music Venue=1

@@ -1,0 +1,8 @@
+time,count,fsq_count,CategorieParents,Categories
+Mon Sep 03 00:00:00 UTC 2012,4067,440,Travel & Transport=114_Food=67_Shops & Services=38,Airport=37_Hotel=22_Train Station=19
+Tue Sep 04 00:00:00 UTC 2012,4184,478,Travel & Transport=94_Food=92_Outdoors & Recreation=48,Hotel=21_Train Station=19_Café=19
+Wed Sep 05 00:00:00 UTC 2012,3980,462,Professional & Other Places=98_Food=96_Outdoors & Recreation=40,Office=25_Event Space=24_Hotel=20
+Thu Sep 06 00:00:00 UTC 2012,3933,463,Professional & Other Places=86_Food=85_Shops & Services=49,Airport=25_Home (private)=21_Train Station=20
+Fri Sep 07 00:00:00 UTC 2012,4248,460,Food=82_Professional & Other Places=76_Shops & Services=54,Airport=23_Light Rail=22_Train Station=22
+Sat Sep 08 00:00:00 UTC 2012,3847,415,Travel & Transport=74_Shops & Services=62_Arts & Entertainment=59,Home (private)=18_Plaza=17_Music Venue=16
+Sun Sep 09 00:00:00 UTC 2012,3623,364,Food=72_Outdoors & Recreation=56_Nightlife Spots=48,Nightclub=16_Train Station=16_Plaza=15

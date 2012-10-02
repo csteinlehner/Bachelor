@@ -1,0 +1,25 @@
+time,count,fsq_count,CategorieParents,Categories
+Sun Sep 09 00:00:00 UTC 2012,140,8,Arts & Entertainment=2_Travel & Transport=2,Light Rail=2_Nightclub=2_General Entertainment=1
+Sun Sep 09 01:00:00 UTC 2012,144,8,Arts & Entertainment=1_Food=1,Concert Hall=1_Café=1_Gay Bar=1
+Sun Sep 09 02:00:00 UTC 2012,172,8,Travel & Transport=2_Arts & Entertainment=1_Train Stations=1,Platform=1_General Entertainment=1_Plaza=1
+Sun Sep 09 03:00:00 UTC 2012,133,7,Residences=3_Travel & Transport=1_Airports=1,Gay Bar=2_Nightclub=1_Airport Terminal=1
+Sun Sep 09 04:00:00 UTC 2012,58,4,Arts & Entertainment=1_Food=1,Vietnamese Restaurant=1_Concert Hall=1_Bar=1
+Sun Sep 09 05:00:00 UTC 2012,54,2,Nightlife Spots=1_Travel & Transport=1_Music Venues=1,Rock Club=1_Nightclub=1_Concert Hall=1
+Sun Sep 09 06:00:00 UTC 2012,47,1,"",""
+Sun Sep 09 07:00:00 UTC 2012,43,3,Food=1,Hotel=1_Train Station=1
+Sun Sep 09 08:00:00 UTC 2012,49,3,Hotels=1_Food=1_Travel & Transport=1,Bakery=1_Hostel=1
+Sun Sep 09 09:00:00 UTC 2012,78,8,Food=2_Arts & Entertainment=1_Outdoors & Recreation=1,Scenic Lookout=1_Café=1_College Classroom=1
+Sun Sep 09 10:00:00 UTC 2012,161,23,Food=4_Outdoors & Recreation=3_Arts & Entertainment=3,Theater=2_General Travel=1_Park=1
+Sun Sep 09 11:00:00 UTC 2012,163,16,Travel & Transport=4_Arts & Entertainment=2_Shops & Services=2,Zoo=1_Automotive Shop=1_Subway=1
+Sun Sep 09 12:00:00 UTC 2012,168,20,Food=5_Travel & Transport=5_Arts & Entertainment=3,Snack Place=2_Airport=2_General Travel=2
+Sun Sep 09 13:00:00 UTC 2012,218,24,Outdoors & Recreation=6_Arts & Entertainment=4_Professional & Other Places=4,Café=3_Monument / Landmark=2_Italian Restaurant=1
+Sun Sep 09 14:00:00 UTC 2012,195,34,Outdoors & Recreation=8_Arts & Entertainment=7_Nightlife Spots=4,Plaza=2_Theme Park=2_Bar=2
+Sun Sep 09 15:00:00 UTC 2012,179,28,Food=6_Outdoors & Recreation=6_Travel & Transport=4,Park=2_Train Station=2_Flea Market=2
+Sun Sep 09 16:00:00 UTC 2012,211,42,Travel & Transport=10_Food=6_Arts & Entertainment=4,Airport Terminal=3_Café=3_Plaza=3
+Sun Sep 09 17:00:00 UTC 2012,218,36,Travel & Transport=9_Professional & Other Places=7_Outdoors & Recreation=4,Light Rail=4_Office=3_Nightlife Spot=2
+Sun Sep 09 18:00:00 UTC 2012,141,27,Outdoors & Recreation=5_Food=5_Professional & Other Places=3,German Restaurant=2_Office=2_Plaza=2
+Sun Sep 09 19:00:00 UTC 2012,203,19,Arts & Entertainment=4_Travel & Transport=2_Shops & Services=2,Theater=2_Spa / Massage=1_Bus Line=1
+Sun Sep 09 20:00:00 UTC 2012,187,20,Food=4_Nightlife Spots=3_Shops & Services=3,Airport=2_Post Office=2_Platform=1
+Sun Sep 09 21:00:00 UTC 2012,180,6,Residences=2_Nightlife Spots=1,Hotel=1_Housing Development=1_Home (private)=1
+Sun Sep 09 22:00:00 UTC 2012,263,7,Food=2_Residences=1_Outdoors & Recreation=1,Nightclub=1_Café=1_Plaza=1
+Sun Sep 09 23:00:00 UTC 2012,218,10,Residences=3_Food=2_Nightlife Spots=2,Bar=1_Residential Building (Apartment / Condo)=1_Platform=1

@@ -1,0 +1,25 @@
+time,count,fsq_count,CategorieParents,Categories
+Mon Sep 03 00:00:00 UTC 2012,160,4,Outdoors & Recreation=1,Bus Station=1_Plaza=1
+Mon Sep 03 01:00:00 UTC 2012,125,5,Nightlife Spots=2_Arts & Entertainment=1_Stadiums=1,Bar=1_Gay Bar=1_Playground=1
+Mon Sep 03 02:00:00 UTC 2012,82,1,"",""
+Mon Sep 03 03:00:00 UTC 2012,53,3,Professional & Other Places=1_Offices=1_Museums=1,History Museum=1_Tech Startup=1
+Mon Sep 03 04:00:00 UTC 2012,52,10,Museums=2_Arts & Entertainment=2_Shops & Services=2,Field=1_Beach=1_Park=1
+Mon Sep 03 05:00:00 UTC 2012,44,2,Travel & Transport=1,Concert Hall=1
+Mon Sep 03 06:00:00 UTC 2012,74,4,Medical Centers=1_Residences=1_Train Stations=1,Hospital=1_Home (private)=1
+Mon Sep 03 07:00:00 UTC 2012,100,11,Professional & Other Places=3_Spiritual Centers=1_Shops & Services=1,Airport Gate=1_Office=1_Bakery=1
+Mon Sep 03 08:00:00 UTC 2012,180,26,Professional & Other Places=4_Offices=2_Food=2,Train Station=3_Subway=3_Café=2
+Mon Sep 03 09:00:00 UTC 2012,233,39,Travel & Transport=11_Food=2_Outdoors & Recreation=2,Office=5_Hotel=4_Airport=3
+Mon Sep 03 10:00:00 UTC 2012,265,42,Travel & Transport=10_Food=3_Offices=2,Train Station=5_Tech Startup=2_Building=2
+Mon Sep 03 11:00:00 UTC 2012,213,28,Travel & Transport=8_Residences=2_Shops & Services=1,Airport=5_Home (private)=2_Building=2
+Mon Sep 03 12:00:00 UTC 2012,206,28,Food=4_Outdoors & Recreation=3_Travel & Transport=3,Convention Center=2_Plaza=2_Capitol Building=2
+Mon Sep 03 13:00:00 UTC 2012,204,39,Food=15_Shops & Services=4_Gyms or Fitness Centers=2,Italian Restaurant=2_Building=2_Café=2
+Mon Sep 03 14:00:00 UTC 2012,190,31,Travel & Transport=8_Food=5_Shops & Services=3,Capitol Building=2_Airport=2_Office=2
+Mon Sep 03 15:00:00 UTC 2012,201,28,Food=8_Outdoors & Recreation=4_Arts & Entertainment=4,Event Space=4_Plaza=2_BBQ Joint=2
+Mon Sep 03 16:00:00 UTC 2012,216,15,Arts & Entertainment=3_Professional & Other Places=2_Food=2,Historic Site=2_Airport=2_Deli / Bodega=1
+Mon Sep 03 17:00:00 UTC 2012,221,8,Professional & Other Places=2_Shops & Services=2_Medical Centers=1,Grocery Store=1_Bus Line=1_Dentist's Office=1
+Mon Sep 03 18:00:00 UTC 2012,239,33,Shops & Services=6_Professional & Other Places=4_Arts & Entertainment=3,Event Space=4_Hotel=2_Home (private)=2
+Mon Sep 03 19:00:00 UTC 2012,256,29,Shops & Services=5_Outdoors & Recreation=5_Food=4,Airport=3_Hotel=3_Mall=2
+Mon Sep 03 20:00:00 UTC 2012,265,22,Food=6_Outdoors & Recreation=3_Shops & Services=3,German Restaurant=2_Airport Gate=2_Gym Pool=1
+Mon Sep 03 21:00:00 UTC 2012,208,17,Travel & Transport=5_Residences=2_Outdoors & Recreation=2,Mexican Restaurant=2_Miscellaneous Shop=1_Road=1
+Mon Sep 03 22:00:00 UTC 2012,209,14,Travel & Transport=2_Outdoors & Recreation=2_Shops & Services=2,Bar=1_Neighborhood=1_Airport=1
+Mon Sep 03 23:00:00 UTC 2012,73,2,Travel & Transport=1,Park=1

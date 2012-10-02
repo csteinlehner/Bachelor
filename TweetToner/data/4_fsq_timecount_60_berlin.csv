@@ -1,0 +1,25 @@
+time,count,fsq_count,CategorieParents,Categories
+Thu Sep 06 00:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 01:00:00 UTC 2012,77,3,Residences=1_Outdoors & Recreation=1,Stable=1_Home (private)=1
+Thu Sep 06 02:00:00 UTC 2012,68,5,Nightlife Spots=1_Food=1_Professional & Other Places=1,German Restaurant=1_Light Rail=1_Hotel=1
+Thu Sep 06 03:00:00 UTC 2012,81,0,"",""
+Thu Sep 06 04:00:00 UTC 2012,79,2,Travel & Transport=1,Airport=1
+Thu Sep 06 05:00:00 UTC 2012,50,4,Arts & Entertainment=1,Music Venue=1
+Thu Sep 06 06:00:00 UTC 2012,53,2,"",Light Rail=1
+Thu Sep 06 07:00:00 UTC 2012,76,10,Travel & Transport=3_Nightlife Spots=1,Dive Bar=1_Subway=1_Light Rail=1
+Thu Sep 06 08:00:00 UTC 2012,137,19,Travel & Transport=6_Food=3_Government Buildings=2,Courthouse=2_Airport=2_Tech Startup=1
+Thu Sep 06 09:00:00 UTC 2012,201,25,Travel & Transport=6_Shops & Services=3_Colleges & Universities=3,Tech Startup=2_Airport=2_Office=2
+Thu Sep 06 10:00:00 UTC 2012,207,23,Food=4_Travel & Transport=3_Offices=3,Tech Startup=3_Tea Room=2_Other Great Outdoors=1
+Thu Sep 06 11:00:00 UTC 2012,213,20,Food=4_Outdoors & Recreation=3_Government Buildings=2,Coffee Shop=4_Garden=1_Plaza=1
+Thu Sep 06 12:00:00 UTC 2012,155,18,Travel & Transport=4_Outdoors & Recreation=3_Residences=2,Home (private)=2_Asian Restaurant=2_Train Station=2
+Thu Sep 06 13:00:00 UTC 2012,213,41,Travel & Transport=9_Professional & Other Places=6_Outdoors & Recreation=4,Home (private)=3_Café=3_Plaza=3
+Thu Sep 06 14:00:00 UTC 2012,238,43,Professional & Other Places=10_Outdoors & Recreation=6_Food=5,Airport=4_Office=4_Bus Station=3
+Thu Sep 06 15:00:00 UTC 2012,205,35,Food=11_Shops & Services=6_Professional & Other Places=5,Café=3_Fast Food Restaurant=3_Coffee Shop=3
+Thu Sep 06 16:00:00 UTC 2012,248,38,Travel & Transport=8_Outdoors & Recreation=6_Food=5,Bridge=2_Airport=2_Light Rail=2
+Thu Sep 06 17:00:00 UTC 2012,212,30,Professional & Other Places=6_Travel & Transport=4_Food & Drink Shops=3,City Hall=2_Home (private)=2_Candy Store=2
+Thu Sep 06 18:00:00 UTC 2012,246,35,Professional & Other Places=7_Food=7_Shops & Services=5,Italian Restaurant=3_Park=2_Airport=2
+Thu Sep 06 19:00:00 UTC 2012,225,21,Professional & Other Places=4_Travel & Transport=3_Nightlife Spots=2,Italian Restaurant=2_Turkish Restaurant=2_Bar=2
+Thu Sep 06 20:00:00 UTC 2012,260,32,Shops & Services=8_Food=5_Gyms or Fitness Centers=4,Gym=3_Burger Joint=2_General Entertainment=2
+Thu Sep 06 21:00:00 UTC 2012,276,30,Food=9_Arts & Entertainment=5_Airports=2,Train Station=2_Airport=2_Art Museum=2
+Thu Sep 06 22:00:00 UTC 2012,214,17,Food=4_Residences=4_Nightlife Spots=3,Light Rail=2_Residential Building (Apartment / Condo)=1_German Restaurant=1
+Thu Sep 06 23:00:00 UTC 2012,201,10,Travel & Transport=2_Arts & Entertainment=2_Hotels=1,Nightclub=2_Performing Arts Venue=2_Lounge=1

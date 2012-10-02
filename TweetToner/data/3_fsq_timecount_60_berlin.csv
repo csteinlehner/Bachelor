@@ -1,0 +1,25 @@
+time,count,fsq_count,CategorieParents,Categories
+Wed Sep 05 00:00:00 UTC 2012,154,3,Travel & Transport=1,Train Station=1_Home (private)=1
+Wed Sep 05 01:00:00 UTC 2012,130,5,Government Buildings=1_Residences=1_Professional & Other Places=1,Hotel=1_Home (private)=1_Monument / Landmark=1
+Wed Sep 05 02:00:00 UTC 2012,84,4,Arts & Entertainment=1_Food=1,Concert Hall=1_Bar=1_Turkish Restaurant=1
+Wed Sep 05 03:00:00 UTC 2012,65,0,"",""
+Wed Sep 05 04:00:00 UTC 2012,56,1,"",""
+Wed Sep 05 05:00:00 UTC 2012,38,0,"",""
+Wed Sep 05 06:00:00 UTC 2012,79,2,"",Train Station=1
+Wed Sep 05 07:00:00 UTC 2012,115,8,Professional & Other Places=3_Outdoors & Recreation=1,Office=2_Bridge=1_Building=1
+Wed Sep 05 08:00:00 UTC 2012,149,26,Professional & Other Places=5_Medical Centers=2_Outdoors & Recreation=2,Train Station=3_Subway=3_Gas Station / Garage=2
+Wed Sep 05 09:00:00 UTC 2012,203,34,Travel & Transport=9_Colleges & Universities=4_Hotels=3,Office=3_Hotel=3_Nightclub=2
+Wed Sep 05 10:00:00 UTC 2012,213,31,Professional & Other Places=10_Food=4_Airports=2,Event Space=3_Train Station=3_Office=2
+Wed Sep 05 11:00:00 UTC 2012,198,26,Shops & Services=4_Travel & Transport=4_Arts & Entertainment=4,Café=2_Event Space=2_Grocery Store=2
+Wed Sep 05 12:00:00 UTC 2012,207,37,Food=8_Travel & Transport=6_Shops & Services=5,Event Space=3_Home (private)=2_Train Station=2
+Wed Sep 05 13:00:00 UTC 2012,205,25,Travel & Transport=7_Professional & Other Places=5_Shops & Services=5,Café=3_Home (private)=2_Airport Terminal=2
+Wed Sep 05 14:00:00 UTC 2012,198,27,Professional & Other Places=6_Travel & Transport=5_Outdoors & Recreation=2,Restaurant=2_Asian Restaurant=2_General Travel=1
+Wed Sep 05 15:00:00 UTC 2012,207,34,Travel & Transport=8_Food=7_Outdoors & Recreation=5,Train Station=2_Italian Restaurant=2_Event Space=2
+Wed Sep 05 16:00:00 UTC 2012,247,30,Travel & Transport=6_Shops & Services=6_Outdoors & Recreation=3,Mall=2_Department Store=2_Subway=2
+Wed Sep 05 17:00:00 UTC 2012,247,36,Food=7_Travel & Transport=7_Outdoors & Recreation=6,Plaza=4_Office=4_City Hall=2
+Wed Sep 05 18:00:00 UTC 2012,258,35,Travel & Transport=9_Outdoors & Recreation=5_Nightlife Spots=2,Park=3_Train Station=3_Light Rail=3
+Wed Sep 05 19:00:00 UTC 2012,234,27,Professional & Other Places=5_Travel & Transport=4_Arts & Entertainment=3,Stadium=2_Coworking Space=2_Train Station=2
+Wed Sep 05 20:00:00 UTC 2012,256,34,Arts & Entertainment=5_Professional & Other Places=5_Government Buildings=4,Capitol Building=3_Asian Restaurant=3_Hotel=2
+Wed Sep 05 21:00:00 UTC 2012,255,19,Arts & Entertainment=3_Nightlife Spots=3_Food=3,Airport=2_Light Rail=2_Burger Joint=1
+Wed Sep 05 22:00:00 UTC 2012,182,18,Nightlife Spots=4_Travel & Transport=4_Food=3,Airport=2_Event Space=2_Fast Food Restaurant=2
+Wed Sep 05 23:00:00 UTC 2012,0,0,"",""
