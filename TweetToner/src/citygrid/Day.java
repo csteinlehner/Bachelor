@@ -11,7 +11,7 @@ public class Day {
 	}
 	void draw(){
 		CityGrid.p5.pushMatrix();
-		CityGrid.p5.translate(0,-t_count/4);
+//		CityGrid.p5.translate(0,-t_count/4);
 		CityGrid.p5.line(0, 0, 0, t_count/2);
 		CityGrid.p5.popMatrix();
 	}
