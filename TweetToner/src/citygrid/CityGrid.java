@@ -4,6 +4,7 @@ package citygrid;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -31,6 +32,8 @@ public class CityGrid extends PApplet{
 	private float fontSize = 12f;
 	
 	private float hourSize = 20f;
+	private Integer maxHours;
+	private Integer maxWidth = 800;
 	
 	int start = 0;
 	int end = start+24;
@@ -82,9 +85,7 @@ public class CityGrid extends PApplet{
 					}
 				}
 			}
-			println(tweetCount);
-			println(tweetCountAdded);
-			println(tweetCountAdded.row(0));
+			maxHours = Collections.max(tweetCountAdded.values());
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
@@ -106,14 +107,14 @@ public class CityGrid extends PApplet{
 //			println("--"+i);
 			for (int j = 0; j < 7; j++) {
 //				println(tweetCountAdded.get(i,j));
-				vertex(tweetCountAdded.get(i, j),i*hourSize);
+				vertex(map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth),i*hourSize);
 			}	
 			endShape();
 		}
 		for (int i = 0; i < 7; i++) {
 			beginShape();
 			for (int j = 0; j < 24; j++) {
-				vertex(tweetCountAdded.get(j, i),j*hourSize);
+				vertex(map(tweetCountAdded.get(j, i),0,maxHours,0,maxWidth),j*hourSize);
 			}
 			endShape();
 		}
@@ -162,6 +163,8 @@ public class CityGrid extends PApplet{
 		strokeWeight(1);
 
 	}
+	
+	
 	public static void main(String args[])
 	{
 		//PApplet.main(new String[] { "--present", mailgod.MailGod.class.getName()});
