@@ -31,7 +31,7 @@ public class CityGrid extends PApplet{
 	
 	private float fontSize = 12f;
 	
-	private float hourSize = 30f;
+	private float hourSize = 40f;
 	private Integer maxHours;
 	private Integer maxWidth = 800;
 	
@@ -99,24 +99,27 @@ public class CityGrid extends PApplet{
 		float step = 2*PI/(end-start);
 		
 		float weekstep = 2*PI/7;
-		translate(100,100);
-
+		translate(100,30);
+		
+		//// draw hour lines
 		for (int i = 0; i < 24; i++) {
 			beginShape();
-			vertex(0,i*hourSize);
+			vertex(i*hourSize,0);
 //			println(tweetCountAdded.get(0,1));
 //			println("--"+i);
 			for (int j = 0; j < 7; j++) {
 //				println(tweetCountAdded.get(i,j));
-				vertex(map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth),i*hourSize);
+				vertex(i*hourSize, map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth));
 			}	
 			endShape();
 		}
+		
+		//// draw day lines
 		for (int i = 0; i < 7; i++) {
 			beginShape();
 			for (int j = 0; j < 24; j++) {
 				if(i>0){
-					vertex(map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth),j*hourSize);
+					vertex(j*hourSize,map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
 				}
 			}
 			endShape();
