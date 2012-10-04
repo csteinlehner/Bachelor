@@ -23,7 +23,8 @@ public class CityGrid extends PApplet{
 	
 	protected static final String CITY = "berlin";
 	
-	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
+	private static String csvPath_h = "data/tweetcount_matrix_60_"+CITY+".csv";
+	private static String csvPath_d = "data/tweetcount_matrix_60_d"+CITY+".csv";
 	
 	public static PApplet p5; 
 	
@@ -31,17 +32,21 @@ public class CityGrid extends PApplet{
 	
 	private float fontSize = 12f;
 	
-	private float hourSize = 40f;
-	private Integer maxHours;
-	private Integer maxWidth = 800;
+	private float hourSize = 100f;
+	private Integer maxHours_h, maxHours_d;
+	private Integer maxSize_h = 800;
+	private Integer maxSize_d = 800;
 	private Integer bottomPoint = 800;
 	
 	int start = 0;
 	int end = start+24;
 	
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
-	Table<Integer, Integer, Integer> tweetCount = HashBasedTable.create();
-	Table<Integer, Integer, Integer> tweetCountAdded = HashBasedTable.create();
+	Table<Integer, Integer, Integer> tweetCount_h = HashBasedTable.create();
+	Table<Integer, Integer, Integer> tweetCountAdded_h = HashBasedTable.create();
+	
+	Table<Integer, Integer, Integer> tweetCount_d = HashBasedTable.create();
+	Table<Integer, Integer, Integer> tweetCountAdded_d = HashBasedTable.create();
 	
 	Vector<WeekDay> weekdaydata = new Vector<WeekDay>();
 	Vector<DayStreet> daystreets = new Vector<DayStreet>();
@@ -54,39 +59,56 @@ public class CityGrid extends PApplet{
 		font = createFont("Axel-Bold",20);
 			try {
 			
-			CsvReader csvData = new CsvReader(csvPath,';',Charset.forName("UTF-8"));
+			CsvReader csvData_h = new CsvReader(csvPath_h,';',Charset.forName("UTF-8"));
 		
-			csvData.readHeaders();
+			csvData_h.readHeaders();
 			int day = 0;
 			int time = 0;
-			int hCount = csvData.getHeaderCount();
-			while (csvData.readRecord())
+			int hCount = csvData_h.getHeaderCount();
+			while (csvData_h.readRecord())
 			{
 				for (int i = 0; i < hCount; i++) {
-					tweetCount.put(i, time, Integer.parseInt(csvData.get(i)));
+					tweetCount_h.put(i, time, Integer.parseInt(csvData_h.get(i)));
 				}
 //				tweetCount.put();
 				time++;
 			}
-			csvData.close();
+			csvData_h.close();
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-			Map<Integer, Map<Integer, Integer>> rMap = tweetCount.rowMap();
+			
+			// calculate hour maps
+			Map<Integer, Map<Integer, Integer>> rMap = tweetCount_h.columnMap();
 			for (int i = 0; i < rMap.size(); i++) {
 				Map<Integer, Integer> tMap = rMap.get(i);
 				for (int j = 0; j < tMap.size(); j++) {
 					if(j>0){
-						tweetCountAdded.put(i, j, tMap.get(j)+tweetCountAdded.get(i,j-1));
+						tweetCountAdded_h.put(i, j, tMap.get(j)+tweetCountAdded_h.get(i,j-1));
 					}else{
-						tweetCountAdded.put(i, j, tMap.get(j));
+						tweetCountAdded_h.put(i, j, tMap.get(j));
 					}
 				}
 			}
-			maxHours = Collections.max(tweetCountAdded.values());
+			maxHours_h = Collections.max(tweetCountAdded_h.values());
+			
+			/// calculates day maps
+			Map<Integer, Map<Integer, Integer>> rMap_d = tweetCount_h.rowMap();
+			for (int i = 0; i < rMap_d.size(); i++) {
+				Map<Integer, Integer> tMap = rMap_d.get(i);
+				for (int j = 0; j < tMap.size(); j++) {
+					if(j>0){
+						tweetCountAdded_d.put(i, j, tMap.get(j)+tweetCountAdded_d.get(i,j-1));
+					}else{
+						tweetCountAdded_d.put(i, j, tMap.get(j));
+					}
+				}
+			}
+			maxHours_d = Collections.max(tweetCountAdded_d.values());
+			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
@@ -102,27 +124,28 @@ public class CityGrid extends PApplet{
 		float weekstep = 2*PI/7;
 		translate(100,30);
 		
-		//// draw hour lines
-		for (int i = 0; i < 24; i++) {
+		//// draw day lines
+		stroke(0,0,255);
+		for (int d = 0; d < 7; d++) {
 			beginShape();
-			vertex(i*hourSize,800);
-//			println(tweetCountAdded.get(0,1));
+			vertex(d*hourSize,bottomPoint);
+//			println(tweetCountAdded.get(0,1 ));
 //			println("--"+i);
-			for (int j = 0; j < 7; j++) {
+			for (int h = 0; h < 24; h++) {
 //				println(tweetCountAdded.get(i,j));
-				vertex(i*hourSize, bottomPoint-map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth));
+				vertex(d*hourSize, bottomPoint-map(tweetCountAdded_h.get(d, h),0,maxHours_h,0,maxSize_h));
 			}	
 			endShape();
 		}
-		
-		//// draw day lines
-		for (int i = 0; i < 7; i++) {
+		stroke(0);
+		//// draw hour lines
+		for (int h = 0; h < 24; h++) {
 			beginShape();
-			for (int j = 0; j < 24; j++) {
-				if(i>0){
-					vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
+			for (int d = 0; d < 7; d++) {
+				 if(h>0){
+					vertex(map(tweetCountAdded_d.get(h, d),0,maxHours_d,0,maxSize_d),bottomPoint-map(tweetCountAdded_h.get(d, h-1),0,maxHours_h,0,maxSize_h));
 				}else{
-					vertex(j*hourSize,bottomPoint);
+					vertex(d*hourSize,bottomPoint);
 				}
 			}
 			endShape();
