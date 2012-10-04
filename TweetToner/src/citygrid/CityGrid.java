@@ -33,9 +33,8 @@ public class CityGrid extends PApplet{
 	private float fontSize = 12f;
 	
 	private float hourSize = 100f;
-	private Integer maxHours_h, maxHours_d;
+	private Integer maxHours_h;
 	private Integer maxSize_h = 800;
-	private Integer maxSize_d = 800;
 	private Integer bottomPoint = 800;
 	
 	int start = 0;
@@ -44,9 +43,7 @@ public class CityGrid extends PApplet{
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
 	Table<Integer, Integer, Integer> tweetCount_h = HashBasedTable.create();
 	Table<Integer, Integer, Integer> tweetCountAdded_h = HashBasedTable.create();
-	
-	Table<Integer, Integer, Integer> tweetCount_d = HashBasedTable.create();
-	Table<Integer, Integer, Integer> tweetCountAdded_d = HashBasedTable.create();
+
 	
 	Vector<WeekDay> weekdaydata = new Vector<WeekDay>();
 	Vector<DayStreet> daystreets = new Vector<DayStreet>();
@@ -95,20 +92,6 @@ public class CityGrid extends PApplet{
 			}
 			maxHours_h = Collections.max(tweetCountAdded_h.values());
 			
-			/// calculates day maps
-			Map<Integer, Map<Integer, Integer>> rMap_d = tweetCount_h.rowMap();
-			for (int i = 0; i < rMap_d.size(); i++) {
-				Map<Integer, Integer> tMap = rMap_d.get(i);
-				for (int j = 0; j < tMap.size(); j++) {
-					if(j>0){
-						tweetCountAdded_d.put(i, j, tMap.get(j)+tweetCountAdded_d.get(i,j-1));
-					}else{
-						tweetCountAdded_d.put(i, j, tMap.get(j));
-					}
-				}
-			}
-			maxHours_d = Collections.max(tweetCountAdded_d.values());
-			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
@@ -143,7 +126,7 @@ public class CityGrid extends PApplet{
 			beginShape();
 			for (int d = 0; d < 7; d++) {
 				 if(h>0){
-					vertex(map(tweetCountAdded_d.get(h, d),0,maxHours_d,0,maxSize_d),bottomPoint-map(tweetCountAdded_h.get(d, h-1),0,maxHours_h,0,maxSize_h));
+					vertex(d*hourSize,bottomPoint-map(tweetCountAdded_h.get(d, h-1),0,maxHours_h,0,maxSize_h));
 				}else{
 					vertex(d*hourSize,bottomPoint);
 				}
