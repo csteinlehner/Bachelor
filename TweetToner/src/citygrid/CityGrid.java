@@ -103,31 +103,36 @@ public class CityGrid extends PApplet{
 		translate(100,30);
 		
 		//// draw hour lines
-		for (int i = 0; i < 24; i++) {
-			beginShape();
-			vertex(i*hourSize,800);
-//			println(tweetCountAdded.get(0,1));
-//			println("--"+i);
-			for (int j = 0; j < 7; j++) {
-//				println(tweetCountAdded.get(i,j));
-				vertex(i*hourSize, bottomPoint-map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth));
-			}	
-			endShape();
-		}
+//		for (int i = 0; i < 24; i++) {
+//			beginShape();
+//			vertex(i*hourSize,800);
+////			println(tweetCountAdded.get(0,1));
+////			println("--"+i);
+//			for (int j = 0; j < 7; j++) {
+////				println(tweetCountAdded.get(i,j));
+//				vertex(i*hourSize, bottomPoint-map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth));
+//			}	
+//			endShape();
+//		}
 		
-		//// draw day lines
-		for (int i = 0; i < 7; i++) {
-			beginShape();
-			for (int j = 0; j < 24; j++) {
-				if(i>0){
-					vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
+		fill(255,0,0);
+		for (int d = 0; d < 7; d++) {
+			for (int h = 0; h < 24; h++) {
+				if(d>0){
+					rect(h*hourSize,bottomPoint-map(tweetCountAdded.get(h, d-1),0,maxHours,0,maxWidth)-15,10,10);
 				}else{
-					vertex(j*hourSize,bottomPoint);
+					rect(h*hourSize,bottomPoint-15,10,10);
 				}
 			}
-			endShape();
 		}
 		
+		drawHourStreets(color(30,30,30), 5f);
+		drawDayStreets(color(30,30,30), 7f);
+		drawHourStreets(color(100,200,200), 3f);
+		drawDayStreets(color(300,200,200), 5f);
+		//// draw day lines
+		
+
 //		
 //		pushMatrix();
 //	translate(100,height/4);
@@ -171,6 +176,45 @@ public class CityGrid extends PApplet{
 		noFill();
 		strokeWeight(1);
 
+	}
+	
+	private void drawHourStreets(int color, float thickness){
+		pushStyle();
+		noFill();
+		stroke(color);
+		strokeWeight(thickness);
+		strokeCap(SQUARE);
+		for (int h = 0; h < 24; h++) {
+			beginShape();
+			vertex(h*hourSize,bottomPoint);
+//			println(tweetCountAdded.get(0,1));
+//			println("--"+i);
+			for (int d = 0; d < 7; d++) {
+//				println(tweetCountAdded.get(i,j));
+				vertex(h*hourSize, bottomPoint-map(tweetCountAdded.get(h, d),0,maxHours,0,maxWidth));
+			}	
+			endShape();
+		}
+		popStyle();
+	}
+	private void drawDayStreets(int color, float thickness){
+		pushStyle();
+		noFill();
+		stroke(color);
+		strokeWeight(thickness);
+		strokeCap(SQUARE);
+		for (int i = 0; i < 7; i++) {
+			beginShape();
+			for (int j = 0; j < 24; j++) {
+				if(i>0){
+					vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
+				}else{
+					vertex(j*hourSize,bottomPoint);
+				}
+			}
+			endShape();
+		}
+		popStyle();
 	}
 	
 	
