@@ -10,9 +10,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.Vector;
-
-import citygrid.WeekDay;
 
 import com.csvreader.CsvReader;
 import com.google.common.collect.HashBasedTable;
@@ -51,9 +48,7 @@ public class CityGrid extends PApplet{
 	Table<Integer, Integer, Integer> tweetCountAdded = HashBasedTable.create();
 	
 	TreeBasedTable<Integer, Integer, FsqData> fsqCount = TreeBasedTable.create();
-	
-	Vector<WeekDay> weekdaydata = new Vector<WeekDay>();
-	Vector<DayStreet> daystreets = new Vector<DayStreet>();
+
 	
 	public void setup(){
 		p5 = this;
@@ -105,6 +100,7 @@ public class CityGrid extends PApplet{
 //						tweetCount.put(i, time, Integer.parseInt(csvData.get(i)));
 					int day = Integer.parseInt(fsqData.get("day"));
 					int minute = Integer.parseInt(fsqData.get("minute"));
+					int hour = Integer.parseInt(fsqData.get("hour"));
 					int t_count = Integer.parseInt(fsqData.get("count"));
 					int f_count = Integer.parseInt(fsqData.get("fsq_count"));
 					String catString = fsqData.get("Categories");
@@ -116,9 +112,9 @@ public class CityGrid extends PApplet{
 							String[] tCatSplit = catSplit[i].split("=");
 							categories.put(tCatSplit[0], Integer.parseInt(tCatSplit[1]));
 						}
-							fsqCount.put(day,minute,new FsqData(day, minute, t_count, f_count, categories));
+							fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count, categories));
 					}else{
-						fsqCount.put(day,minute,new FsqData(day, minute, t_count, f_count));	
+						fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count));	
 					}
 				}
 				fsqData.close();
@@ -127,10 +123,10 @@ public class CityGrid extends PApplet{
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			int hourSize = fsqCount.columnKeySet().size();
-			int daySize = fsqCount.rowKeySet().size();
-			for (int d = 0; d < daySize; d++) {
-				for (int h = 0; h < hourSize; h++) {
+			int hourLength = fsqCount.columnKeySet().size();
+			int dayLength = fsqCount.rowKeySet().size();
+			for (int h = 0; h < hourLength; h++) {
+				for (int d = 0; d < dayLength; d++) {
 					FsqData e = fsqCount.get(d, h*HOURS_INTERVAL);
 					if(d!=0){
 						e.t_count_added = e.t_count + fsqCount.get(d-1, h*HOURS_INTERVAL).t_count_added;
@@ -141,6 +137,8 @@ public class CityGrid extends PApplet{
 			}
 	
 			maxHours = Collections.max(tweetCountAdded.values());
+			
+			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
@@ -155,10 +153,11 @@ public class CityGrid extends PApplet{
 		
 		//// draw houses
 		fill(255,0,0);
-		int hourSize = fsqCount.columnKeySet().size();
-		int daySize = fsqCount.rowKeySet().size();
-		for (int d = 0; d < daySize; d++) {
-			for (int h = 0; h < hourSize; h++) {
+		
+		int hourLength = fsqCount.columnKeySet().size();
+		int dayLength = fsqCount.rowKeySet().size();
+		for (int d = 0; d < dayLength; d++) {
+			for (int h = 0; h < hourLength; h++) {
 				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
 				if(entry.hasCategories){
 					HashMap<String, Integer> categories = entry.categories;
@@ -167,9 +166,9 @@ public class CityGrid extends PApplet{
 					while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
 						if(d>0){
-							rect(map(entry.minute/30*(hourSize/2),0,DAY_MINUTES,0,maxWidth),bottomPoint-map(entry.t_count_added,0,maxHours,0,maxWidth)-15,10,me.getValue()*10);
+							rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10,10,me.getValue()*10);
 						}else{
-							rect(h*hourSize,bottomPoint-15,10,10);
+							rect(h/2*(hourLength/2),bottomPoint-15,10,10);
 						}
 					}
 				}
