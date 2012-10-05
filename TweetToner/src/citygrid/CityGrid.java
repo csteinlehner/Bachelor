@@ -8,6 +8,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.Vector;
 
 import citygrid.WeekDay;
@@ -15,6 +17,7 @@ import citygrid.WeekDay;
 import com.csvreader.CsvReader;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
+import com.google.common.collect.TreeBasedTable;
 
 import processing.core.PApplet;
 import processing.core.PFont;
@@ -24,12 +27,16 @@ public class CityGrid extends PApplet{
 	protected static final String CITY = "berlin";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
+	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
 	
 	public static PApplet p5; 
 	
 	private PFont font;
 	
 	private float fontSize = 12f;
+	
+	private static final int  HOURS_INTERVAL = 30;
+	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
 	
 	private float hourSize = 40f;
 	private Integer maxHours;
@@ -42,6 +49,8 @@ public class CityGrid extends PApplet{
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
 	Table<Integer, Integer, Integer> tweetCount = HashBasedTable.create();
 	Table<Integer, Integer, Integer> tweetCountAdded = HashBasedTable.create();
+	
+	TreeBasedTable<Integer, Integer, FsqData> fsqCount = TreeBasedTable.create();
 	
 	Vector<WeekDay> weekdaydata = new Vector<WeekDay>();
 	Vector<DayStreet> daystreets = new Vector<DayStreet>();
@@ -86,6 +95,51 @@ public class CityGrid extends PApplet{
 					}
 				}
 			}
+			
+			
+			try {
+				CsvReader fsqData = new CsvReader(fsqCsvPath,',',Charset.forName("UTF-8"));
+				fsqData.readHeaders();
+				while (fsqData.readRecord())
+				{
+//						tweetCount.put(i, time, Integer.parseInt(csvData.get(i)));
+					int day = Integer.parseInt(fsqData.get("day"));
+					int minute = Integer.parseInt(fsqData.get("minute"));
+					int t_count = Integer.parseInt(fsqData.get("count"));
+					int f_count = Integer.parseInt(fsqData.get("fsq_count"));
+					String catString = fsqData.get("Categories");
+					
+					if(!catString.isEmpty()){
+					HashMap<String, Integer> categories = new HashMap<String, Integer>();
+					String[] catSplit = catString.split("_");
+						for (int i = 0; i < catSplit.length; i++) {
+							String[] tCatSplit = catSplit[i].split("=");
+							categories.put(tCatSplit[0], Integer.parseInt(tCatSplit[1]));
+						}
+							fsqCount.put(day,minute,new FsqData(day, minute, t_count, f_count, categories));
+					}else{
+						fsqCount.put(day,minute,new FsqData(day, minute, t_count, f_count));	
+					}
+				}
+				fsqData.close();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			int hourSize = fsqCount.columnKeySet().size();
+			int daySize = fsqCount.rowKeySet().size();
+			for (int d = 0; d < daySize; d++) {
+				for (int h = 0; h < hourSize; h++) {
+					FsqData e = fsqCount.get(d, h*HOURS_INTERVAL);
+					if(d!=0){
+						e.t_count_added = e.t_count + fsqCount.get(d-1, h*HOURS_INTERVAL).t_count_added;
+					}else{
+						e.t_count_added=e.t_count;
+					}
+				}
+			}
+	
 			maxHours = Collections.max(tweetCountAdded.values());
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
@@ -97,84 +151,45 @@ public class CityGrid extends PApplet{
 	public void draw(){
 		background(220,230,220);
 		
-		float step = 2*PI/(end-start);
-		
-		float weekstep = 2*PI/7;
 		translate(100,30);
 		
-		//// draw hour lines
-//		for (int i = 0; i < 24; i++) {
-//			beginShape();
-//			vertex(i*hourSize,800);
-////			println(tweetCountAdded.get(0,1));
-////			println("--"+i);
-//			for (int j = 0; j < 7; j++) {
-////				println(tweetCountAdded.get(i,j));
-//				vertex(i*hourSize, bottomPoint-map(tweetCountAdded.get(i, j),0,maxHours,0,maxWidth));
-//			}	
-//			endShape();
-//		}
-		
+		//// draw houses
 		fill(255,0,0);
-		for (int d = 0; d < 7; d++) {
-			for (int h = 0; h < 24; h++) {
-				if(d>0){
-					rect(h*hourSize,bottomPoint-map(tweetCountAdded.get(h, d-1),0,maxHours,0,maxWidth)-15,10,10);
-				}else{
-					rect(h*hourSize,bottomPoint-15,10,10);
+		int hourSize = fsqCount.columnKeySet().size();
+		int daySize = fsqCount.rowKeySet().size();
+		for (int d = 0; d < daySize; d++) {
+			for (int h = 0; h < hourSize; h++) {
+				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
+				if(entry.hasCategories){
+					HashMap<String, Integer> categories = entry.categories;
+					Set<Map.Entry<String, Integer>> set = categories.entrySet();
+					Iterator<Entry<String,Integer>> it = set.iterator();
+					while(it.hasNext()){
+						Map.Entry<String,Integer> me = it.next();
+						if(d>0){
+							rect(map(entry.minute/30*(hourSize/2),0,DAY_MINUTES,0,maxWidth),bottomPoint-map(entry.t_count_added,0,maxHours,0,maxWidth)-15,10,me.getValue()*10);
+						}else{
+							rect(h*hourSize,bottomPoint-15,10,10);
+						}
+					}
 				}
 			}
 		}
+//		for (int d = 0; d < 7; d++) {
+//			for (int h = 0; h < 24; h++) {
+//				if(d>0){
+//					rect(h*hourSize,bottomPoint-map(tweetCountAdded.get(h, d-1),0,maxHours,0,maxWidth)-15,10,10);
+//				}else{
+//					rect(h*hourSize,bottomPoint-15,10,10);
+//				}
+//			}
+//		}
 		
+		//// draw Streets
 		drawHourStreets(color(30,30,30), 5f);
 		drawDayStreets(color(30,30,30), 7f);
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
-		//// draw day lines
-		
-
-//		
-//		pushMatrix();
-//	translate(100,height/4);
-////		rotate(HALF_PI);
-//		stroke(0);
-//		noFill();
-//		for (int i = 0; i < 7; i++) {
-////			WeekDay d = weekdaydata.get(i);
-////			rotate(weekstep);
-//			pushMatrix();
-//			rotate(HALF_PI);
-//			daystreets.get(i).draw();
-//			popMatrix();
-//			CityGrid.p5.translate(140,0);
-//		}
-//		popMatrix();
-		
-//		pushMatrix();
-//		translate(width/2,height/2);
-//		int cRadius = 150;
-//		int j = 0;
-//		for (int i = start; i < end; i++, j++) {
-//			  float x1 = cos(step*j) * cRadius;
-//			  float y1 = sin(step*j) * cRadius;
-//			  SingleData d = data.get(i);
-//			  if(d.hasColor){
-//			  stroke(d.red, d.green, d.red);
-//			  strokeWeight(20);
-//			  strokeCap(SQUARE);
-//			  noFill();
-//			  arc(0,0,300,300,step*j,step*(j+1));
-////			  ellipse(x1,y1,20,20);
-//			  }
-//		}
-//		popMatrix();
-		
-//		fill(0,150,0);
-		
-//		float tCountRadius = 100;
-		stroke(200,150,150);
-		noFill();
-		strokeWeight(1);
 
 	}
 	
