@@ -18,6 +18,8 @@ import com.google.common.collect.TreeBasedTable;
 
 import processing.core.PApplet;
 import processing.core.PFont;
+import processing.core.PGraphics;
+import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 	
@@ -32,6 +34,8 @@ public class CityGrid extends PApplet{
 	
 	private float fontSize = 12f;
 	
+	PGraphics map; 
+	
 	private static final int  HOURS_INTERVAL = 30;
 	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
 	
@@ -42,6 +46,16 @@ public class CityGrid extends PApplet{
 	
 	int start = 0;
 	int end = start+24;
+	
+	/// zoom & pan
+	float zoom;
+	PVector offset;
+	PVector poffset;
+	PVector mouse;
+	float wheel = 1.0f;
+	float wheelMult =0.10f;
+
+	
 	
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
 	Table<Integer, Integer, Integer> tweetCount = HashBasedTable.create();
@@ -54,6 +68,16 @@ public class CityGrid extends PApplet{
 		p5 = this;
 		size(1200,900);
 		frameRate(30);
+		
+		zoom = 1.0f;
+		offset = new PVector(0, 0);
+		poffset = new PVector(0, 0);
+		addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+		    public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+		      mouseWheel(evt.getWheelRotation());
+		  }});
+
+		
 		smooth();
 		font = createFont("Axel-Bold",20);
 			try {
@@ -144,15 +168,18 @@ public class CityGrid extends PApplet{
 //			}
 			
 			textFont(font);
+			
+			drawMap();
 	}
 	
-	public void draw(){
-		background(220,230,220);
-		
-		translate(100,30);
-		
+	private void drawMap(){
+		map = createGraphics(2000,2000,JAVA2D);
+		map.beginDraw();
+		map.smooth();
+		map.background(220,230,220);
+		map.translate(10,10);
 		//// draw houses
-		fill(255,0,0);
+		map.fill(255,0,0);
 		
 		int hourLength = fsqCount.columnKeySet().size();
 		int dayLength = fsqCount.rowKeySet().size();
@@ -167,9 +194,9 @@ public class CityGrid extends PApplet{
 					while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
 						if(d>0){
-							rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10*c,10,me.getValue()*10);
+							map.rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10*c,10,me.getValue()*10);
 						}else{
-							rect(entry.minute/60f*hourSize,bottomPoint-10*c,10,10);
+							map.rect(entry.minute/60f*hourSize,bottomPoint-10*c,10,10);
 						}
 						c++;
 					}
@@ -191,46 +218,58 @@ public class CityGrid extends PApplet{
 		drawDayStreets(color(30,30,30), 7f);
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
-
+		map.endDraw();
+		
+	}
+	
+	public void draw(){
+		background(0);
+		zoom = wheel;
+		translate(100,30);
+		pushMatrix();
+		scale(zoom);
+		translate((int)(offset.x/zoom), (int)(offset.y/zoom));
+		image(map,0,0);
+		popMatrix();
 	}
 	
 	private void drawHourStreets(int color, float thickness){
-		pushStyle();
-		noFill();
-		stroke(color);
-		strokeWeight(thickness);
-		strokeCap(SQUARE);
+		map.pushStyle();
+		map.noFill();
+		map.stroke(color);
+		map.strokeWeight(thickness);
+		map.strokeCap(SQUARE);
 		for (int h = 0; h < 24; h++) {
-			beginShape();
-			vertex(h*hourSize,bottomPoint);
+			map.beginShape();
+			map.vertex(h*hourSize,bottomPoint);
 //			println(tweetCountAdded.get(0,1));
 //			println("--"+i);
 			for (int d = 0; d < 7; d++) {
 //				println(tweetCountAdded.get(i,j));
-				vertex(h*hourSize, bottomPoint-map(tweetCountAdded.get(h, d),0,maxHours,0,maxWidth));
+				map.vertex(h*hourSize, bottomPoint-map(tweetCountAdded.get(h, d),0,maxHours,0,maxWidth));
 			}	
-			endShape();
+			map.endShape();
 		}
-		popStyle();
+		map.popStyle();
 	}
 	private void drawDayStreets(int color, float thickness){
-		pushStyle();
-		noFill();
-		stroke(color);
-		strokeWeight(thickness);
-		strokeCap(SQUARE);
+		map.pushStyle();
+		map.noFill();
+		map.stroke(color);
+		map.strokeWeight(thickness);
+		map.strokeCap(SQUARE);
 		for (int i = 0; i < 7; i++) {
-			beginShape();
+			map.beginShape();
 			for (int j = 0; j < 24; j++) {
 				if(i>0){
-					vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
+					map.vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
 				}else{
-					vertex(j*hourSize,bottomPoint);
+					map.vertex(j*hourSize,bottomPoint);
 				}
 			}
-			endShape();
+			map.endShape();
 		}
-		popStyle();
+		map.popStyle();
 	}
 	
 	
@@ -239,6 +278,23 @@ public class CityGrid extends PApplet{
 		//PApplet.main(new String[] { "--present", mailgod.MailGod.class.getName()});
 		PApplet.main(new String[] {  citygrid.CityGrid.class.getName()});
 	}
+	
+	public void mousePressed() {
+		  mouse = new PVector(mouseX, mouseY);
+		  poffset.set(offset);
+		}
+
+		// Calculate the new offset based on change in mouse vs. previous offsey
+	public void mouseDragged() {
+		  offset.x = mouseX - mouse.x + poffset.x;
+		  offset.y = mouseY - mouse.y + poffset.y;
+		}
+	
+	void mouseWheel(int step) {
+	      wheel=(constrain(wheel+step*wheelMult*-1f,0.1f,50f));
+	     println(wheel);
+	}
+
 	public void keyPressed() {
 		  if (key == CODED) {
 		    if (keyCode == UP) {
