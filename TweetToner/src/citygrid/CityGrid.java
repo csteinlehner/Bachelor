@@ -58,7 +58,7 @@ public class CityGrid extends PApplet{
 		font = createFont("Axel-Bold",20);
 			try {
 			
-			CsvReader csvData = new CsvReader(csvPath,';',Charset.forName("UTF-8"));
+			CsvReader csvData = new CsvReader(csvPath,',',Charset.forName("UTF-8"));
 		
 			csvData.readHeaders();
 			int day = 0;
@@ -159,6 +159,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < dayLength; d++) {
 			for (int h = 0; h < hourLength; h++) {
 				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
+				int c = 0;
 				if(entry.hasCategories){
 					HashMap<String, Integer> categories = entry.categories;
 					Set<Map.Entry<String, Integer>> set = categories.entrySet();
@@ -166,10 +167,11 @@ public class CityGrid extends PApplet{
 					while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
 						if(d>0){
-							rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10,10,me.getValue()*10);
+							rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10*c,10,me.getValue()*10);
 						}else{
-							rect(h/2*(hourLength/2),bottomPoint-15,10,10);
+							rect(entry.minute/60f*hourSize,bottomPoint-10*c,10,10);
 						}
+						c++;
 					}
 				}
 			}
