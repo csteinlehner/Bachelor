@@ -42,7 +42,6 @@ public class CityGrid extends PApplet{
 	private float hourSize = 40f;
 	private Integer maxHours;
 	private Integer maxWidth = 800;
-	private Integer bottomPoint = 800;
 	
 	int start = 0;
 	int end = start+24;
@@ -54,6 +53,11 @@ public class CityGrid extends PApplet{
 	PVector mouse;
 	float wheel = 1.0f;
 	float wheelMult =0.10f;
+	
+	int mapWidth = 3000;
+	int mapHeight = 2000;
+	int bottomPoint = mapHeight-50;
+	float sizeFactor = 3f;
 
 	
 	
@@ -173,7 +177,7 @@ public class CityGrid extends PApplet{
 	}
 	
 	private void drawMap(){
-		map = createGraphics(2000,2000,JAVA2D);
+		map = createGraphics(mapWidth,mapHeight,JAVA2D);
 		map.beginDraw();
 		map.smooth();
 		map.background(220,230,220);
@@ -194,9 +198,9 @@ public class CityGrid extends PApplet{
 					while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
 						if(d>0){
-							map.rect(entry.minute/60f*hourSize,bottomPoint-map(tweetCountAdded.get(entry.hour,d-1),0,maxHours,0,maxWidth)-me.getValue()*10-10*c,10,me.getValue()*10);
+							map.rect(entry.minute/60f*hourSize,bottomPoint-tweetCountAdded.get(entry.hour,d-1)/sizeFactor-me.getValue()*10-10*c,10,me.getValue()*10);
 						}else{
-							map.rect(entry.minute/60f*hourSize,bottomPoint-10*c,10,10);
+							map.rect(entry.minute/60f*hourSize,bottomPoint-15,10,10);
 						}
 						c++;
 					}
@@ -246,7 +250,7 @@ public class CityGrid extends PApplet{
 //			println("--"+i);
 			for (int d = 0; d < 7; d++) {
 //				println(tweetCountAdded.get(i,j));
-				map.vertex(h*hourSize, bottomPoint-map(tweetCountAdded.get(h, d),0,maxHours,0,maxWidth));
+				map.vertex(h*hourSize, bottomPoint-tweetCountAdded.get(h, d)/sizeFactor);
 			}	
 			map.endShape();
 		}
@@ -262,7 +266,7 @@ public class CityGrid extends PApplet{
 			map.beginShape();
 			for (int j = 0; j < 24; j++) {
 				if(i>0){
-					map.vertex(j*hourSize,bottomPoint-map(tweetCountAdded.get(j, i-1),0,maxHours,0,maxWidth));
+					map.vertex(j*hourSize,bottomPoint-tweetCountAdded.get(j, i-1)/sizeFactor);
 				}else{
 					map.vertex(j*hourSize,bottomPoint);
 				}
@@ -292,7 +296,6 @@ public class CityGrid extends PApplet{
 	
 	void mouseWheel(int step) {
 	      wheel=(constrain(wheel+step*wheelMult*-1f,0.1f,50f));
-	     println(wheel);
 	}
 
 	public void keyPressed() {
