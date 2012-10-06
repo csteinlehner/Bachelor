@@ -251,39 +251,159 @@ public class CityGrid extends PApplet{
 					HashMap<String, Integer> categories = entry.categoryParents;
 					Set<Map.Entry<String, Integer>> set = categories.entrySet();
 					Iterator<Entry<String,Integer>> it = set.iterator();
-					while(it.hasNext()){
+					PVector bl = new PVector();
+					PVector br = new PVector();
+					PVector tl = new PVector();
+					PVector tr = new PVector();
+				//	while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
-//						map.beginShape();
-						if(d>0 && d<dayLength-1){
-							float x1 = entry.minute/60f*hourSize;
-							float bl_y = coordinates.get(d-1,entry.hour).y;							
-							if(h<hourLength-2 && h%2==0){
-
-								float x2 =  fsqCount.get(d, (h+1)*HOURS_INTERVAL).minute/60f*hourSize;
-								float tl_y = coordinates.get(d,entry.hour).y;
-								float tr_y = coordinates.get(d, entry.hour+1).y;
-								
-								float br_y = coordinates.get(d-1, entry.hour+1).y;
-								PVector botL = new PVector(x1,bl_y);
-								PVector botR = new PVector(x2,br_y);
-								PVector botM = PVector.sub(botR, botL);
-								botM.div(60/HOURS_INTERVAL);
-								botM.add(botL);
-								
-								PVector topL = new PVector(x1,tl_y);
-								PVector topR = new PVector(x2,tr_y);
-								PVector topM = PVector.sub(topR,topL);
-								topM.div(60/HOURS_INTERVAL);
-								topM.add(topL);
-								
-								map.beginShape();
-								map.vertex(x1,bl_y);
-								map.vertex(x2,botM.y);
-								map.vertex(x2,topM.y); // y3
-								map.vertex(x1,tl_y);
-								map.endShape();
-							}
+						/// calculates the total cell
+							/// bottom left
+						float bl_x = 0;
+						if(h%2==0){
+							bl_x = entry.minute/60f*hourSize;
+						}else{
+							bl_x = entry.minute/60f*hourSize-hourSize/2;
 						}
+							float bl_y;
+							if(d>0){
+								bl_y = coordinates.get(d-1, entry.hour).y;
+							}else{
+								bl_y = bottomPoint;
+							}
+							bl = new PVector(bl_x,bl_y);
+							
+							/// bottom right
+							float br_x = 0; 
+							if(h%2==0){
+								br_x = entry.minute/60f*hourSize+hourSize;
+							}else{
+								br_x = entry.minute/60f*hourSize+hourSize-hourSize/2;
+							}
+							float br_y;
+							float t_hourMove;
+							if(h%2==0){
+								t_hourMove = hourLength-2;
+							}else{
+								t_hourMove = hourLength-1;
+							}
+							if(d>0 && h<t_hourMove){
+								br_y = coordinates.get(d-1, entry.hour+1).y;
+							}else if (d>0 && h==t_hourMove){
+						 		br_y = coordinates.get(d-1, entry.hour).y;
+							}else{
+								br_y = bottomPoint;
+							}
+							br = new PVector(br_x,br_y);
+							
+							/// top left
+							float tl_x = bl_x;
+							float tl_y = coordinates.get(d,entry.hour).y;
+							tl = new PVector(tl_x,tl_y);
+							
+							/// top right
+							float tr_x = br_x;
+							float tr_y;
+							if(h<hourLength-2){
+								tr_y = coordinates.get(d, entry.hour+1).y;
+							}else{
+								tr_y = coordinates.get(d, entry.hour).y;
+							}
+							tr = new PVector(tr_x, tr_y);
+							
+							
+						//// Vectors for drawing
+						PVector d_bl_1;
+						PVector d_br_1;
+						PVector d_tr_1;
+						PVector d_tl_1;
+						
+						PVector d_bl_2;
+						PVector d_br_2;
+						PVector d_tr_2;
+						PVector d_tl_2;
+						
+						//// draw left half
+						if(h%2==0){
+							d_bl_1 = bl;
+							d_tl_1 = tl;
+							
+							d_br_1 = PVector.sub(br, bl);
+							d_br_1.div(2);
+							d_br_1.add(bl);
+							
+							d_tr_1 = PVector.sub(tr,tl);
+							d_tr_1.div(2);
+							d_tr_1.add(tl);
+							map.beginShape();
+							map.vertex(d_bl_1.x, d_bl_1.y);
+							map.vertex(d_br_1.x, d_br_1.y);
+							map.vertex(d_tr_1.x, d_tr_1.y);
+							map.vertex(d_tl_1.x, d_tl_1.y);
+							map.endShape();
+						}
+						else{
+							d_bl_2 = PVector.sub(br, bl);
+							d_bl_2.div(2);
+							d_bl_2.add(bl);
+							
+							d_tl_2 = PVector.sub(tr,tl);
+							d_tl_2.div(2);
+							d_tl_2.add(tl);
+							
+							d_br_2 = br;
+							d_tr_2 = tr;
+							map.beginShape();
+							map.vertex(d_bl_2.x, d_bl_2.y);
+							map.vertex(br.x, br.y);
+							map.vertex(tr.x, tr.y);
+							map.vertex(d_tl_2.x, d_tl_2.y);
+							map.endShape();
+						}
+							
+							
+//							if(d>0){
+//								float x1 = entry.minute/60f*hourSize;
+//								float x2;
+//								float tr_y;
+//								if(h<hourLength-2){
+//									x2 =  fsqCount.get(d, (h+1)*HOURS_INTERVAL).minute/60f*hourSize;	
+//									tr_y = coordinates.get(d, entry.hour+1).y;
+//									br_y = coordinates.get(d-1, entry.hour+1).y;
+//								}else{
+//									x2 =  entry.minute/60f*hourSize+hourSize/2;	
+//									tr_y = coordinates.get(d, entry.hour).y;
+//									br_y = coordinates.get(d-1, entry.hour).y;
+//								}
+//									PVector botL = new PVector(x1,bl_y);
+//									PVector botR = new PVector(x2,br_y);
+//									PVector botM = PVector.sub(botR, botL);
+//									botM.div(60/HOURS_INTERVAL);
+//									botM.add(botL);
+//									
+//									PVector topL = new PVector(x1,tl_y);
+//									PVector topR = new PVector(x2,tr_y);
+//									PVector topM = PVector.sub(topR,topL);
+//									topM.div(60/HOURS_INTERVAL);
+//									topM.add(topL);
+//									
+//									map.beginShape();
+//									map.vertex(x1,bl_y);
+//									map.vertex(x2,botM.y);
+//									map.vertex(x2,topM.y); // y3
+//									map.vertex(x1,tl_y);
+//									map.endShape();
+//							}
+//						}
+//						map.beginShape();
+//						if(d>0 && d<dayLength-1){
+//							float x1 = entry.minute/60f*hourSize;
+//							float bl_y = coordinates.get(d-1,entry.hour).y;							
+//							if(h<hourLength-2 && h%2==0){
+//
+//								
+//							}
+//						}
 //						vertex();
 //						map.endShape();
 //						if(d>0){
@@ -292,11 +412,12 @@ public class CityGrid extends PApplet{
 //							map.rect(entry.minute/60f*hourSize,bottomPoint-15,10,10);
 //						}
 //						c++;
-					}
+		//			}
 				}
 			}
 		}
 	}
+
 	
 	private void drawHourStreets(int color, float thickness){
 		map.pushStyle();
