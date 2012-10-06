@@ -229,11 +229,11 @@ public class CityGrid extends PApplet{
 	private void createCoordinates(){
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
-				if(d>0){
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d-1)/sizeFactor));
-				}else{
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
-				}
+//				if(d>0){
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)/sizeFactor));
+//				}else{
+//					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
+//				}
 			}
 		}
 	}
@@ -271,16 +271,24 @@ public class CityGrid extends PApplet{
 		map.strokeWeight(thickness);
 		map.strokeCap(SQUARE);
 		for (int h = 0; h < 24; h++) {
-			map.beginShape();
-			map.vertex(h*hourSize,bottomPoint);
+//			map.beginShape();
+//			map.vertex(h*hourSize,bottomPoint);
 //			println(tweetCountAdded.get(0,1));
 //			println("--"+i);
 			for (int d = 0; d < 7; d++) {
+				if(d>0){
+					PVector p1 = coordinates.get(d-1,h);
+					PVector p2 = coordinates.get(d,h);
+					map.line(p1.x,p1.y,p2.x,p2.y);
+				}else{
+					PVector p2 = coordinates.get(d,h);
+					map.line(p2.x,bottomPoint,p2.x,p2.y);
+				}
 //				println(tweetCountAdded.get(i,j));
-				PVector p = coordinates.get(d, h);
-				map.vertex(p.x, p.y);
+//				PVector p = coordinates.get(d, h);
+//				map.vertex(p.x, p.y);
 			}	
-			map.endShape();
+//			map.endShape();
 		}
 		map.popStyle();
 	}
@@ -291,12 +299,16 @@ public class CityGrid extends PApplet{
 		map.strokeWeight(thickness);
 		map.strokeCap(SQUARE);
 		for (int d = 0; d < 7; d++) {
-			map.beginShape();
-			for (int h = 0; h < 24; h++) {
-				PVector p = coordinates.get(d, h);
-				map.vertex(p.x, p.y);
+			for (int h = 0; h <= 24; h++) {
+				if(h==24){
+					PVector p2 = coordinates.get(d, h-1);
+					map.line(p2.x,p2.y,p2.x+hourSize,p2.y);
+				}else if(h>0){
+					PVector p1 = coordinates.get(d, h-1);
+					PVector p2 = coordinates.get(d, h);
+					map.line(p1.x,p1.y,p2.x,p2.y);
+				}
 			}
-			map.endShape();
 		}
 		map.popStyle();
 	}
