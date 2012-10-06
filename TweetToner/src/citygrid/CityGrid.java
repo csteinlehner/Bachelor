@@ -39,7 +39,7 @@ public class CityGrid extends PApplet{
 	private static final int  HOURS_INTERVAL = 30;
 	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
 	
-	private float hourSize = 40f;
+
 	private Integer maxHours;
 	private Integer maxWidth = 800;
 	
@@ -57,7 +57,8 @@ public class CityGrid extends PApplet{
 	int mapWidth;
 	int mapHeight;
 	int bottomPoint;
-	float sizeFactor = 3f;
+	float sizeFactor = 2.2f;
+	private float hourSize = 100/sizeFactor;
 
 	
 	
@@ -218,7 +219,7 @@ public class CityGrid extends PApplet{
 	public void draw(){
 		background(0);
 		zoom = wheel;
-		translate(100,30);
+//		translate(100,30);
 		pushMatrix();
 		scale(zoom);
 		translate((int)(offset.x/zoom), (int)(offset.y/zoom));
@@ -252,12 +253,45 @@ public class CityGrid extends PApplet{
 					Iterator<Entry<String,Integer>> it = set.iterator();
 					while(it.hasNext()){
 						Map.Entry<String,Integer> me = it.next();
-						if(d>0){
-							map.rect(entry.minute/60f*hourSize,bottomPoint-tweetCountAdded.get(entry.hour,d-1)/sizeFactor-me.getValue()*10-10*c,10,me.getValue()*10);
-						}else{
-							map.rect(entry.minute/60f*hourSize,bottomPoint-15,10,10);
+//						map.beginShape();
+						if(d>0 && d<dayLength-1){
+							float x1 = entry.minute/60f*hourSize;
+							float bl_y = coordinates.get(d-1,entry.hour).y;							
+							if(h<hourLength-2 && h%2==0){
+
+								float x2 =  fsqCount.get(d, (h+1)*HOURS_INTERVAL).minute/60f*hourSize;
+								float tl_y = coordinates.get(d,entry.hour).y;
+								float tr_y = coordinates.get(d, entry.hour+1).y;
+								
+								float br_y = coordinates.get(d-1, entry.hour+1).y;
+								PVector botL = new PVector(x1,bl_y);
+								PVector botR = new PVector(x2,br_y);
+								PVector botM = PVector.sub(botR, botL);
+								botM.div(60/HOURS_INTERVAL);
+								botM.add(botL);
+								
+								PVector topL = new PVector(x1,tl_y);
+								PVector topR = new PVector(x2,tr_y);
+								PVector topM = PVector.sub(topR,topL);
+								topM.div(60/HOURS_INTERVAL);
+								topM.add(topL);
+								
+								map.beginShape();
+								map.vertex(x1,bl_y);
+								map.vertex(x2,botM.y);
+								map.vertex(x2,topM.y); // y3
+								map.vertex(x1,tl_y);
+								map.endShape();
+							}
 						}
-						c++;
+//						vertex();
+//						map.endShape();
+//						if(d>0){
+//							map.rect(entry.minute/60f*hourSize,bottomPoint-tweetCountAdded.get(entry.hour,d-1)/sizeFactor-me.getValue()*10-10*c,10,me.getValue()*10);
+//						}else{
+//							map.rect(entry.minute/60f*hourSize,bottomPoint-15,10,10);
+//						}
+//						c++;
 					}
 				}
 			}
