@@ -66,6 +66,8 @@ public class CityGrid extends PApplet{
 	Table<Integer, Integer, Integer> tweetCountAdded = HashBasedTable.create();
 	
 	TreeBasedTable<Integer, Integer, FsqData> fsqCount = TreeBasedTable.create();
+	
+	TreeBasedTable<Integer, Integer, PVector> coordinates = TreeBasedTable.create();
 
 	
 	public void setup(){
@@ -188,6 +190,9 @@ public class CityGrid extends PApplet{
 			mapHeight = (int)(maxHours/sizeFactor+200);
 			mapWidth = (int)(hourSize*24+200);
 			bottomPoint = mapHeight-50;
+			
+			createCoordinates();
+			
 			drawMap();
 	}
 	
@@ -197,9 +202,44 @@ public class CityGrid extends PApplet{
 		map.smooth();
 		map.background(220,230,220);
 		map.translate(10,10);
-		//// draw houses
-		map.fill(255,0,0);
 		
+		
+		drawHouses();
+		
+		//// draw Streets
+		drawHourStreets(color(30,30,30), 5f);
+		drawDayStreets(color(30,30,30), 7f);
+		drawHourStreets(color(100,200,200), 3f);
+		drawDayStreets(color(300,200,200), 5f);
+		map.endDraw();
+		
+	}
+	
+	public void draw(){
+		background(0);
+		zoom = wheel;
+		translate(100,30);
+		pushMatrix();
+		scale(zoom);
+		translate((int)(offset.x/zoom), (int)(offset.y/zoom));
+		image(map,0,0);
+		popMatrix();
+	}
+	
+	private void createCoordinates(){
+		for (int d = 0; d < 7; d++) {
+			for (int h = 0; h < 24; h++) {
+				if(d>0){
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d-1)/sizeFactor));
+				}else{
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
+				}
+			}
+		}
+	}
+	
+	private void drawHouses(){
+		map.fill(255,0,0);
 		int hourLength = fsqCount.columnKeySet().size();
 		int dayLength = fsqCount.rowKeySet().size();
 		for (int d = 0; d < dayLength; d++) {
@@ -222,34 +262,6 @@ public class CityGrid extends PApplet{
 				}
 			}
 		}
-//		for (int d = 0; d < 7; d++) {
-//			for (int h = 0; h < 24; h++) {
-//				if(d>0){
-//					rect(h*hourSize,bottomPoint-map(tweetCountAdded.get(h, d-1),0,maxHours,0,maxWidth)-15,10,10);
-//				}else{
-//					rect(h*hourSize,bottomPoint-15,10,10);
-//				}
-//			}
-//		}
-		
-		//// draw Streets
-		drawHourStreets(color(30,30,30), 5f);
-		drawDayStreets(color(30,30,30), 7f);
-		drawHourStreets(color(100,200,200), 3f);
-		drawDayStreets(color(300,200,200), 5f);
-		map.endDraw();
-		
-	}
-	
-	public void draw(){
-		background(0);
-		zoom = wheel;
-		translate(100,30);
-		pushMatrix();
-		scale(zoom);
-		translate((int)(offset.x/zoom), (int)(offset.y/zoom));
-		image(map,0,0);
-		popMatrix();
 	}
 	
 	private void drawHourStreets(int color, float thickness){
@@ -265,7 +277,8 @@ public class CityGrid extends PApplet{
 //			println("--"+i);
 			for (int d = 0; d < 7; d++) {
 //				println(tweetCountAdded.get(i,j));
-				map.vertex(h*hourSize, bottomPoint-tweetCountAdded.get(h, d)/sizeFactor);
+				PVector p = coordinates.get(d, h);
+				map.vertex(p.x, p.y);
 			}	
 			map.endShape();
 		}
@@ -277,14 +290,11 @@ public class CityGrid extends PApplet{
 		map.stroke(color);
 		map.strokeWeight(thickness);
 		map.strokeCap(SQUARE);
-		for (int i = 0; i < 7; i++) {
+		for (int d = 0; d < 7; d++) {
 			map.beginShape();
-			for (int j = 0; j < 24; j++) {
-				if(i>0){
-					map.vertex(j*hourSize,bottomPoint-tweetCountAdded.get(j, i-1)/sizeFactor);
-				}else{
-					map.vertex(j*hourSize,bottomPoint);
-				}
+			for (int h = 0; h < 24; h++) {
+				PVector p = coordinates.get(d, h);
+				map.vertex(p.x, p.y);
 			}
 			map.endShape();
 		}
