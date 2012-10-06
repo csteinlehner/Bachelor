@@ -132,17 +132,30 @@ public class CityGrid extends PApplet{
 					int t_count = Integer.parseInt(fsqData.get("count"));
 					int f_count = Integer.parseInt(fsqData.get("fsq_count"));
 					String catString = fsqData.get("Categories");
+					String catParentString = fsqData.get("CategorieParents");
 					
+					fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count));
+					
+					//// set the categories
 					if(!catString.isEmpty()){
-					HashMap<String, Integer> categories = new HashMap<String, Integer>();
-					String[] catSplit = catString.split("_");
+						HashMap<String, Integer> categories = new HashMap<String, Integer>();
+						String[] catSplit = catString.split("_");
 						for (int i = 0; i < catSplit.length; i++) {
 							String[] tCatSplit = catSplit[i].split("=");
 							categories.put(tCatSplit[0], Integer.parseInt(tCatSplit[1]));
 						}
-							fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count, categories));
-					}else{
-						fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count));	
+						fsqCount.get(day, minute).setCategories(categories);
+					}
+					
+					//// set the categoryParents
+					if(!catParentString.isEmpty()){
+						HashMap<String, Integer> categoryParents = new HashMap<String, Integer>();
+						String[] catParentSplit = catParentString.split("_");
+						for (int i = 0; i < catParentSplit.length; i++) {
+							String[] tCatSplit = catParentSplit[i].split("=");
+							categoryParents.put(tCatSplit[0], Integer.parseInt(tCatSplit[1]));
+						}
+						fsqCount.get(day, minute).setCategoryParents(categoryParents);
 					}
 				}
 				fsqData.close();
@@ -193,8 +206,8 @@ public class CityGrid extends PApplet{
 			for (int h = 0; h < hourLength; h++) {
 				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
 				int c = 0;
-				if(entry.hasCategories){
-					HashMap<String, Integer> categories = entry.categories;
+				if(entry.hasCategoryParents){
+					HashMap<String, Integer> categories = entry.categoryParents;
 					Set<Map.Entry<String, Integer>> set = categories.entrySet();
 					Iterator<Entry<String,Integer>> it = set.iterator();
 					while(it.hasNext()){
