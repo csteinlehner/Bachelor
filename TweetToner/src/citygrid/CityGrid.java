@@ -54,9 +54,9 @@ public class CityGrid extends PApplet{
 	float wheel = 1.0f;
 	float wheelMult =0.10f;
 	
-	int mapWidth = 3000;
-	int mapHeight = 2000;
-	int bottomPoint = mapHeight-50;
+	int mapWidth;
+	int mapHeight;
+	int bottomPoint;
 	float sizeFactor = 3f;
 
 	
@@ -172,7 +172,9 @@ public class CityGrid extends PApplet{
 //			}
 			
 			textFont(font);
-			
+			mapHeight = (int)(maxHours/sizeFactor+200);
+			mapWidth = (int)(hourSize*24+200);
+			bottomPoint = mapHeight-50;
 			drawMap();
 	}
 	
