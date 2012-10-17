@@ -1,78 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/base/opengl/gluegen-rt.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/opengl/src">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/opengl"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/opengl"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/base/opengl/jogl.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/opengl/src">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/opengl"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/opengl"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/base/opengl/opengl.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/opengl/src">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/opengl"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/opengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/pdf/itext.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/pdf/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/pdf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/base/pdf/pdf.jar" sourcepath="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/pdf/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/pdf"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/base/core/ant-launcher.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/core"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/core"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/base/core/ant.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/core"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/core"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/base/core/core.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/base/core"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/core"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/GLGraphics/GLGraphics.jar" sourcepath="/Users/norrix/Documents/Processing/libraries/GLGraphics/src">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/Users/norrix/Documents/Processing/libraries/GLGraphics/reference/"/>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/GLGraphics"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/GLGraphics"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/SQLibrary-0.0.8/mysql-connector-java-3.1.14-bin.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/SQLibrary-0.0.8"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/SQLibrary-0.0.8"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/SQLibrary-0.0.8/postgresql-8.3-604.jdbc3.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/SQLibrary-0.0.8"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/SQLibrary-0.0.8"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/SQLibrary-0.0.8/SQLibrary.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/SQLibrary-0.0.8"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/SQLibrary-0.0.8"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/SQLibrary-0.0.8/sqlitejdbc-v053-pure.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/SQLibrary-0.0.8"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/SQLibrary-0.0.8"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/Unfolding/log4j-1.2.15.jar" sourcepath="/Users/norrix/Documents/Processing/libraries/Unfolding/src">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/Users/norrix/Documents/Processing/libraries/Unfolding/reference/"/>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/Unfolding"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/Unfolding"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/Unfolding/Unfolding.jar" sourcepath="/Users/norrix/Documents/Processing/libraries/Unfolding/src">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/Users/norrix/Documents/Processing/libraries/Unfolding/reference/"/>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TweetToner/lib/user/Unfolding"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/Unfolding"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/javacsv.jar"/>
+	<classpathentry kind="lib" path="lib/user/guava-13.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/user/batikfont.jar"/>
 	<classpathentry kind="lib" path="lib/user/geomerative.jar"/>
-	<classpathentry kind="lib" path="lib/user/guava-13.0.1.jar"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
