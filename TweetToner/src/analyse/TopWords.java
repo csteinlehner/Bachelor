@@ -14,20 +14,22 @@ import processing.core.PFont;
 public class TopWords extends PApplet{
 	
 	HashMap<String,CityMass> cities = new HashMap<String, CityMass>();
+	String city = "potsdam";
 	
 public void setup(){
 	background(255);
-	size(800,800, PDF, "top_words.pdf");
+	size(4020,2970, PDF, "top_words_"+city+".pdf");
 //	size(800,800);
 	smooth();
-	PFont font = createFont("TitlingGothicFBComp-Bold",50);
+	PFont font = createFont("Axel-Bold",50);
 	textFont(font);
+	translate(160,180);
 	try {
-		CsvReader csvData = new CsvReader("data/top_words/top_words_60_berlin.csv",',',Charset.forName("UTF-8"));
+		CsvReader csvData = new CsvReader("data/top_words/top_words_60_"+city+".csv",',',Charset.forName("UTF-8"));
 		csvData.readHeaders();
 		int hCount = csvData.getHeaderCount();
 		int xmove = 10, ymove = 10;
-		int xspace = 150, yspace = 30;
+		int xspace = 300, yspace = 90;
 		int yCount = 1;
 		translate(10,10);
 		fill(0);
@@ -37,7 +39,12 @@ public void setup(){
 			HashMap<String, Integer> words = splitWords(csvData.get("top_words"));
 			for (Iterator<String> iterator = words.keySet().iterator(); iterator.hasNext();) {
 				String word =  iterator.next();
-				textSize(sqrt(words.get(word)*10));
+				int fSize = (int)(sqrt(words.get(word)*15));
+				if(fSize<6){
+					fSize=6;
+				}
+				println(fSize);
+				textSize(fSize);
 				text(word,xmove,ymove);
 			}
 			if(yCount<24){
