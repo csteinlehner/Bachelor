@@ -19,7 +19,7 @@ import processing.core.PFont;
 
 public class TweetCollectedMass extends PApplet  {
 	
-	private static final String CITY = "sanfrancisco";
+	private static final String CITY = "rosenheim";
 	private static final float pointF = 2.5f;
 	
 	private static final int MODE_WORD = 1;
@@ -62,14 +62,14 @@ public class TweetCollectedMass extends PApplet  {
 	
 
 	public void setup() {
-		size(1200,900);
+		size(3000,3000);
 		smooth();
 		font = createFont("Axel-Bold", 14);
 		textFont(font);
 		map = new Map(this, 0, 0, width, height, new MBTilesMapProvider(JDBC_CONN_STRING_MAC));
 		MapUtils.createDefaultEventDispatcher(this, map);
-		map.setZoomRange(10, 16);
-		map.zoom(11);
+		map.setZoomRange(8, 16);
+		map.zoom(9);
 		System.out.println(map.getZoom());
 		map.setTweening(false);
 		map.panTo(MIDPOINTS.get(CITY));
@@ -107,7 +107,6 @@ public class TweetCollectedMass extends PApplet  {
 	}
 
 	public void draw() {
-		background(0);
 		map.draw();
 		textAlign(CENTER);
 		for (Iterator<DataPoint> it = dataPoints.iterator(); it.hasNext();) {
@@ -115,8 +114,10 @@ public class TweetCollectedMass extends PApplet  {
 			float xy[] = map.getScreenPositionFromLocation(dp);
 			
 			if(MODE==MODE_SENTIMENT){
-				fill(getColorForSentiment(dp.getSentimentAverage()),200);
-				stroke(255,100);
+				//fill(getColorForSentiment(dp.getSentimentAverage()),200);
+				fill(150,150,150,150);
+//				stroke(255,100);
+				noStroke();
 				strokeWeight(2);
 				ellipse(xy[0], xy[1], sqrt(dp.getSize()*pointF), sqrt(dp.getSize()*pointF));
 			}
