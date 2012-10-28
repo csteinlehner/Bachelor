@@ -1,0 +1,169 @@
+time,count,fsq_count,CategorieParents,Categories
+Mon Sep 03 00:00:00 UTC 2012,56,1,Hotels=1_Travel & Transport=1,Hostel=1
+Mon Sep 03 01:00:00 UTC 2012,82,1,Hotels=1_Travel & Transport=1,Hostel=1
+Mon Sep 03 02:00:00 UTC 2012,42,0,"",""
+Mon Sep 03 03:00:00 UTC 2012,3,0,"",""
+Mon Sep 03 04:00:00 UTC 2012,12,0,"",""
+Mon Sep 03 05:00:00 UTC 2012,7,0,"",""
+Mon Sep 03 06:00:00 UTC 2012,23,4,Travel & Transport=3,Residential Building (Apartment / Condo)=1_Bus Station=1_Train Station=1_Subway=1
+Mon Sep 03 07:00:00 UTC 2012,14,2,Travel & Transport=1_Outdoors & Recreation=1,Plaza=1_Train Station=1
+Mon Sep 03 08:00:00 UTC 2012,51,10,Professional & Other Places=4,Office=3
+Mon Sep 03 09:00:00 UTC 2012,85,16,Professional & Other Places=10,Office=10
+Mon Sep 03 10:00:00 UTC 2012,62,4,Professional & Other Places=1_Food=1_Travel & Transport=1,Turkish Restaurant=1_Hotel=1_Building=1
+Mon Sep 03 11:00:00 UTC 2012,101,10,Professional & Other Places=3_Travel & Transport=3,Train Station=2
+Mon Sep 03 12:00:00 UTC 2012,90,14,Food=4,Bakery=1_Temple=1_Other Great Outdoors=1_Indie Movie Theater=1_Light Rail=1_Office=1_Italian Restaurant=1_Plaza=1_Train Station=1_Pizza Place=1_Grocery Store=1_Housing Development=1_Greek Restaurant=1
+Mon Sep 03 13:00:00 UTC 2012,90,9,Food=5,Miscellaneous Shop=2
+Mon Sep 03 14:00:00 UTC 2012,65,12,Shops & Services=4,Beer Garden=2
+Mon Sep 03 15:00:00 UTC 2012,56,5,Shops & Services=3,Beer Garden=1_Drugstore / Pharmacy=1_Internet Cafe=1_Plaza=1_Grocery Store=1
+Mon Sep 03 16:00:00 UTC 2012,63,7,Shops & Services=4,Mall=1_Neighborhood=1_Boutique=1_Office=1_Electronics Store=1_Soccer Field=1_Gas Station / Garage=1
+Mon Sep 03 17:00:00 UTC 2012,99,3,Outdoors & Recreation=2,Airport Terminal=1_Soccer Field=1_Field=1
+Mon Sep 03 18:00:00 UTC 2012,89,12,Travel & Transport=4,Plaza=3
+Mon Sep 03 19:00:00 UTC 2012,137,9,Travel & Transport=4,Hotel=2
+Mon Sep 03 20:00:00 UTC 2012,119,5,Food=2,Coffee Shop=1_Skate Park=1_Cocktail Bar=1_Residential Building (Apartment / Condo)=1_Italian Restaurant=1
+Mon Sep 03 21:00:00 UTC 2012,160,7,Travel & Transport=3,Movie Theater=1_Hotel=1_Park=1_Gay Bar=1_Road=1_Subway=1_Fast Food Restaurant=1
+Mon Sep 03 22:00:00 UTC 2012,145,5,Food=3,Hotel=2
+Mon Sep 03 23:00:00 UTC 2012,35,1,Travel & Transport=1,Hotel=1
+Tue Sep 04 00:00:00 UTC 2012,0,0,"",""
+Tue Sep 04 01:00:00 UTC 2012,88,3,Hotels=1_Professional & Other Places=1_Shops & Services=1_Travel & Transport=1,Office=1_Gas Station / Garage=1_Hostel=1
+Tue Sep 04 02:00:00 UTC 2012,37,0,"",""
+Tue Sep 04 03:00:00 UTC 2012,7,0,"",""
+Tue Sep 04 04:00:00 UTC 2012,4,0,"",""
+Tue Sep 04 05:00:00 UTC 2012,5,0,"",""
+Tue Sep 04 06:00:00 UTC 2012,26,2,Travel & Transport=2,Train Station=1_Subway=1
+Tue Sep 04 07:00:00 UTC 2012,27,0,"",""
+Tue Sep 04 08:00:00 UTC 2012,64,14,Professional & Other Places=9,Office=8
+Tue Sep 04 09:00:00 UTC 2012,88,10,Professional & Other Places=4,Office=4
+Tue Sep 04 10:00:00 UTC 2012,106,8,Professional & Other Places=3,Office=3
+Tue Sep 04 11:00:00 UTC 2012,94,4,Shops & Services=2,Automotive Shop=1_Internet Cafe=1_Train Station=1_Building=1
+Tue Sep 04 12:00:00 UTC 2012,96,12,Food=5,Plaza=2_Train Station=2_Office=2
+Tue Sep 04 13:00:00 UTC 2012,86,6,Professional & Other Places=3,Office=3
+Tue Sep 04 14:00:00 UTC 2012,95,6,Professional & Other Places=1_Stadiums=1_Food=1_Shops & Services=1_Arts & Entertainment=1_Offices=1_Outdoors & Recreation=1,Electronics Store=1_Burger Joint=1_Tech Startup=1_Plaza=1_Soccer Stadium=1
+Tue Sep 04 15:00:00 UTC 2012,110,7,Food=2,Café=1_Office=1_Asian Restaurant=1_Hotel=1_Grocery Store=1_Soccer Stadium=1
+Tue Sep 04 16:00:00 UTC 2012,96,19,Travel & Transport=11,Train Station=10
+Tue Sep 04 17:00:00 UTC 2012,80,9,Travel & Transport=5,Train Station=3
+Tue Sep 04 18:00:00 UTC 2012,146,11,Travel & Transport=5,Hotel=2
+Tue Sep 04 19:00:00 UTC 2012,113,8,Food=4,German Restaurant=2_Hotel=2
+Tue Sep 04 20:00:00 UTC 2012,176,15,Food=9,Home (private)=2_Café=2_German Restaurant=2
+Tue Sep 04 21:00:00 UTC 2012,137,3,Residences=1_Travel & Transport=1,Hotel=1_Home (private)=1_Residence=1
+Tue Sep 04 22:00:00 UTC 2012,162,7,Travel & Transport=5,Hotel=3
+Tue Sep 04 23:00:00 UTC 2012,167,7,Food=1_Residences=1_Arts & Entertainment=1_Travel & Transport=1_Outdoors & Recreation=1_Movie Theaters=1,Professional & Other Places=1_Other Great Outdoors=1_Indie Movie Theater=1_Hotel=1_Home (private)=1_Diner=1
+Wed Sep 05 00:00:00 UTC 2012,121,1,Hotels=1_Travel & Transport=1,Hostel=1
+Wed Sep 05 01:00:00 UTC 2012,52,0,"",""
+Wed Sep 05 02:00:00 UTC 2012,47,1,Travel & Transport=1,Hotel=1
+Wed Sep 05 03:00:00 UTC 2012,29,0,"",""
+Wed Sep 05 04:00:00 UTC 2012,26,0,"",""
+Wed Sep 05 05:00:00 UTC 2012,17,1,Travel & Transport=1,Hotel=1
+Wed Sep 05 06:00:00 UTC 2012,18,1,Food=1,Coffee Shop=1
+Wed Sep 05 07:00:00 UTC 2012,36,1,Food=1,Coffee Shop=1
+Wed Sep 05 08:00:00 UTC 2012,61,19,Professional & Other Places=9,Office=7
+Wed Sep 05 09:00:00 UTC 2012,89,18,Professional & Other Places=7,Office=6
+Wed Sep 05 10:00:00 UTC 2012,68,5,Professional & Other Places=2,Café=1_Office=1_Plaza=1_Farmers Market=1_Building=1
+Wed Sep 05 11:00:00 UTC 2012,63,3,Professional & Other Places=1_Shops & Services=1,Office=1_Camera Store=1
+Wed Sep 05 12:00:00 UTC 2012,99,15,Food=5,Train Station=2_Bus Station=2
+Wed Sep 05 13:00:00 UTC 2012,90,14,Shops & Services=5,Office=2
+Wed Sep 05 14:00:00 UTC 2012,92,10,Food=5,Chinese Restaurant=2
+Wed Sep 05 15:00:00 UTC 2012,87,7,Food & Drink Shops=2_Shops & Services=2,Grocery Store=2
+Wed Sep 05 16:00:00 UTC 2012,78,12,Shops & Services=4,Plaza=2
+Wed Sep 05 17:00:00 UTC 2012,80,6,Shops & Services=4,Mall=1_Café=1_Miscellaneous Shop=1_Italian Restaurant=1_Grocery Store=1_Accessories Store=1
+Wed Sep 05 18:00:00 UTC 2012,143,12,Travel & Transport=6,Subway=3
+Wed Sep 05 19:00:00 UTC 2012,134,8,Food=4,Moving Target=1_Bakery=1_Coffee Shop=1_German Restaurant=1_Other Great Outdoors=1_Mediterranean Restaurant=1_Shoe Store=1_Train Station=1
+Wed Sep 05 20:00:00 UTC 2012,107,2,Food=2,Restaurant=2
+Wed Sep 05 21:00:00 UTC 2012,129,4,Residences=1_Food=1_Arts & Entertainment=1_Travel & Transport=1_Movie Theaters=1,Indie Movie Theater=1_Home (private)=1_Italian Restaurant=1_Bus Station=1
+Wed Sep 05 22:00:00 UTC 2012,73,2,Residences=1_Nightlife Spots=1,Home (private)=1_Pub=1
+Wed Sep 05 23:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 00:00:00 UTC 2012,0,0,"",""
+Thu Sep 06 01:00:00 UTC 2012,32,0,"",""
+Thu Sep 06 02:00:00 UTC 2012,61,0,"",""
+Thu Sep 06 03:00:00 UTC 2012,17,0,"",""
+Thu Sep 06 04:00:00 UTC 2012,10,0,"",""
+Thu Sep 06 05:00:00 UTC 2012,11,1,"",""
+Thu Sep 06 06:00:00 UTC 2012,22,2,Travel & Transport=2,General Travel=1_Train Station=1
+Thu Sep 06 07:00:00 UTC 2012,45,3,Travel & Transport=2,Train Station=2
+Thu Sep 06 08:00:00 UTC 2012,74,11,Professional & Other Places=4,Office=2
+Thu Sep 06 09:00:00 UTC 2012,78,16,Professional & Other Places=11,Office=9
+Thu Sep 06 10:00:00 UTC 2012,68,5,Professional & Other Places=2,Office=2
+Thu Sep 06 11:00:00 UTC 2012,60,3,Museums=1_Food=1_Arts & Entertainment=1_Travel & Transport=1,Science Museum=1_Mediterranean Restaurant=1_Hotel=1
+Thu Sep 06 12:00:00 UTC 2012,73,7,Food=4,German Restaurant=2
+Thu Sep 06 13:00:00 UTC 2012,68,9,Food=5,Restaurant=2
+Thu Sep 06 14:00:00 UTC 2012,98,15,Food=5,Office=2_Asian Restaurant=2
+Thu Sep 06 15:00:00 UTC 2012,112,6,Professional & Other Places=2_Food=2_Shops & Services=2,Office=2
+Thu Sep 06 16:00:00 UTC 2012,88,6,Shops & Services=3,Bank=1_Café=1_Monument / Landmark=1_Miscellaneous Shop=1_Train Station=1_Clothing Store=1
+Thu Sep 06 17:00:00 UTC 2012,96,8,Food=3_Shops & Services=3,Ice Cream Shop=1_Department Store=1_Electronics Store=1_Tattoo Parlor=1_Italian Restaurant=1_Subway=1_French Restaurant=1
+Thu Sep 06 18:00:00 UTC 2012,84,9,Outdoors & Recreation=3_Travel & Transport=3,Plaza=3
+Thu Sep 06 19:00:00 UTC 2012,95,9,Food=2_Shops & Services=2_Nightlife Spots=2,Japanese Restaurant=1_German Restaurant=1_Cocktail Bar=1_Office=1_Electronics Store=1_Home (private)=1_Hotel=1_Sporting Goods Shop=1_Bar=1
+Thu Sep 06 20:00:00 UTC 2012,89,11,Travel & Transport=5,Train Station=2
+Thu Sep 06 21:00:00 UTC 2012,84,9,Food=4,Train Station=2
+Thu Sep 06 22:00:00 UTC 2012,130,7,Arts & Entertainment=2_Outdoors & Recreation=2,Multiplex=1_General Travel=1_Other Great Outdoors=1_Home (private)=1_Plaza=1_Tapas Restaurant=1_Soccer Stadium=1
+Thu Sep 06 23:00:00 UTC 2012,134,12,Outdoors & Recreation=3,Automotive Shop=2
+Fri Sep 07 00:00:00 UTC 2012,87,5,Travel & Transport=2,Home (private)=1_Hotel=1_Tech Startup=1_Hostel=1
+Fri Sep 07 01:00:00 UTC 2012,31,1,Residences=1,Home (private)=1
+Fri Sep 07 02:00:00 UTC 2012,48,0,"",""
+Fri Sep 07 03:00:00 UTC 2012,18,0,"",""
+Fri Sep 07 04:00:00 UTC 2012,7,0,"",""
+Fri Sep 07 05:00:00 UTC 2012,16,0,"",""
+Fri Sep 07 06:00:00 UTC 2012,50,2,Gyms or Fitness Centers=1_Residences=1_Shops & Services=1,Gym=1_Home (private)=1
+Fri Sep 07 07:00:00 UTC 2012,50,7,Travel & Transport=4,Office=2_Train Station=2
+Fri Sep 07 08:00:00 UTC 2012,59,11,Professional & Other Places=6,Office=6
+Fri Sep 07 09:00:00 UTC 2012,80,20,Professional & Other Places=10,Office=8
+Fri Sep 07 10:00:00 UTC 2012,107,6,Professional & Other Places=2_Shops & Services=2,Office=2
+Fri Sep 07 11:00:00 UTC 2012,95,8,Travel & Transport=3,Train Station=2
+Fri Sep 07 12:00:00 UTC 2012,96,12,Food=3,Turkish Restaurant=1_Salon / Barbershop=1_Opera House=1_Other Great Outdoors=1_Wine Bar=1_Design Studio=1_Thai Restaurant=1_Plaza=1_Convention Center=1_Pizza Place=1_History Museum=1_Building=1
+Fri Sep 07 13:00:00 UTC 2012,93,11,Food=7,German Restaurant=4
+Fri Sep 07 14:00:00 UTC 2012,83,6,Professional & Other Places=2_Shops & Services=2,Office=2
+Fri Sep 07 15:00:00 UTC 2012,104,16,Food=6,Ice Cream Shop=2_Coffee Shop=2_Plaza=2_Light Rail=2
+Fri Sep 07 16:00:00 UTC 2012,79,7,Travel & Transport=3,Hotel=2
+Fri Sep 07 17:00:00 UTC 2012,83,16,Shops & Services=4,Soccer Field=2_Hotel=2
+Fri Sep 07 18:00:00 UTC 2012,103,16,Travel & Transport=4,Train Station=3
+Fri Sep 07 19:00:00 UTC 2012,71,6,Travel & Transport=3,Beer Garden=1_Office=1_Bus Station=1_Train Station=1_Theater=1_Hostel=1
+Fri Sep 07 20:00:00 UTC 2012,143,11,Food=4,Beer Garden=1_German Restaurant=1_Home (private)=1_Italian Restaurant=1_Thai Restaurant=1_Middle Eastern Restaurant=1_Bus Station=1_Train Station=1_Voting Booth=1_Bar=1_Theater=1
+Fri Sep 07 21:00:00 UTC 2012,149,9,Food=4,Train Station=2_German Restaurant=2
+Fri Sep 07 22:00:00 UTC 2012,164,7,Food=4,Cocktail Bar=2
+Fri Sep 07 23:00:00 UTC 2012,88,4,Professional & Other Places=1_Food=1_Nightlife Spots=1_Government Buildings=1_Travel & Transport=1,German Restaurant=1_Monument / Landmark=1_Hotel=1_Nightclub=1
+Sat Sep 08 00:00:00 UTC 2012,71,3,Travel & Transport=2,Park=1_Nightclub=1_Hotel=1_Hostel=1
+Sat Sep 08 01:00:00 UTC 2012,48,2,Shops & Services=1_Travel & Transport=1_Food & Drink Shops=1,Light Rail=1_Food Court=1
+Sat Sep 08 02:00:00 UTC 2012,25,0,"",""
+Sat Sep 08 03:00:00 UTC 2012,16,2,Nightlife Spots=1_Travel & Transport=1,Hotel=1_Nightclub=1
+Sat Sep 08 04:00:00 UTC 2012,7,0,"",""
+Sat Sep 08 05:00:00 UTC 2012,29,1,Travel & Transport=1,Hotel=1
+Sat Sep 08 06:00:00 UTC 2012,20,0,"",""
+Sat Sep 08 07:00:00 UTC 2012,23,2,Residences=1_Colleges & Universities=1,Student Center=1_Home (private)=1
+Sat Sep 08 08:00:00 UTC 2012,50,3,Food=1_Shops & Services=1_Travel & Transport=1,Café=1_Travel Lounge=1_Gym / Fitness Center=1
+Sat Sep 08 09:00:00 UTC 2012,49,6,Professional & Other Places=3,Convention Center=3
+Sat Sep 08 10:00:00 UTC 2012,78,15,Travel & Transport=7,Train Station=5
+Sat Sep 08 11:00:00 UTC 2012,78,11,Shops & Services=3_Food=3,Electronics Store=2_German Restaurant=2
+Sat Sep 08 12:00:00 UTC 2012,106,12,Food=6,Café=2
+Sat Sep 08 13:00:00 UTC 2012,84,9,Food=3,Museum=2
+Sat Sep 08 14:00:00 UTC 2012,71,19,Shops & Services=8,Electronics Store=3
+Sat Sep 08 15:00:00 UTC 2012,120,14,Outdoors & Recreation=6,Park=4
+Sat Sep 08 16:00:00 UTC 2012,73,15,Professional & Other Places=4_Shops & Services=4,Grocery Store=2_Home (private)=2_Hospital=2_Beer Garden=2
+Sat Sep 08 17:00:00 UTC 2012,94,10,Food=4,Café=2
+Sat Sep 08 18:00:00 UTC 2012,86,12,Outdoors & Recreation=4,Park=2
+Sat Sep 08 19:00:00 UTC 2012,85,11,Food=7,Greek Restaurant=2
+Sat Sep 08 20:00:00 UTC 2012,93,7,Nightlife Spots=2_Food=2,Multiplex=1_Train=1_Brewery=1_Beer Garden=1_Café=1_Sports Bar=1
+Sat Sep 08 21:00:00 UTC 2012,75,4,Nightlife Spots=2,Beer Garden=1_General Entertainment=1_Home (private)=1_Bar=1
+Sat Sep 08 22:00:00 UTC 2012,62,4,Residences=1_Shops & Services=1_Nightlife Spots=1_Travel & Transport=1,Mall=1_Cocktail Bar=1_Home (private)=1_Train Station=1
+Sat Sep 08 23:00:00 UTC 2012,75,8,Nightlife Spots=3_Food=3,Cocktail Bar=2
+Sun Sep 09 00:00:00 UTC 2012,46,4,Travel & Transport=2_Nightlife Spots=2,Movie Theater=1_Cocktail Bar=1_Hotel=1_Motel=1_Bar=1
+Sun Sep 09 01:00:00 UTC 2012,34,3,Food=1_Nightlife Spots=1_Arts & Entertainment=1,Music Venue=1_Nightclub=1_Fried Chicken Joint=1
+Sun Sep 09 02:00:00 UTC 2012,24,1,Residences=1,Home (private)=1
+Sun Sep 09 03:00:00 UTC 2012,11,1,Residences=1,Home (private)=1
+Sun Sep 09 04:00:00 UTC 2012,7,0,"",""
+Sun Sep 09 05:00:00 UTC 2012,8,0,"",""
+Sun Sep 09 06:00:00 UTC 2012,12,0,"",""
+Sun Sep 09 07:00:00 UTC 2012,12,2,Residences=1_Outdoors & Recreation=1,Home (private)=1_Park=1
+Sun Sep 09 08:00:00 UTC 2012,27,5,Travel & Transport=2,Train Station=2
+Sun Sep 09 09:00:00 UTC 2012,41,3,Hotels=1_Professional & Other Places=1_Gyms or Fitness Centers=1_Shops & Services=1_Travel & Transport=1,Gym=1_Convention Center=1_Motel=1
+Sun Sep 09 10:00:00 UTC 2012,61,5,Travel & Transport=2,Flower Shop=1_Lake=1_Hotel=1_Train Station=1_Event Space=1
+Sun Sep 09 11:00:00 UTC 2012,44,7,Travel & Transport=3,Light Rail=2
+Sun Sep 09 12:00:00 UTC 2012,55,5,Outdoors & Recreation=2_Arts & Entertainment=2,Lake=1_Museum=1_Hospital=1_Plaza=1_Soccer Stadium=1
+Sun Sep 09 13:00:00 UTC 2012,63,8,Food=4,Coffee Shop=2
+Sun Sep 09 14:00:00 UTC 2012,68,6,Outdoors & Recreation=4,Lake=1_Bridge=1_Plaza=1_Racetrack=1_Soccer Stadium=1_Beach=1
+Sun Sep 09 15:00:00 UTC 2012,84,8,Outdoors & Recreation=3,Sculpture Garden=2
+Sun Sep 09 16:00:00 UTC 2012,99,13,Arts & Entertainment=6,Museum=2_Multiplex=2_Ice Cream Shop=2
+Sun Sep 09 17:00:00 UTC 2012,59,6,Travel & Transport=3,Hotel=2
+Sun Sep 09 18:00:00 UTC 2012,44,3,Hotels=1_Food=1_Nightlife Spots=1_Travel & Transport=1,German Restaurant=1_Beer Garden=1_Hostel=1
+Sun Sep 09 19:00:00 UTC 2012,61,9,Travel & Transport=4,Train Station=2
+Sun Sep 09 20:00:00 UTC 2012,83,3,Food=3,German Restaurant=1_Ramen /  Noodle House=1_Pizza Place=1
+Sun Sep 09 21:00:00 UTC 2012,95,7,Nightlife Spots=2_Food=2,Pizza Place=2
+Sun Sep 09 22:00:00 UTC 2012,134,4,Residences=1_Travel & Transport=1_Outdoors & Recreation=1,Other Great Outdoors=1_Home (private)=1_Train Station=1
+Sun Sep 09 23:00:00 UTC 2012,50,6,Professional & Other Places=3,Tech Startup=2

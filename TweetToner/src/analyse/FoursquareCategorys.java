@@ -14,15 +14,15 @@ import processing.core.PFont;
 public class FoursquareCategorys extends PApplet{
 	
 	HashMap<String,CityMass> cities = new HashMap<String, CityMass>();
-	String city = "sanfrancisco";
+	String city = "berlin";
 	
 public void setup(){
 	background(255);
-	size(4020,2970, PDF, "fsq_categoryParents_"+city+".pdf");
+	size(4020,2970, PDF, "fsq_category_"+city+".pdf");
 //	size(800,800);
 	smooth();
 	println(PFont.list());
-	PFont font = createFont("Axel-Bold",50);
+	PFont font = createFont("Axel",50);
 	textFont(font);
 	translate(160,180);
 	try {
@@ -37,7 +37,7 @@ public void setup(){
 		while (csvData.readRecord())
 		{
 			
-			HashMap<String, Integer> words = splitWords(csvData.get("CategorieParents"));
+			HashMap<String, Integer> words = splitWords(csvData.get("Categories"));
 			for (Iterator<String> iterator = words.keySet().iterator(); iterator.hasNext();) {
 				String word =  iterator.next();
 				int fSize = (int)(sqrt(words.get(word)*10)+7);

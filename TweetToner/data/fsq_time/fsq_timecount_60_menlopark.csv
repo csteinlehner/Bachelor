@@ -1,0 +1,169 @@
+time,count,fsq_count,CategorieParents,Categories
+Mon Sep 03 00:00:00 UTC 2012,38,0,"",""
+Mon Sep 03 01:00:00 UTC 2012,15,0,"",""
+Mon Sep 03 02:00:00 UTC 2012,5,0,"",""
+Mon Sep 03 03:00:00 UTC 2012,5,0,"",""
+Mon Sep 03 04:00:00 UTC 2012,12,0,"",""
+Mon Sep 03 05:00:00 UTC 2012,7,0,"",""
+Mon Sep 03 06:00:00 UTC 2012,12,0,"",""
+Mon Sep 03 07:00:00 UTC 2012,26,3,Professional & Other Places=2,Fast Food Restaurant=1_Building=1_Emergency Room=1
+Mon Sep 03 08:00:00 UTC 2012,37,2,Shops & Services=1_Food=1,Electronics Store=1_Coffee Shop=1
+Mon Sep 03 09:00:00 UTC 2012,21,1,Shops & Services=1,Gym / Fitness Center=1
+Mon Sep 03 10:00:00 UTC 2012,32,3,Professional & Other Places=2,Grocery Store=1_Office=1_Tech Startup=1
+Mon Sep 03 11:00:00 UTC 2012,27,2,Shops & Services=2,Electronics Store=1_Mobile Phone Shop=1_Harbor / Marina=1
+Mon Sep 03 12:00:00 UTC 2012,38,4,Food=3,American Restaurant=2
+Mon Sep 03 13:00:00 UTC 2012,17,2,Food=1,Mexican Restaurant=1
+Mon Sep 03 14:00:00 UTC 2012,11,1,Food=1,Juice Bar=1
+Mon Sep 03 15:00:00 UTC 2012,0,0,"",""
+Mon Sep 03 16:00:00 UTC 2012,52,5,Movie Theaters=3_Arts & Entertainment=3,Multiplex=2
+Mon Sep 03 17:00:00 UTC 2012,135,8,Food=5,Bakery=1_Lingerie Store=1_Sandwich Place=1_Burger Joint=1_Residential Building (Apartment / Condo)=1_Coffee Shop=1_Cupcake Shop=1_Spa / Massage=1
+Mon Sep 03 18:00:00 UTC 2012,65,9,Food=4_Arts & Entertainment=4,Performing Arts Venue=2
+Mon Sep 03 19:00:00 UTC 2012,44,5,Colleges & Universities=2,Multiplex=1_Road=1_College Track=1_College Residence Hall=1_Residential Building (Apartment / Condo)=1
+Mon Sep 03 20:00:00 UTC 2012,57,3,Food=3,Dessert Shop=1_Burger Joint=1_American Restaurant=1
+Mon Sep 03 21:00:00 UTC 2012,50,3,Nightlife Spots=1_Shops & Services=1_Professional & Other Places=1,Gym / Fitness Center=1_Bar=1_Post Office=1
+Mon Sep 03 22:00:00 UTC 2012,49,0,"",""
+Mon Sep 03 23:00:00 UTC 2012,24,1,Professional & Other Places=1,Office=1
+Tue Sep 04 00:00:00 UTC 2012,17,0,"",""
+Tue Sep 04 01:00:00 UTC 2012,7,0,"",""
+Tue Sep 04 02:00:00 UTC 2012,2,0,"",""
+Tue Sep 04 03:00:00 UTC 2012,14,1,Shops & Services=1_Food & Drink Shops=1,Grocery Store=1
+Tue Sep 04 04:00:00 UTC 2012,6,0,"",""
+Tue Sep 04 05:00:00 UTC 2012,6,0,"",""
+Tue Sep 04 06:00:00 UTC 2012,14,0,"",""
+Tue Sep 04 07:00:00 UTC 2012,17,5,Professional & Other Places=3,Building=1_College Lab=1_Café=1_Office=1_Tech Startup=1
+Tue Sep 04 08:00:00 UTC 2012,34,2,Professional & Other Places=2,Parking=1_Tech Startup=1
+Tue Sep 04 09:00:00 UTC 2012,20,4,Food=2,Bakery=1_Coffee Shop=1_Gym=1_Office=1
+Tue Sep 04 10:00:00 UTC 2012,57,6,Professional & Other Places=3,Home (private)=1_Coffee Shop=1_Pool=1_Parking=1_Post Office=1_Office=1
+Tue Sep 04 11:00:00 UTC 2012,50,3,Shops & Services=1_Food & Drink Shops=1_Professional & Other Places=1_Offices=1_Outdoors & Recreation=1,Park=1_Grocery Store=1_Tech Startup=1
+Tue Sep 04 12:00:00 UTC 2012,61,10,Food=7,Office=2
+Tue Sep 04 13:00:00 UTC 2012,44,5,Food=2,Mexican Restaurant=1_Burger Joint=1_University=1_Harbor / Marina=1_Paper / Office Supplies Store=1
+Tue Sep 04 14:00:00 UTC 2012,43,6,Food=3,Mexican Restaurant=1_Residential Building (Apartment / Condo)=1_Café=1_Pet Store=1_Doctor's Office=1_American Restaurant=1
+Tue Sep 04 15:00:00 UTC 2012,61,9,Professional & Other Places=6,Tech Startup=2_Office=2
+Tue Sep 04 16:00:00 UTC 2012,112,11,Travel & Transport=4,Hotel=4
+Tue Sep 04 17:00:00 UTC 2012,86,10,Food=4,Building=2
+Tue Sep 04 18:00:00 UTC 2012,125,14,Arts & Entertainment=4,Office=2_Performing Arts Venue=2_Hiking Trail=2
+Tue Sep 04 19:00:00 UTC 2012,96,5,Shops & Services=1_Residences=1_Travel & Transport=1_Professional & Other Places=1_Food=1,Home (private)=1_Hardware Store=1_Burger Joint=1_Office=1_Hotel=1
+Tue Sep 04 20:00:00 UTC 2012,82,4,Shops & Services=1_Residences=1_Colleges & Universities=1_Professional & Other Places=1_Offices=1,General College & University=1_Electronics Store=1_Residential Building (Apartment / Condo)=1_Tech Startup=1
+Tue Sep 04 21:00:00 UTC 2012,71,4,Shops & Services=2,Vietnamese Restaurant=1_Furniture / Home Store=1_General Travel=1_Grocery Store=1
+Tue Sep 04 22:00:00 UTC 2012,31,1,Shops & Services=1_Food & Drink Shops=1,Grocery Store=1
+Tue Sep 04 23:00:00 UTC 2012,28,0,"",""
+Wed Sep 05 00:00:00 UTC 2012,27,2,Professional & Other Places=1_Arts & Entertainment=1,Concert Hall=1_Office=1
+Wed Sep 05 01:00:00 UTC 2012,19,0,"",""
+Wed Sep 05 02:00:00 UTC 2012,1,0,"",""
+Wed Sep 05 03:00:00 UTC 2012,1,0,"",""
+Wed Sep 05 04:00:00 UTC 2012,4,0,"",""
+Wed Sep 05 05:00:00 UTC 2012,10,0,"",""
+Wed Sep 05 06:00:00 UTC 2012,20,2,Travel & Transport=2,General Travel=1_Hotel=1
+Wed Sep 05 07:00:00 UTC 2012,44,7,Professional & Other Places=2,Resort=1_Sports Bar=1_Building=1_College Lab=1_Café=1_Yoga Studio=1_Tech Startup=1
+Wed Sep 05 08:00:00 UTC 2012,54,10,Professional & Other Places=5,Office=4
+Wed Sep 05 09:00:00 UTC 2012,62,7,Professional & Other Places=3,Office=2
+Wed Sep 05 10:00:00 UTC 2012,64,5,Professional & Other Places=4,Office=3
+Wed Sep 05 11:00:00 UTC 2012,46,7,Professional & Other Places=4,Hospital=2
+Wed Sep 05 12:00:00 UTC 2012,55,7,Food=5,Mexican Restaurant=2
+Wed Sep 05 13:00:00 UTC 2012,35,5,Shops & Services=3,Gym=1_Grocery Store=1_Train Station=1_Paper / Office Supplies Store=1_Tech Startup=1
+Wed Sep 05 14:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 15:00:00 UTC 2012,0,0,"",""
+Wed Sep 05 16:00:00 UTC 2012,46,2,Shops & Services=1_Food=1,Café=1_Spa / Massage=1
+Wed Sep 05 17:00:00 UTC 2012,74,6,Food=2_Professional & Other Places=2,New American Restaurant=1_Mediterranean Restaurant=1_Home (private)=1_College Engineering Building=1_Post Office=1_Tech Startup=1
+Wed Sep 05 18:00:00 UTC 2012,74,8,Arts & Entertainment=3_Food=3,Concert Hall=1_Wine Bar=1_Community College=1_Clothing Store=1_Asian Restaurant=1_Music Venue=1_Performing Arts Venue=1_Coffee Shop=1_Hotel=1_Tapas Restaurant=1
+Wed Sep 05 19:00:00 UTC 2012,81,8,Colleges & Universities=2_Professional & Other Places=2,Office=2
+Wed Sep 05 20:00:00 UTC 2012,89,5,Food=2,French Restaurant=1_Pizza Place=1_Residential Building (Apartment / Condo)=1_Gym=1_Office=1
+Wed Sep 05 21:00:00 UTC 2012,62,2,Professional & Other Places=1_Food=1,Burger Joint=1_Office=1
+Wed Sep 05 22:00:00 UTC 2012,71,1,Nightlife Spots=1,Bar=1
+Wed Sep 05 23:00:00 UTC 2012,58,1,Outdoors & Recreation=1,Neighborhood=1
+Thu Sep 06 00:00:00 UTC 2012,17,0,"",""
+Thu Sep 06 01:00:00 UTC 2012,6,0,"",""
+Thu Sep 06 02:00:00 UTC 2012,5,0,"",""
+Thu Sep 06 03:00:00 UTC 2012,8,0,"",""
+Thu Sep 06 04:00:00 UTC 2012,9,0,"",""
+Thu Sep 06 05:00:00 UTC 2012,8,0,"",""
+Thu Sep 06 06:00:00 UTC 2012,9,2,Food=2,Coffee Shop=1_Greek Restaurant=1
+Thu Sep 06 07:00:00 UTC 2012,34,6,Colleges & Universities=2_Professional & Other Places=2_Medical Centers=2_Food=2,College Lab=1_Café=1_Coffee Shop=1_College Administrative Building=1_Doctor's Office=1_Emergency Room=1
+Thu Sep 06 08:00:00 UTC 2012,39,3,Food=3,Coffee Shop=3
+Thu Sep 06 09:00:00 UTC 2012,40,3,Professional & Other Places=3,Office=2
+Thu Sep 06 10:00:00 UTC 2012,41,5,Professional & Other Places=3,Mexican Restaurant=1_Building=1_College Bookstore=1_Tech Startup=1_Post Office=1
+Thu Sep 06 11:00:00 UTC 2012,47,4,Food=2,Coworking Space=1_Electronics Store=1_Coffee Shop=1_Juice Bar=1
+Thu Sep 06 12:00:00 UTC 2012,42,13,Food=6,Japanese Restaurant=1_College Football Field=1_Sushi Restaurant=1_Sandwich Place=1_University=1_College Academic Building=1_Music Venue=1_Gym=1_Art Museum=1_Café=1_Mall=1_American Restaurant=1_Art Gallery=1_Italian Restaurant=1
+Thu Sep 06 13:00:00 UTC 2012,54,11,Professional & Other Places=5_Food=5,Office=3
+Thu Sep 06 14:00:00 UTC 2012,38,3,Shops & Services=1_Colleges & Universities=1,University=1_Spa / Massage=1
+Thu Sep 06 15:00:00 UTC 2012,52,0,"",""
+Thu Sep 06 16:00:00 UTC 2012,100,4,Offices=3_Professional & Other Places=3,Tech Startup=3
+Thu Sep 06 17:00:00 UTC 2012,89,6,Professional & Other Places=3,Office=2
+Thu Sep 06 18:00:00 UTC 2012,60,6,Food=3,Coworking Space=1_Latin American Restaurant=1_Performing Arts Venue=1_American Restaurant=1_Italian Restaurant=1_Cafeteria=1
+Thu Sep 06 19:00:00 UTC 2012,89,6,Shops & Services=2_Professional & Other Places=2,Mexican Restaurant=1_Event Space=1_Department Store=1_College Residence Hall=1_Mall=1_Office=1
+Thu Sep 06 20:00:00 UTC 2012,92,7,Food=3,Wine Bar=1_Mexican Restaurant=1_Fast Food Restaurant=1_Residential Building (Apartment / Condo)=1_American Restaurant=1_Hotel=1
+Thu Sep 06 21:00:00 UTC 2012,44,2,Travel & Transport=2,Motel=1_Hotel=1
+Thu Sep 06 22:00:00 UTC 2012,59,4,Nightlife Spots=2_Residences=2,Home (private)=2
+Thu Sep 06 23:00:00 UTC 2012,45,2,Nightlife Spots=1_Travel & Transport=1,Bar=1_Hotel=1
+Fri Sep 07 00:00:00 UTC 2012,31,1,Professional & Other Places=1_Offices=1,Tech Startup=1
+Fri Sep 07 01:00:00 UTC 2012,16,0,"",""
+Fri Sep 07 02:00:00 UTC 2012,9,0,"",""
+Fri Sep 07 03:00:00 UTC 2012,10,0,"",""
+Fri Sep 07 04:00:00 UTC 2012,3,0,"",""
+Fri Sep 07 05:00:00 UTC 2012,6,0,"",""
+Fri Sep 07 06:00:00 UTC 2012,15,2,Professional & Other Places=1_Food=1,Coffee Shop=1_Office=1
+Fri Sep 07 07:00:00 UTC 2012,56,5,Food=2_Professional & Other Places=2,Coffee Shop=2
+Fri Sep 07 08:00:00 UTC 2012,52,5,Professional & Other Places=3,Office=3
+Fri Sep 07 09:00:00 UTC 2012,55,4,Professional & Other Places=2,Hardware Store=1_Restaurant=1_Doctor's Office=1_Tech Startup=1
+Fri Sep 07 10:00:00 UTC 2012,53,10,Professional & Other Places=6,Office=3
+Fri Sep 07 11:00:00 UTC 2012,41,5,Food=3,Chinese Restaurant=1_Fast Food Restaurant=1_Asian Restaurant=1_Grocery Store=1_Tech Startup=1
+Fri Sep 07 12:00:00 UTC 2012,31,10,Professional & Other Places=3_Shops & Services=3,Office=2
+Fri Sep 07 13:00:00 UTC 2012,45,6,Food=3,Caribbean Restaurant=1_Furniture / Home Store=1_University=1_Burger Joint=1_Café=1_Sporting Goods Shop=1
+Fri Sep 07 14:00:00 UTC 2012,58,12,Professional & Other Places=5,Tech Startup=2_Mexican Restaurant=2_Building=2
+Fri Sep 07 15:00:00 UTC 2012,54,5,Colleges & Universities=4,College Technology Building=1_College Engineering Building=1_University=1_Hospital=1_College Administrative Building=1_Church=1_Spa / Massage=1
+Fri Sep 07 16:00:00 UTC 2012,52,5,Professional & Other Places=2,College Rec Center=1_Farm=1_Burger Joint=1_Office=1_Tech Startup=1
+Fri Sep 07 17:00:00 UTC 2012,89,12,Arts & Entertainment=5,Music Venue=5
+Fri Sep 07 18:00:00 UTC 2012,79,11,Arts & Entertainment=7,Music Venue=6
+Fri Sep 07 19:00:00 UTC 2012,103,17,Food=7_Arts & Entertainment=7,Music Venue=6
+Fri Sep 07 20:00:00 UTC 2012,82,15,Food=5,Music Venue=3
+Fri Sep 07 21:00:00 UTC 2012,51,8,Arts & Entertainment=6,Music Venue=6
+Fri Sep 07 22:00:00 UTC 2012,77,1,Arts & Entertainment=1,Music Venue=1
+Fri Sep 07 23:00:00 UTC 2012,81,2,Food=1_Arts & Entertainment=1,Music Venue=1_Cajun / Creole Restaurant=1
+Sat Sep 08 00:00:00 UTC 2012,41,0,"",""
+Sat Sep 08 01:00:00 UTC 2012,18,0,"",""
+Sat Sep 08 02:00:00 UTC 2012,10,0,"",""
+Sat Sep 08 03:00:00 UTC 2012,4,0,"",""
+Sat Sep 08 04:00:00 UTC 2012,4,0,"",""
+Sat Sep 08 05:00:00 UTC 2012,4,0,"",""
+Sat Sep 08 06:00:00 UTC 2012,6,0,"",""
+Sat Sep 08 07:00:00 UTC 2012,16,0,"",""
+Sat Sep 08 08:00:00 UTC 2012,32,2,Shops & Services=2_Gyms or Fitness Centers=2,Gym=2
+Sat Sep 08 09:00:00 UTC 2012,44,0,"",""
+Sat Sep 08 10:00:00 UTC 2012,41,0,"",""
+Sat Sep 08 11:00:00 UTC 2012,41,5,Shops & Services=3,Hiking Trail=1_Grocery Store=1_Neighborhood=1_Mall=1_Nail Salon=1
+Sat Sep 08 12:00:00 UTC 2012,36,10,Shops & Services=5,Drugstore / Pharmacy=1_Bakery=1_Electronics Store=1_Sandwich Place=1_Seafood Restaurant=1_Boutique=1_Pet Store=1_Church=1_American Restaurant=1_Mall=1
+Sat Sep 08 13:00:00 UTC 2012,46,8,Food=3,Park=1_Clothing Store=1_Sushi Restaurant=1_Historic Site=1_Burger Joint=1_Women's Store=1_Residential Building (Apartment / Condo)=1_Italian Restaurant=1
+Sat Sep 08 14:00:00 UTC 2012,45,3,Food=2,New American Restaurant=1_Coffee Shop=1_Tech Startup=1
+Sat Sep 08 15:00:00 UTC 2012,33,6,Colleges & Universities=3_College Stadiums=3,College Football Field=3
+Sat Sep 08 16:00:00 UTC 2012,59,4,Shops & Services=2_Colleges & Universities=2,College Football Field=1_University=1_Gym=1_Mall=1
+Sat Sep 08 17:00:00 UTC 2012,55,6,Food=3,Bakery=2
+Sat Sep 08 18:00:00 UTC 2012,51,7,Food=3_College Stadiums=3_Colleges & Universities=3,College Football Field=3
+Sat Sep 08 19:00:00 UTC 2012,86,10,Colleges & Universities=8_College Stadiums=8,College Football Field=8
+Sat Sep 08 20:00:00 UTC 2012,88,9,Food=4_College Stadiums=4_Colleges & Universities=4,College Football Field=4
+Sat Sep 08 21:00:00 UTC 2012,75,3,Colleges & Universities=2_College Stadiums=2,College Football Field=2
+Sat Sep 08 22:00:00 UTC 2012,55,0,"",""
+Sat Sep 08 23:00:00 UTC 2012,52,0,"",""
+Sun Sep 09 00:00:00 UTC 2012,32,1,Food=1,Cajun / Creole Restaurant=1
+Sun Sep 09 01:00:00 UTC 2012,13,1,Colleges & Universities=1,College Residence Hall=1
+Sun Sep 09 02:00:00 UTC 2012,20,0,"",""
+Sun Sep 09 03:00:00 UTC 2012,15,2,Colleges & Universities=2,General College & University=2
+Sun Sep 09 04:00:00 UTC 2012,2,0,"",""
+Sun Sep 09 05:00:00 UTC 2012,1,0,"",""
+Sun Sep 09 06:00:00 UTC 2012,5,0,"",""
+Sun Sep 09 07:00:00 UTC 2012,9,0,"",""
+Sun Sep 09 08:00:00 UTC 2012,32,4,Food=4,Coffee Shop=2
+Sun Sep 09 09:00:00 UTC 2012,25,4,Professional & Other Places=2_Spiritual Centers=2,Church=2
+Sun Sep 09 10:00:00 UTC 2012,23,4,Food=3,Burger Joint=2
+Sun Sep 09 11:00:00 UTC 2012,32,3,Shops & Services=1_Food=1,Electronics Store=1_Burger Joint=1
+Sun Sep 09 12:00:00 UTC 2012,61,8,Shops & Services=3,Furniture / Home Store=1_Farmers Market=1_Music Venue=1_Grocery Store=1_Parking=1_Breakfast Spot=1_Sculpture Garden=1_Tech Startup=1
+Sun Sep 09 13:00:00 UTC 2012,28,6,Food=4,French Restaurant=1_Pizza Place=1_Cupcake Shop=1_Campground=1_American Restaurant=1_Train=1
+Sun Sep 09 14:00:00 UTC 2012,87,9,Food=5,Coffee Shop=2_Dessert Shop=2
+Sun Sep 09 15:00:00 UTC 2012,89,11,Shops & Services=5,Gym=2_University=2
+Sun Sep 09 16:00:00 UTC 2012,88,5,Shops & Services=2,Drugstore / Pharmacy=1_Plaza=1_Salon / Barbershop=1_University=1
+Sun Sep 09 17:00:00 UTC 2012,86,6,Arts & Entertainment=3,Music Venue=3
+Sun Sep 09 18:00:00 UTC 2012,89,10,Arts & Entertainment=6,Music Venue=6
+Sun Sep 09 19:00:00 UTC 2012,68,14,Arts & Entertainment=10,Music Venue=10
+Sun Sep 09 20:00:00 UTC 2012,86,4,Food=2_Arts & Entertainment=2,Music Venue=2
+Sun Sep 09 21:00:00 UTC 2012,80,0,"",""
+Sun Sep 09 22:00:00 UTC 2012,57,2,Nightlife Spots=1_Arts & Entertainment=1,Pub=1_Music Venue=1
+Sun Sep 09 23:00:00 UTC 2012,75,0,"",""
