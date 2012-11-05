@@ -14,7 +14,7 @@ import processing.core.PFont;
 public class TopWords extends PApplet{
 	
 	HashMap<String,CityMass> cities = new HashMap<String, CityMass>();
-	String city = "potsdam";
+	String city = "london";
 	
 public void setup(){
 	background(255);
@@ -29,7 +29,7 @@ public void setup(){
 		csvData.readHeaders();
 		int hCount = csvData.getHeaderCount();
 		int xmove = 10, ymove = 10;
-		int xspace = 300, yspace = 90;
+		int xspace = 450, yspace = 90;
 		int yCount = 1;
 		translate(10,10);
 		fill(0);

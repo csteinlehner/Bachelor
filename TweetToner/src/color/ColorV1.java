@@ -3,18 +3,17 @@ package color;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.Comparator;
 import java.util.Vector;
 
 import com.csvreader.CsvReader;
 
-import foursquare.FoursquarePoint;
 import processing.core.PApplet;
 import processing.core.PFont;
+import processing.pdf.*;
 
 public class ColorV1 extends PApplet{
 	
-	private static final String CITY = "berlin";
+	private static final String CITY = "sanfrancisco";
 	
 	private static String csvPath = "data/instagram_top_color/instagram_top_color_time_"+CITY+".csv";
 	
@@ -28,11 +27,11 @@ public class ColorV1 extends PApplet{
 	Vector<SingleData> data = new Vector<SingleData>();
 	
 	public void setup(){
-		size(1200,900);
+		size(1200,900, PDF, CITY+"_instacolor.pdf");
 		frameRate(30);
 		smooth();
 //		println(PFont.list());
-		font = createFont("MuseoSlab-500",20);
+		font = createFont("Axel-Bold",20);
 			try {
 			
 			CsvReader csvData = new CsvReader(csvPath,',',Charset.forName("UTF-8"));
@@ -136,6 +135,7 @@ public class ColorV1 extends PApplet{
 		noFill();
 		strokeWeight(1);
 
+		exit();
 	}
 	public static void main(String args[])
 	{
