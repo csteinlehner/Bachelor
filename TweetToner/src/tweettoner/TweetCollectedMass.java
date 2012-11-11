@@ -19,7 +19,7 @@ import processing.core.PFont;
 
 public class TweetCollectedMass extends PApplet  {
 	
-	private static final String CITY = "rosenheim";
+	private static final String CITY = "newyork";
 	private static final float pointF = 2.5f;
 	
 	private static final int MODE_WORD = 1;

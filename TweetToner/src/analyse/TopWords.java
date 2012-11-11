@@ -14,7 +14,7 @@ import processing.core.PFont;
 public class TopWords extends PApplet{
 	
 	HashMap<String,CityMass> cities = new HashMap<String, CityMass>();
-	String city = "london";
+	String city = "sanfrancisco";
 	
 public void setup(){
 	background(255);
@@ -39,10 +39,10 @@ public void setup(){
 			HashMap<String, Integer> words = splitWords(csvData.get("top_words"));
 			for (Iterator<String> iterator = words.keySet().iterator(); iterator.hasNext();) {
 				String word =  iterator.next();
-				int fSize = (int)(sqrt(words.get(word)*15));
-				if(fSize<6){
-					fSize=6;
-				}
+				int fSize = (int)(sqrt(words.get(word)*15)+10);
+//				if(fSize<6){
+//					fSize=6;
+//				}
 				println(fSize);
 				textSize(fSize);
 				text(word,xmove,ymove);
