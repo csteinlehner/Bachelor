@@ -22,13 +22,17 @@ import processing.core.PGraphics;
 import processing.core.PVector;
 
 public class CityGrid extends PApplet{
+
+	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	
-	protected static final String CITY = "potsdam";
+	
+	protected static final String CITY = "berlin";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
 	
-	public static PApplet p5; 
+	public static PApplet p5;
+
 	
 	private PFont font;
 	
@@ -41,7 +45,6 @@ public class CityGrid extends PApplet{
 	
 
 	private Integer maxHours;
-	private Integer maxWidth = 800;
 	
 	int start = 0;
 	int end = start+24;
@@ -57,9 +60,9 @@ public class CityGrid extends PApplet{
 	int mapWidth;
 	int mapHeight;
 	int bottomPoint;
-	float sizeFactor = 2.2f;
-	float heightFactor;
-	private float hourSize = 100/sizeFactor;
+	float sizeFactor = 2.2f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	float heightFactor;				// wert zur normalisierung der höhenausbreitung
+	private float hourSize = 100/sizeFactor;	// breite der stunde
 
 	
 	
@@ -183,7 +186,6 @@ public class CityGrid extends PApplet{
 	
 			maxHours = Collections.max(tweetCountAdded.values());
 			heightFactor = 2000f/maxHours;
-			System.out.println(maxHours);
 			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
@@ -200,7 +202,11 @@ public class CityGrid extends PApplet{
 	}
 	
 	private void drawMap(){
-		map = createGraphics(mapWidth,mapHeight,JAVA2D);
+		if(SAVE_PDF){
+			map = createGraphics(mapWidth,mapHeight,PDF,"citygrid_shots/"+CITY+"_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".pdf");
+		}else{
+			map = createGraphics(mapWidth,mapHeight,JAVA2D);
+		}
 		map.beginDraw();
 		map.smooth();
 		map.background(220,230,220);
@@ -214,8 +220,13 @@ public class CityGrid extends PApplet{
 		drawDayStreets(color(30,30,30), 7f);
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
+		if(SAVE_PDF){
+			map.dispose();
+		}
 		map.endDraw();
-		
+		if(SAVE_PDF){
+			exit();
+		}
 	}
 	
 	public void draw(){
@@ -368,6 +379,8 @@ public class CityGrid extends PApplet{
 			map.vertex(tr.x, tr.y);
 			map.vertex(tl.x, tl.y);
 			map.endShape();
+			bl.y = oTly;
+			br.y = oTry;
 			oTly = tl.y;
 			oTry = tr.y;
 		}
@@ -447,14 +460,14 @@ public class CityGrid extends PApplet{
 	}
 
 	public void keyPressed() {
-		  if (key == CODED) {
-		    if (keyCode == UP) {
-		     start += 24;
-		     end += 24;
-		    } else if (keyCode == DOWN) {
-		    	start -= 24;
-			     end -= 24;
-		    } 
-		  }
-		}
+	  if (key == CODED) {
+	    if (keyCode == UP) {
+	     start += 24;
+	     end += 24;
+	    } else if (keyCode == DOWN) {
+	    	start -= 24;
+		     end -= 24;
+	    } 
+	  }
+	}
 }
