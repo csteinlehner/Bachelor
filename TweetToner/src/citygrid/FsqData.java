@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class FsqData {
 	int minute, day, hour;
 	int t_count, t_count_added, f_count;
+	int categoryParentsParts = 0;
 	HashMap<String, Integer> categories;
 	HashMap<String, Integer> categoryParents;
 	Boolean hasCategories = false;
@@ -23,6 +24,9 @@ public class FsqData {
 	public void setCategoryParents(HashMap<String, Integer> categoryParents) {
 		this.categoryParents = categoryParents;
 		hasCategoryParents = true;
+		for( int val : categoryParents.values()){
+			categoryParentsParts+=val;
+		}
 	}
 	
 	

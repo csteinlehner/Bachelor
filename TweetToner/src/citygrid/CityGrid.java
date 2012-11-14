@@ -23,7 +23,7 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 	
-	protected static final String CITY = "rosenheim";
+	protected static final String CITY = "potsdam";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
@@ -58,6 +58,7 @@ public class CityGrid extends PApplet{
 	int mapHeight;
 	int bottomPoint;
 	float sizeFactor = 2.2f;
+	float heightFactor;
 	private float hourSize = 100/sizeFactor;
 
 	
@@ -181,14 +182,15 @@ public class CityGrid extends PApplet{
 			}
 	
 			maxHours = Collections.max(tweetCountAdded.values());
-			
+			heightFactor = 2000f/maxHours;
+			System.out.println(maxHours);
 			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
 			
 			textFont(font);
-			mapHeight = (int)(maxHours/sizeFactor+200);
+			mapHeight = (int)(maxHours*heightFactor/sizeFactor+200);
 			mapWidth = (int)(hourSize*24+200);
 			bottomPoint = mapHeight-50;
 			
@@ -205,7 +207,7 @@ public class CityGrid extends PApplet{
 		map.translate(10,10);
 		
 		
-		drawHouses();
+		calcHouseArea();
 		
 		//// draw Streets
 		drawHourStreets(color(30,30,30), 5f);
@@ -231,7 +233,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
 //				if(d>0){
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)/sizeFactor));
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/sizeFactor));
 //				}else{
 //					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
 //				}
@@ -239,14 +241,13 @@ public class CityGrid extends PApplet{
 		}
 	}
 	
-	private void drawHouses(){
-		map.fill(255,0,0);
+	private void calcHouseArea(){
+		map.fill(150,150,150);
 		int hourLength = fsqCount.columnKeySet().size();
 		int dayLength = fsqCount.rowKeySet().size();
 		for (int d = 0; d < dayLength; d++) {
 			for (int h = 0; h < hourLength; h++) {
 				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
-				int c = 0;
 				if(entry.hasCategoryParents){
 					HashMap<String, Integer> categories = entry.categoryParents;
 					Set<Map.Entry<String, Integer>> set = categories.entrySet();
@@ -312,22 +313,14 @@ public class CityGrid extends PApplet{
 							tr = new PVector(tr_x, tr_y);
 							
 							
-						//// Vectors for drawing
-						PVector d_bl_1;
 						PVector d_br_1;
 						PVector d_tr_1;
-						PVector d_tl_1;
-						
 						PVector d_bl_2;
-						PVector d_br_2;
-						PVector d_tr_2;
 						PVector d_tl_2;
 						
 						//// draw left half
+						
 						if(h%2==0){
-							d_bl_1 = bl;
-							d_tl_1 = tl;
-							
 							d_br_1 = PVector.sub(br, bl);
 							d_br_1.div(2);
 							d_br_1.add(bl);
@@ -335,13 +328,10 @@ public class CityGrid extends PApplet{
 							d_tr_1 = PVector.sub(tr,tl);
 							d_tr_1.div(2);
 							d_tr_1.add(tl);
-							map.beginShape();
-							map.vertex(d_bl_1.x, d_bl_1.y);
-							map.vertex(d_br_1.x, d_br_1.y);
-							map.vertex(d_tr_1.x, d_tr_1.y);
-							map.vertex(d_tl_1.x, d_tl_1.y);
-							map.endShape();
+							
+							drawHouses(bl, d_br_1, d_tr_1, tl, entry);
 						}
+						//// draw right half
 						else{
 							d_bl_2 = PVector.sub(br, bl);
 							d_bl_2.div(2);
@@ -351,73 +341,39 @@ public class CityGrid extends PApplet{
 							d_tl_2.div(2);
 							d_tl_2.add(tl);
 							
-							d_br_2 = br;
-							d_tr_2 = tr;
-							map.beginShape();
-							map.vertex(d_bl_2.x, d_bl_2.y);
-							map.vertex(br.x, br.y);
-							map.vertex(tr.x, tr.y);
-							map.vertex(d_tl_2.x, d_tl_2.y);
-							map.endShape();
+							drawHouses(d_bl_2, br, tr, d_tl_2, entry);
 						}
-							
-							
-//							if(d>0){
-//								float x1 = entry.minute/60f*hourSize;
-//								float x2;
-//								float tr_y;
-//								if(h<hourLength-2){
-//									x2 =  fsqCount.get(d, (h+1)*HOURS_INTERVAL).minute/60f*hourSize;	
-//									tr_y = coordinates.get(d, entry.hour+1).y;
-//									br_y = coordinates.get(d-1, entry.hour+1).y;
-//								}else{
-//									x2 =  entry.minute/60f*hourSize+hourSize/2;	
-//									tr_y = coordinates.get(d, entry.hour).y;
-//									br_y = coordinates.get(d-1, entry.hour).y;
-//								}
-//									PVector botL = new PVector(x1,bl_y);
-//									PVector botR = new PVector(x2,br_y);
-//									PVector botM = PVector.sub(botR, botL);
-//									botM.div(60/HOURS_INTERVAL);
-//									botM.add(botL);
-//									
-//									PVector topL = new PVector(x1,tl_y);
-//									PVector topR = new PVector(x2,tr_y);
-//									PVector topM = PVector.sub(topR,topL);
-//									topM.div(60/HOURS_INTERVAL);
-//									topM.add(topL);
-//									
-//									map.beginShape();
-//									map.vertex(x1,bl_y);
-//									map.vertex(x2,botM.y);
-//									map.vertex(x2,topM.y); // y3
-//									map.vertex(x1,tl_y);
-//									map.endShape();
-//							}
-//						}
-//						map.beginShape();
-//						if(d>0 && d<dayLength-1){
-//							float x1 = entry.minute/60f*hourSize;
-//							float bl_y = coordinates.get(d-1,entry.hour).y;							
-//							if(h<hourLength-2 && h%2==0){
-//
-//								
-//							}
-//						}
-//						vertex();
-//						map.endShape();
-//						if(d>0){
-//							map.rect(entry.minute/60f*hourSize,bottomPoint-tweetCountAdded.get(entry.hour,d-1)/sizeFactor-me.getValue()*10-10*c,10,me.getValue()*10);
-//						}else{
-//							map.rect(entry.minute/60f*hourSize,bottomPoint-15,10,10);
-//						}
-//						c++;
-		//			}
 				}
 			}
 		}
 	}
 
+	private void drawHouses(PVector bl, PVector br, PVector tr, PVector tl, FsqData entry){
+		float lLength = bl.y-tl.y;
+		float rLength = br.y-tr.y;
+		
+		
+		float lPart = lLength/entry.categoryParentsParts;
+		float rPart = rLength/entry.categoryParentsParts;
+		map.noFill();
+//		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
+		float oTly = bl.y;
+		float oTry = br.y;
+		for( Object key : entry.categoryParents.keySet()){
+			tl.y = oTly- entry.categoryParents.get(key)*lPart;
+			tr.y = oTry - entry.categoryParents.get(key)*rPart;
+			map.beginShape();
+			map.vertex(bl.x, bl.y);
+			map.vertex(br.x, br.y);
+			map.vertex(tr.x, tr.y);
+			map.vertex(tl.x, tl.y);
+			map.endShape();
+			oTly = tl.y;
+			oTry = tr.y;
+		}
+		
+		
+	}
 	
 	private void drawHourStreets(int color, float thickness){
 		map.pushStyle();
