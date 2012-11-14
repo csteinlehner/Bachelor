@@ -40,6 +40,11 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/base/core"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/user/colorutils/colorutils.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Bachelor/lib/user/colorutils"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/GLGraphics/GLGraphics.jar" sourcepath="/Users/norrix/Documents/Processing/libraries/GLGraphics/src">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/Users/norrix/Documents/Processing/libraries/GLGraphics/reference/"/>
@@ -80,7 +85,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/user/javacsv.jar"/>
 	<classpathentry kind="lib" path="lib/user/guava-13.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/user/batikfont.jar"/>
+	<classpathentry kind="lib" path="lib/user/toxiclibscore.jar"/>
 	<classpathentry kind="lib" path="lib/user/geomerative.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

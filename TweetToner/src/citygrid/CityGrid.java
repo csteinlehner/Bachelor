@@ -31,14 +31,14 @@ public class CityGrid extends PApplet{
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
 	
-	public static PApplet p5;
+	public static CityGrid p5;
 
 	
 	private PFont font;
 	
 	private float fontSize = 12f;
 	
-	PGraphics map; 
+	PGraphics citymap; 
 	
 	private static final int  HOURS_INTERVAL = 30;
 	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
@@ -64,7 +64,7 @@ public class CityGrid extends PApplet{
 	float heightFactor;				// wert zur normalisierung der höhenausbreitung
 	private float hourSize = 100/sizeFactor;	// breite der stunde
 
-	
+	HouseDrawer houseDrawer = new HouseDrawer();
 	
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
 	Table<Integer, Integer, Integer> tweetCount = HashBasedTable.create();
@@ -203,14 +203,14 @@ public class CityGrid extends PApplet{
 	
 	private void drawMap(){
 		if(SAVE_PDF){
-			map = createGraphics(mapWidth,mapHeight,PDF,"citygrid_shots/"+CITY+"_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".pdf");
+			citymap = createGraphics(mapWidth,mapHeight,PDF,"citygrid_shots/"+CITY+"_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".pdf");
 		}else{
-			map = createGraphics(mapWidth,mapHeight,JAVA2D);
+			citymap = createGraphics(mapWidth,mapHeight,JAVA2D);
 		}
-		map.beginDraw();
-		map.smooth();
-		map.background(220,230,220);
-		map.translate(10,10);
+		citymap.beginDraw();
+		citymap.smooth();
+		citymap.background(220,230,220);
+		citymap.translate(10,10);
 		
 		
 		calcHouseArea();
@@ -221,9 +221,9 @@ public class CityGrid extends PApplet{
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
 		if(SAVE_PDF){
-			map.dispose();
+			citymap.dispose();
 		}
-		map.endDraw();
+		citymap.endDraw();
 		if(SAVE_PDF){
 			exit();
 		}
@@ -236,7 +236,7 @@ public class CityGrid extends PApplet{
 		pushMatrix();
 		scale(zoom);
 		translate((int)(offset.x/zoom), (int)(offset.y/zoom));
-		image(map,0,0);
+		image(citymap,0,0);
 		popMatrix();
 	}
 	
@@ -253,7 +253,7 @@ public class CityGrid extends PApplet{
 	}
 	
 	private void calcHouseArea(){
-		map.fill(150,150,150);
+		citymap.fill(150,150,150);
 		int hourLength = fsqCount.columnKeySet().size();
 		int dayLength = fsqCount.rowKeySet().size();
 		for (int d = 0; d < dayLength; d++) {
@@ -366,19 +366,14 @@ public class CityGrid extends PApplet{
 		
 		float lPart = lLength/entry.categoryParentsParts;
 		float rPart = rLength/entry.categoryParentsParts;
-		map.noFill();
+		citymap.noFill();
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = bl.y;
 		float oTry = br.y;
-		for( Object key : entry.categoryParents.keySet()){
+		for( String key : entry.categoryParents.keySet()){
 			tl.y = oTly- entry.categoryParents.get(key)*lPart;
 			tr.y = oTry - entry.categoryParents.get(key)*rPart;
-			map.beginShape();
-			map.vertex(bl.x, bl.y);
-			map.vertex(br.x, br.y);
-			map.vertex(tr.x, tr.y);
-			map.vertex(tl.x, tl.y);
-			map.endShape();
+			houseDrawer.drawHouse(bl, br, tr, tl, key);
 			bl.y = oTly;
 			br.y = oTry;
 			oTly = tl.y;
@@ -389,11 +384,11 @@ public class CityGrid extends PApplet{
 	}
 	
 	private void drawHourStreets(int color, float thickness){
-		map.pushStyle();
-		map.noFill();
-		map.stroke(color);
-		map.strokeWeight(thickness);
-		map.strokeCap(SQUARE);
+		citymap.pushStyle();
+		citymap.noFill();
+		citymap.stroke(color);
+		citymap.strokeWeight(thickness);
+		citymap.strokeCap(SQUARE);
 		for (int h = 0; h < 24; h++) {
 //			map.beginShape();
 //			map.vertex(h*hourSize,bottomPoint);
@@ -403,10 +398,10 @@ public class CityGrid extends PApplet{
 				if(d>0){
 					PVector p1 = coordinates.get(d-1,h);
 					PVector p2 = coordinates.get(d,h);
-					map.line(p1.x,p1.y,p2.x,p2.y);
+					citymap.line(p1.x,p1.y,p2.x,p2.y);
 				}else{
 					PVector p2 = coordinates.get(d,h);
-					map.line(p2.x,bottomPoint,p2.x,p2.y);
+					citymap.line(p2.x,bottomPoint,p2.x,p2.y);
 				}
 //				println(tweetCountAdded.get(i,j));
 //				PVector p = coordinates.get(d, h);
@@ -414,27 +409,27 @@ public class CityGrid extends PApplet{
 			}	
 //			map.endShape();
 		}
-		map.popStyle();
+		citymap.popStyle();
 	}
 	private void drawDayStreets(int color, float thickness){
-		map.pushStyle();
-		map.noFill();
-		map.stroke(color);
-		map.strokeWeight(thickness);
-		map.strokeCap(SQUARE);
+		citymap.pushStyle();
+		citymap.noFill();
+		citymap.stroke(color);
+		citymap.strokeWeight(thickness);
+		citymap.strokeCap(SQUARE);
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h <= 24; h++) {
 				if(h==24){
 					PVector p2 = coordinates.get(d, h-1);
-					map.line(p2.x,p2.y,p2.x+hourSize,p2.y);
+					citymap.line(p2.x,p2.y,p2.x+hourSize,p2.y);
 				}else if(h>0){
 					PVector p1 = coordinates.get(d, h-1);
 					PVector p2 = coordinates.get(d, h);
-					map.line(p1.x,p1.y,p2.x,p2.y);
+					citymap.line(p1.x,p1.y,p2.x,p2.y);
 				}
 			}
 		}
-		map.popStyle();
+		citymap.popStyle();
 	}
 	
 	
