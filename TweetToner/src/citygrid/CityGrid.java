@@ -24,7 +24,7 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 
-	static final Boolean SAVE_PDF = false;		// true to save this as pdf
+	static final Boolean SAVE_PDF = true;		// true to save this as pdf
 	
 	
 	protected static final String CITY = "berlin";
@@ -65,7 +65,7 @@ public class CityGrid extends PApplet{
 	float heightFactor;				// wert zur normalisierung der höhenausbreitung
 	private float hourSize = 100/sizeFactor;	// breite der stunde
 
-	HouseDrawer houseDrawer = new HouseDrawer();
+	HouseDrawer houseDrawer;
 	
 	// holds the tweetCount with schema day (0-6), time(0-23), t_count
 	Table<Integer, Integer, Integer> tweetCount = HashBasedTable.create();
@@ -81,6 +81,8 @@ public class CityGrid extends PApplet{
 		p5 = this;
 		size(1200,900);
 		frameRate(30);
+		
+		houseDrawer = new HouseDrawer();
 		
 		zoom = 1.0f;
 		offset = new PVector(0, 0);
@@ -216,12 +218,17 @@ public class CityGrid extends PApplet{
 		
 		
 		calcHouseArea();
-		
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
 		//// draw Streets
 		drawHourStreets(color(30,30,30), 5f);
 		drawDayStreets(color(30,30,30), 7f);
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesOverlay(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
 		if(SAVE_PDF){
 			citymap.dispose();
 		}
@@ -359,12 +366,6 @@ public class CityGrid extends PApplet{
 				}
 			}
 		}
-		for(HouseCoordinate c : houseCoordinates){
-			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
-		}
-		for(HouseCoordinate c : houseCoordinates){
-			drawHousesOverlay(c.bl, c.br, c.tr, c.tl, c.entry);
-		}
 	}
 
 	private void drawHousesBackground(PVector bl, PVector br, PVector tr, PVector tl, FsqData entry){
@@ -410,7 +411,7 @@ public class CityGrid extends PApplet{
 		for( String key : entry.categoryParents.keySet()){
 			ttl.y = oTly - entry.categoryParents.get(key)*lPart;
 			ttr.y = oTry - entry.categoryParents.get(key)*rPart;
-			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key);
+			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categoryParents.get(key));
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
 			oTly = ttl.y;

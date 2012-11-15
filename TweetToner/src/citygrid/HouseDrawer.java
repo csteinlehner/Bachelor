@@ -3,16 +3,22 @@ package citygrid;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import processing.core.PApplet;
 import processing.core.PGraphics;
+import processing.core.PShape;
 import processing.core.PVector;
 import toxi.color.TColor;
 
 public class HouseDrawer {
 	HashMap<String, TColor> houseColors = new HashMap<String, TColor>();
 	HashMap<String, DrawDescription> houseFunctions = new HashMap<String, DrawDescription>();
+	SymbolManager symbolManager;
 	
 	public HouseDrawer(){
+		symbolManager = new SymbolManager();
+		
 		houseColors.put("Food",TColor.newRandom());
 		houseColors.put("Spanish Restaurants",TColor.newRandom());
 		houseColors.put("Food & Drink Shops",TColor.newRandom());
@@ -84,7 +90,6 @@ public class HouseDrawer {
 		houseFunctions.put("Ski Areas",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
-		
 		try {
 			java.lang.reflect.Method method = HouseDrawer.class.getMethod(houseFunctions.get(catName).background.toString().toLowerCase()+"BG",PVector.class, PVector.class, PVector.class, PVector.class, String.class); 
 			method.invoke(this, bl, br, tr, tl, catName);
@@ -106,13 +111,13 @@ public class HouseDrawer {
 		}
 	}
 	
-	public void drawHouseOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+	public void drawHouseOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, int size){
 		DrawingType dt = houseFunctions.get(catName).overlay;
 		if(dt!=DrawingType.NONE){
 			String drawCat = dt.toString().toLowerCase()+"Overlay";
 		try {
-			java.lang.reflect.Method method = HouseDrawer.class.getMethod(drawCat,PVector.class, PVector.class, PVector.class, PVector.class, String.class); 
-			method.invoke(this, bl, br, tr, tl, catName);
+			java.lang.reflect.Method method = HouseDrawer.class.getMethod(drawCat,PVector.class, PVector.class, PVector.class, PVector.class, String.class, Integer.class); 
+			method.invoke(this, bl, br, tr, tl, catName, size);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -170,7 +175,7 @@ public class HouseDrawer {
 			citymap.vertex(bl.x, bl.y);
 			citymap.vertex(br.x, br.y);
 			citymap.vertex(tr.x, tr.y);
-//			citymap.vertex(tl.x, tl.y);
+			citymap.vertex(tl.x, tl.y);
 			citymap.endShape();
 			citymap.popStyle();
 		}
@@ -184,15 +189,17 @@ public class HouseDrawer {
 	 */
 				
 	// FOOD OVERLAY
-	public void foodOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+	public void foodOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
 		PGraphics citymap = CityGrid.p5.citymap;
 		PVector mid = PVector.sub(br, tl);
 		mid.div(2);
 		mid.add(tl);
 		citymap.pushStyle();
 		citymap.fill(0);
-		citymap.ellipseMode(PApplet.CENTER);
-		citymap.ellipse(mid.x,mid.y,10,10);
+		citymap.shapeMode(PApplet.CENTER);
+		PShape tSymbol = symbolManager.getSymbol(houseFunctions.get(catName).overlay);
+		citymap.shape(tSymbol,mid.x,mid.y, (float)Math.sqrt((float)size)*tSymbol.width/10, (float)Math.sqrt((float)size)*tSymbol.height/10);
+		//citymap.ellipse(mid.x,mid.y,10,10);
 		citymap.popStyle();
 	}
 }
