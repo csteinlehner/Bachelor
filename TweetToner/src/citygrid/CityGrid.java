@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.Vector;
 
 import com.csvreader.CsvReader;
 import com.google.common.collect.HashBasedTable;
@@ -74,6 +75,7 @@ public class CityGrid extends PApplet{
 	
 	TreeBasedTable<Integer, Integer, PVector> coordinates = TreeBasedTable.create();
 
+	Vector<HouseCoordinate> houseCoordinates = new Vector<HouseCoordinate>();
 	
 	public void setup(){
 		p5 = this;
@@ -340,7 +342,7 @@ public class CityGrid extends PApplet{
 							d_tr_1.div(2);
 							d_tr_1.add(tl);
 							
-							drawHouses(bl, d_br_1, d_tr_1, tl, entry);
+							houseCoordinates.add(new HouseCoordinate(bl, d_br_1, d_tr_1, tl, entry));
 						}
 						//// draw right half
 						else{
@@ -352,35 +354,68 @@ public class CityGrid extends PApplet{
 							d_tl_2.div(2);
 							d_tl_2.add(tl);
 							
-							drawHouses(d_bl_2, br, tr, d_tl_2, entry);
+							houseCoordinates.add(new HouseCoordinate(d_bl_2, br, tr, d_tl_2, entry));
 						}
 				}
 			}
 		}
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesOverlay(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
 	}
 
-	private void drawHouses(PVector bl, PVector br, PVector tr, PVector tl, FsqData entry){
-		float lLength = bl.y-tl.y;
-		float rLength = br.y-tr.y;
+	private void drawHousesBackground(PVector bl, PVector br, PVector tr, PVector tl, FsqData entry){
+		PVector tbl = new PVector(bl.x, bl.y);
+		PVector tbr = new PVector(br.x, br.y);
+		PVector ttr = new PVector(tr.x, tr.y);
+		PVector ttl = new PVector(tl.x, tl.y);
+		float lLength = tbl.y-ttl.y;
+		float rLength = tbr.y-ttr.y;
 		
 		
 		float lPart = lLength/entry.categoryParentsParts;
 		float rPart = rLength/entry.categoryParentsParts;
 		citymap.noFill();
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
-		float oTly = bl.y;
-		float oTry = br.y;
+		float oTly = tbl.y;
+		float oTry = tbr.y;
 		for( String key : entry.categoryParents.keySet()){
-			tl.y = oTly- entry.categoryParents.get(key)*lPart;
-			tr.y = oTry - entry.categoryParents.get(key)*rPart;
-			houseDrawer.drawHouse(bl, br, tr, tl, key);
-			bl.y = oTly;
-			br.y = oTry;
-			oTly = tl.y;
-			oTry = tr.y;
+			ttl.y = oTly - entry.categoryParents.get(key)*lPart;
+			ttr.y = oTry - entry.categoryParents.get(key)*rPart;
+			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key);
+			tbl.y = ttl.y;
+			tbr.y = ttr.y;
+			oTly = ttl.y;
+			oTry = ttr.y;
 		}
+	}
+	private void drawHousesOverlay(PVector bl, PVector br, PVector tr, PVector tl, FsqData entry){
+		PVector tbl = new PVector(bl.x, bl.y);
+		PVector tbr = new PVector(br.x, br.y);
+		PVector ttr = new PVector(tr.x, tr.y);
+		PVector ttl = new PVector(tl.x, tl.y);
+		float lLength = tbl.y-ttl.y;
+		float rLength = tbr.y-ttr.y;
 		
 		
+		float lPart = lLength/entry.categoryParentsParts;
+		float rPart = rLength/entry.categoryParentsParts;
+		citymap.noFill();
+//		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
+		float oTly = tbl.y;
+		float oTry = tbr.y;
+		for( String key : entry.categoryParents.keySet()){
+			ttl.y = oTly - entry.categoryParents.get(key)*lPart;
+			ttr.y = oTry - entry.categoryParents.get(key)*rPart;
+			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key);
+			tbl.y = ttl.y;
+			tbr.y = ttr.y;
+			oTly = ttl.y;
+			oTry = ttr.y;
+		}
 	}
 	
 	private void drawHourStreets(int color, float thickness){
