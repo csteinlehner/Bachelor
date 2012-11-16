@@ -24,7 +24,7 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 
-	static final Boolean SAVE_PDF = true;		// true to save this as pdf
+	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	
 	
 	protected static final String CITY = "berlin";
@@ -36,14 +36,14 @@ public class CityGrid extends PApplet{
 
 	
 	private PFont font;
-	
-	private float fontSize = 12f;
+
+	float dayStreetSize = 7f;
 	
 	PGraphics citymap; 
 	
 	private static final int  HOURS_INTERVAL = 30;
 	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
-	
+
 
 	private Integer maxHours;
 	
@@ -63,7 +63,7 @@ public class CityGrid extends PApplet{
 	int bottomPoint;
 	float sizeFactor = 2.2f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
 	float heightFactor;				// wert zur normalisierung der höhenausbreitung
-	private float hourSize = 100/sizeFactor;	// breite der stunde
+	private float hourSize = 200/sizeFactor;	// breite der stunde
 
 	HouseDrawer houseDrawer;
 	
@@ -223,7 +223,7 @@ public class CityGrid extends PApplet{
 		}
 		//// draw Streets
 		drawHourStreets(color(30,30,30), 5f);
-		drawDayStreets(color(30,30,30), 7f);
+		drawDayStreets(color(30,30,30), dayStreetSize);
 		drawHourStreets(color(100,200,200), 3f);
 		drawDayStreets(color(300,200,200), 5f);
 		for(HouseCoordinate c : houseCoordinates){
@@ -253,7 +253,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
 //				if(d>0){
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/sizeFactor));
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/sizeFactor-dayStreetSize*2*d));
 //				}else{
 //					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
 //				}

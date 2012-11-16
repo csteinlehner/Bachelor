@@ -20,8 +20,8 @@ public class HouseDrawer {
 		symbolManager = new SymbolManager();
 		
 		houseColors.put("Food",TColor.newRandom());
-		houseColors.put("Spanish Restaurants",TColor.newRandom());
-		houseColors.put("Food & Drink Shops",TColor.newRandom());
+//		houseColors.put("Spanish Restaurants",TColor.newRandom());
+//		houseColors.put("Food & Drink Shops",TColor.newRandom());
 		houseColors.put("Travel & Transport",TColor.newRandom());
 		houseColors.put("Professional & Other Places",TColor.newRandom());
 		houseColors.put("Offices",TColor.newRandom());
@@ -55,8 +55,8 @@ public class HouseDrawer {
 		houseColors.put("Ski Areas",TColor.newRandom());
 		
 		houseFunctions.put("Food",new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
-		houseFunctions.put("Spanish Restaurants", new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
-		houseFunctions.put("Food & Drink Shops",new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
+//		houseFunctions.put("Spanish Restaurants", new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
+//		houseFunctions.put("Food & Drink Shops",new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
 		houseFunctions.put("Travel & Transport",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Professional & Other Places",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Offices",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
