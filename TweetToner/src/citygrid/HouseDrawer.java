@@ -61,7 +61,7 @@ public class HouseDrawer {
 		houseFunctions.put("Professional & Other Places",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Offices",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Shops & Services",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
-		houseFunctions.put("Outdoors & Recreation",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
+		houseFunctions.put("Outdoors & Recreation",new DrawDescription(DrawingType.OUTDOOR, DrawingType.NONE));
 		houseFunctions.put("Arts & Entertainment",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Nightlife Spots",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Residences",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
@@ -165,11 +165,25 @@ public class HouseDrawer {
 			citymap.popStyle();
 		}
 		
+		public void outdoorBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+			PGraphics citymap = CityGrid.p5.citymap;
+			citymap.pushStyle();
+			citymap.fill(90, 178, 78);
+			citymap.stroke(255);
+			citymap.beginShape();
+			citymap.vertex(bl.x, bl.y);
+			citymap.vertex(br.x, br.y);
+			citymap.vertex(tr.x, tr.y);
+			citymap.vertex(tl.x, tl.y);
+			citymap.endShape();
+			citymap.popStyle();
+		}
+		
 		// WHITE
 		public void whiteBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 			PGraphics citymap = CityGrid.p5.citymap;
-//			citymap.stroke(255);
 			citymap.pushStyle();
+			citymap.stroke(255);
 			citymap.fill(255);
 			citymap.beginShape();
 			citymap.vertex(bl.x, bl.y);

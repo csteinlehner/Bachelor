@@ -376,16 +376,13 @@ public class CityGrid extends PApplet{
 		float lLength = tbl.y-ttl.y;
 		float rLength = tbr.y-ttr.y;
 		
-		
-		float lPart = lLength/entry.categoryParentsParts;
-		float rPart = rLength/entry.categoryParentsParts;
 		citymap.noFill();
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
 		for( String key : entry.categoryParents.keySet()){
-			ttl.y = oTly - entry.categoryParents.get(key)*lPart;
-			ttr.y = oTry - entry.categoryParents.get(key)*rPart;
+			ttl.y = oTly - entry.categoryParentsPercent.get(key)*lLength;
+			ttr.y = oTry - entry.categoryParentsPercent.get(key)*rLength;
 			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key);
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
@@ -402,15 +399,13 @@ public class CityGrid extends PApplet{
 		float rLength = tbr.y-ttr.y;
 		
 		
-		float lPart = lLength/entry.categoryParentsParts;
-		float rPart = rLength/entry.categoryParentsParts;
 		citymap.noFill();
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
 		for( String key : entry.categoryParents.keySet()){
-			ttl.y = oTly - entry.categoryParents.get(key)*lPart;
-			ttr.y = oTry - entry.categoryParents.get(key)*rPart;
+			ttl.y = oTly - entry.categoryParentsPercent.get(key)*lLength;
+			ttr.y = oTry - entry.categoryParentsPercent.get(key)*rLength;
 			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categoryParents.get(key));
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;

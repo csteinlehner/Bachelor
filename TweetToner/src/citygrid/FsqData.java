@@ -5,9 +5,10 @@ import java.util.HashMap;
 public class FsqData {
 	int minute, day, hour;
 	int t_count, t_count_added, f_count;
-	int categoryParentsParts = 0;
+	float categoryParentsParts = 0;
 	HashMap<String, Integer> categories;
 	HashMap<String, Integer> categoryParents;
+	HashMap<String, Float> categoryParentsPercent = new HashMap<String, Float>();
 	Boolean hasCategories = false;
 	Boolean hasCategoryParents = false;
 	public FsqData(int day, int minute, int hour, int t_count, int f_count){
@@ -25,7 +26,11 @@ public class FsqData {
 		this.categoryParents = categoryParents;
 		hasCategoryParents = true;
 		for( int val : categoryParents.values()){
-			categoryParentsParts+=val;
+			categoryParentsParts+=Math.sqrt((float)val);
+		}
+		for(String key : categoryParents.keySet()){
+			float p = (float)Math.sqrt(categoryParents.get(key))/(float)categoryParentsParts;
+			categoryParentsPercent.put(key,p);
 		}
 	}
 	
