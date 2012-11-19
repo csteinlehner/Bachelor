@@ -7,6 +7,7 @@ import com.sun.org.apache.bcel.internal.generic.NEW;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
+import processing.core.PGraphics2D;
 import processing.core.PShape;
 import processing.core.PVector;
 import toxi.color.TColor;
@@ -54,7 +55,7 @@ public class HouseDrawer {
 //		houseColors.put("Convention Centers",TColor.newRandom());
 //		houseColors.put("Ski Areas",TColor.newRandom());
 		
-		houseFunctions.put("Plaza",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
+		houseFunctions.put("Plaza",new DrawDescription(DrawingType.PLAZA, DrawingType.NONE));
 		houseFunctions.put("Bus Station",new DrawDescription(DrawingType.NEUTRAL, DrawingType.BUS));
 		houseFunctions.put("Hotel",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
 		houseFunctions.put("Home (private)",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
@@ -275,27 +276,44 @@ public class HouseDrawer {
 			citymap.pushStyle();
 			//citymap.stroke(255);
 			citymap.noStroke();
-			citymap.beginShape();
-			citymap.vertex(bl.x, bl.y);
-			citymap.vertex(br.x, br.y);
-			citymap.vertex(tr.x, tr.y);
-			citymap.vertex(tl.x, tl.y);
-			citymap.endShape();
+			drawQuad(citymap, bl, br, tr, tl, 0);
 			citymap.popStyle();
 		}
 		
+		public void plazaBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+			PGraphics citymap = CityGrid.p5.citymap;
+			citymap.pushStyle();
+			citymap.fill(225,220,210);
+			citymap.noStroke();
+			drawQuad(citymap, bl, br, tr, tl, 0);
+			PVector mid = calcMid(br, tl);
+			PVector size = calcSize(bl, br, tr, tl);
+			citymap.fill(100);
+			drawQuad(citymap, bl, br, tr, tl, 0.2f);
+			citymap.fill(225,220,210);
+			drawQuad(citymap, bl, br, tr, tl, 0.4f);
+//			citymap.stroke(100);
+//			citymap.strokeWeight(5);
+//			PVector ttl = interpolateTo(tl, mid, 0.4f);
+//			PVector ttr = interpolateTo(tr, mid, 0.4f);
+//			PVector tbr = interpolateTo(br, mid, 0.4f);
+//			PVector tbl = interpolateTo(bl, mid, 0.4f);
+//			citymap.line(tbr.x,tbr.y,ttl.x,ttl.y);
+//			citymap.line(tbl.x,tbl.y,ttr.x,ttr.y);
+//			citymap.noStroke();
+			citymap.fill(100);
+			drawQuad(citymap, bl, br, tr, tl, 0.6f);
+			citymap.fill(225,220,210);
+			drawQuad(citymap, bl, br, tr, tl, 0.8f);
+			citymap.popStyle();
+		}
 		public void parkBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 			PGraphics citymap = CityGrid.p5.citymap;
 			citymap.pushStyle();
 			citymap.fill(90, 178, 78);
 //			citymap.stroke(255);
 			citymap.noStroke();
-			citymap.beginShape();
-			citymap.vertex(bl.x, bl.y);
-			citymap.vertex(br.x, br.y);
-			citymap.vertex(tr.x, tr.y);
-			citymap.vertex(tl.x, tl.y);
-			citymap.endShape();
+			drawQuad(citymap, bl, br, tr, tl, 0);
 			citymap.popStyle();
 		}
 		
@@ -306,12 +324,7 @@ public class HouseDrawer {
 //			citymap.stroke(255);
 			citymap.noStroke();
 			citymap.fill(225,220,210);
-			citymap.beginShape();
-			citymap.vertex(bl.x, bl.y);
-			citymap.vertex(br.x, br.y);
-			citymap.vertex(tr.x, tr.y);
-			citymap.vertex(tl.x, tl.y);
-			citymap.endShape();
+			drawQuad(citymap, bl, br, tr, tl, 0);
 			citymap.popStyle();
 		}
 		
@@ -321,12 +334,7 @@ public class HouseDrawer {
 //			citymap.stroke(255);
 			citymap.noStroke();
 			citymap.fill(255);
-			citymap.beginShape();
-			citymap.vertex(bl.x, bl.y);
-			citymap.vertex(br.x, br.y);
-			citymap.vertex(tr.x, tr.y);
-			citymap.vertex(tl.x, tl.y);
-			citymap.endShape();
+			drawQuad(citymap, bl, br, tr, tl, 0);
 			citymap.popStyle();
 		}
 				
@@ -339,9 +347,7 @@ public class HouseDrawer {
 			
 		public void symbolOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
 			PGraphics citymap = CityGrid.p5.citymap;
-			PVector mid = PVector.sub(br, tl);
-			mid.div(2);
-			mid.add(tl);
+			PVector mid =calcMid(br, tl);
 			citymap.pushStyle();
 			citymap.fill(0);
 			citymap.shapeMode(PApplet.CENTER);
@@ -362,5 +368,40 @@ public class HouseDrawer {
 	public void hospitalOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
 		symbolOverlay(bl, br, tr, tl, catName, size);
 	}
-
+	
+	
+	public PVector calcMid(PVector br, PVector tl){
+		PVector mid = PVector.sub(br, tl);
+		mid.div(2);
+		mid.add(tl);
+		return mid;
+	}
+	
+	public PVector calcSize(PVector bl, PVector br, PVector tr, PVector tl){
+		float x = br.x-bl.x;
+		float y = br.y-tr.y;
+		return new PVector(x,y);
+	}
+	
+	public void drawQuad(PGraphics target, PVector bl, PVector br, PVector tr, PVector tl, float scaleF){
+//		PVector bltr = PVector.sub(tr, bl);
+//		PVector brtl = PVector.sub(tl, br);
+//		bltbltr.mult(scaleF);
+//		brtl.mult(scaleF);
+		PVector mid = calcMid(br, tl);
+		PVector tbl = interpolateTo(bl, mid, scaleF);
+		PVector tbr = interpolateTo(br, mid, scaleF);
+		PVector ttr = interpolateTo(tr, mid, scaleF);
+		PVector ttl = interpolateTo(tl, mid, scaleF);
+		target.beginShape();
+		target.vertex(tbl.x, tbl.y);
+		target.vertex(tbr.x, tbr.y);
+		target.vertex(ttr.x, ttr.y);
+		target.vertex(ttl.x, ttl.y);
+		target.endShape();
+	}
+	
+	public PVector interpolateTo(PVector v1, PVector v2, float f){
+		  return new PVector(v1.x + (v2.x - v1.x) * f, v1.y + (v2.y - v1.y) * f);
+	}
 }
