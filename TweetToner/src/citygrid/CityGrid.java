@@ -270,8 +270,8 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < dayLength; d++) {
 			for (int h = 0; h < hourLength; h++) {
 				FsqData entry = fsqCount.get(d, h*HOURS_INTERVAL);
-				if(entry.hasCategoryParents){
-					HashMap<String, Integer> categories = entry.categoryParents;
+				if(entry.hasCategories){
+					HashMap<String, Integer> categories = entry.categories;
 					Set<Map.Entry<String, Integer>> set = categories.entrySet();
 					Iterator<Entry<String,Integer>> it = set.iterator();
 					PVector bl = new PVector();
@@ -382,9 +382,9 @@ public class CityGrid extends PApplet{
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
-		for( String key : entry.categoryParents.keySet()){
-			ttl.y = oTly - entry.categoryParentsPercent.get(key)*lLength;
-			ttr.y = oTry - entry.categoryParentsPercent.get(key)*rLength;
+		for( String key : entry.categories.keySet()){
+			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
+			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
 			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key);
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
@@ -405,10 +405,10 @@ public class CityGrid extends PApplet{
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
-		for( String key : entry.categoryParents.keySet()){
-			ttl.y = oTly - entry.categoryParentsPercent.get(key)*lLength;
-			ttr.y = oTry - entry.categoryParentsPercent.get(key)*rLength;
-			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categoryParents.get(key));
+		for( String key : entry.categories.keySet()){
+			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
+			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
+			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categories.get(key));
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
 			oTly = ttl.y;
