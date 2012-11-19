@@ -57,7 +57,7 @@ public class HouseDrawer {
 		
 		houseFunctions.put("Plaza",new DrawDescription(DrawingType.PLAZA, DrawingType.NONE));
 		houseFunctions.put("Bus Station",new DrawDescription(DrawingType.NEUTRAL, DrawingType.BUS));
-		houseFunctions.put("Hotel",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
+		houseFunctions.put("Hotel",new DrawDescription(DrawingType.HOTEL, DrawingType.HOTEL));
 		houseFunctions.put("Home (private)",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
 		houseFunctions.put("Playground",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
 		houseFunctions.put("Hockey Arena",new DrawDescription(DrawingType.NEUTRAL, DrawingType.NONE));
@@ -328,6 +328,23 @@ public class HouseDrawer {
 			citymap.popStyle();
 		}
 		
+		// HOTEL
+		public void hotelBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+			PGraphics citymap = CityGrid.p5.citymap;
+			citymap.pushStyle();
+//			citymap.stroke(255);
+			citymap.noStroke();
+			citymap.fill(225,220,210);
+			drawQuad(citymap, bl, br, tr, tl, 0);
+			citymap.fill(210,200,200);
+			citymap.stroke(180);
+			citymap.strokeWeight(1);
+			drawQuad(citymap, bl, br, tr, tl, .2f);
+			drawQuad(citymap, bl, br, tr, tl, .3f);
+			citymap.noStroke();
+			citymap.popStyle();
+		}
+		
 		public void whiteBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 			PGraphics citymap = CityGrid.p5.citymap;
 			citymap.pushStyle();
@@ -368,6 +385,10 @@ public class HouseDrawer {
 	public void hospitalOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
 		symbolOverlay(bl, br, tr, tl, catName, size);
 	}
+	// HOTEL OVERLAY
+	public void hotelOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
+		symbolOverlay(bl, br, tr, tl, catName, size);
+	}
 	
 	
 	public PVector calcMid(PVector br, PVector tl){
@@ -398,6 +419,7 @@ public class HouseDrawer {
 		target.vertex(tbr.x, tbr.y);
 		target.vertex(ttr.x, ttr.y);
 		target.vertex(ttl.x, ttl.y);
+		target.vertex(tbl.x, tbl.y);
 		target.endShape();
 	}
 	
