@@ -54,10 +54,10 @@ public class HouseDrawer {
 		houseColors.put("Convention Centers",TColor.newRandom());
 		houseColors.put("Ski Areas",TColor.newRandom());
 		
-		houseFunctions.put("Food",new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
+		houseFunctions.put("Food",new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 //		houseFunctions.put("Spanish Restaurants", new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
 //		houseFunctions.put("Food & Drink Shops",new DrawDescription(DrawingType.WHITE, DrawingType.FOOD));
-		houseFunctions.put("Travel & Transport",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
+		houseFunctions.put("Travel & Transport",new DrawDescription(DrawingType.NEUTRAL, DrawingType.TRAVEL));
 		houseFunctions.put("Professional & Other Places",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Offices",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
 		houseFunctions.put("Shops & Services",new DrawDescription(DrawingType.OTHER, DrawingType.NONE));
@@ -147,7 +147,8 @@ public class HouseDrawer {
 		public void otherBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 			PGraphics citymap = CityGrid.p5.citymap;
 			try {
-			citymap.fill(houseColors.get(catName).toARGB());
+			//citymap.fill(houseColors.get(catName).toARGB());
+				citymap.fill(225,220,210);
 			
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -155,7 +156,8 @@ public class HouseDrawer {
 			System.out.println(catName);
 		}
 			citymap.pushStyle();
-			citymap.stroke(255);
+			//citymap.stroke(255);
+			citymap.noStroke();
 			citymap.beginShape();
 			citymap.vertex(bl.x, bl.y);
 			citymap.vertex(br.x, br.y);
@@ -169,7 +171,8 @@ public class HouseDrawer {
 			PGraphics citymap = CityGrid.p5.citymap;
 			citymap.pushStyle();
 			citymap.fill(90, 178, 78);
-			citymap.stroke(255);
+//			citymap.stroke(255);
+			citymap.noStroke();
 			citymap.beginShape();
 			citymap.vertex(bl.x, bl.y);
 			citymap.vertex(br.x, br.y);
@@ -179,12 +182,13 @@ public class HouseDrawer {
 			citymap.popStyle();
 		}
 		
-		// WHITE
-		public void whiteBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+		// NEUTRAL
+		public void neutralBG(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 			PGraphics citymap = CityGrid.p5.citymap;
 			citymap.pushStyle();
-			citymap.stroke(255);
-			citymap.fill(255);
+//			citymap.stroke(255);
+			citymap.noStroke();
+			citymap.fill(225,220,210);
 			citymap.beginShape();
 			citymap.vertex(bl.x, bl.y);
 			citymap.vertex(br.x, br.y);
@@ -201,19 +205,26 @@ public class HouseDrawer {
 	 * 	
 	 * Overlay Drawing Functions
 	 */
-				
+			
+		public void symbolOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
+			PGraphics citymap = CityGrid.p5.citymap;
+			PVector mid = PVector.sub(br, tl);
+			mid.div(2);
+			mid.add(tl);
+			citymap.pushStyle();
+			citymap.fill(0);
+			citymap.shapeMode(PApplet.CENTER);
+			PShape tSymbol = symbolManager.getSymbol(houseFunctions.get(catName).overlay);
+			citymap.shape(tSymbol,mid.x,mid.y, (float)Math.sqrt((float)size)*tSymbol.width/10, (float)Math.sqrt((float)size)*tSymbol.height/10);
+			//citymap.ellipse(mid.x,mid.y,10,10);
+			citymap.popStyle();
+		}
 	// FOOD OVERLAY
 	public void foodOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
-		PGraphics citymap = CityGrid.p5.citymap;
-		PVector mid = PVector.sub(br, tl);
-		mid.div(2);
-		mid.add(tl);
-		citymap.pushStyle();
-		citymap.fill(0);
-		citymap.shapeMode(PApplet.CENTER);
-		PShape tSymbol = symbolManager.getSymbol(houseFunctions.get(catName).overlay);
-		citymap.shape(tSymbol,mid.x,mid.y, (float)Math.sqrt((float)size)*tSymbol.width/10, (float)Math.sqrt((float)size)*tSymbol.height/10);
-		//citymap.ellipse(mid.x,mid.y,10,10);
-		citymap.popStyle();
+		symbolOverlay(bl, br, tr, tl, catName, size);
 	}
+	// FOOD OVERLAY
+		public void travelOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
+			symbolOverlay(bl, br, tr, tl, catName, size);
+		}
 }

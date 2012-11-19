@@ -37,7 +37,8 @@ public class CityGrid extends PApplet{
 	
 	private PFont font;
 
-	float dayStreetSize = 7f;
+	float dayStreetSize = 12f;
+	float hourStreetSize = 6f;
 	
 	PGraphics citymap; 
 	
@@ -213,7 +214,8 @@ public class CityGrid extends PApplet{
 		}
 		citymap.beginDraw();
 		citymap.smooth();
-		citymap.background(220,230,220);
+//		citymap.background(220,230,220);
+		citymap.background(255);
 		citymap.translate(10,10);
 		
 		
@@ -222,10 +224,10 @@ public class CityGrid extends PApplet{
 			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
 		}
 		//// draw Streets
-		drawHourStreets(color(30,30,30), 5f);
-		drawDayStreets(color(30,30,30), dayStreetSize);
-		drawHourStreets(color(100,200,200), 3f);
-		drawDayStreets(color(300,200,200), 5f);
+		drawHourStreets(color(110,100,100), hourStreetSize);
+		drawDayStreets(color(110,100,100), dayStreetSize);
+		drawHourStreets(color(255,240,230), hourStreetSize-2f);
+		drawDayStreets(color(255,253,139), dayStreetSize-2f);
 		for(HouseCoordinate c : houseCoordinates){
 			drawHousesOverlay(c.bl, c.br, c.tr, c.tl, c.entry);
 		}
