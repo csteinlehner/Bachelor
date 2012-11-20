@@ -24,7 +24,7 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 
-	static final Boolean SAVE_PDF = true;		// true to save this as pdf
+	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	
 	
 	protected static final String CITY = "berlin";

@@ -30,7 +30,7 @@ public class FsqData {
 			float p = (float)Math.sqrt(categories.get(key))/(float)categoryParts;
 			categoryPercent.put(key,p);
 		}
-//		System.out.println(categories);
+		System.out.println(categories);
 	}
 	public void setCategoryParents(HashMap<String, Integer> categoryParents) {
 		this.categoryParents = categoryParents;

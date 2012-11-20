@@ -17,7 +17,7 @@ Mon Sep 03 07:00:00 UTC 2012,0,7,420,8,0,"","",""
 Mon Sep 03 07:30:00 UTC 2012,0,7,450,8,0,"","",""
 Mon Sep 03 08:00:00 UTC 2012,0,8,480,9,0,"","",""
 Mon Sep 03 08:30:00 UTC 2012,0,8,510,12,1,Residences=1,Home (private)=1,Dr_Lange HomeOffice=1
-Mon Sep 03 09:00:00 UTC 2012,0,9,540,14,2,Travel & Transport=1_Outdoors & Recreation=1,Bridge=1_Train Station=1,Nedlitzer Nordbrücke=1_Bhf. Park Sanssouci=1
+Mon Sep 03 09:00:00 UTC 2012,0,9,540,14,2,Outdoors & Recreation=1_Travel & Transport=1,Train Station=1_Bridge=1,Nedlitzer Nordbrücke=1_Bhf. Park Sanssouci=1
 Mon Sep 03 09:30:00 UTC 2012,0,9,570,13,0,"","",""
 Mon Sep 03 10:00:00 UTC 2012,0,10,600,13,0,"","",""
 Mon Sep 03 10:30:00 UTC 2012,0,10,630,13,0,"","",""
@@ -69,13 +69,13 @@ Tue Sep 04 09:00:00 UTC 2012,1,9,540,12,0,"","",""
 Tue Sep 04 09:30:00 UTC 2012,1,9,570,13,0,"","",""
 Tue Sep 04 10:00:00 UTC 2012,1,10,600,13,0,"","",""
 Tue Sep 04 10:30:00 UTC 2012,1,10,630,11,0,"","",""
-Tue Sep 04 11:00:00 UTC 2012,1,11,660,13,1,Arts & Entertainment=1_Museums=1,History Museum=1,Haus der Wannsee-Konferenz | House of the Wannsee Conference=1
+Tue Sep 04 11:00:00 UTC 2012,1,11,660,13,1,Museums=1_Arts & Entertainment=1,History Museum=1,Haus der Wannsee-Konferenz | House of the Wannsee Conference=1
 Tue Sep 04 11:30:00 UTC 2012,1,11,690,15,1,Travel & Transport=1,Train Station=1,Potsdam Hauptbahnhof=1
 Tue Sep 04 12:00:00 UTC 2012,1,12,720,15,0,"","",""
 Tue Sep 04 12:30:00 UTC 2012,1,12,750,16,1,Outdoors & Recreation=1,Bridge=1,Glienicker Brücke=1
 Tue Sep 04 13:00:00 UTC 2012,1,13,780,8,1,Outdoors & Recreation=1,Park=1,Park Sanssouci=1
 Tue Sep 04 13:30:00 UTC 2012,1,13,810,14,1,Arts & Entertainment=1,Historic Site=1,Brandenburger Tor=1
-Tue Sep 04 14:00:00 UTC 2012,1,14,840,13,2,Travel & Transport=1_Outdoors & Recreation=1,Athletic & Sport=1_Train Station=1,ReitTherapieZentrum=1_Bahnhofspassagen Potsdam=1
+Tue Sep 04 14:00:00 UTC 2012,1,14,840,13,2,Outdoors & Recreation=1_Travel & Transport=1,Athletic & Sport=1_Train Station=1,ReitTherapieZentrum=1_Bahnhofspassagen Potsdam=1
 Tue Sep 04 14:30:00 UTC 2012,1,14,870,15,1,Food=1,Ice Cream Shop=1,Piazza Rossa=1
 Tue Sep 04 15:00:00 UTC 2012,1,15,900,11,1,Travel & Transport=1,Hotel=1,Kongresshotel Potsdam am Templiner See=1
 Tue Sep 04 15:30:00 UTC 2012,1,15,930,13,1,Schools=1_Professional & Other Places=1,Nursery School=1,Kita Nuthewinkel=1
@@ -164,18 +164,18 @@ Thu Sep 06 08:30:00 UTC 2012,3,8,510,11,1,Travel & Transport=1,Train Station=1,P
 Thu Sep 06 09:00:00 UTC 2012,3,9,540,10,0,"","",""
 Thu Sep 06 09:30:00 UTC 2012,3,9,570,11,0,"","",""
 Thu Sep 06 10:00:00 UTC 2012,3,10,600,13,0,"","",""
-Thu Sep 06 10:30:00 UTC 2012,3,10,630,14,2,Outdoors & Recreation=1,Other Great Outdoors=1,Potsdam=1_Filmpark Babelsberg=1
+Thu Sep 06 10:30:00 UTC 2012,3,10,630,14,2,Outdoors & Recreation=1,Other Great Outdoors=1,Filmpark Babelsberg=1_Potsdam=1
 Thu Sep 06 11:00:00 UTC 2012,3,11,660,11,0,"","",""
 Thu Sep 06 11:30:00 UTC 2012,3,11,690,12,0,"","",""
 Thu Sep 06 12:00:00 UTC 2012,3,12,720,12,0,"","",""
-Thu Sep 06 12:30:00 UTC 2012,3,12,750,18,2,Travel & Transport=1_Colleges & Universities=1,General College & University=1_Train Station=1,"Eliteschule des Sports ""Friedrich Ludwig Jahn""=1_Potsdam Hauptbahnhof=1"
+Thu Sep 06 12:30:00 UTC 2012,3,12,750,18,2,Travel & Transport=1_Colleges & Universities=1,Train Station=1_General College & University=1,"Eliteschule des Sports ""Friedrich Ludwig Jahn""=1_Potsdam Hauptbahnhof=1"
 Thu Sep 06 13:00:00 UTC 2012,3,13,780,9,1,Outdoors & Recreation=1,Park=1,Park Sanssouci=1
 Thu Sep 06 13:30:00 UTC 2012,3,13,810,15,0,"","",""
 Thu Sep 06 14:00:00 UTC 2012,3,14,840,12,0,"","",""
 Thu Sep 06 14:30:00 UTC 2012,3,14,870,17,1,Arts & Entertainment=1,Historic Site=1,Schloss Sanssouci=1
 Thu Sep 06 15:00:00 UTC 2012,3,15,900,13,0,"","",""
-Thu Sep 06 15:30:00 UTC 2012,3,15,930,17,2,Travel & Transport=1_Shops & Services=1_Hotels=1,Salon / Barbershop=1_Bed & Breakfast=1,Schlosshotel Cecilienhof=1_hairkiller=1
-Thu Sep 06 16:00:00 UTC 2012,3,16,960,15,2,Travel & Transport=1_Outdoors & Recreation=1,Bridge=1_Light Rail=1,Tram-H Lange Brücke=1_Glienicker Brücke=1
+Thu Sep 06 15:30:00 UTC 2012,3,15,930,17,2,Shops & Services=1_Hotels=1_Travel & Transport=1,Salon / Barbershop=1_Bed & Breakfast=1,hairkiller=1_Schlosshotel Cecilienhof=1
+Thu Sep 06 16:00:00 UTC 2012,3,16,960,15,2,Outdoors & Recreation=1_Travel & Transport=1,Light Rail=1_Bridge=1,Tram-H Lange Brücke=1_Glienicker Brücke=1
 Thu Sep 06 16:30:00 UTC 2012,3,16,990,17,1,Food=1,Coffee Shop=1,Starbucks=1
 Thu Sep 06 17:00:00 UTC 2012,3,17,1020,10,0,"","",""
 Thu Sep 06 17:30:00 UTC 2012,3,17,1050,13,0,"","",""
@@ -183,7 +183,7 @@ Thu Sep 06 18:00:00 UTC 2012,3,18,1080,14,0,"","",""
 Thu Sep 06 18:30:00 UTC 2012,3,18,1110,12,0,"","",""
 Thu Sep 06 19:00:00 UTC 2012,3,19,1140,8,0,"","",""
 Thu Sep 06 19:30:00 UTC 2012,3,19,1170,15,0,"","",""
-Thu Sep 06 20:00:00 UTC 2012,3,20,1200,12,1,Gyms or Fitness Centers=1_Shops & Services=1,Gym Pool=1,Schwimmhalle am Brauhausberg=1
+Thu Sep 06 20:00:00 UTC 2012,3,20,1200,12,1,Shops & Services=1_Gyms or Fitness Centers=1,Gym Pool=1,Schwimmhalle am Brauhausberg=1
 Thu Sep 06 20:30:00 UTC 2012,3,20,1230,13,0,"","",""
 Thu Sep 06 21:00:00 UTC 2012,3,21,1260,15,1,Nightlife Spots=1,Bar=1,Pub a la Pub=1
 Thu Sep 06 21:30:00 UTC 2012,3,21,1290,17,0,"","",""
@@ -211,7 +211,7 @@ Fri Sep 07 08:00:00 UTC 2012,4,8,480,8,0,"","",""
 Fri Sep 07 08:30:00 UTC 2012,4,8,510,11,0,"","",""
 Fri Sep 07 09:00:00 UTC 2012,4,9,540,12,0,"","",""
 Fri Sep 07 09:30:00 UTC 2012,4,9,570,16,0,"","",""
-Fri Sep 07 10:00:00 UTC 2012,4,10,600,12,1,Colleges & Universities=2,College Library=1_College Lab=1,GFZ German Research Centre for Geosciences=1
+Fri Sep 07 10:00:00 UTC 2012,4,10,600,12,1,Colleges & Universities=2,College Lab=1_College Library=1,GFZ German Research Centre for Geosciences=1
 Fri Sep 07 10:30:00 UTC 2012,4,10,630,12,0,"","",""
 Fri Sep 07 11:00:00 UTC 2012,4,11,660,13,2,Colleges & Universities=2,University=2,Institut für Informatik=2
 Fri Sep 07 11:30:00 UTC 2012,4,11,690,14,0,"","",""
@@ -255,7 +255,7 @@ Sat Sep 08 06:00:00 UTC 2012,5,6,360,10,0,"","",""
 Sat Sep 08 06:30:00 UTC 2012,5,6,390,12,0,"","",""
 Sat Sep 08 07:00:00 UTC 2012,5,7,420,7,0,"","",""
 Sat Sep 08 07:30:00 UTC 2012,5,7,450,8,0,"","",""
-Sat Sep 08 08:00:00 UTC 2012,5,8,480,11,2,Travel & Transport=1_Food & Drink Shops=1_Shops & Services=1,Grocery Store=1_Train Station=1,Potsdam Hauptbahnhof=1_Kaufland=1
+Sat Sep 08 08:00:00 UTC 2012,5,8,480,11,2,Shops & Services=1_Travel & Transport=1_Food=1,Train Station=1_Grocery Store=1,Kaufland=1_Potsdam Hauptbahnhof=1
 Sat Sep 08 08:30:00 UTC 2012,5,8,510,9,0,"","",""
 Sat Sep 08 09:00:00 UTC 2012,5,9,540,11,0,"","",""
 Sat Sep 08 09:30:00 UTC 2012,5,9,570,11,0,"","",""
@@ -277,7 +277,7 @@ Sat Sep 08 17:00:00 UTC 2012,5,17,1020,11,0,"","",""
 Sat Sep 08 17:30:00 UTC 2012,5,17,1050,11,0,"","",""
 Sat Sep 08 18:00:00 UTC 2012,5,18,1080,21,2,Food=2,Italian Restaurant=2,Pino=2
 Sat Sep 08 18:30:00 UTC 2012,5,18,1110,20,0,"","",""
-Sat Sep 08 19:00:00 UTC 2012,5,19,1140,24,2,Arts & Entertainment=1_College Stadiums=1_Colleges & Universities=1,Art Gallery=1_College Basketball Court=1,Villa Schöningen=1_Universitätssporthalle=1
+Sat Sep 08 19:00:00 UTC 2012,5,19,1140,24,2,College Stadiums=1_Arts & Entertainment=1_Colleges & Universities=1,Art Gallery=1_College Basketball Court=1,Universitätssporthalle=1_Villa Schöningen=1
 Sat Sep 08 19:30:00 UTC 2012,5,19,1170,20,0,"","",""
 Sat Sep 08 20:00:00 UTC 2012,5,20,1200,17,0,"","",""
 Sat Sep 08 20:30:00 UTC 2012,5,20,1230,13,0,"","",""
@@ -319,13 +319,13 @@ Sun Sep 09 14:00:00 UTC 2012,6,14,840,12,0,"","",""
 Sun Sep 09 14:30:00 UTC 2012,6,14,870,14,1,Nightlife Spots=1,Beer Garden=1,Bürgershof=1
 Sun Sep 09 15:00:00 UTC 2012,6,15,900,16,1,Outdoors & Recreation=1,Other Great Outdoors=1,Pfaueninsel=1
 Sun Sep 09 15:30:00 UTC 2012,6,15,930,14,1,Outdoors & Recreation=1,Playground=1,Wasserbecken im BuGa-Park=1
-Sun Sep 09 16:00:00 UTC 2012,6,16,960,12,1,Athletics & Sports=1_Outdoors & Recreation=1,Golf Course=1,Berliner Golf Club Gatow e.V.=1
+Sun Sep 09 16:00:00 UTC 2012,6,16,960,12,1,Outdoors & Recreation=1_Athletics & Sports=1,Golf Course=1,Berliner Golf Club Gatow e.V.=1
 Sun Sep 09 16:30:00 UTC 2012,6,16,990,12,0,"","",""
 Sun Sep 09 17:00:00 UTC 2012,6,17,1020,12,0,"","",""
 Sun Sep 09 17:30:00 UTC 2012,6,17,1050,13,1,Food=1,Brewery=1,Meierei im Neuen Garten=1
 Sun Sep 09 18:00:00 UTC 2012,6,18,1080,10,0,"","",""
 Sun Sep 09 18:30:00 UTC 2012,6,18,1110,4,0,"","",""
-Sun Sep 09 19:00:00 UTC 2012,6,19,1140,11,1,Arts & Entertainment=1_Performing Arts Venues=1,Theater=1,Hans Otto Theater=1
+Sun Sep 09 19:00:00 UTC 2012,6,19,1140,11,1,Performing Arts Venues=1_Arts & Entertainment=1,Theater=1,Hans Otto Theater=1
 Sun Sep 09 19:30:00 UTC 2012,6,19,1170,6,0,"","",""
 Sun Sep 09 20:00:00 UTC 2012,6,20,1200,11,0,"","",""
 Sun Sep 09 20:30:00 UTC 2012,6,20,1230,8,0,"","",""

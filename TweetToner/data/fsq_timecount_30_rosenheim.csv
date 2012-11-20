@@ -26,7 +26,7 @@ Mon Sep 03 11:30:00 UTC 2012,0,11,690,0,0,"","",""
 Mon Sep 03 12:00:00 UTC 2012,0,12,720,0,0,"","",""
 Mon Sep 03 12:30:00 UTC 2012,0,12,750,0,0,"","",""
 Mon Sep 03 13:00:00 UTC 2012,0,13,780,1,1,Shops & Services=1,Clothing Store=1,Modepark Röther=1
-Mon Sep 03 13:30:00 UTC 2012,0,13,810,4,4,Outdoors & Recreation=2_Arts & Entertainment=1_Shops & Services=1,Electronics Store=1_Neighborhood=1_Theme Park=1_Plaza=1,Rosenheim=1_Syspro Apple Reseller=1_Max-Josefs-Platz=1_Herbstfest Rosenheim=1
+Mon Sep 03 13:30:00 UTC 2012,0,13,810,4,4,Outdoors & Recreation=2_Shops & Services=1_Arts & Entertainment=1,Neighborhood=1_Electronics Store=1_Theme Park=1_Plaza=1,Herbstfest Rosenheim=1_Rosenheim=1_Syspro Apple Reseller=1_Max-Josefs-Platz=1
 Mon Sep 03 14:00:00 UTC 2012,0,14,840,0,0,"","",""
 Mon Sep 03 14:30:00 UTC 2012,0,14,870,1,0,"","",""
 Mon Sep 03 15:00:00 UTC 2012,0,15,900,0,0,"","",""
@@ -35,7 +35,7 @@ Mon Sep 03 16:00:00 UTC 2012,0,16,960,4,0,"","",""
 Mon Sep 03 16:30:00 UTC 2012,0,16,990,1,0,"","",""
 Mon Sep 03 17:00:00 UTC 2012,0,17,1020,1,0,"","",""
 Mon Sep 03 17:30:00 UTC 2012,0,17,1050,2,0,"","",""
-Mon Sep 03 18:00:00 UTC 2012,0,18,1080,4,3,Nightlife Spots=1,Shop & Service=2,TkmaxX=2_Flötzinger Festzelt=1
+Mon Sep 03 18:00:00 UTC 2012,0,18,1080,4,3,Nightlife Spots=1,Shop & Service=2_Beer Garden=1,TkmaxX=2_Flötzinger Festzelt=1
 Mon Sep 03 18:30:00 UTC 2012,0,18,1110,1,0,"","",""
 Mon Sep 03 19:00:00 UTC 2012,0,19,1140,0,0,"","",""
 Mon Sep 03 19:30:00 UTC 2012,0,19,1170,2,0,"","",""
@@ -73,7 +73,7 @@ Tue Sep 04 11:00:00 UTC 2012,1,11,660,0,0,"","",""
 Tue Sep 04 11:30:00 UTC 2012,1,11,690,1,1,Nightlife Spots=1,Beer Garden=1,Herbstfest Flötzinger Festzelt=1
 Tue Sep 04 12:00:00 UTC 2012,1,12,720,1,0,"","",""
 Tue Sep 04 12:30:00 UTC 2012,1,12,750,0,0,"","",""
-Tue Sep 04 13:00:00 UTC 2012,1,13,780,2,2,Shops & Services=1_Outdoors & Recreation=1,Neighborhood=1_Department Store=1,Rosenheim=1_Karstadt Rosenheim=1
+Tue Sep 04 13:00:00 UTC 2012,1,13,780,2,2,Outdoors & Recreation=1_Shops & Services=1,Neighborhood=1_Department Store=1,Karstadt Rosenheim=1_Rosenheim=1
 Tue Sep 04 13:30:00 UTC 2012,1,13,810,0,0,"","",""
 Tue Sep 04 14:00:00 UTC 2012,1,14,840,2,0,"","",""
 Tue Sep 04 14:30:00 UTC 2012,1,14,870,2,0,"","",""
@@ -173,7 +173,7 @@ Thu Sep 06 13:00:00 UTC 2012,3,13,780,1,0,"","",""
 Thu Sep 06 13:30:00 UTC 2012,3,13,810,0,0,"","",""
 Thu Sep 06 14:00:00 UTC 2012,3,14,840,0,0,"","",""
 Thu Sep 06 14:30:00 UTC 2012,3,14,870,3,2,Professional & Other Places=1_Food=1,German Restaurant=1_Office=1,Cubeware GmbH=1_Gasthaus zum Stockhammer=1
-Thu Sep 06 15:00:00 UTC 2012,3,15,900,2,2,Nightlife Spots=1_Food=1,Beer Garden=1_Bakery=1,Herbstfest Flötzinger Festzelt=1_Bergmeister=1
+Thu Sep 06 15:00:00 UTC 2012,3,15,900,2,2,Nightlife Spots=1_Food=1,Beer Garden=1_Bakery=1,Bergmeister=1_Herbstfest Flötzinger Festzelt=1
 Thu Sep 06 15:30:00 UTC 2012,3,15,930,1,1,Nightlife Spots=1,Beer Garden=1,Flötzinger Festzelt=1
 Thu Sep 06 16:00:00 UTC 2012,3,16,960,1,0,"","",""
 Thu Sep 06 16:30:00 UTC 2012,3,16,990,0,0,"","",""
@@ -205,7 +205,7 @@ Fri Sep 07 05:00:00 UTC 2012,4,5,300,0,0,"","",""
 Fri Sep 07 05:30:00 UTC 2012,4,5,330,0,0,"","",""
 Fri Sep 07 06:00:00 UTC 2012,4,6,360,0,0,"","",""
 Fri Sep 07 06:30:00 UTC 2012,4,6,390,0,0,"","",""
-Fri Sep 07 07:00:00 UTC 2012,4,7,420,7,3,Arts & Entertainment=2_Travel & Transport=1,General Entertainment=2,Ku'ko: Kultur & Kongresszentrum=2_Rosenheim=1
+Fri Sep 07 07:00:00 UTC 2012,4,7,420,7,3,Travel & Transport=1_Arts & Entertainment=2,General Entertainment=2_General Travel=1,Ku'ko: Kultur & Kongresszentrum=2_Rosenheim=1
 Fri Sep 07 07:30:00 UTC 2012,4,7,450,0,0,"","",""
 Fri Sep 07 08:00:00 UTC 2012,4,8,480,5,0,"","",""
 Fri Sep 07 08:30:00 UTC 2012,4,8,510,1,0,"","",""
@@ -316,7 +316,7 @@ Sun Sep 09 12:30:00 UTC 2012,6,12,750,0,0,"","",""
 Sun Sep 09 13:00:00 UTC 2012,6,13,780,2,1,Nightlife Spots=1,Beer Garden=1,Auer Bräu Festzelt (Herbstfest)=1
 Sun Sep 09 13:30:00 UTC 2012,6,13,810,2,0,"","",""
 Sun Sep 09 14:00:00 UTC 2012,6,14,840,0,0,"","",""
-Sun Sep 09 14:30:00 UTC 2012,6,14,870,4,2,Shops & Services=2_Gyms or Fitness Centers=2,Gym Pool=2,Freibad Rosenheim=2
+Sun Sep 09 14:30:00 UTC 2012,6,14,870,4,2,Gyms or Fitness Centers=2_Shops & Services=2,Gym Pool=2,Freibad Rosenheim=2
 Sun Sep 09 15:00:00 UTC 2012,6,15,900,0,0,"","",""
 Sun Sep 09 15:30:00 UTC 2012,6,15,930,0,0,"","",""
 Sun Sep 09 16:00:00 UTC 2012,6,16,960,1,1,Arts & Entertainment=1,Theme Park=1,Herbstfest Rosenheim=1
