@@ -24,10 +24,10 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 
-	static final Boolean SAVE_PDF = false;		// true to save this as pdf
+	static final Boolean SAVE_PDF = true;		// true to save this as pdf
 	
 	
-	protected static final String CITY = "rosenheim";
+	protected static final String CITY = "berlin";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
@@ -408,7 +408,7 @@ public class CityGrid extends PApplet{
 		for( String key : entry.categories.keySet()){
 			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
 			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
-			houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categories.get(key));
+			//houseDrawer.drawHouseOverlay(tbl, tbr, ttr, ttl, key, entry.categories.get(key));
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
 			oTly = ttl.y;

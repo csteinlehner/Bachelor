@@ -28,6 +28,11 @@ public class PatternDrawTest extends PApplet {
 		pattern = pdm.createPattern("VideoGameStore", 10, 10, new PVector[]{new PVector(10,10),new PVector(500,10), new PVector(500,500), new PVector(10,250)});
 	}
 	public void draw(){
+		background(100);
+		pushStyle();
+		fill(130);
+		ellipse(width/2,height/2,width,height);
+		popStyle();
 		scale(0.5f);
 		image(pattern,0,0);
 	}

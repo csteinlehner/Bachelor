@@ -2,12 +2,15 @@ package citygrid;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PGraphics2D;
+import processing.core.PImage;
 import processing.core.PShape;
 import processing.core.PVector;
 import toxi.color.TColor;
@@ -15,11 +18,15 @@ import toxi.color.TColor;
 public class HouseDrawer {
 	HashMap<String, TColor> houseColors = new HashMap<String, TColor>();
 	HashMap<String, DrawDescription> houseFunctions = new HashMap<String, DrawDescription>();
+	
+	Pattern pattern = Pattern.compile("\\s+|\\/|&|\\(|\\)|'");
+	
+	PatternDrawManager pdm = new PatternDrawManager();
+	
 	SymbolManager symbolManager;
 	
 	public HouseDrawer(){
 		symbolManager = new SymbolManager();
-		
 //		houseColors.put("Food",TColor.newRandom());
 ////		houseColors.put("Spanish Restaurants",TColor.newRandom());
 ////		houseColors.put("Food & Drink Shops",TColor.newRandom());
@@ -365,31 +372,47 @@ public class HouseDrawer {
 		System.out.println(houseFunctions.keySet());
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
-		try {
-//				DrawDescription d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE); 
-//			try{
-//			//		d = houseFunctions.get(catName);
-//			}catch (Exception e){
-//				d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE);
-//			}
-			java.lang.reflect.Method method = HouseDrawer.class.getMethod(houseFunctions.get(catName).background.toString().toLowerCase()+"BG",PVector.class, PVector.class, PVector.class, PVector.class, String.class); 
-			method.invoke(this, bl, br, tr, tl, catName);
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		PGraphics citymap = CityGrid.p5.citymap;
+		Matcher matcher = pattern.matcher(catName);
+		StringBuffer sb = new StringBuffer();
+		while (matcher.find()) {
+		     matcher.appendReplacement(sb, "");
+		    // s now contains "BAR"
 		}
+		matcher.appendTail(sb);
+		System.out.println(sb.toString());
+		PVector ttl = new PVector(0,0);
+		PVector ttr = new PVector(tr.x-tl.x,tr.y-tl.y);
+		PVector tbl = new PVector(0,bl.y-tl.y);
+		PVector tbr = new PVector(br.x-bl.x,br.y-tr.y+ttr.y);
+		PImage pattern = pdm.createPattern(sb.toString(), 2, 2, new PVector[]{tbl,tbr,ttr,ttl});
+		citymap.image(pattern, tl.x,tl.y);
+		drawQuad(citymap, bl, br, tr, tl, 0);
+//		try {
+////				DrawDescription d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE); 
+////			try{
+////			//		d = houseFunctions.get(catName);
+////			}catch (Exception e){
+////				d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE);
+////			}
+//			java.lang.reflect.Method method = HouseDrawer.class.getMethod(houseFunctions.get(catName).background.toString().toLowerCase()+"BG",PVector.class, PVector.class, PVector.class, PVector.class, String.class); 
+//			method.invoke(this, bl, br, tr, tl, catName);
+//		} catch (IllegalArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (SecurityException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IllegalAccessException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (InvocationTargetException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (NoSuchMethodException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 	
 	public void drawHouseOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, int size){
