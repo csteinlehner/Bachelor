@@ -362,6 +362,7 @@ public class HouseDrawer {
 		houseFunctions.put("Food Court", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 		houseFunctions.put("Seafood Restaurant", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 		houseFunctions.put("Juice Bar", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
+		System.out.println(houseFunctions.keySet());
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 		try {
@@ -371,7 +372,6 @@ public class HouseDrawer {
 //			}catch (Exception e){
 //				d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE);
 //			}
-			System.out.println(catName);
 			java.lang.reflect.Method method = HouseDrawer.class.getMethod(houseFunctions.get(catName).background.toString().toLowerCase()+"BG",PVector.class, PVector.class, PVector.class, PVector.class, String.class); 
 			method.invoke(this, bl, br, tr, tl, catName);
 		} catch (IllegalArgumentException e) {

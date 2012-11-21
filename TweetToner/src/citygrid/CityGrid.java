@@ -27,7 +27,7 @@ public class CityGrid extends PApplet{
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	
 	
-	protected static final String CITY = "berlin";
+	protected static final String CITY = "rosenheim";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
