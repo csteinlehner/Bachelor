@@ -24,7 +24,7 @@ import processing.core.PVector;
 
 public class CityGrid extends PApplet{
 
-	static final Boolean SAVE_PDF = true;		// true to save this as pdf
+	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	
 	
 	protected static final String CITY = "berlin";
@@ -56,15 +56,16 @@ public class CityGrid extends PApplet{
 	PVector offset;
 	PVector poffset;
 	PVector mouse;
-	float wheel = 1.0f;
+	float wheel = .3f;
 	float wheelMult =0.10f;
 	
 	int mapWidth;
 	int mapHeight;
 	int bottomPoint;
-	float sizeFactor = 2.2f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static float SIZE_FACTOR = 5f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
 	float heightFactor;				// wert zur normalisierung der höhenausbreitung
-	private float hourSize = 200/sizeFactor;	// breite der stunde
+	private float hourSizeOrg = 1000;
+	private float hourSize = hourSizeOrg/SIZE_FACTOR;	// breite der stunde
 
 	HouseDrawer houseDrawer;
 	
@@ -190,15 +191,16 @@ public class CityGrid extends PApplet{
 			}
 	
 			maxHours = Collections.max(tweetCountAdded.values());
-			heightFactor = 2000f/maxHours;
+			heightFactor = hourSizeOrg*10/maxHours;
 			
 //			for (int i = 0; i < 7; i++) {
 //				daystreets.add(new DayStreet(i+1, weekdaydata.get(i).t_count));
 //			}
 			
 			textFont(font);
-			mapHeight = (int)(maxHours*heightFactor/sizeFactor+200);
+			mapHeight = (int)(maxHours*heightFactor/SIZE_FACTOR+200);
 			mapWidth = (int)(hourSize*24+200);
+			println(mapWidth);
 			bottomPoint = mapHeight-50;
 			
 			createCoordinates();
@@ -255,7 +257,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
 //				if(d>0){
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/sizeFactor-dayStreetSize*2*d));
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/SIZE_FACTOR-dayStreetSize*2*d));
 //				}else{
 //					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
 //				}

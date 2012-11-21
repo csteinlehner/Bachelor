@@ -381,13 +381,17 @@ public class HouseDrawer {
 		}
 		matcher.appendTail(sb);
 		System.out.println(sb.toString());
-		PVector ttl = new PVector(0,0);
-		PVector ttr = new PVector(tr.x-tl.x,tr.y-tl.y);
-		PVector tbl = new PVector(0,bl.y-tl.y);
-		PVector tbr = new PVector(br.x-bl.x,br.y-tr.y+ttr.y);
-		PImage pattern = pdm.createPattern(sb.toString(), 2, 2, new PVector[]{tbl,tbr,ttr,ttl});
-		citymap.image(pattern, tl.x,tl.y);
+		PVector origin = calcOrigin(bl, br, tr, tl);
+		PVector size = calcCompleteSize(bl, br, tr, tl);
+		size.x = (int)Math.ceil(size.x);
+		size.y = (int)Math.ceil(size.y);
+		PImage pattern = pdm.createPattern(sb.toString(), (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
+		citymap.image(pattern, origin.x, origin.y);
+		citymap.pushStyle();
+		citymap.stroke(255);
+		citymap.strokeWeight(4);
 		drawQuad(citymap, bl, br, tr, tl, 0);
+		citymap.popStyle();
 //		try {
 ////				DrawDescription d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE); 
 ////			try{
@@ -592,6 +596,30 @@ public class HouseDrawer {
 		float x = br.x-bl.x;
 		float y = br.y-tr.y;
 		return new PVector(x,y);
+	}
+	public PVector calcCompleteSize(PVector bl, PVector br, PVector tr, PVector tl){
+		
+		float x = br.x-bl.x;
+		float y1 = bl.y-tr.y;
+		float y2 = br.y-tl.y;
+		
+		return new PVector(x,Math.max(y1,y2));
+	}
+	
+	public PVector calcOrigin(PVector bl, PVector br, PVector tr, PVector tl){
+		float x = Math.min(bl.x, tl.x);
+		float y = Math.min(tl.y, tr.y);
+		return new PVector(x, y);
+	}
+	
+	public PVector[] calcNormalizedQuad(PVector bl, PVector br, PVector tr, PVector tl){
+		PVector origin = calcOrigin(bl, br, tr, tl);
+		float yMove = tl.y-origin.y;
+		PVector ttl = new PVector(0,0+yMove);
+		PVector ttr = new PVector(tr.x-tl.x,(tr.y-tl.y)+yMove);
+		PVector tbl = new PVector(0,bl.y-tl.y+yMove);
+		PVector tbr = new PVector(br.x-bl.x,br.y-tr.y+ttr.y);
+		return new PVector[]{tbl, tbr, ttr, ttl};
 	}
 	
 	public void drawQuad(PGraphics target, PVector bl, PVector br, PVector tr, PVector tl, float scaleF){

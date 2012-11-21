@@ -20,11 +20,13 @@ public class PatternDrawManager {
 	    }
 	}
 	
-	public PImage createPattern(String name, int sizeX, int sizeY, PVector[] maskShape){
+	public PImage createPattern(String name, int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
 		String path = iconPaths.get(name);
 		PImage tile = CityGrid.p5.loadImage(path);
-		
-		PGraphics mask = CityGrid.p5.createGraphics(tile.width*sizeX, tile.height*sizeY, PApplet.JAVA2D);
+		tile.resize(tileSize, tileSize);
+		int tilesX = (int)Math.ceil(sizeX/(float)tile.width);
+		int tilesY = (int)Math.ceil(sizeY/(float)tile.height);
+		PGraphics mask = CityGrid.p5.createGraphics(tilesX*tile.width, tilesY*tile.height, PApplet.JAVA2D);
 		mask.beginDraw();
 		mask.background(0);
 		mask.fill(255);
@@ -36,25 +38,24 @@ public class PatternDrawManager {
 		mask.endDraw();
 		PImage piMask = mask.get(0, 0, mask.width, mask.height);
 		
-		PGraphics pattern = CityGrid.p5.createGraphics(tile.width*sizeX, tile.height*sizeY, PApplet.JAVA2D);
+		PGraphics pattern = CityGrid.p5.createGraphics(tilesX*tile.width, tilesY*tile.height, PApplet.JAVA2D);
 		pattern.beginDraw();
 		pattern.background(255);
 		pattern.smooth();
 		pattern.tint(255,0,0,255);
-		pattern.scale(0.3f);
-		for (int i = 0; i < sizeX; i++) {
-			for (int j = 0; j < sizeY; j++) {
+		for (int i = 0; i < tilesX; i++) {
+			for (int j = 0; j < tilesY; j++) {
 				pattern.image(tile,tile.width*i,tile.height*j);	
 			}	
 		}
-		pattern.stroke(0,0,255);
-		pattern.strokeWeight(2);
-		pattern.noFill();
-		pattern.beginShape();
-		for (int i = 0; i < maskShape.length; i++) {
-			pattern.vertex(maskShape[i].x,maskShape[i].y);
-		}
-		pattern.endShape();
+//		pattern.stroke(0,0,255);
+//		pattern.strokeWeight(2);
+//		pattern.noFill();
+//		pattern.beginShape();
+//		for (int i = 0; i < maskShape.length; i++) {
+//			pattern.vertex(maskShape[i].x,maskShape[i].y);
+//		}
+//		pattern.endShape();
 		pattern.endDraw();
 		PImage piPattern = pattern.get();
 		piPattern.mask(piMask);
