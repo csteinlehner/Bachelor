@@ -69,10 +69,7 @@ public void setup(){
 	
 }
 
-public void draw(){
-	
-	
-}
+
 
 private HashMap<String, Integer> splitWords(String top_string){
 	HashMap<String, Integer> topWords = new HashMap<String, Integer>();
@@ -91,12 +88,6 @@ private HashMap<String, Integer> splitWords(String top_string){
 	return topWords;
 }
 
-
-public static void main(String args[])
-{
-	//PApplet.main(new String[] { "--present", mailgod.MailGod.class.getName()});
-	PApplet.main(new String[] {  analyse.TopWords.class.getName()});
-}
 }
 
 

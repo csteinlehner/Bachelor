@@ -1,18 +1,18 @@
-package citygrid;
+package citiygrid.dataObjects;
 
 import java.util.HashMap;
 
 public class FsqData {
-	int minute, day, hour;
-	int t_count, t_count_added, f_count;
-	float categoryParentsParts = 0;
-	float categoryParts = 0;
-	HashMap<String, Integer> categories;
-	HashMap<String, Integer> categoryParents;
-	HashMap<String, Float> categoryParentsPercent = new HashMap<String, Float>();
-	HashMap<String, Float> categoryPercent = new HashMap<String, Float>();
-	Boolean hasCategories = false;
-	Boolean hasCategoryParents = false;
+	public int minute, day, hour;
+	public int t_count, t_count_added, f_count;
+	public float categoryParentsParts = 0;
+	public float categoryParts = 0;
+	public HashMap<String, Integer> categories;
+	public HashMap<String, Integer> categoryParents;
+	public HashMap<String, Float> categoryParentsPercent = new HashMap<String, Float>();
+	public HashMap<String, Float> categoryPercent = new HashMap<String, Float>();
+	public Boolean hasCategories = false;
+	public Boolean hasCategoryParents = false;
 	public FsqData(int day, int minute, int hour, int t_count, int f_count){
 		this.day = day;
 		this.minute = minute;

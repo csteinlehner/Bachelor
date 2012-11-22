@@ -1,5 +1,6 @@
 package citygrid;
 
+import citiygrid.dataObjects.FsqData;
 import processing.core.PVector;
 
 public class HouseCoordinate {
