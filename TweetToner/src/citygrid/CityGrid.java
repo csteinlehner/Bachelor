@@ -104,7 +104,6 @@ public class CityGrid extends PApplet{
 		
 		smooth();
 		font = createFont("Axel-Bold",20);
-		RG.init(this);
 			try {
 			
 			CsvReader csvData = new CsvReader(csvPath,',',Charset.forName("UTF-8"));
@@ -253,6 +252,7 @@ public class CityGrid extends PApplet{
 		
 		// draw StreetNames
 		drawStreetNames();
+		drawDayStreetNames();
 		
 		
 		if(SAVE_PDF){
@@ -545,6 +545,40 @@ public class CityGrid extends PApplet{
 		citymap.popStyle();
 	}
 	
+	private void drawDayStreetNames(){
+		HashMap<Integer, String> dayNames = new HashMap<Integer, String>();
+		dayNames.put(0, "Monday Road");
+		dayNames.put(1, "Tuesday Road");
+		dayNames.put(2, "Wednesday Road");
+		dayNames.put(3, "Thursday Road");
+		dayNames.put(4, "Friday Road");
+		dayNames.put(5, "Saturday Road");
+		dayNames.put(6, "Sunday Road");
+		citymap.textAlign(CENTER);
+		for (int d = 0; d < 7; d++) {
+			for (int h = 1; h <= 24; h+=2) {
+				if(h>0 && h<24){
+					PVector p1 = coordinates.get(d, h-1);
+					PVector p2 = coordinates.get(d, h);
+					float dev = angle(p1, p2);
+					PVector mid = PVector.add(p1,PVector.div(PVector.sub(p2, p1),2f));
+					citymap.pushMatrix();
+					mid.y += dayStreetSize/2;
+					citymap.translate(mid.x, mid.y);					
+					citymap.rotate(-dev+HALF_PI);
+					citymap.text(dayNames.get(d),0,0);
+					citymap.popMatrix();
+					//citymap.line(p1.x,p1.y,p2.x,p2.y);
+				}
+			}
+		}
+	}
+	
+	float angle(PVector v1, PVector v2) {
+		  float a = atan2(v2.x - v1.x, v2.y - v1.y);
+		  if (a < 0) a += TWO_PI;
+		  return a;
+	}
 	
 	public static void main(String args[])
 	{
