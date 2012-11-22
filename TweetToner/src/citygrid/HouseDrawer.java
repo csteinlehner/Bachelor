@@ -2,14 +2,9 @@ package citygrid;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
-import processing.core.PGraphics2D;
 import processing.core.PImage;
 import processing.core.PShape;
 import processing.core.PVector;
@@ -19,7 +14,6 @@ public class HouseDrawer {
 	HashMap<String, TColor> houseColors = new HashMap<String, TColor>();
 	HashMap<String, DrawDescription> houseFunctions = new HashMap<String, DrawDescription>();
 	
-	Pattern pattern = Pattern.compile("\\s+|\\/|&|\\(|\\)|'");
 	
 	PatternDrawManager pdm = new PatternDrawManager();
 	
@@ -373,19 +367,12 @@ public class HouseDrawer {
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 		PGraphics citymap = CityGrid.p5.citymap;
-		Matcher matcher = pattern.matcher(catName);
-		StringBuffer sb = new StringBuffer();
-		while (matcher.find()) {
-		     matcher.appendReplacement(sb, "");
-		    // s now contains "BAR"
-		}
-		matcher.appendTail(sb);
-		System.out.println(sb.toString());
+		
 		PVector origin = calcOrigin(bl, br, tr, tl);
 		PVector size = calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
-		PImage pattern = pdm.createPattern(sb.toString(), (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
+		PImage pattern = pdm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
 		citymap.image(pattern, origin.x, origin.y);
 		citymap.pushStyle();
 		citymap.stroke(255);
