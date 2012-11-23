@@ -14,12 +14,15 @@ public class HouseDrawer {
 	HashMap<String, TColor> houseColors = new HashMap<String, TColor>();
 	HashMap<String, DrawDescription> houseFunctions = new HashMap<String, DrawDescription>();
 	
-	
-	PatternDrawManager pdm = new PatternDrawManager();
-	
+	DrawManager dm;
 	SymbolManager symbolManager;
 	
 	public HouseDrawer(){
+		if(CityGrid.DRAW_TYPE==CityGrid.DrawType.PATTERN){
+			dm = new PatternDrawManager();
+		}else{ 
+			dm = new SatelliteDrawManager();
+		}
 		symbolManager = new SymbolManager();
 //		houseColors.put("Food",TColor.newRandom());
 ////		houseColors.put("Spanish Restaurants",TColor.newRandom());
@@ -372,7 +375,7 @@ public class HouseDrawer {
 		PVector size = calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
-		PImage pattern = pdm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
+		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
 		citymap.image(pattern, origin.x, origin.y);
 		citymap.pushStyle();
 		citymap.stroke(255);

@@ -29,8 +29,13 @@ import processing.core.PVector;
 import toxi.color.TColor;
 
 public class CityGrid extends PApplet{
+	public enum DrawType{
+		PATTERN, SATELLITE;
+	}
 
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
+	static final Boolean SAVE_GRAPHIC = true;
+	static final DrawType DRAW_TYPE = DrawType.PATTERN; 
 	
 	
 	protected static final String CITY = "berlin";
@@ -235,9 +240,9 @@ public class CityGrid extends PApplet{
 		calcHouseArea();
 
 		//// draw House Background/Patterns
-//		for(HouseCoordinate c : houseCoordinates){
-//			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
-//		}
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
 		
 		//// draw Streets
 		drawHourStreets(color(110,100,100), hourStreetSize);
@@ -259,6 +264,11 @@ public class CityGrid extends PApplet{
 			citymap.dispose();
 		}
 		citymap.endDraw();
+		
+		if(SAVE_GRAPHIC){
+			citymap.save("citygrid_shots/"+CITY+"_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".png");
+			exit();
+		}
 		if(SAVE_PDF){
 			exit();
 		}
@@ -613,3 +623,5 @@ public class CityGrid extends PApplet{
 	  }
 	}
 }
+
+
