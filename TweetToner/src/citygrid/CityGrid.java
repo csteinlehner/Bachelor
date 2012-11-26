@@ -15,6 +15,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Vector;
 
+import org.gicentre.handy.HandyRenderer;
+
 import citiygrid.dataObjects.FsqData;
 
 import com.csvreader.CsvReader;
@@ -37,6 +39,8 @@ public class CityGrid extends PApplet{
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final DrawType DRAW_TYPE = DrawType.PATTERN;
+	
+	static HandyRenderer h;
 	
 	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
 	static final int ICON_SIZE = 44;
@@ -102,7 +106,7 @@ public class CityGrid extends PApplet{
 		p5 = this;
 		size(1200,900, JAVA2D);
 		frameRate(30);
-		
+		h = new HandyRenderer(this);
 		houseDrawer = new HouseDrawer();
 		
 		zoom = 1.0f;

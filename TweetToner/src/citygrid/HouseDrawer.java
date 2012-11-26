@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 import javax.security.auth.callback.TextOutputCallback;
 
+import org.gicentre.handy.HandyRenderer;
+
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -381,8 +383,8 @@ public class HouseDrawer {
 		citymapBG.image(pattern, origin.x, origin.y);
 		citymapBG.pushStyle();
 		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
-		citymapBG.stroke(255);
-		citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
+		//citymapBG.stroke(255);
+		//citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
 		drawQuad(citymapBG, bl, br, tr, tl, 0);
 		citymapBG.popStyle();
 //		try {
@@ -625,13 +627,21 @@ public class HouseDrawer {
 		PVector tbr = interpolateTo(br, mid, scaleF);
 		PVector ttr = interpolateTo(tr, mid, scaleF);
 		PVector ttl = interpolateTo(tl, mid, scaleF);
-		target.beginShape();
-		target.vertex(tbl.x, tbl.y);
-		target.vertex(tbr.x, tbr.y);
-		target.vertex(ttr.x, ttr.y);
-		target.vertex(ttl.x, ttl.y);
-		target.vertex(tbl.x, tbl.y);
-		target.endShape();
+		HandyRenderer h = CityGrid.h;
+		h.setGraphics(target);
+		h.setFillGap(0.5f);
+		h.setFillWeight(0.1f);
+		//h.setFillColour(TColor.newGray(2).toARGB());
+//		target.fill(255,0,0);
+		target.stroke(255);
+		h.quad(tbl.x, tbl.y, tbr.x, tbr.y, ttr.x, ttr.y, ttl.x, ttl.y);
+//		target.beginShape();
+//		target.vertex(tbl.x, tbl.y);
+//		target.vertex(tbr.x, tbr.y);
+//		target.vertex(ttr.x, ttr.y);
+//		target.vertex(ttl.x, ttl.y);
+//		target.vertex(tbl.x, tbl.y);
+//		target.endShape();
 	}
 	
 	public PVector interpolateTo(PVector v1, PVector v2, float f){

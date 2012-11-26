@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.gicentre.handy.HandyRenderer;
+
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -51,11 +53,21 @@ public class PatternDrawManager implements DrawManager{
 		
 		PGraphics pattern = CityGrid.p5.createGraphics(tilesX*tile.width, tilesY*tile.height, PApplet.JAVA2D);
 		pattern.beginDraw();
-		pattern.background(255,255);
+		HandyRenderer h = CityGrid.h;
+		
+		//pattern.background(255,255);
 		TColor c = new TColor(iconColors.get(categoryParents.get(catName)));
-		pattern.background(c.toARGB());
+		pattern.fill(c.toARGB());
+		pattern.noStroke();
+		//pattern.background(c.toARGB());
 		pattern.smooth();
-		pattern.tint(c.getDarkened(0.3f).toARGB());
+		h.setGraphics(pattern);
+		h.beginShape();
+		for (int i = 0; i < maskShape.length; i++) {
+			h.vertex(maskShape[i].x,maskShape[i].y);
+		}
+		h.endShape();
+		//pattern.tint(c.getDarkened(0.3f).toARGB());
 		for (int i = 0; i < tilesX; i++) {
 			for (int j = 0; j < tilesY; j++) {
 				pattern.image(tile,tile.width*i,tile.height*j);	
