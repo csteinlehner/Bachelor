@@ -3,6 +3,8 @@ package citygrid;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
+import javax.security.auth.callback.TextOutputCallback;
+
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -378,8 +380,9 @@ public class HouseDrawer {
 		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
 		citymapBG.image(pattern, origin.x, origin.y);
 		citymapBG.pushStyle();
+		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
 		citymapBG.stroke(255);
-		citymapBG.strokeWeight(4);
+		citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
 		drawQuad(citymapBG, bl, br, tr, tl, 0);
 		citymapBG.popStyle();
 //		try {

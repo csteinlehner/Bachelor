@@ -34,11 +34,11 @@ public class CityGrid extends PApplet{
 	}
 
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
-	static final Boolean SAVE_BACKGROUND = true; // export just background as png
+	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final DrawType DRAW_TYPE = DrawType.PATTERN;
 	
-	public static final float SIZE_FACTOR = 1f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
 	static final int ICON_SIZE = 44;
 	
 	
@@ -52,8 +52,10 @@ public class CityGrid extends PApplet{
 	
 	private PFont font;
 
-	float dayStreetSize = 12f;
-	float hourStreetSize = 8f;
+	static final float DAY_STREET_SIZE = 10f;
+	static final float HOUR_STREET_SIZE = 8f;
+	static final float BLOCK_STREET_SIZE = 4f;
+	
 	
 	
 	PGraphics citymap; 
@@ -267,10 +269,16 @@ public class CityGrid extends PApplet{
 		
 		
 		//// draw Streets
-		drawHourStreets(color(110,100,100), hourStreetSize);
-		drawDayStreets(color(110,100,100), dayStreetSize);
-		drawHourStreets(color(255,240,230), hourStreetSize-2f);
-		drawDayStreets(color(255,253,139), dayStreetSize-2f);
+//		drawHourStreets(color(110,100,100), hourStreetSize);
+//		drawDayStreets(color(110,100,100), dayStreetSize);
+//		drawHourStreets(color(255,240,230), hourStreetSize-2f);
+//		drawDayStreets(color(255,253,139), dayStreetSize-2f);
+//		drawHourStreets(TColor.newHex("4C4C41").toARGB(), HOUR_STREET_SIZE);
+//		drawDayStreets(TColor.newHex("38382E").toARGB(), DAY_STREET_SIZE);
+//		drawHourStreets(TColor.newHex("F3E4E7").toARGB(), HOUR_STREET_SIZE-2f);
+//		drawDayStreets(TColor.newHex("DECFD1").toARGB(), DAY_STREET_SIZE-2f);
+		drawHourStreets(color(255), HOUR_STREET_SIZE);
+		drawDayStreets(color(255), DAY_STREET_SIZE);
 		
 		//// draw House Overlay
 		for(HouseCoordinate c : houseCoordinates){
@@ -311,7 +319,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
 //				if(d>0){
-					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/SIZE_FACTOR-dayStreetSize*2*d));
+					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint-tweetCountAdded.get(h, d)*heightFactor/SIZE_FACTOR-DAY_STREET_SIZE*2*d));
 //				}else{
 //					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
 //				}
@@ -514,7 +522,7 @@ public class CityGrid extends PApplet{
 					PVector p1 = coordinates.get(d-1,h);
 					PVector p2 = coordinates.get(d,h);
 					PVector mid = PVector.add(p1,PVector.div(PVector.sub(p2, p1),2f));
-					mid.x+=hourStreetSize/2;
+					mid.x+=HOUR_STREET_SIZE/2;
 					String streetName = streetNameDrawer.getStreetName(d, h*60);
 					drawStreetName(streetName, mid);
 					//citymap.line(p1.x,p1.y,p2.x,p2.y);
@@ -522,7 +530,7 @@ public class CityGrid extends PApplet{
 					PVector p2 = coordinates.get(d,h);
 					PVector p1 = new PVector(p2.x, bottomPoint);
 					PVector mid = PVector.add(p1,PVector.div(PVector.sub(p2, p1),2f));
-					mid.x+=hourStreetSize/2;
+					mid.x+=HOUR_STREET_SIZE/2;
 					String streetName = streetNameDrawer.getStreetName(d, h*60);
 					drawStreetName(streetName, mid);
 
@@ -594,7 +602,7 @@ public class CityGrid extends PApplet{
 					float dev = angle(p1, p2);
 					PVector mid = PVector.add(p1,PVector.div(PVector.sub(p2, p1),2f));
 					citymap.pushMatrix();
-					mid.y += dayStreetSize/2;
+					mid.y += DAY_STREET_SIZE/2;
 					citymap.translate(mid.x, mid.y);					
 					citymap.rotate(-dev+HALF_PI);
 					citymap.text(dayNames.get(d),0,0);
