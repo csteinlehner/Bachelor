@@ -13,7 +13,7 @@ import processing.pdf.*;
 
 public class ColorV1 extends PApplet{
 	
-	private static final String CITY = "sanfrancisco";
+	private static final String CITY = "berlin";
 	
 	private static String csvPath = "data/instagram_top_color/instagram_top_color_time_"+CITY+".csv";
 	

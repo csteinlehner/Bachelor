@@ -51,6 +51,7 @@ public class PatternDrawManager implements DrawManager{
 		
 		PGraphics pattern = CityGrid.p5.createGraphics(tilesX*tile.width, tilesY*tile.height, PApplet.JAVA2D);
 		pattern.beginDraw();
+		pattern.background(255,255);
 		TColor c = new TColor(iconColors.get(categoryParents.get(catName)));
 		pattern.background(c.toARGB());
 		pattern.smooth();

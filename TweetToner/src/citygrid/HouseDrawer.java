@@ -369,19 +369,19 @@ public class HouseDrawer {
 		System.out.println(houseFunctions.keySet());
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
-		PGraphics citymap = CityGrid.p5.citymap;
+		PGraphics citymapBG = CityGrid.p5.citymapBG;
 		
 		PVector origin = calcOrigin(bl, br, tr, tl);
 		PVector size = calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
-		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(88/CityGrid.SIZE_FACTOR));
-		citymap.image(pattern, origin.x, origin.y);
-		citymap.pushStyle();
-		citymap.stroke(255);
-		citymap.strokeWeight(4);
-		drawQuad(citymap, bl, br, tr, tl, 0);
-		citymap.popStyle();
+		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
+		citymapBG.image(pattern, origin.x, origin.y);
+		citymapBG.pushStyle();
+		citymapBG.stroke(255);
+		citymapBG.strokeWeight(4);
+		drawQuad(citymapBG, bl, br, tr, tl, 0);
+		citymapBG.popStyle();
 //		try {
 ////				DrawDescription d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE); 
 ////			try{

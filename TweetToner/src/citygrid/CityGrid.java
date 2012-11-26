@@ -34,8 +34,12 @@ public class CityGrid extends PApplet{
 	}
 
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
-	static final Boolean SAVE_GRAPHIC = true;
-	static final DrawType DRAW_TYPE = DrawType.PATTERN; 
+	static final Boolean SAVE_BACKGROUND = true; // export just background as png
+	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
+	static final DrawType DRAW_TYPE = DrawType.PATTERN;
+	
+	public static final float SIZE_FACTOR = 1f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	static final int ICON_SIZE = 44;
 	
 	
 	protected static final String CITY = "berlin";
@@ -51,7 +55,9 @@ public class CityGrid extends PApplet{
 	float dayStreetSize = 12f;
 	float hourStreetSize = 8f;
 	
+	
 	PGraphics citymap; 
+	PGraphics citymapBG;
 	
 	private static final int  HOURS_INTERVAL = 30;
 	private static final int DAY_MINUTES = 60*24-HOURS_INTERVAL;
@@ -73,7 +79,6 @@ public class CityGrid extends PApplet{
 	int mapWidth;
 	int mapHeight;
 	int bottomPoint;
-	public static float SIZE_FACTOR = 5f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
 	float heightFactor;				// wert zur normalisierung der höhenausbreitung
 	private float hourSizeOrg = 1000;
 	private float hourSize = hourSizeOrg/SIZE_FACTOR;	// breite der stunde
@@ -93,7 +98,7 @@ public class CityGrid extends PApplet{
 	
 	public void setup(){
 		p5 = this;
-		size(1200,900);
+		size(1200,900, JAVA2D);
 		frameRate(30);
 		
 		houseDrawer = new HouseDrawer();
@@ -227,22 +232,39 @@ public class CityGrid extends PApplet{
 	private void drawMap(){
 		if(SAVE_PDF){
 			citymap = createGraphics(mapWidth,mapHeight,PDF,"citygrid_shots/"+CITY+"_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".pdf");
+		}else if(SAVE_BACKGROUND){
+			
 		}else{
 			citymap = createGraphics(mapWidth,mapHeight,JAVA2D);
 		}
-		citymap.beginDraw();
-		citymap.smooth();
-//		citymap.background(220,230,220);
-		citymap.background(255);
-		citymap.translate(10,10);
-		
+		if(!SAVE_BACKGROUND){
+			citymap.beginDraw();
+			citymap.smooth();
+	//		citymap.background(220,230,220);
+			citymap.background(255);
+			citymap.translate(10,10);
+			citymap.noFill();
+		}
+		citymapBG = createGraphics(mapWidth,mapHeight,JAVA2D);
 		
 		calcHouseArea();
 
 		//// draw House Background/Patterns
+		citymapBG.beginDraw();
+		citymapBG.background(255);
+		citymapBG.smooth();
+		citymapBG.noFill();
 		for(HouseCoordinate c : houseCoordinates){
 			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
 		}
+		citymapBG.endDraw();
+		if(SAVE_BACKGROUND){
+			citymapBG.save("citygrid_shots/"+CITY+"_background_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".png");
+			println("saved background!");
+			exit();
+		}
+		citymap.image(citymapBG,0,0);
+		
 		
 		//// draw Streets
 		drawHourStreets(color(110,100,100), hourStreetSize);
@@ -298,7 +320,7 @@ public class CityGrid extends PApplet{
 	}
 	
 	private void calcHouseArea(){
-		citymap.fill(150,150,150);
+//		citymap.fill(150,150,150);
 		int hourLength = fsqCount.columnKeySet().size();
 		int dayLength = fsqCount.rowKeySet().size();
 		for (int d = 0; d < dayLength; d++) {
@@ -411,11 +433,10 @@ public class CityGrid extends PApplet{
 		PVector ttl = new PVector(tl.x, tl.y);
 		float lLength = tbl.y-ttl.y;
 		float rLength = tbr.y-ttr.y;
-		
-		citymap.noFill();
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
+
 		for( String key : entry.categories.keySet()){
 			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
 			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
