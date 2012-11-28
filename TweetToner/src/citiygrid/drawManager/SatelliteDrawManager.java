@@ -1,6 +1,9 @@
-package citygrid;
+package citiygrid.drawManager;
 
 import java.util.HashMap;
+
+import citygrid.CityGrid;
+import citygrid.FsqNameHelper;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;

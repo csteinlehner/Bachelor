@@ -1,4 +1,4 @@
-package citygrid;
+package citiygrid.drawManager;
 
 import java.io.File;
 import java.util.HashMap;
@@ -6,6 +6,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.gicentre.handy.HandyRenderer;
+
+import citygrid.CityGrid;
+import citygrid.FsqNameHelper;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
@@ -53,7 +56,7 @@ public class PatternDrawManager implements DrawManager{
 		
 		PGraphics pattern = CityGrid.p5.createGraphics(tilesX*tile.width, tilesY*tile.height, PApplet.JAVA2D);
 		pattern.beginDraw();
-		HandyRenderer h = CityGrid.h;
+		HandyRenderer h = CityGrid.SKETCH_RENDER;
 		
 		//pattern.background(255,255);
 		TColor c = new TColor(iconColors.get(categoryParents.get(catName)));

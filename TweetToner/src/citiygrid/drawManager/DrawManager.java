@@ -1,4 +1,4 @@
-package citygrid;
+package citiygrid.drawManager;
 
 import processing.core.PImage;
 import processing.core.PVector;

@@ -7,6 +7,11 @@ import javax.security.auth.callback.TextOutputCallback;
 
 import org.gicentre.handy.HandyRenderer;
 
+import citiygrid.drawManager.DrawManager;
+import citiygrid.drawManager.PatternDrawManager;
+import citiygrid.drawManager.SatelliteDrawManager;
+import citiygrid.drawManager.SketchDrawManager;
+
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -24,8 +29,10 @@ public class HouseDrawer {
 	public HouseDrawer(){
 		if(CityGrid.DRAW_TYPE==CityGrid.DrawType.PATTERN){
 			dm = new PatternDrawManager();
-		}else{ 
+		}else if(CityGrid.DRAW_TYPE==CityGrid.DrawType.SATELLITE){
 			dm = new SatelliteDrawManager();
+		}else{
+			dm = new SketchDrawManager();
 		}
 		symbolManager = new SymbolManager();
 //		houseColors.put("Food",TColor.newRandom());
@@ -375,11 +382,11 @@ public class HouseDrawer {
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
 		PGraphics citymapBG = CityGrid.p5.citymapBG;
 		
-		PVector origin = calcOrigin(bl, br, tr, tl);
-		PVector size = calcCompleteSize(bl, br, tr, tl);
+		PVector origin = PVectorCalc.calcOrigin(bl, br, tr, tl);
+		PVector size = PVectorCalc.calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
-		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
+		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
 		citymapBG.image(pattern, origin.x, origin.y);
 		citymapBG.pushStyle();
 		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
@@ -475,8 +482,8 @@ public class HouseDrawer {
 			citymap.fill(225,220,210);
 			citymap.noStroke();
 			drawQuad(citymap, bl, br, tr, tl, 0);
-			PVector mid = calcMid(br, tl);
-			PVector size = calcSize(bl, br, tr, tl);
+			PVector mid = PVectorCalc.calcMid(br, tl);
+			PVector size = PVectorCalc.calcSize(bl, br, tr, tl);
 			citymap.fill(100);
 			drawQuad(citymap, bl, br, tr, tl, 0.2f);
 			citymap.fill(225,220,210);
@@ -553,7 +560,7 @@ public class HouseDrawer {
 			
 		public void symbolOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, Integer size){
 			PGraphics citymap = CityGrid.p5.citymap;
-			PVector mid =calcMid(br, tl);
+			PVector mid = PVectorCalc.calcMid(br, tl);
 			citymap.pushStyle();
 			citymap.fill(0);
 			citymap.shapeMode(PApplet.CENTER);
@@ -580,54 +587,20 @@ public class HouseDrawer {
 	}
 	
 	
-	public PVector calcMid(PVector br, PVector tl){
-		PVector mid = PVector.sub(br, tl);
-		mid.div(2);
-		mid.add(tl);
-		return mid;
-	}
-	
-	public PVector calcSize(PVector bl, PVector br, PVector tr, PVector tl){
-		float x = br.x-bl.x;
-		float y = br.y-tr.y;
-		return new PVector(x,y);
-	}
-	public PVector calcCompleteSize(PVector bl, PVector br, PVector tr, PVector tl){
-		
-		float x = br.x-bl.x;
-		float y1 = bl.y-tr.y;
-		float y2 = br.y-tl.y;
-		
-		return new PVector(x,Math.max(y1,y2));
-	}
-	
-	public PVector calcOrigin(PVector bl, PVector br, PVector tr, PVector tl){
-		float x = Math.min(bl.x, tl.x);
-		float y = Math.min(tl.y, tr.y);
-		return new PVector(x, y);
-	}
-	
-	public PVector[] calcNormalizedQuad(PVector bl, PVector br, PVector tr, PVector tl){
-		PVector origin = calcOrigin(bl, br, tr, tl);
-		float yMove = tl.y-origin.y;
-		PVector ttl = new PVector(0,0+yMove);
-		PVector ttr = new PVector(tr.x-tl.x,(tr.y-tl.y)+yMove);
-		PVector tbl = new PVector(0,bl.y-tl.y+yMove);
-		PVector tbr = new PVector(br.x-bl.x,br.y-tr.y+ttr.y);
-		return new PVector[]{tbl, tbr, ttr, ttl};
-	}
+
+
 	
 	public void drawQuad(PGraphics target, PVector bl, PVector br, PVector tr, PVector tl, float scaleF){
 //		PVector bltr = PVector.sub(tr, bl);
 //		PVector brtl = PVector.sub(tl, br);
 //		bltbltr.mult(scaleF);
 //		brtl.mult(scaleF);
-		PVector mid = calcMid(br, tl);
-		PVector tbl = interpolateTo(bl, mid, scaleF);
-		PVector tbr = interpolateTo(br, mid, scaleF);
-		PVector ttr = interpolateTo(tr, mid, scaleF);
-		PVector ttl = interpolateTo(tl, mid, scaleF);
-		HandyRenderer h = CityGrid.h;
+		PVector mid = PVectorCalc.calcMid(br, tl);
+		PVector tbl = PVectorCalc.interpolateTo(bl, mid, scaleF);
+		PVector tbr = PVectorCalc.interpolateTo(br, mid, scaleF);
+		PVector ttr = PVectorCalc.interpolateTo(tr, mid, scaleF);
+		PVector ttl = PVectorCalc.interpolateTo(tl, mid, scaleF);
+		HandyRenderer h = CityGrid.SKETCH_RENDER;
 		h.setGraphics(target);
 		h.setFillGap(0.5f);
 		h.setFillWeight(0.1f);
@@ -644,7 +617,5 @@ public class HouseDrawer {
 //		target.endShape();
 	}
 	
-	public PVector interpolateTo(PVector v1, PVector v2, float f){
-		  return new PVector(v1.x + (v2.x - v1.x) * f, v1.y + (v2.y - v1.y) * f);
-	}
+
 }
