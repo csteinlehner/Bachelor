@@ -1,337 +1,337 @@
-time,day,hour,minute,count,fsq_count,CategorieParents,Categories,Venues
-Mon Sep 03 00:00:00 UTC 2012,0,0,0,23,0,"","",""
-Mon Sep 03 00:30:00 UTC 2012,0,0,30,15,0,"","",""
-Mon Sep 03 01:00:00 UTC 2012,0,1,60,14,0,"","",""
-Mon Sep 03 01:30:00 UTC 2012,0,1,90,1,0,"","",""
-Mon Sep 03 02:00:00 UTC 2012,0,2,120,4,0,"","",""
-Mon Sep 03 02:30:00 UTC 2012,0,2,150,1,0,"","",""
-Mon Sep 03 03:00:00 UTC 2012,0,3,180,3,0,"","",""
-Mon Sep 03 03:30:00 UTC 2012,0,3,210,2,0,"","",""
-Mon Sep 03 04:00:00 UTC 2012,0,4,240,6,0,"","",""
-Mon Sep 03 04:30:00 UTC 2012,0,4,270,6,0,"","",""
-Mon Sep 03 05:00:00 UTC 2012,0,5,300,3,0,"","",""
-Mon Sep 03 05:30:00 UTC 2012,0,5,330,4,0,"","",""
-Mon Sep 03 06:00:00 UTC 2012,0,6,360,7,0,"","",""
-Mon Sep 03 06:30:00 UTC 2012,0,6,390,5,0,"","",""
-Mon Sep 03 07:00:00 UTC 2012,0,7,420,8,1,Medical Centers=1_Professional & Other Places=1,Emergency Room=1,Stanford Hospital Emergency Department=1
-Mon Sep 03 07:30:00 UTC 2012,0,7,450,18,2,Professional & Other Places=1_Food=1,Building=1_Fast Food Restaurant=1,McDonald's=1_Facebook=1
-Mon Sep 03 08:00:00 UTC 2012,0,8,480,31,1,Food=1,Coffee Shop=1,Starbucks=1
-Mon Sep 03 08:30:00 UTC 2012,0,8,510,6,1,Shops & Services=1,Electronics Store=1,Microsoft Store=1
-Mon Sep 03 09:00:00 UTC 2012,0,9,540,10,1,Shops & Services=1,Gym / Fitness Center=1,Core Studio=1
-Mon Sep 03 09:30:00 UTC 2012,0,9,570,11,0,"","",""
-Mon Sep 03 10:00:00 UTC 2012,0,10,600,18,1,Professional & Other Places=1,Office=1,AOL West Coast=1
-Mon Sep 03 10:30:00 UTC 2012,0,10,630,14,2,Shops & Services=1_Offices=1_Food=1_Professional & Other Places=1,Grocery Store=1_Tech Startup=1,Mixbook HQ=1_Trader Joe's=1
-Mon Sep 03 11:00:00 UTC 2012,0,11,660,20,2,Outdoors & Recreation=1_Shops & Services=2,Mobile Phone Shop=1_Harbor / Marina=1_Electronics Store=1,Shoreline Park & Lake=1_AT&T=1
-Mon Sep 03 11:30:00 UTC 2012,0,11,690,7,0,"","",""
-Mon Sep 03 12:00:00 UTC 2012,0,12,720,27,3,Food=2_Residences=1,Home (private)=1_Coffee Shop=1_American Restaurant=1,Casa de Duncaloo=1_Max's Restaurant=1_Starbucks=1
-Mon Sep 03 12:30:00 UTC 2012,0,12,750,11,1,Food=1,American Restaurant=1,Madera=1
-Mon Sep 03 13:00:00 UTC 2012,0,13,780,7,1,"","",Nine Lives Foundation=1
-Mon Sep 03 13:30:00 UTC 2012,0,13,810,10,1,Food=1,Mexican Restaurant=1,Milagros Cantina=1
-Mon Sep 03 14:00:00 UTC 2012,0,14,840,11,1,Food=1,Juice Bar=1,Jamba Juice=1
-Mon Sep 03 14:30:00 UTC 2012,0,14,870,0,0,"","",""
-Mon Sep 03 15:00:00 UTC 2012,0,15,900,0,0,"","",""
-Mon Sep 03 15:30:00 UTC 2012,0,15,930,0,0,"","",""
-Mon Sep 03 16:00:00 UTC 2012,0,16,960,23,0,"","",""
-Mon Sep 03 16:30:00 UTC 2012,0,16,990,29,5,Movie Theaters=3_Shops & Services=1_Food=1_Arts & Entertainment=3,Multiplex=2_Indie Movie Theater=1_Sporting Goods Shop=1_Ice Cream Shop=1,Cinemark Redwood Downtown 20 and XD=2_Rick's Rather Rich Ice Cream=1_Aquarius Theatre=1_Big 5 Sporting Goods=1
-Mon Sep 03 17:00:00 UTC 2012,0,17,1020,83,5,Shops & Services=1_Clothing Stores=1_Food=3_Residences=1,Burger Joint=1_Bakery=1_Residential Building (Apartment / Condo)=1_Lingerie Store=1_Sandwich Place=1,Mayfield Bakery & Cafe=1_Jeffrey's Hamburgers=1_The Melt=1_Rellas Palace=1_Victoria's Secret=1
-Mon Sep 03 17:30:00 UTC 2012,0,17,1050,52,3,Shops & Services=1_Food=2,Coffee Shop=1_Cupcake Shop=1_Spa / Massage=1,Philz Coffee=1_Watercourse Way=1_Sprinkles Cupcakes=1
-Mon Sep 03 18:00:00 UTC 2012,0,18,1080,27,2,Outdoors & Recreation=1_Food=1,Pool=1_Coffee Shop=1,Starbucks=1_Rinconada Pool=1
-Mon Sep 03 18:30:00 UTC 2012,0,18,1110,38,7,Travel & Transport=1_Professional & Other Places=1_Food=3_Arts & Entertainment=4,Performing Arts Venue=2_Hotel=1_Concert Hall=1_Music Venue=1_Event Space=1_Japanese Restaurant=1_Mexican Restaurant=1_Bakery=1,Fox Theatre=2_Sakura Teppanyaki & Sushi=1_Cafe La Tartine=1_Blossom Birth=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1_Los Altos Taqueria=1
-Mon Sep 03 19:00:00 UTC 2012,0,19,1140,20,2,Travel & Transport=1_Residences=1,Residential Building (Apartment / Condo)=1_Road=1,Alma Street=1_Stanford Villas=1
-Mon Sep 03 19:30:00 UTC 2012,0,19,1170,24,3,Colleges & Universities=2_Movie Theaters=1_College Stadiums=1_Arts & Entertainment=1,Multiplex=1_College Track=1_College Residence Hall=1,Cinemark Redwood Downtown 20 and XD=1_Cobb Track & Angell Field=1_Burbank House=1
-Mon Sep 03 20:00:00 UTC 2012,0,20,1200,30,1,Food=1,American Restaurant=1,Waterfront Restaurant=1
-Mon Sep 03 20:30:00 UTC 2012,0,20,1230,27,2,Food=2,Burger Joint=1_Dessert Shop=1,SliderBar Cafe=1_Yoppi Yogurt=1
-Mon Sep 03 21:00:00 UTC 2012,0,21,1260,20,3,Shops & Services=1_Nightlife Spots=1_Professional & Other Places=1,Bar=1_Post Office=1_Gym / Fitness Center=1,US Post Office - Menlo Park Center=1_Rudy's Pub=1_Equinox=1
-Mon Sep 03 21:30:00 UTC 2012,0,21,1290,30,0,"","",""
-Mon Sep 03 22:00:00 UTC 2012,0,22,1320,28,0,"","",""
-Mon Sep 03 22:30:00 UTC 2012,0,22,1350,21,0,"","",""
-Mon Sep 03 23:00:00 UTC 2012,0,23,1380,16,1,Professional & Other Places=1,Office=1,Oracle=1
-Mon Sep 03 23:30:00 UTC 2012,0,23,1410,8,0,"","",""
-Tue Sep 04 00:00:00 UTC 2012,1,0,0,6,0,"","",""
-Tue Sep 04 00:30:00 UTC 2012,1,0,30,11,0,"","",""
-Tue Sep 04 01:00:00 UTC 2012,1,1,60,5,0,"","",""
-Tue Sep 04 01:30:00 UTC 2012,1,1,90,2,0,"","",""
-Tue Sep 04 02:00:00 UTC 2012,1,2,120,1,0,"","",""
-Tue Sep 04 02:30:00 UTC 2012,1,2,150,1,0,"","",""
-Tue Sep 04 03:00:00 UTC 2012,1,3,180,10,0,"","",""
-Tue Sep 04 03:30:00 UTC 2012,1,3,210,4,1,Shops & Services=1_Food=1,Grocery Store=1,Safeway=1
-Tue Sep 04 04:00:00 UTC 2012,1,4,240,2,0,"","",""
-Tue Sep 04 04:30:00 UTC 2012,1,4,270,4,0,"","",""
-Tue Sep 04 05:00:00 UTC 2012,1,5,300,3,0,"","",""
-Tue Sep 04 05:30:00 UTC 2012,1,5,330,3,0,"","",""
-Tue Sep 04 06:00:00 UTC 2012,1,6,360,2,0,"","",""
-Tue Sep 04 06:30:00 UTC 2012,1,6,390,12,0,"","",""
-Tue Sep 04 07:00:00 UTC 2012,1,7,420,10,1,Colleges & Universities=1,College Lab=1,SLAC Natioal Accelerator Laboratory Bldg 35=1
-Tue Sep 04 07:30:00 UTC 2012,1,7,450,7,4,Offices=1_Food=1_Professional & Other Places=3,Office=1_Café=1_Building=1_Tech Startup=1,Googleplex=1_Stanford Hospitals & Clinics - EAST Team=1_Epic Cafe=1_Facebook HQ=1
-Tue Sep 04 08:00:00 UTC 2012,1,8,480,18,0,"","",""
-Tue Sep 04 08:30:00 UTC 2012,1,8,510,16,2,Offices=1_Professional & Other Places=2,Tech Startup=1_Parking=1,Plug and Play Tech Center - Palo Alto=1_Lime Parking Garage=1
-Tue Sep 04 09:00:00 UTC 2012,1,9,540,5,0,"","",""
-Tue Sep 04 09:30:00 UTC 2012,1,9,570,15,4,Shops & Services=1_Food=2_Professional & Other Places=1_Gyms or Fitness Centers=1,Office=1_Bakery=1_Coffee Shop=1_Gym=1,My Own Gym=1_Googleplex=1_Starbucks=1_Martha's Pastries=1
-Tue Sep 04 10:00:00 UTC 2012,1,10,600,28,4,Outdoors & Recreation=1_Professional & Other Places=1_Food=1_Residences=1,Post Office=1_Home (private)=1_Pool=1_Coffee Shop=1,Sharon Heights Pool=1_US Post Office=1_Kiwi House=1_Starbucks=1
-Tue Sep 04 10:30:00 UTC 2012,1,10,630,29,2,Professional & Other Places=2,Office=1_Parking=1,Dealix Corporation=1_Lime Parking Garage=1
-Tue Sep 04 11:00:00 UTC 2012,1,11,660,19,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Color Labs HQ=1
-Tue Sep 04 11:30:00 UTC 2012,1,11,690,31,2,Outdoors & Recreation=1_Shops & Services=1_Food=1,Grocery Store=1_Park=1,Eleanor Pardee Park=1_Safeway=1
-Tue Sep 04 12:00:00 UTC 2012,1,12,720,40,5,Shops & Services=1_Professional & Other Places=1_Food=4,Bakery=1_Bagel Shop=1_Asian Restaurant=1_Building=1_Mexican Restaurant=1_Electronics Store=1,Verizon Wireless EVO² Palo Alto=1_House of Bagels=1_Googleplex=1_Chipotle Mexican Grill=1_Goldilocks=1
-Tue Sep 04 12:30:00 UTC 2012,1,12,750,21,5,Food=3_Professional & Other Places=2,Office=2_Thai Restaurant=1_Sandwich Place=1_Deli / Bodega=1,Stanford Law School Cafe=1_Cooliris Office=1_Menlo Cafe=1_Indochine=1_Coldwell Banker Residential Brokerage=1
-Tue Sep 04 13:00:00 UTC 2012,1,13,780,23,2,Colleges & Universities=1_Food=1,Burger Joint=1_University=1,Stanford University - The Future of Freelancing Journalism Conference=1_The Counter=1
-Tue Sep 04 13:30:00 UTC 2012,1,13,810,21,3,Outdoors & Recreation=1_Shops & Services=1_Food=1,Harbor / Marina=1_Paper / Office Supplies Store=1_Mexican Restaurant=1,Kelly Paper=1_Los Gallos Taqueria=1_Shoreline Park & Lake=1
-Tue Sep 04 14:00:00 UTC 2012,1,14,840,24,3,Medical Centers=1_Professional & Other Places=1_Food=1_Residences=1,Residential Building (Apartment / Condo)=1_Mexican Restaurant=1_Doctor's Office=1,Palo Alto Medical Foundation=1_Mi Pueblo Food Center=1_Rellas Palace=1
-Tue Sep 04 14:30:00 UTC 2012,1,14,870,19,3,Shops & Services=1_Food=2,Café=1_American Restaurant=1_Pet Store=1,Googleplex - Tetsuwan Atom Cafe=1_PetSmart=1_LYFE Kitchen=1
-Tue Sep 04 15:00:00 UTC 2012,1,15,900,33,3,Shops & Services=1_Professional & Other Places=2,Office=2_Car Wash=1,Auto Pride Car Wash=1_Googleplex=1_UpWest Labs - Silicon Valley=1
-Tue Sep 04 15:30:00 UTC 2012,1,15,930,28,6,Offices=2_Food=2_Professional & Other Places=4,Tech Startup=2_Building=1_Post Office=1_Cupcake Shop=1_Café=1,The UPS Store=1_SusieCakes=1_Google HQ=1_Coupa Café=1_Facebook MPK 16=1_Facebook MPK 17=1
-Tue Sep 04 16:00:00 UTC 2012,1,16,960,31,6,Colleges & Universities=1_Travel & Transport=3_Professional & Other Places=1_Food=1,Hotel=3_Burger Joint=1_Office=1_Sorority House=1,Four Seasons Hotel Silicon Valley at East Palo Alto=2_Sheraton Palo Alto=1_Kirk's Steakburger=1_Pi Beta Phi (ΠΒΦ)=1_Coldwell Banker Residential Brokerage=1
-Tue Sep 04 16:30:00 UTC 2012,1,16,990,82,6,Shops & Services=3_Travel & Transport=2_Professional & Other Places=1_Food=2,Hotel=2_Miscellaneous Shop=1_Office=1_Café=1_Gas Station / Garage=1_Electronics Store=1_Seafood Restaurant=1,Four Seasons Hotel Silicon Valley at East Palo Alto=2_Shell Gas Station=1_Googleplex - 1950=1_Fry's Electronics=1_Old Port Lobster Shack=1
-Tue Sep 04 17:00:00 UTC 2012,1,17,1020,47,6,Outdoors & Recreation=1_Colleges & Universities=1_Shops & Services=1_Offices=1_Professional & Other Places=1_Food=3,Café=1_Cupcake Shop=1_Grocery Store=1_Tech Startup=1_Hiking Trail=1_College Residence Hall=1,Kleiner Perkins Caufield & Byers=1_Schwab Residential Center=1_SusieCakes=1_Coyote Hills Regional Park=1_Whole Foods Market=1_Crepes Cafe=1
-Tue Sep 04 17:30:00 UTC 2012,1,17,1050,39,4,Professional & Other Places=2_Food=2,Building=2_Diner=1_Asian Restaurant=1,Palo Alto Creamery=1_Google HQ=1_Googleplex=1_Da Sichuan Restaurant=1
-Tue Sep 04 18:00:00 UTC 2012,1,18,1080,68,8,Outdoors & Recreation=3_Shops & Services=2_Food=2_Professional & Other Places=1,Hiking Trail=2_Asian Restaurant=1_Department Store=1_Bike Shop=1_Restaurant=1_Field=1_Office=1,Shoreline Interpretive Trail=2_Asian Box=1_DLA Piper=1_Nordstrom Café Bistro=1_Wilbur Field=1_Nordstrom=1_Velo tech cycles=1
-Tue Sep 04 18:30:00 UTC 2012,1,18,1110,57,6,Shops & Services=1_Food=1_Professional & Other Places=2_Arts & Entertainment=4,Performing Arts Venue=2_School=1_Music Venue=1_Furniture / Home Store=1_Concert Hall=1_Office=1_Ice Cream Shop=1,Fox Theatre=2_Selby Lane School=1_IKEA=1_Wilson Sonsini Goodrich & Rosati=1_Michael's Gelato & Cafe=1
-Tue Sep 04 19:00:00 UTC 2012,1,19,1140,74,4,Shops & Services=1_Travel & Transport=1_Professional & Other Places=1_Residences=1,Office=1_Hardware Store=1_Home (private)=1_Hotel=1,Orchard Supply Hardware=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1_DLA Piper=1_The Green House=1
-Tue Sep 04 19:30:00 UTC 2012,1,19,1170,22,1,Food=1,Burger Joint=1,The Counter=1
-Tue Sep 04 20:00:00 UTC 2012,1,20,1200,43,2,Offices=1_Professional & Other Places=1_Residences=1,Residential Building (Apartment / Condo)=1_Tech Startup=1,Rellas Palace=1_StartX=1
-Tue Sep 04 20:30:00 UTC 2012,1,20,1230,39,2,Colleges & Universities=1_Shops & Services=1,General College & University=1_Electronics Store=1,KZSU Stanford 90.1 FM=1_Apple Store=1
-Tue Sep 04 21:00:00 UTC 2012,1,21,1260,29,3,Shops & Services=1_Travel & Transport=1_Food=1,Furniture / Home Store=1_General Travel=1_Vietnamese Restaurant=1,IKEA=1_Tamarine Restaurant=1_Far Far Away=1
-Tue Sep 04 21:30:00 UTC 2012,1,21,1290,42,1,Shops & Services=1_Food=1,Grocery Store=1,Food Co=1
-Tue Sep 04 22:00:00 UTC 2012,1,22,1320,14,1,Shops & Services=1_Food=1,Grocery Store=1,Whole Foods Market=1
-Tue Sep 04 22:30:00 UTC 2012,1,22,1350,17,0,"","",""
-Tue Sep 04 23:00:00 UTC 2012,1,23,1380,17,0,"","",""
-Tue Sep 04 23:30:00 UTC 2012,1,23,1410,11,0,"","",""
-Wed Sep 05 00:00:00 UTC 2012,2,0,0,24,2,Professional & Other Places=1_Arts & Entertainment=1,Office=1_Concert Hall=1,Highland Capital Partners=1_Music=1
-Wed Sep 05 00:30:00 UTC 2012,2,0,30,3,0,"","",""
-Wed Sep 05 01:00:00 UTC 2012,2,1,60,13,0,"","",""
-Wed Sep 05 01:30:00 UTC 2012,2,1,90,6,0,"","",""
-Wed Sep 05 02:00:00 UTC 2012,2,2,120,0,0,"","",""
-Wed Sep 05 02:30:00 UTC 2012,2,2,150,1,0,"","",""
-Wed Sep 05 03:00:00 UTC 2012,2,3,180,0,0,"","",""
-Wed Sep 05 03:30:00 UTC 2012,2,3,210,1,0,"","",""
-Wed Sep 05 04:00:00 UTC 2012,2,4,240,2,0,"","",""
-Wed Sep 05 04:30:00 UTC 2012,2,4,270,2,0,"","",""
-Wed Sep 05 05:00:00 UTC 2012,2,5,300,3,0,"","",""
-Wed Sep 05 05:30:00 UTC 2012,2,5,330,7,0,"","",""
-Wed Sep 05 06:00:00 UTC 2012,2,6,360,5,1,Travel & Transport=1,Hotel=1,Four Seasons Hotel Silicon Valley at East Palo Alto=1
-Wed Sep 05 06:30:00 UTC 2012,2,6,390,15,1,Travel & Transport=1,General Travel=1,Far Far Away=1
-Wed Sep 05 07:00:00 UTC 2012,2,7,420,11,1,Shops & Services=1_Gyms or Fitness Centers=1,Yoga Studio=1,Be Yoga=1
-Wed Sep 05 07:30:00 UTC 2012,2,7,450,33,6,Colleges & Universities=1_Hotels=1_Travel & Transport=1_Offices=1_Professional & Other Places=2_Food=1_Nightlife Spots=1,Café=1_Resort=1_Building=1_College Lab=1_Sports Bar=1_Tech Startup=1,Googleville=1_Googleplex=1_Epic Cafe=1_The Sports Page=1_SLAC Natioal Accelerator Laboratory Bldg 35=1_Facebook HQ=1
-Wed Sep 05 08:00:00 UTC 2012,2,8,480,31,7,Outdoors & Recreation=1_Colleges & Universities=2_Shops & Services=1_College Academic Buildings=1_Medical Centers=1_Professional & Other Places=3_Gyms or Fitness Centers=1,Office=2_University=1_College Engineering Building=1_Garden=1_Gym=1_Emergency Room=1,The Garden=1_Orrick Silicon Valley=1_Hasso Plattner Institute of Design at Stanford (d.School)=1_Stanford Hospital Emergency Department=1_Stanford University=1_Gold's Gym=1_Googleplex - 1950=1
-Wed Sep 05 08:30:00 UTC 2012,2,8,510,23,3,Shops & Services=1_Professional & Other Places=2,Office=2_Gym / Fitness Center=1,CA Technologies=1_Core Studio=1_Andreessen Horowitz=1
-Wed Sep 05 09:00:00 UTC 2012,2,9,540,24,3,Outdoors & Recreation=1_Professional & Other Places=2,Office=1_Building=1_Other Great Outdoors=1,Downtown Palo Alto=1_Google HQ=1_BMW Group Technology Office USA=1
-Wed Sep 05 09:30:00 UTC 2012,2,9,570,38,4,Colleges & Universities=1_Shops & Services=1_Professional & Other Places=1,Office=1_Automotive Shop=1_University=1,Stanford EV Studio 2=1_Magnussen's Toyota of Palo Alto=1_Googleplex=1_Stanford University=1
-Wed Sep 05 10:00:00 UTC 2012,2,10,600,38,1,Colleges & Universities=1,College Quad=1,The Stanford Oval=1
-Wed Sep 05 10:30:00 UTC 2012,2,10,630,26,4,Professional & Other Places=4,Office=3_Building=1,Googleplex=2_Googleplex - 1600=1_Dreyfus Properties=1
-Wed Sep 05 11:00:00 UTC 2012,2,11,660,21,5,Medical Centers=3_Professional & Other Places=4,Hospital=2_Office=1_Doctor's Office=1,Stanford Medicine Outpatient Center=1_Stanford Sleep Center=1_Stanford Orthopedic Specialties Center=1_AOL West Coast=1_Altos Ventures=1
-Wed Sep 05 11:30:00 UTC 2012,2,11,690,25,2,Colleges & Universities=1_Food=1,University=1_Coffee Shop=1,Starbucks=1_Stanford University=1
-Wed Sep 05 12:00:00 UTC 2012,2,12,720,25,4,Shops & Services=1_Food=3,Mexican Restaurant=2_Drugstore / Pharmacy=1_Vietnamese Restaurant=1,CVS/pharmacy=1_Chipotle Mexican Grill=1_Hometown Noodle=1_Reposado=1
-Wed Sep 05 12:30:00 UTC 2012,2,12,750,30,3,Offices=1_Professional & Other Places=1_Food=2,Burger Joint=1_Food Truck=1_Tech Startup=1,Food truck driveway at HighWire=1_In-N-Out Burger=1_Facebook HQ=1
-Wed Sep 05 13:00:00 UTC 2012,2,13,780,31,4,Shops & Services=3_Travel & Transport=1_Food=1_Gyms or Fitness Centers=1,Train Station=1_Gym=1_Grocery Store=1_Paper / Office Supplies Store=1,Kelly Paper=1_California Ave Caltrain Station=1_Gold's Gym=1_Mollie Stone's Markets=1
-Wed Sep 05 13:30:00 UTC 2012,2,13,810,4,1,Offices=1_Professional & Other Places=1,Tech Startup=1,DudaMobile=1
-Wed Sep 05 14:00:00 UTC 2012,2,14,840,0,0,"","",""
-Wed Sep 05 14:30:00 UTC 2012,2,14,870,0,0,"","",""
-Wed Sep 05 15:00:00 UTC 2012,2,15,900,0,0,"","",""
-Wed Sep 05 15:30:00 UTC 2012,2,15,930,0,0,"","",""
-Wed Sep 05 16:00:00 UTC 2012,2,16,960,0,0,"","",""
-Wed Sep 05 16:30:00 UTC 2012,2,16,990,46,2,Shops & Services=1_Food=1,Café=1_Spa / Massage=1,LaBelle Day Spas & Salons=1_La Boulange de Palo Alto=1
-Wed Sep 05 17:00:00 UTC 2012,2,17,1020,47,5,Colleges & Universities=1_College Academic Buildings=1_Offices=1_Food=2_Professional & Other Places=2,College Engineering Building=1_Post Office=1_Mediterranean Restaurant=1_New American Restaurant=1_Tech Startup=1,Mozes=1_University Cafe=1_FedEx Office Print & Ship Center=1_Hasso Plattner Institute of Design at Stanford (d.School)=1_Lavanda=1
-Wed Sep 05 17:30:00 UTC 2012,2,17,1050,28,2,Food=1_Residences=1,Home (private)=1_New American Restaurant=1,UpWest Labs House=1_University Cafe=1
-Wed Sep 05 18:00:00 UTC 2012,2,18,1080,38,2,Shops & Services=1_Food=1,Clothing Store=1_Asian Restaurant=1,American Apparel=1_Da Sichuan Restaurant=1
-Wed Sep 05 18:30:00 UTC 2012,2,18,1110,36,6,Colleges & Universities=1_Travel & Transport=1_Nightlife Spots=1_Food=2_Arts & Entertainment=3,Community College=1_Wine Bar=1_Music Venue=1_Coffee Shop=1_Concert Hall=1_Hotel=1_Tapas Restaurant=1_Performing Arts Venue=1,Garden Court Hotel=1_Fox Theatre=1_Joya Restaurant & Lounge=1_Starbucks=1_Menlo College=1_Angelica's Bell Theatre & Bistro=1
-Wed Sep 05 19:00:00 UTC 2012,2,19,1140,40,7,Outdoors & Recreation=1_Colleges & Universities=1_Shops & Services=1_Food=1_Professional & Other Places=2_Residences=1,Office=2_Home (private)=1_Plaza=1_Burrito Place=1_Bookstore=1_College Bookstore=1,Stanford University Bookstore=1_Googleplex=1_Books Inc.=1_Startup Embassy (dot) com=1_Rojoz Gourmet Wraps=1_AOL West Coast=1_The Claw=1
-Wed Sep 05 19:30:00 UTC 2012,2,19,1170,41,1,Colleges & Universities=1,College Academic Building=1,Hoover Tower=1
-Wed Sep 05 20:00:00 UTC 2012,2,20,1200,51,3,Professional & Other Places=1_Food=2,Office=1_French Restaurant=1_Pizza Place=1,Bistro Elan on Birch Street=1_California Pizza Kitchen=1_AOL West Coast=1
-Wed Sep 05 20:30:00 UTC 2012,2,20,1230,38,2,Shops & Services=1_Gyms or Fitness Centers=1_Residences=1,Residential Building (Apartment / Condo)=1_Gym=1,Rellas Palace=1_Googleplex - B40 Gym=1
-Wed Sep 05 21:00:00 UTC 2012,2,21,1260,28,1,Food=1,Burger Joint=1,Five Guys Burgers & Fries=1
-Wed Sep 05 21:30:00 UTC 2012,2,21,1290,34,1,Professional & Other Places=1,Office=1,Wilson Sonsini Goodrich & Rosati=1
-Wed Sep 05 22:00:00 UTC 2012,2,22,1320,43,0,"","",""
-Wed Sep 05 22:30:00 UTC 2012,2,22,1350,28,1,Nightlife Spots=1,Bar=1,Antonio's Nut House=1
-Wed Sep 05 23:00:00 UTC 2012,2,23,1380,34,1,Outdoors & Recreation=1,Neighborhood=1,"Palo Alto, CA=1"
-Wed Sep 05 23:30:00 UTC 2012,2,23,1410,24,0,"","",""
-Thu Sep 06 00:00:00 UTC 2012,3,0,0,10,0,"","",""
-Thu Sep 06 00:30:00 UTC 2012,3,0,30,7,0,"","",""
-Thu Sep 06 01:00:00 UTC 2012,3,1,60,4,0,"","",""
-Thu Sep 06 01:30:00 UTC 2012,3,1,90,2,0,"","",""
-Thu Sep 06 02:00:00 UTC 2012,3,2,120,2,0,"","",""
-Thu Sep 06 02:30:00 UTC 2012,3,2,150,3,0,"","",""
-Thu Sep 06 03:00:00 UTC 2012,3,3,180,2,0,"","",""
-Thu Sep 06 03:30:00 UTC 2012,3,3,210,6,0,"","",""
-Thu Sep 06 04:00:00 UTC 2012,3,4,240,2,0,"","",""
-Thu Sep 06 04:30:00 UTC 2012,3,4,270,7,0,"","",""
-Thu Sep 06 05:00:00 UTC 2012,3,5,300,4,0,"","",""
-Thu Sep 06 05:30:00 UTC 2012,3,5,330,4,0,"","",""
-Thu Sep 06 06:00:00 UTC 2012,3,6,360,5,2,Food=2,Greek Restaurant=1_Coffee Shop=1,Starbucks=1_Evvia Estiatorio=1
-Thu Sep 06 06:30:00 UTC 2012,3,6,390,4,0,"","",""
-Thu Sep 06 07:00:00 UTC 2012,3,7,420,19,3,Colleges & Universities=1_Food=1_Medical Centers=1_Professional & Other Places=1,Café=1_College Lab=1_Emergency Room=1,Googleplex - The Hub=1_Stanford Hospital Emergency Department=1_SLAC Natioal Accelerator Laboratory Bldg 35=1
-Thu Sep 06 07:30:00 UTC 2012,3,7,450,15,3,Colleges & Universities=1_Medical Centers=1_Professional & Other Places=1_Food=1,Coffee Shop=1_College Administrative Building=1_Doctor's Office=1,Stanford Menlo Park=1_Cardiovascular Medicine And Cardiac Arrhythmias=1_Starbucks=1
-Thu Sep 06 08:00:00 UTC 2012,3,8,480,18,1,Food=1,Coffee Shop=1,Café Venetia=1
-Thu Sep 06 08:30:00 UTC 2012,3,8,510,21,2,Food=2,Coffee Shop=2,Starbucks=2
-Thu Sep 06 09:00:00 UTC 2012,3,9,540,24,2,Professional & Other Places=2,Office=1_Building=1,CA Technologies=1_Dreyfus Properties=1
-Thu Sep 06 09:30:00 UTC 2012,3,9,570,16,1,Professional & Other Places=1,Office=1,Googleplex - 2000=1
-Thu Sep 06 10:00:00 UTC 2012,3,10,600,23,5,Colleges & Universities=1_Offices=1_Food=1_Professional & Other Places=3,Post Office=1_Building=1_Tech Startup=1_Mexican Restaurant=1_College Bookstore=1,Mint.com HQ - Intuit Building 3=1_US Post Office=1_Barnes & Noble=1_Stanford University Bookstore=1_Tacos El Camino=1
-Thu Sep 06 10:30:00 UTC 2012,3,10,630,18,0,"","",""
-Thu Sep 06 11:00:00 UTC 2012,3,11,660,20,0,"","",""
-Thu Sep 06 11:30:00 UTC 2012,3,11,690,27,4,Shops & Services=1_Offices=1_Food=2_Professional & Other Places=1,Coworking Space=1_Coffee Shop=1_Electronics Store=1_Juice Bar=1,Jamba Juice=1_Starbucks=1_AOL First Floor Labs=1_Apple Store=1
-Thu Sep 06 12:00:00 UTC 2012,3,12,720,21,10,Colleges & Universities=3_Museums=1_Shops & Services=2_Food=2_College Stadiums=1_Arts & Entertainment=3_Gyms or Fitness Centers=1,Music Venue=1_University=1_College Football Field=1_Gym=1_College Academic Building=1_Art Gallery=1_Italian Restaurant=1_Art Museum=1,Stanford Stadium=1_Iris & B. Gerald Cantor Center for Visual Arts=1_The Bar Method - Palo Alto=1_Stanford Law School Cafe=1_Stone River Sculpture=1_Il Fornaio=1_Stanford University=1_Laurence Frost Amphitheater=1_Jordan Hall=1_Stanford Shopping Center=1
-Thu Sep 06 12:30:00 UTC 2012,3,12,750,21,3,Food=4,Café=1_American Restaurant=1_Japanese Restaurant=1_Sushi Restaurant=1,Bytes Café=1_Yokohama=1_LYFE Kitchen=1
-Thu Sep 06 13:00:00 UTC 2012,3,13,780,29,8,Offices=2_Professional & Other Places=4_Food=3,Office=2_Seafood Restaurant=2_Coffee Shop=1_Tech Startup=1_Cafeteria=1,Old Port Lobster Shack=2_Googleplex - 43=1_Pacific Shores Cafe=1_Philz Coffee=1_Facebook HQ=1_Cool Cafe @ MBP=1_Googleplex - GWC2=1
-Thu Sep 06 13:30:00 UTC 2012,3,13,810,25,3,Professional & Other Places=1_Food=2,Office=1_Burger Joint=1_Cuban Restaurant=1,La Bodeguita del Medio=1_The Counter=1_Dreyfus Properties=1
-Thu Sep 06 14:00:00 UTC 2012,3,14,840,18,1,"","",Ferrari=1
-Thu Sep 06 14:30:00 UTC 2012,3,14,870,20,2,Colleges & Universities=1_Shops & Services=1,University=1_Spa / Massage=1,Sense® Spa at Rosewood Sand Hill=1_Stanford Visitor Center=1
-Thu Sep 06 15:00:00 UTC 2012,3,15,900,15,0,"","",""
-Thu Sep 06 15:30:00 UTC 2012,3,15,930,37,0,"","",""
-Thu Sep 06 16:00:00 UTC 2012,3,16,960,45,2,Shops & Services=1_Offices=1_Professional & Other Places=1,Hardware Store=1_Tech Startup=1,Gigya=1_Home Depot=1
-Thu Sep 06 16:30:00 UTC 2012,3,16,990,55,2,Offices=2_Professional & Other Places=2,Tech Startup=2,StartX=2
-Thu Sep 06 17:00:00 UTC 2012,3,17,1020,46,4,Colleges & Universities=1_Shops & Services=1_Offices=1_Professional & Other Places=2,Office=1_General College & University=1_Mobile Phone Shop=1_Tech Startup=1,Frances C. Arrillaga Alumni Center=1_Learning Ally=1_StartX=1_AT&T=1
-Thu Sep 06 17:30:00 UTC 2012,3,17,1050,43,2,Shops & Services=1_Professional & Other Places=1,Office=1_Salon / Barbershop=1,Great Clips=1_BUILD HQ=1
-Thu Sep 06 18:00:00 UTC 2012,3,18,1080,26,0,"","",""
-Thu Sep 06 18:30:00 UTC 2012,3,18,1110,34,6,Offices=2_Professional & Other Places=2_Food=3_Arts & Entertainment=1,Coworking Space=1_American Restaurant=1_Italian Restaurant=1_Cafeteria=1_Latin American Restaurant=1_Performing Arts Venue=1,Vero=1_Googleplex - Yoshka's Café=1_Fox Theatre=1_La Viga=1_NestGSV=1_Harry's Hofbrau=1
-Thu Sep 06 19:00:00 UTC 2012,3,19,1140,41,4,Colleges & Universities=1_Shops & Services=1_Food=1_Professional & Other Places=1,Department Store=1_Event Space=1_Mexican Restaurant=1_College Residence Hall=1,TechShop=1_Donner House=1_Reposado=1_Nordstrom=1
-Thu Sep 06 19:30:00 UTC 2012,3,19,1170,48,2,Shops & Services=1_Professional & Other Places=1,Office=1_Mall=1,Googleplex=1_Town & Country Village=1
-Thu Sep 06 20:00:00 UTC 2012,3,20,1200,53,7,Travel & Transport=1_Nightlife Spots=1_Food=3_Residences=1,Wine Bar=1_Residential Building (Apartment / Condo)=1_American Restaurant=1_Hotel=1_Fast Food Restaurant=1_Mexican Restaurant=1,La Victoria Taqueria=1_The Cheesecake Factory=1_Rellas Palace=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1_Wendy's=1_Googleplex - Wetlands=1_Vino Locale=1
-Thu Sep 06 20:30:00 UTC 2012,3,20,1230,39,0,"","",""
-Thu Sep 06 21:00:00 UTC 2012,3,21,1260,22,2,Hotels=1_Travel & Transport=2,Motel=1_Hotel=1,Quality Inn Palo Alto=1_Holiday Inn Express=1
-Thu Sep 06 21:30:00 UTC 2012,3,21,1290,22,0,"","",""
-Thu Sep 06 22:00:00 UTC 2012,3,22,1320,24,3,Nightlife Spots=1_Residences=2,Home (private)=2_Wine Bar=1,Startup Embassy (dot) com=2_The Living Room=1
-Thu Sep 06 22:30:00 UTC 2012,3,22,1350,35,1,Nightlife Spots=1,Sports Bar=1,The Old Pro=1
-Thu Sep 06 23:00:00 UTC 2012,3,23,1380,24,1,Nightlife Spots=1,Bar=1,Antonio's Nut House=1
-Thu Sep 06 23:30:00 UTC 2012,3,23,1410,21,1,Travel & Transport=1,Hotel=1,Four Seasons Hotel Silicon Valley at East Palo Alto=1
-Fri Sep 07 00:00:00 UTC 2012,4,0,0,23,0,"","",""
-Fri Sep 07 00:30:00 UTC 2012,4,0,30,8,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Blackbox Mansion=1
-Fri Sep 07 01:00:00 UTC 2012,4,1,60,5,0,"","",""
-Fri Sep 07 01:30:00 UTC 2012,4,1,90,11,0,"","",""
-Fri Sep 07 02:00:00 UTC 2012,4,2,120,8,0,"","",""
-Fri Sep 07 02:30:00 UTC 2012,4,2,150,1,0,"","",""
-Fri Sep 07 03:00:00 UTC 2012,4,3,180,2,0,"","",""
-Fri Sep 07 03:30:00 UTC 2012,4,3,210,8,0,"","",""
-Fri Sep 07 04:00:00 UTC 2012,4,4,240,1,0,"","",""
-Fri Sep 07 04:30:00 UTC 2012,4,4,270,2,0,"","",""
-Fri Sep 07 05:00:00 UTC 2012,4,5,300,3,0,"","",""
-Fri Sep 07 05:30:00 UTC 2012,4,5,330,3,0,"","",""
-Fri Sep 07 06:00:00 UTC 2012,4,6,360,7,1,Professional & Other Places=1,Office=1,Googleplex - 45=1
-Fri Sep 07 06:30:00 UTC 2012,4,6,390,8,1,Food=1,Coffee Shop=1,Philz Coffee=1
-Fri Sep 07 07:00:00 UTC 2012,4,7,420,32,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Wildfire HQ=1
-Fri Sep 07 07:30:00 UTC 2012,4,7,450,24,4,Shops & Services=1_Medical Centers=1_Professional & Other Places=1_Food=2,Coffee Shop=2_Car Dealership=1_Emergency Room=1,Starbucks=2_UsedCarsdotcom Headquarters=1_Stanford Hospital Emergency Department=1
-Fri Sep 07 08:00:00 UTC 2012,4,8,480,19,1,Professional & Other Places=1,Office=1,Googleplex=1
-Fri Sep 07 08:30:00 UTC 2012,4,8,510,33,4,Shops & Services=1_Food=1_Professional & Other Places=2,Office=2_Coffee Shop=1_Electronics Store=1,CA Technologies=1_Googleplex - 1098=1_Starbucks=1_Microsoft Store=1
-Fri Sep 07 09:00:00 UTC 2012,4,9,540,28,3,Shops & Services=1_Medical Centers=1_Professional & Other Places=1_Food=1,Hardware Store=1_Restaurant=1_Doctor's Office=1,Palo Alto Medical Foundation=1_Nordstrom Café Bistro=1_Home Depot=1
-Fri Sep 07 09:30:00 UTC 2012,4,9,570,27,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Wildfire HQ=1
-Fri Sep 07 10:00:00 UTC 2012,4,10,600,25,6,Shops & Services=1_Spiritual Centers=1_Offices=1_Professional & Other Places=5,Office=3_Church=1_Department Store=1_Tech Startup=1,NSVG / Bullpen Club House=1_Evernote=1_Googleplex - 43=1_Kohl's=1_Googleplex=1_First Baptist Church of Palo Alto=1
-Fri Sep 07 10:30:00 UTC 2012,4,10,630,28,4,Shops & Services=2_Offices=1_Food=1_Professional & Other Places=1,Gym / Fitness Center=1_Tech Startup=1_Paper / Office Supplies Store=1_Mexican Restaurant=1,Kelly Paper=1_Chipotle Mexican Grill=1_Googleplex - B1900 Gym=1_10gen Palo Alto=1
-Fri Sep 07 11:00:00 UTC 2012,4,11,660,18,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Facebook HQ=1
-Fri Sep 07 11:30:00 UTC 2012,4,11,690,23,4,Shops & Services=1_Food=4,Chinese Restaurant=1_Asian Restaurant=1_Fast Food Restaurant=1_Grocery Store=1,Costco=1_Madame Tam Asian Bistro=1_Jack in the Box=1_P.F. Chang's=1
-Fri Sep 07 12:00:00 UTC 2012,4,12,720,20,8,Shops & Services=2_Nightlife Spots=1_Professional & Other Places=3_Food=1_Residences=1,Office=2_Salon / Barbershop=1_Residential Building (Apartment / Condo)=1_Mediterranean Restaurant=1_Building=1_Gift Shop=1_Hotel Bar=1,Googleplex - Google Store=1_Googleplex - 1098=1_Mediterranean Wraps=1_Rellas Palace=1_Google HQ=1_Supercuts=1_Googleplex=1_Madera Lounge @ Rosewood Hotel=1
-Fri Sep 07 12:30:00 UTC 2012,4,12,750,11,2,Shops & Services=1_Food=1,Sandwich Place=1_Miscellaneous Shop=1,Target=1_Erik's DeliCafe=1
-Fri Sep 07 13:00:00 UTC 2012,4,13,780,19,3,Colleges & Universities=1_Food=2,Caribbean Restaurant=1_Café=1_University=1,Coconuts Caribbean Restaurant & Bar=1_Stanford Visitor Center=1_Googleplex - Nourish Cafe=1
-Fri Sep 07 13:30:00 UTC 2012,4,13,810,26,3,Shops & Services=2_Food=1,Furniture / Home Store=1_Burger Joint=1_Sporting Goods Shop=1,REI=1_Bed Bath & Beyond=1_The Counter=1
-Fri Sep 07 14:00:00 UTC 2012,4,14,840,29,5,Offices=2_Food=2_Professional & Other Places=3,Tech Startup=2_Pizza Place=1_Mexican Restaurant=1_Parking=1,Blue Parking Lot=1_Plug and Play Tech Center - Palo Alto=1_Chipotle Mexican Grill=1_Chuck E. Cheese's=1_Jive=1
-Fri Sep 07 14:30:00 UTC 2012,4,14,870,29,7,Shops & Services=1_Travel & Transport=1_Professional & Other Places=2_Food=3_Nightlife Spots=1,Building=2_Wine Bar=1_Train Station=1_Grocery Store=1_Sandwich Place=1_Mexican Restaurant=1,charles schwab=2_Costco=1_Beltramos=1_Sancho's Taqueria & Catering=1_Le Boulanger=1_Menlo Park Caltrain Station=1
-Fri Sep 07 15:00:00 UTC 2012,4,15,900,33,3,Colleges & Universities=4_Shops & Services=1_College Academic Buildings=2,College Engineering Building=1_College Technology Building=1_University=1_Spa / Massage=1_College Administrative Building=1,Hasso Plattner Institute of Design at Stanford (d.School)=1_Watercourse Way=1_Stanford Visitor Center=1
-Fri Sep 07 15:30:00 UTC 2012,4,15,930,21,2,Spiritual Centers=1_Medical Centers=1_Professional & Other Places=2,Church=1_Hospital=1,Stanford University Medical Center=1_First Baptist Church of Palo Alto=1
-Fri Sep 07 16:00:00 UTC 2012,4,16,960,20,4,Outdoors & Recreation=1_Offices=1_Food=1_Professional & Other Places=2,Office=1_Burger Joint=1_Tech Startup=1_Farm=1,Stanford Community Farm=1_Googleplex - 1875=1_Wildfire HQ=1_The Counter=1
-Fri Sep 07 16:30:00 UTC 2012,4,16,990,32,1,Colleges & Universities=1,College Rec Center=1,Stanford Campus Recreational Association=1
-Fri Sep 07 17:00:00 UTC 2012,4,17,1020,37,3,Shops & Services=1_Offices=1_Professional & Other Places=2,Office=1_Tech Startup=1_Spa / Massage=1,Sense® Spa at Rosewood Sand Hill=1_Googleplex=1_Facebook HQ=1
-Fri Sep 07 17:30:00 UTC 2012,4,17,1050,52,9,Outdoors & Recreation=1_Shops & Services=1_Athletics & Sports=1_Food=2_Arts & Entertainment=5,Music Venue=5_Hot Dog Joint=1_Golf Course=1_Coffee Shop=1_Miscellaneous Shop=1,Shoreline Amphitheatre=5_Gourmet Franks=1_Philz Coffee=1_Target=1_Stanford Driving Range=1
-Fri Sep 07 18:00:00 UTC 2012,4,18,1080,35,6,Outdoors & Recreation=1_Stadiums=1_Colleges & Universities=1_Athletics & Sports=1_Offices=1_Professional & Other Places=1_Food=1_College Stadiums=1_Arts & Entertainment=4,Music Venue=3_Italian Restaurant=1_Soccer Field=1_College Soccer Field=1_Soccer Stadium=1_Tech Startup=1,Shoreline Amphitheatre=2_Redwood City Music On The Square=1_Laird Q. Cagan Stadium at Maloney Field=1_Color Labs HQ=1_Buca di Beppo=1
-Fri Sep 07 18:30:00 UTC 2012,4,18,1110,44,5,Outdoors & Recreation=1_Food=1_Arts & Entertainment=3,Music Venue=3_Coffee Shop=1_Park=1,Shoreline Amphitheatre=3_Henry W. Seale Park=1_Starbucks=1
-Fri Sep 07 19:00:00 UTC 2012,4,19,1140,52,7,Outdoors & Recreation=1_Food=5,American Restaurant=2_Burger Joint=1_Campground=1_Tapas Restaurant=1_Mexican Restaurant=1,Applebee’s Neighborhood Grill & Bar=1_Google Android Camp=1_Milagros Cantina=1_Five Guys Burgers and Fries=1_Joya Restaurant & Lounge=1_LYFE Kitchen=1_Google Earth=1
-Fri Sep 07 19:30:00 UTC 2012,4,19,1170,51,10,Offices=1_Professional & Other Places=1_Food=2_Arts & Entertainment=7,Music Venue=6_Coffee Shop=1_BBQ Joint=1_Tech Startup=1_Performing Arts Venue=1,Shoreline Amphitheatre=6_Café Venetia=1_Lucie Stern Community Theatre=1_Back A Yard Caribbean American Grill=1_Facebook HQ=1
-Fri Sep 07 20:00:00 UTC 2012,4,20,1200,48,9,Shops & Services=1_Travel & Transport=1_Food=3_Nightlife Spots=1_Arts & Entertainment=3,Music Venue=2_Train Station=1_Lounge=1_Burger Joint=1_Gastropub=1_Asian Restaurant=1_Concert Hall=1_Electronics Store=1,Shoreline Amphitheatre=2_Shoreline-VIP Lounge=1_Atherton Caltrain Station=1_Five Guys Burgers and Fries=1_Martin's West=1_Asian Box=1_Shoreline Amphitheater=1_Apple Store=1
-Fri Sep 07 20:30:00 UTC 2012,4,20,1230,34,6,Outdoors & Recreation=1_Colleges & Universities=1_Food=2_Arts & Entertainment=1,Burger Joint=1_Music Venue=1_College & University=1_Neighborhood=1_Vietnamese Restaurant=1_College Residence Hall=1,"Three Seasons Restaurant=1_Shoreline Amphitheatre=1_Palo Alto, CA=1_Burbank House=1_The Counter=1_Stanford Athletic Complex=1"
-Fri Sep 07 21:00:00 UTC 2012,4,21,1260,35,7,Food=1_Arts & Entertainment=6,Music Venue=6_Café=1,Shoreline Amphitheatre=6_Coupa Café=1
-Fri Sep 07 21:30:00 UTC 2012,4,21,1290,16,1,Nightlife Spots=1,Wine Bar=1,The Wine Room=1
-Fri Sep 07 22:00:00 UTC 2012,4,22,1320,21,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1
-Fri Sep 07 22:30:00 UTC 2012,4,22,1350,56,0,"","",""
-Fri Sep 07 23:00:00 UTC 2012,4,23,1380,54,1,Food=1,Cajun / Creole Restaurant=1,Nola=1
-Fri Sep 07 23:30:00 UTC 2012,4,23,1410,27,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1
-Sat Sep 08 00:00:00 UTC 2012,5,0,0,32,0,"","",""
-Sat Sep 08 00:30:00 UTC 2012,5,0,30,9,0,"","",""
-Sat Sep 08 01:00:00 UTC 2012,5,1,60,16,0,"","",""
-Sat Sep 08 01:30:00 UTC 2012,5,1,90,2,0,"","",""
-Sat Sep 08 02:00:00 UTC 2012,5,2,120,6,0,"","",""
-Sat Sep 08 02:30:00 UTC 2012,5,2,150,4,0,"","",""
-Sat Sep 08 03:00:00 UTC 2012,5,3,180,3,0,"","",""
-Sat Sep 08 03:30:00 UTC 2012,5,3,210,1,0,"","",""
-Sat Sep 08 04:00:00 UTC 2012,5,4,240,3,0,"","",""
-Sat Sep 08 04:30:00 UTC 2012,5,4,270,1,0,"","",""
-Sat Sep 08 05:00:00 UTC 2012,5,5,300,4,0,"","",""
-Sat Sep 08 05:30:00 UTC 2012,5,5,330,0,0,"","",""
-Sat Sep 08 06:00:00 UTC 2012,5,6,360,4,0,"","",""
-Sat Sep 08 06:30:00 UTC 2012,5,6,390,2,0,"","",""
-Sat Sep 08 07:00:00 UTC 2012,5,7,420,5,0,"","",""
-Sat Sep 08 07:30:00 UTC 2012,5,7,450,11,0,"","",""
-Sat Sep 08 08:00:00 UTC 2012,5,8,480,12,0,"","",""
-Sat Sep 08 08:30:00 UTC 2012,5,8,510,20,2,Shops & Services=2_Gyms or Fitness Centers=2,Gym=2,Amity CrossFit=2
-Sat Sep 08 09:00:00 UTC 2012,5,9,540,21,0,"","",""
-Sat Sep 08 09:30:00 UTC 2012,5,9,570,23,0,"","",""
-Sat Sep 08 10:00:00 UTC 2012,5,10,600,14,0,"","",""
-Sat Sep 08 10:30:00 UTC 2012,5,10,630,27,0,"","",""
-Sat Sep 08 11:00:00 UTC 2012,5,11,660,25,5,Outdoors & Recreation=2_Shops & Services=3_Food=1,Neighborhood=1_Grocery Store=1_Nail Salon=1_Hiking Trail=1_Mall=1,"Costco=1_Palo Alto, CA=1_Shoreline Interpretive Trail=1_La Jolie Nail Spa=1_Stanford Shopping Center=1"
-Sat Sep 08 11:30:00 UTC 2012,5,11,690,16,0,"","",""
-Sat Sep 08 12:00:00 UTC 2012,5,12,720,18,4,Shops & Services=2_Food=2,American Restaurant=1_Pet Store=1_Drugstore / Pharmacy=1_Sandwich Place=1,The Cheesecake Factory=1_Walgreens=1_Bow Wow Meow=1_Subway=1
-Sat Sep 08 12:30:00 UTC 2012,5,12,750,18,6,Shops & Services=3_Spiritual Centers=1_Clothing Stores=1_Professional & Other Places=1_Food=2,Boutique=1_Bakery=1_Church=1_Mall=1_Seafood Restaurant=1_Electronics Store=1,Louis Vuitton=1_Palo Alto Baking Company=1_Old Port Lobster Shack=1_Stanford Shopping Center=1_Apple Store=1_Lord's Grace Christian Church=1
-Sat Sep 08 13:00:00 UTC 2012,5,13,780,24,4,Shops & Services=1_Food=1_Arts & Entertainment=1_Residences=1,Clothing Store=1_Residential Building (Apartment / Condo)=1_Italian Restaurant=1_Historic Site=1,Urban Outfitters=1_Valpo Hill=1_Mission Palo Alto=1_Tootsies=1
-Sat Sep 08 13:30:00 UTC 2012,5,13,810,22,4,Outdoors & Recreation=1_Shops & Services=1_Clothing Stores=1_Food=2,Burger Joint=1_Park=1_Women's Store=1_Sushi Restaurant=1,Chico's=1_Five Guys Burgers and Fries=1_Homma's Brown Rice Sushi=1_Eucalyptus Grove=1
-Sat Sep 08 14:00:00 UTC 2012,5,14,840,28,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Jive=1
-Sat Sep 08 14:30:00 UTC 2012,5,14,870,17,2,Food=2,Coffee Shop=1_New American Restaurant=1,Philz Coffee=1_University Cafe=1
-Sat Sep 08 15:00:00 UTC 2012,5,15,900,17,2,Food=2,Café=1_Burger Joint=1,Coupa Café=1_The Counter=1
-Sat Sep 08 15:30:00 UTC 2012,5,15,930,16,4,Colleges & Universities=3_Shops & Services=1_College Stadiums=3,College Football Field=3_Sporting Goods Shop=1,Stanford Stadium=3_REI=1
-Sat Sep 08 16:00:00 UTC 2012,5,16,960,32,3,Colleges & Universities=2_Shops & Services=1_College Stadiums=1_Gyms or Fitness Centers=1,University=1_College Football Field=1_Gym=1,Stanford Stadium=1_Googleplex - GWC5 Gym=1_Stanford University=1
-Sat Sep 08 16:30:00 UTC 2012,5,16,990,27,1,Shops & Services=1,Mall=1,Stanford Shopping Center=1
-Sat Sep 08 17:00:00 UTC 2012,5,17,1020,32,2,Colleges & Universities=1_Food=1,Bakery=1_College Bookstore=1,Paris Baguette=1_Stanford University Bookstore=1
-Sat Sep 08 17:30:00 UTC 2012,5,17,1050,23,4,Outdoors & Recreation=1_Shops & Services=1_Athletics & Sports=1_Food=2,Furniture / Home Store=1_Golf Course=1_Bakery=1_Juice Bar=1,Mayfield Bakery & Cafe=1_IKEA=1_Jamba Juice=1_Shoreline Golf Links=1
-Sat Sep 08 18:00:00 UTC 2012,5,18,1080,24,4,Colleges & Universities=1_Shops & Services=1_College Stadiums=1_Food=2,Furniture / Home Store=1_Bakery=1_College Football Field=1_Japanese Restaurant=1,IKEA=1_Stanford Stadium=1_Paris Baguette=1_Sakura Teppanyaki & Sushi=1
-Sat Sep 08 18:30:00 UTC 2012,5,18,1110,27,3,Colleges & Universities=2_Food=1_College Stadiums=2,College Football Field=2_Fast Food Restaurant=1,Stanford Stadium=2_McDonald's=1
-Sat Sep 08 19:00:00 UTC 2012,5,19,1140,33,4,Colleges & Universities=4_College Stadiums=4,College Football Field=4,Stanford Stadium=4
-Sat Sep 08 19:30:00 UTC 2012,5,19,1170,53,6,Colleges & Universities=4_Food=1_College Stadiums=4_Professional & Other Places=1,College Football Field=4_Mediterranean Restaurant=1_Office=1,Stanford Stadium=4_Googleplex=1_Cafe 220=1
-Sat Sep 08 20:00:00 UTC 2012,5,20,1200,45,5,Colleges & Universities=3_Travel & Transport=1_College Stadiums=3_Food=1,College Football Field=3_Train Station=1_Sushi Restaurant=1,Stanford Stadium=3_Atherton Caltrain Station=1_Homma's Brown Rice Sushi=1
-Sat Sep 08 20:30:00 UTC 2012,5,20,1230,43,4,Colleges & Universities=1_College Stadiums=1_Food=3,Bakery=1_American Restaurant=1_College Football Field=1_Coffee Shop=1,Stanford Stadium=1_Paris Baguette=1_Starbucks=1_LYFE Kitchen=1
-Sat Sep 08 21:00:00 UTC 2012,5,21,1260,31,2,Colleges & Universities=1_College Stadiums=1_Food=1,College Football Field=1_Sushi Restaurant=1,Stanford Stadium=1_Kanpai Sushi=1
-Sat Sep 08 21:30:00 UTC 2012,5,21,1290,44,1,Colleges & Universities=1_College Stadiums=1,College Football Field=1,Stanford Stadium=1
-Sat Sep 08 22:00:00 UTC 2012,5,22,1320,28,0,"","",""
-Sat Sep 08 22:30:00 UTC 2012,5,22,1350,27,0,"","",""
-Sat Sep 08 23:00:00 UTC 2012,5,23,1380,25,0,"","",""
-Sat Sep 08 23:30:00 UTC 2012,5,23,1410,27,0,"","",""
-Sun Sep 09 00:00:00 UTC 2012,6,0,0,19,0,"","",""
-Sun Sep 09 00:30:00 UTC 2012,6,0,30,13,1,Food=1,Cajun / Creole Restaurant=1,Nola=1
-Sun Sep 09 01:00:00 UTC 2012,6,1,60,4,0,"","",""
-Sun Sep 09 01:30:00 UTC 2012,6,1,90,9,1,Colleges & Universities=1,College Residence Hall=1,Burbank House=1
-Sun Sep 09 02:00:00 UTC 2012,6,2,120,4,0,"","",""
-Sun Sep 09 02:30:00 UTC 2012,6,2,150,16,0,"","",""
-Sun Sep 09 03:00:00 UTC 2012,6,3,180,10,0,"","",""
-Sun Sep 09 03:30:00 UTC 2012,6,3,210,5,2,Colleges & Universities=2,General College & University=2,KZSU Stanford 90.1 FM=2
-Sun Sep 09 04:00:00 UTC 2012,6,4,240,0,0,"","",""
-Sun Sep 09 04:30:00 UTC 2012,6,4,270,2,0,"","",""
-Sun Sep 09 05:00:00 UTC 2012,6,5,300,0,0,"","",""
-Sun Sep 09 05:30:00 UTC 2012,6,5,330,1,0,"","",""
-Sun Sep 09 06:00:00 UTC 2012,6,6,360,0,0,"","",""
-Sun Sep 09 06:30:00 UTC 2012,6,6,390,5,0,"","",""
-Sun Sep 09 07:00:00 UTC 2012,6,7,420,6,0,"","",""
-Sun Sep 09 07:30:00 UTC 2012,6,7,450,3,0,"","",""
-Sun Sep 09 08:00:00 UTC 2012,6,8,480,10,0,"","",""
-Sun Sep 09 08:30:00 UTC 2012,6,8,510,22,4,Food=4,Coffee Shop=2_Donut Shop=1_Bakery=1,Philz Coffee=1_Mayfield Bakery & Cafe=1_Happy Donuts=1_Starbucks=1
-Sun Sep 09 09:00:00 UTC 2012,6,9,540,21,3,Spiritual Centers=2_Food=1_Professional & Other Places=2,Church=2_Coffee Shop=1,First Baptist Church of Palo Alto=2_Starbucks=1
-Sun Sep 09 09:30:00 UTC 2012,6,9,570,4,1,Nightlife Spots=1,Bar=1,Patio at Rudy's=1
-Sun Sep 09 10:00:00 UTC 2012,6,10,600,19,4,Professional & Other Places=1_Food=3,Burger Joint=2_Spiritual Center=1_Breakfast Spot=1,The Dutch Goose=2_Alana's Cafe=1_Unitarian Universalist Church of Palo Alto=1
-Sun Sep 09 10:30:00 UTC 2012,6,10,630,4,0,"","",""
-Sun Sep 09 11:00:00 UTC 2012,6,11,660,19,2,Food=1,Burger Joint=1,Cal Train=1_The Dutch Goose=1
-Sun Sep 09 11:30:00 UTC 2012,6,11,690,13,1,Shops & Services=1,Electronics Store=1,Apple Store=1
-Sun Sep 09 12:00:00 UTC 2012,6,12,720,42,2,Shops & Services=2_Food=1,Furniture / Home Store=1_Farmers Market=1,IKEA=1_California Ave Farmers' Market=1
-Sun Sep 09 12:30:00 UTC 2012,6,12,750,19,6,Outdoors & Recreation=1_Shops & Services=1_Offices=1_Food=2_Professional & Other Places=2_Arts & Entertainment=1,Music Venue=1_Sculpture Garden=1_Breakfast Spot=1_Grocery Store=1_Tech Startup=1_Parking=1,Calafia Cafe=1_Redwood City Music On The Square=1_Blue Parking Lot=1_Rodin Sculpture Garden=1_Plug and Play Tech Center - Palo Alto=1_Lucky=1
-Sun Sep 09 13:00:00 UTC 2012,6,13,780,8,2,Food=2,American Restaurant=1_Cupcake Shop=1,St Michael's Alley=1_Sprinkles Cupcakes=1
-Sun Sep 09 13:30:00 UTC 2012,6,13,810,20,4,Outdoors & Recreation=1_Travel & Transport=1_Food=2_Train Stations=1,Campground=1_French Restaurant=1_Pizza Place=1_Train=1,Left Bank=1_Round Table Pizza=1_Google Android Camp=1_Caltrain 217=1
-Sun Sep 09 14:00:00 UTC 2012,6,14,840,32,2,Colleges & Universities=1_Shops & Services=1,Hardware Store=1_College Academic Building=1,Hoover Tower=1_Home Depot=1
-Sun Sep 09 14:30:00 UTC 2012,6,14,870,55,7,Shops & Services=1_Professional & Other Places=1_Food=5,Coffee Shop=2_Dessert Shop=2_Clothing Store=1_Event Space=1_Juice Bar=1,Fraiche Yogurt=1_Jamba Juice=1_Cubberley Community Center & Theatre=1_Starbucks=1_Peet's Coffee & Tea=1_Abercrombie & Fitch=1_Pinkberry=1
-Sun Sep 09 15:00:00 UTC 2012,6,15,900,61,5,Outdoors & Recreation=1_Colleges & Universities=1_Shops & Services=2_Food=1_Gyms or Fitness Centers=1,Café=1_University=1_Gym=1_Neighborhood=1_Electronics Store=1,"Palo Alto Family YMCA=1_Palo Alto, CA=1_Stanford University=1_Coupa Café=1_Apple Store=1"
-Sun Sep 09 15:30:00 UTC 2012,6,15,930,28,6,Colleges & Universities=1_Shops & Services=3_Travel & Transport=1_Food=1_Gyms or Fitness Centers=1,Train Station=1_University=1_Department Store=1_Gym=1_New American Restaurant=1_Mall=1,Macy's Mens Store=1_University Cafe=1_Palo Alto Caltrain Station=1_Pacific Shores Club=1_Stanford University=1_Stanford Shopping Center=1
-Sun Sep 09 16:00:00 UTC 2012,6,16,960,36,2,Colleges & Universities=1_Shops & Services=1,University=1_Drugstore / Pharmacy=1,CVS/pharmacy=1_Stanford University=1
-Sun Sep 09 16:30:00 UTC 2012,6,16,990,52,3,Outdoors & Recreation=1_Shops & Services=1,Plaza=1_Salon / Barbershop=1,"SimplyBe Salon and Spa=1_Frog Fountain=1_Stanford, Computer Science=1"
-Sun Sep 09 17:00:00 UTC 2012,6,17,1020,47,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1
-Sun Sep 09 17:30:00 UTC 2012,6,17,1050,39,5,Colleges & Universities=2_Food=1_Arts & Entertainment=2,Music Venue=2_University=1_Sushi Restaurant=1_College Bookstore=1,Shoreline Amphitheatre=2_Miyake=1_Stanford University Bookstore=1_Stanford University=1
-Sun Sep 09 18:00:00 UTC 2012,6,18,1080,45,7,Outdoors & Recreation=1_Food=1_Residences=1_Arts & Entertainment=4,Music Venue=4_Bridge=1_Residential Building (Apartment / Condo)=1_American Restaurant=1,Shoreline Amphitheatre=4_Max's Restaurant=1_Rellas Palace=1_Dumbarton Bridge=1
-Sun Sep 09 18:30:00 UTC 2012,6,18,1110,44,3,Food=1_Arts & Entertainment=2,Music Venue=2_Sushi Restaurant=1,Shoreline Amphitheatre=2_Koma Sushi Restaurant=1
-Sun Sep 09 19:00:00 UTC 2012,6,19,1140,35,9,Food=1_Arts & Entertainment=8,Music Venue=8_Mediterranean Restaurant=1,Shoreline Amphitheatre=8_Oren's Hummus Shop=1
-Sun Sep 09 19:30:00 UTC 2012,6,19,1170,33,5,Outdoors & Recreation=1_Food=2_Arts & Entertainment=2,Music Venue=2_Italian Restaurant=2_Dog Run=1,Shoreline Amphitheatre=2_La Strada=1_Java Training Center=1_Buca di Beppo=1
-Sun Sep 09 20:00:00 UTC 2012,6,20,1200,30,3,Food=2_Arts & Entertainment=1,Café=1_Music Venue=1_Sandwich Place=1,Shoreline Amphitheatre=1_Coupa Café=1_Subway=1
-Sun Sep 09 20:30:00 UTC 2012,6,20,1230,56,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1
-Sun Sep 09 21:00:00 UTC 2012,6,21,1260,55,0,"","",""
-Sun Sep 09 21:30:00 UTC 2012,6,21,1290,25,0,"","",""
-Sun Sep 09 22:00:00 UTC 2012,6,22,1320,30,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1
-Sun Sep 09 22:30:00 UTC 2012,6,22,1350,27,1,Nightlife Spots=1,Pub=1,The Rose & Crown Pub=1
-Sun Sep 09 23:00:00 UTC 2012,6,23,1380,37,0,"","",""
-Sun Sep 09 23:30:00 UTC 2012,6,23,1410,38,0,"","",""
+time,day,hour,minute,count,fsq_count,CategorieParents,Categories,Venues,Coord
+Mon Sep 03 00:00:00 UTC 2012,0,0,0,23,0,"","","",""
+Mon Sep 03 00:30:00 UTC 2012,0,0,30,15,0,"","","",""
+Mon Sep 03 01:00:00 UTC 2012,0,1,60,14,0,"","","",""
+Mon Sep 03 01:30:00 UTC 2012,0,1,90,1,0,"","","",""
+Mon Sep 03 02:00:00 UTC 2012,0,2,120,4,0,"","","",""
+Mon Sep 03 02:30:00 UTC 2012,0,2,150,1,0,"","","",""
+Mon Sep 03 03:00:00 UTC 2012,0,3,180,3,0,"","","",""
+Mon Sep 03 03:30:00 UTC 2012,0,3,210,2,0,"","","",""
+Mon Sep 03 04:00:00 UTC 2012,0,4,240,6,0,"","","",""
+Mon Sep 03 04:30:00 UTC 2012,0,4,270,6,0,"","","",""
+Mon Sep 03 05:00:00 UTC 2012,0,5,300,3,0,"","","",""
+Mon Sep 03 05:30:00 UTC 2012,0,5,330,4,0,"","","",""
+Mon Sep 03 06:00:00 UTC 2012,0,6,360,7,0,"","","",""
+Mon Sep 03 06:30:00 UTC 2012,0,6,390,5,0,"","","",""
+Mon Sep 03 07:00:00 UTC 2012,0,7,420,8,1,Medical Centers=1_Professional & Other Places=1,Emergency Room=1,Stanford Hospital Emergency Department=1,Emergency Room=37.43438564 -122.17462063
+Mon Sep 03 07:30:00 UTC 2012,0,7,450,18,2,Food=1_Professional & Other Places=1,Fast Food Restaurant=1_Building=1,McDonald's=1_Facebook=1,Building=37.41971409 -122.14773417_Fast Food Restaurant=37.41927057 -122.09365002
+Mon Sep 03 08:00:00 UTC 2012,0,8,480,31,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.42736136 -122.14926613
+Mon Sep 03 08:30:00 UTC 2012,0,8,510,6,1,Shops & Services=1,Electronics Store=1,Microsoft Store=1,Electronics Store=37.44324946 -122.17127616
+Mon Sep 03 09:00:00 UTC 2012,0,9,540,10,1,Shops & Services=1,Gym / Fitness Center=1,Core Studio=1,Gym / Fitness Center=37.43457307 -122.12783217
+Mon Sep 03 09:30:00 UTC 2012,0,9,570,11,0,"","","",""
+Mon Sep 03 10:00:00 UTC 2012,0,10,600,18,1,Professional & Other Places=1,Office=1,AOL West Coast=1,Office=37.4253184 -122.1390671
+Mon Sep 03 10:30:00 UTC 2012,0,10,630,14,2,Shops & Services=1_Offices=1_Food & Drink Shops=1_Professional & Other Places=1,Tech Startup=1_Grocery Store=1,Trader Joe's=1_Mixbook HQ=1,Grocery Store=37.451177 -122.18340755_Tech Startup=37.425734 -122.143568
+Mon Sep 03 11:00:00 UTC 2012,0,11,660,20,2,Shops & Services=2_Outdoors & Recreation=1,Mobile Phone Shop=1_Harbor / Marina=1_Electronics Store=1,Shoreline Park & Lake=1_AT&T=1,Electronics Store=37.42330458 -122.14156988_Harbor / Marina=37.4324262 -122.08760977_Mobile Phone Shop=37.42330458 -122.14156988
+Mon Sep 03 11:30:00 UTC 2012,0,11,690,7,0,"","","",""
+Mon Sep 03 12:00:00 UTC 2012,0,12,720,27,3,Residences=1_Food=2,Home (private)=1_American Restaurant=1_Coffee Shop=1,Casa de Duncaloo=1_Max's Restaurant=1_Starbucks=1,Coffee Shop=37.42688743 -122.1440374_American Restaurant=37.44280217 -122.1730113_Home (private)=37.45193916 -122.16892845
+Mon Sep 03 12:30:00 UTC 2012,0,12,750,11,1,Food=1,American Restaurant=1,Madera=1,American Restaurant=37.41940595 -122.21201329
+Mon Sep 03 13:00:00 UTC 2012,0,13,780,7,1,"","",Nine Lives Foundation=1,""
+Mon Sep 03 13:30:00 UTC 2012,0,13,810,10,1,Food=1,Mexican Restaurant=1,Milagros Cantina=1,Mexican Restaurant=37.48424912 -122.22641945
+Mon Sep 03 14:00:00 UTC 2012,0,14,840,11,1,Food=1,Juice Bar=1,Jamba Juice=1,Juice Bar=37.43790865 -122.15971828
+Mon Sep 03 14:30:00 UTC 2012,0,14,870,0,0,"","","",""
+Mon Sep 03 15:00:00 UTC 2012,0,15,900,0,0,"","","",""
+Mon Sep 03 15:30:00 UTC 2012,0,15,930,0,0,"","","",""
+Mon Sep 03 16:00:00 UTC 2012,0,16,960,23,0,"","","",""
+Mon Sep 03 16:30:00 UTC 2012,0,16,990,29,5,Shops & Services=1_Arts & Entertainment=3_Movie Theaters=3_Food=1,Multiplex=2_Indie Movie Theater=1_Ice Cream Shop=1_Sporting Goods Shop=1,Cinemark Redwood Downtown 20 and XD=2_Aquarius Theatre=1_Rick's Rather Rich Ice Cream=1_Big 5 Sporting Goods=1,Sporting Goods Shop=37.49290691 -122.22483158_Ice Cream Shop=37.41858179 -122.10928732_Indie Movie Theater=37.44497856 -122.16344118_Multiplex=37.48602844 -122.22860813
+Mon Sep 03 17:00:00 UTC 2012,0,17,1020,83,5,Shops & Services=1_Clothing Stores=1_Residences=1_Food=3,Bakery=1_Residential Building (Apartment / Condo)=1_Burger Joint=1_Sandwich Place=1_Lingerie Store=1,Rellas Palace=1_Mayfield Bakery & Cafe=1_Victoria's Secret=1_Jeffrey's Hamburgers=1_The Melt=1,Lingerie Store=37.441866 -122.17221703_Sandwich Place=37.44315568 -122.17268407_Burger Joint=37.452416 -122.18022_Residential Building (Apartment / Condo)=37.47075 -122.215521_Bakery=37.43814253 -122.15874195
+Mon Sep 03 17:30:00 UTC 2012,0,17,1050,52,3,Shops & Services=1_Food=2,Cupcake Shop=1_Spa / Massage=1_Coffee Shop=1,Watercourse Way=1_Sprinkles Cupcakes=1_Philz Coffee=1,Coffee Shop=37.44212016 -122.16134171_Spa / Massage=37.44115391 -122.15840888_Cupcake Shop=37.442309 -122.17308059
+Mon Sep 03 18:00:00 UTC 2012,0,18,1080,27,2,Outdoors & Recreation=1_Food=1,Pool=1_Coffee Shop=1,Rinconada Pool=1_Starbucks=1,Coffee Shop=37.41747209 -122.13055685_Pool=37.44389261 -122.14081575
+Mon Sep 03 18:30:00 UTC 2012,0,18,1110,38,7,Arts & Entertainment=4_Food=3_Travel & Transport=1_Professional & Other Places=1,Performing Arts Venue=2_Event Space=1_Bakery=1_Hotel=1_Japanese Restaurant=1_Mexican Restaurant=1_Music Venue=1_Concert Hall=1,Fox Theatre=2_Sakura Teppanyaki & Sushi=1_Los Altos Taqueria=1_Cafe La Tartine=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1_Blossom Birth=1,Performing Arts Venue=37.48630659 -122.2296003_Music Venue=37.48630659 -122.2296003_Mexican Restaurant=37.41414324 -122.09345586_Japanese Restaurant=37.48664466 -122.22894652_Event Space=37.42738265 -122.14330547_Bakery=37.48583391 -122.22925186_Hotel=37.45929173 -122.14148998_Concert Hall=37.48630659 -122.2296003
+Mon Sep 03 19:00:00 UTC 2012,0,19,1140,20,2,Residences=1_Travel & Transport=1,Residential Building (Apartment / Condo)=1_Road=1,Alma Street=1_Stanford Villas=1,Road=37.41497195 -122.11879951_Residential Building (Apartment / Condo)=37.42012268 -122.12597053
+Mon Sep 03 19:30:00 UTC 2012,0,19,1170,24,3,Colleges & Universities=2_Arts & Entertainment=1_Movie Theaters=1_College Stadiums=1,Multiplex=1_College Residence Hall=1_College Track=1,Cinemark Redwood Downtown 20 and XD=1_Cobb Track & Angell Field=1_Burbank House=1,College Track=37.43181279 -122.16258287_College Residence Hall=37.42406814 -122.16525435_Multiplex=37.48602844 -122.22860813
+Mon Sep 03 20:00:00 UTC 2012,0,20,1200,30,1,Food=1,American Restaurant=1,Waterfront Restaurant=1,American Restaurant=37.50049122 -122.22380698
+Mon Sep 03 20:30:00 UTC 2012,0,20,1230,27,2,Food=2,Burger Joint=1_Dessert Shop=1,Yoppi Yogurt=1_SliderBar Cafe=1,Dessert Shop=37.485926 -122.229005_Burger Joint=37.446284 -122.161204
+Mon Sep 03 21:00:00 UTC 2012,0,21,1260,20,3,Shops & Services=1_Nightlife Spots=1_Professional & Other Places=1,Bar=1_Gym / Fitness Center=1_Post Office=1,Rudy's Pub=1_Equinox=1_US Post Office - Menlo Park Center=1,Post Office=37.45347 -122.184722_Gym / Fitness Center=37.42168 -122.13798_Bar=37.44385463 -122.16376442
+Mon Sep 03 21:30:00 UTC 2012,0,21,1290,30,0,"","","",""
+Mon Sep 03 22:00:00 UTC 2012,0,22,1320,28,0,"","","",""
+Mon Sep 03 22:30:00 UTC 2012,0,22,1350,21,0,"","","",""
+Mon Sep 03 23:00:00 UTC 2012,0,23,1380,16,1,Professional & Other Places=1,Office=1,Oracle=1,Office=37.48525194 -122.14686527
+Mon Sep 03 23:30:00 UTC 2012,0,23,1410,8,0,"","","",""
+Tue Sep 04 00:00:00 UTC 2012,1,0,0,6,0,"","","",""
+Tue Sep 04 00:30:00 UTC 2012,1,0,30,11,0,"","","",""
+Tue Sep 04 01:00:00 UTC 2012,1,1,60,5,0,"","","",""
+Tue Sep 04 01:30:00 UTC 2012,1,1,90,2,0,"","","",""
+Tue Sep 04 02:00:00 UTC 2012,1,2,120,1,0,"","","",""
+Tue Sep 04 02:30:00 UTC 2012,1,2,150,1,0,"","","",""
+Tue Sep 04 03:00:00 UTC 2012,1,3,180,10,0,"","","",""
+Tue Sep 04 03:30:00 UTC 2012,1,3,210,4,1,Shops & Services=1_Food & Drink Shops=1,Grocery Store=1,Safeway=1,Grocery Store=37.42367943 -122.19723332
+Tue Sep 04 04:00:00 UTC 2012,1,4,240,2,0,"","","",""
+Tue Sep 04 04:30:00 UTC 2012,1,4,270,4,0,"","","",""
+Tue Sep 04 05:00:00 UTC 2012,1,5,300,3,0,"","","",""
+Tue Sep 04 05:30:00 UTC 2012,1,5,330,3,0,"","","",""
+Tue Sep 04 06:00:00 UTC 2012,1,6,360,2,0,"","","",""
+Tue Sep 04 06:30:00 UTC 2012,1,6,390,12,0,"","","",""
+Tue Sep 04 07:00:00 UTC 2012,1,7,420,10,1,Colleges & Universities=1,College Lab=1,SLAC Natioal Accelerator Laboratory Bldg 35=1,College Lab=37.41662712 -122.20928688
+Tue Sep 04 07:30:00 UTC 2012,1,7,450,7,4,Offices=1_Food=1_Professional & Other Places=3,Café=1_Tech Startup=1_Office=1_Building=1,Googleplex=1_Facebook HQ=1_Stanford Hospitals & Clinics - EAST Team=1_Epic Cafe=1,Building=37.42139893 -122.0842244_Office=37.417606 -122.151107_Tech Startup=37.48327006 -122.14953661_Café=37.48402404 -122.14894454
+Tue Sep 04 08:00:00 UTC 2012,1,8,480,18,0,"","","",""
+Tue Sep 04 08:30:00 UTC 2012,1,8,510,16,2,Offices=1_Professional & Other Places=2,Tech Startup=1_Parking=1,Lime Parking Garage=1_Plug and Play Tech Center - Palo Alto=1,Parking=37.44633394 -122.16177969_Tech Startup=37.44864347 -122.15876925
+Tue Sep 04 09:00:00 UTC 2012,1,9,540,5,0,"","","",""
+Tue Sep 04 09:30:00 UTC 2012,1,9,570,15,4,Shops & Services=1_Food=2_Gyms or Fitness Centers=1_Professional & Other Places=1,Gym=1_Bakery=1_Office=1_Coffee Shop=1,Googleplex=1_Martha's Pastries=1_Starbucks=1_My Own Gym=1,Coffee Shop=37.42342911 -122.19777346_Office=37.42194653 -122.08385468_Bakery=37.42392283 -122.19749934_Gym=37.450279 -122.206545
+Tue Sep 04 10:00:00 UTC 2012,1,10,600,28,4,Outdoors & Recreation=1_Food=1_Residences=1_Professional & Other Places=1,Home (private)=1_Pool=1_Post Office=1_Coffee Shop=1,Kiwi House=1_Sharon Heights Pool=1_US Post Office=1_Starbucks=1,Coffee Shop=37.42342911 -122.19777346_Post Office=37.424429 -122.16891_Pool=37.42572137 -122.19899572_Home (private)=37.47380022 -122.1916328
+Tue Sep 04 10:30:00 UTC 2012,1,10,630,29,2,Professional & Other Places=2,Parking=1_Office=1,Dealix Corporation=1_Lime Parking Garage=1,Office=37.48447003 -122.21691179_Parking=37.44633394 -122.16177969
+Tue Sep 04 11:00:00 UTC 2012,1,11,660,19,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Color Labs HQ=1,Tech Startup=37.44419266 -122.16156347
+Tue Sep 04 11:30:00 UTC 2012,1,11,690,31,2,Shops & Services=1_Outdoors & Recreation=1_Food & Drink Shops=1,Park=1_Grocery Store=1,Safeway=1_Eleanor Pardee Park=1,Grocery Store=37.432717 -122.127696_Park=37.44960683 -122.14245154
+Tue Sep 04 12:00:00 UTC 2012,1,12,720,40,5,Shops & Services=1_Food=4_Professional & Other Places=1,Bakery=1_Bagel Shop=1_Mexican Restaurant=1_Asian Restaurant=1_Electronics Store=1_Building=1,Goldilocks=1_Chipotle Mexican Grill=1_House of Bagels=1_Googleplex=1_Verizon Wireless EVO² Palo Alto=1,Building=37.42139893 -122.0842244_Electronics Store=37.42250889 -122.14014888_Asian Restaurant=37.41993565 -122.09590229_Mexican Restaurant=37.44431106 -122.17082159_Bagel Shop=37.44855218 -122.158965_Bakery=37.41993565 -122.09590229
+Tue Sep 04 12:30:00 UTC 2012,1,12,750,21,5,Food=3_Professional & Other Places=2,Office=2_Sandwich Place=1_Deli / Bodega=1_Thai Restaurant=1,Stanford Law School Cafe=1_Coldwell Banker Residential Brokerage=1_Cooliris Office=1_Menlo Cafe=1_Indochine=1,Office=37.42135901 -122.14107637_Deli / Bodega=37.452989 -122.183449_Sandwich Place=37.424281 -122.167868_Thai Restaurant=37.43325537 -122.129396
+Tue Sep 04 13:00:00 UTC 2012,1,13,780,23,2,Colleges & Universities=1_Food=1,Burger Joint=1_University=1,Stanford University - The Future of Freelancing Journalism Conference=1_The Counter=1,University=37.424448 -122.170616_Burger Joint=37.42680311 -122.14425919
+Tue Sep 04 13:30:00 UTC 2012,1,13,810,21,3,Shops & Services=1_Outdoors & Recreation=1_Food=1,Harbor / Marina=1_Paper / Office Supplies Store=1_Mexican Restaurant=1,Shoreline Park & Lake=1_Los Gallos Taqueria=1_Kelly Paper=1,Mexican Restaurant=37.4783586 -122.18718946_Paper / Office Supplies Store=37.416466 -122.102525_Harbor / Marina=37.4324262 -122.08760977
+Tue Sep 04 14:00:00 UTC 2012,1,14,840,24,3,Food=1_Residences=1_Medical Centers=1_Professional & Other Places=1,Residential Building (Apartment / Condo)=1_Mexican Restaurant=1_Doctor's Office=1,Rellas Palace=1_Palo Alto Medical Foundation=1_Mi Pueblo Food Center=1,Doctor's Office=37.43956516 -122.16127396_Mexican Restaurant=37.46146422 -122.13772155_Residential Building (Apartment / Condo)=37.47075 -122.215521
+Tue Sep 04 14:30:00 UTC 2012,1,14,870,19,3,Shops & Services=1_Food=2,Café=1_American Restaurant=1_Pet Store=1,Googleplex - Tetsuwan Atom Cafe=1_PetSmart=1_LYFE Kitchen=1,Pet Store=37.4226592 -122.09605873_American Restaurant=37.44365825 -122.16193378_Café=37.42006063 -122.08349206
+Tue Sep 04 15:00:00 UTC 2012,1,15,900,33,3,Shops & Services=1_Professional & Other Places=2,Office=2_Car Wash=1,Auto Pride Car Wash=1_Googleplex=1_UpWest Labs - Silicon Valley=1,Office=37.424203 -122.145246_Car Wash=37.463975 -122.224478
+Tue Sep 04 15:30:00 UTC 2012,1,15,930,28,6,Offices=2_Food=2_Professional & Other Places=4,Tech Startup=2_Café=1_Cupcake Shop=1_Post Office=1_Building=1,Coupa Café=1_Google HQ=1_SusieCakes=1_The UPS Store=1_Facebook MPK 16=1_Facebook MPK 17=1,Building=37.42199766 -122.08406925_Post Office=37.43850011 -122.16033269_Tech Startup=37.48566405 -122.14801303_Cupcake Shop=37.45276012 -122.18382041_Café=37.4448082 -122.1614778
+Tue Sep 04 16:00:00 UTC 2012,1,16,960,31,6,Colleges & Universities=1_Food=1_Travel & Transport=3_Professional & Other Places=1,Hotel=3_Burger Joint=1_Sorority House=1_Office=1,Four Seasons Hotel Silicon Valley at East Palo Alto=2_Sheraton Palo Alto=1_Coldwell Banker Residential Brokerage=1_Kirk's Steakburger=1_Pi Beta Phi (ΠΒΦ)=1,Office=37.44961213 -122.186828_Sorority House=37.42189754 -122.1623683_Burger Joint=37.438017 -122.15941787_Hotel=37.44141566 -122.16352604
+Tue Sep 04 16:30:00 UTC 2012,1,16,990,82,6,Shops & Services=3_Food=2_Travel & Transport=2_Professional & Other Places=1,Hotel=2_Miscellaneous Shop=1_Seafood Restaurant=1_Café=1_Gas Station / Garage=1_Office=1_Electronics Store=1,Four Seasons Hotel Silicon Valley at East Palo Alto=2_Fry's Electronics=1_Googleplex - 1950=1_Old Port Lobster Shack=1_Shell Gas Station=1,Electronics Store=37.42336947 -122.13680148_Office=37.42205787 -122.08776951_Gas Station / Garage=37.42396674 -122.1959017_Miscellaneous Shop=37.42336947 -122.13680148_Seafood Restaurant=37.4908213 -122.22828627_Café=37.42336947 -122.13680148_Hotel=37.45929173 -122.14148998
+Tue Sep 04 17:00:00 UTC 2012,1,17,1020,47,6,Shops & Services=1_Colleges & Universities=1_Outdoors & Recreation=1_Offices=1_Food=2_Food & Drink Shops=1_Professional & Other Places=1,Café=1_Cupcake Shop=1_Tech Startup=1_College Residence Hall=1_Hiking Trail=1_Grocery Store=1,Schwab Residential Center=1_SusieCakes=1_Whole Foods Market=1_Kleiner Perkins Caufield & Byers=1_Coyote Hills Regional Park=1_Crepes Cafe=1,Grocery Store=37.44228317 -122.15936802_Hiking Trail=37.5511697 -122.08659053_College Residence Hall=37.42651823 -122.16164109_Tech Startup=37.42170307 -122.21096596_Cupcake Shop=37.45276012 -122.18382041_Café=37.45505869 -122.183613
+Tue Sep 04 17:30:00 UTC 2012,1,17,1050,39,4,Food=2_Professional & Other Places=2,Building=2_Diner=1_Asian Restaurant=1,Google HQ=1_Da Sichuan Restaurant=1_Googleplex=1_Palo Alto Creamery=1,Building=37.42199766 -122.08406925_Diner=37.44389676 -122.16169238_Asian Restaurant=37.41790286 -122.13168902
+Tue Sep 04 18:00:00 UTC 2012,1,18,1080,68,8,Shops & Services=2_Outdoors & Recreation=3_Food=2_Professional & Other Places=1,Hiking Trail=2_Bike Shop=1_Restaurant=1_Field=1_Asian Restaurant=1_Office=1_Department Store=1,Shoreline Interpretive Trail=2_Asian Box=1_Nordstrom=1_Wilbur Field=1_Nordstrom Café Bistro=1_Velo tech cycles=1_DLA Piper=1,Department Store=37.43933389 -122.17365984_Office=37.4593769 -122.14283109_Asian Restaurant=37.43864514 -122.15979338_Bike Shop=37.44269371 -122.15978554_Restaurant=37.43904306 -122.17358223_Hiking Trail=37.43363644 -122.09887565_Field=37.42310533 -122.16423512
+Tue Sep 04 18:30:00 UTC 2012,1,18,1110,57,6,Shops & Services=1_Arts & Entertainment=4_Food=1_Professional & Other Places=2,Performing Arts Venue=2_Music Venue=1_Ice Cream Shop=1_Furniture / Home Store=1_School=1_Concert Hall=1_Office=1,Fox Theatre=2_Selby Lane School=1_IKEA=1_Wilson Sonsini Goodrich & Rosati=1_Michael's Gelato & Cafe=1,Office=37.42151816 -122.14439782_Performing Arts Venue=37.48630659 -122.2296003_School=37.4576842 -122.21975991_Music Venue=37.48630659 -122.2296003_Ice Cream Shop=37.44758145 -122.1599058_Concert Hall=37.48630659 -122.2296003_Furniture / Home Store=37.46106312 -122.13891506
+Tue Sep 04 19:00:00 UTC 2012,1,19,1140,74,4,Shops & Services=1_Residences=1_Travel & Transport=1_Professional & Other Places=1,Hardware Store=1_Home (private)=1_Hotel=1_Office=1,The Green House=1_Orchard Supply Hardware=1_DLA Piper=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1,Office=37.4593769 -122.14283109_Hotel=37.45929173 -122.14148998_Home (private)=37.45883165 -122.1462193_Hardware Store=37.47932921 -122.21831924
+Tue Sep 04 19:30:00 UTC 2012,1,19,1170,22,1,Food=1,Burger Joint=1,The Counter=1,Burger Joint=37.42680311 -122.14425919
+Tue Sep 04 20:00:00 UTC 2012,1,20,1200,43,2,Residences=1_Offices=1_Professional & Other Places=1,Tech Startup=1_Residential Building (Apartment / Condo)=1,Rellas Palace=1_StartX=1,Residential Building (Apartment / Condo)=37.47075 -122.215521_Tech Startup=37.4250139 -122.13919401
+Tue Sep 04 20:30:00 UTC 2012,1,20,1230,39,2,Colleges & Universities=1_Shops & Services=1,General College & University=1_Electronics Store=1,Apple Store=1_KZSU Stanford 90.1 FM=1,Electronics Store=37.44782779 -122.15984166_General College & University=37.42934816 -122.1666583
+Tue Sep 04 21:00:00 UTC 2012,1,21,1260,29,3,Shops & Services=1_Food=1_Travel & Transport=1,Furniture / Home Store=1_Vietnamese Restaurant=1_General Travel=1,Far Far Away=1_IKEA=1_Tamarine Restaurant=1,General Travel=37.450282 -122.206533_Vietnamese Restaurant=37.448966 -122.15846835_Furniture / Home Store=37.46106312 -122.13891506
+Tue Sep 04 21:30:00 UTC 2012,1,21,1290,42,1,Shops & Services=1_Food & Drink Shops=1,Grocery Store=1,Food Co=1,Grocery Store=37.48635463 -122.21650137
+Tue Sep 04 22:00:00 UTC 2012,1,22,1320,14,1,Shops & Services=1_Food & Drink Shops=1,Grocery Store=1,Whole Foods Market=1,Grocery Store=37.44228317 -122.15936802
+Tue Sep 04 22:30:00 UTC 2012,1,22,1350,17,0,"","","",""
+Tue Sep 04 23:00:00 UTC 2012,1,23,1380,17,0,"","","",""
+Tue Sep 04 23:30:00 UTC 2012,1,23,1410,11,0,"","","",""
+Wed Sep 05 00:00:00 UTC 2012,2,0,0,24,2,Arts & Entertainment=1_Professional & Other Places=1,Concert Hall=1_Office=1,Highland Capital Partners=1_Music=1,Office=37.423433 -122.204757_Concert Hall=37.450266 -122.206533
+Wed Sep 05 00:30:00 UTC 2012,2,0,30,3,0,"","","",""
+Wed Sep 05 01:00:00 UTC 2012,2,1,60,13,0,"","","",""
+Wed Sep 05 01:30:00 UTC 2012,2,1,90,6,0,"","","",""
+Wed Sep 05 02:00:00 UTC 2012,2,2,120,0,0,"","","",""
+Wed Sep 05 02:30:00 UTC 2012,2,2,150,1,0,"","","",""
+Wed Sep 05 03:00:00 UTC 2012,2,3,180,0,0,"","","",""
+Wed Sep 05 03:30:00 UTC 2012,2,3,210,1,0,"","","",""
+Wed Sep 05 04:00:00 UTC 2012,2,4,240,2,0,"","","",""
+Wed Sep 05 04:30:00 UTC 2012,2,4,270,2,0,"","","",""
+Wed Sep 05 05:00:00 UTC 2012,2,5,300,3,0,"","","",""
+Wed Sep 05 05:30:00 UTC 2012,2,5,330,7,0,"","","",""
+Wed Sep 05 06:00:00 UTC 2012,2,6,360,5,1,Travel & Transport=1,Hotel=1,Four Seasons Hotel Silicon Valley at East Palo Alto=1,Hotel=37.45929173 -122.14148998
+Wed Sep 05 06:30:00 UTC 2012,2,6,390,15,1,Travel & Transport=1,General Travel=1,Far Far Away=1,General Travel=37.450282 -122.206533
+Wed Sep 05 07:00:00 UTC 2012,2,7,420,11,1,Shops & Services=1_Gyms or Fitness Centers=1,Yoga Studio=1,Be Yoga=1,Yoga Studio=37.44789539 -122.1605101
+Wed Sep 05 07:30:00 UTC 2012,2,7,450,33,6,Colleges & Universities=1_Nightlife Spots=1_Hotels=1_Offices=1_Food=1_Travel & Transport=1_Professional & Other Places=2,Café=1_Sports Bar=1_Tech Startup=1_Resort=1_College Lab=1_Building=1,The Sports Page=1_Facebook HQ=1_Googleplex=1_Googleville=1_Epic Cafe=1_SLAC Natioal Accelerator Laboratory Bldg 35=1,Building=37.42139893 -122.0842244_College Lab=37.41662712 -122.20928688_Resort=37.41601031 -122.07795499_Tech Startup=37.48327006 -122.14953661_Sports Bar=37.41607098 -122.07860549_Café=37.48402404 -122.14894454
+Wed Sep 05 08:00:00 UTC 2012,2,8,480,31,7,Shops & Services=1_Colleges & Universities=2_Outdoors & Recreation=1_College Academic Buildings=1_Medical Centers=1_Gyms or Fitness Centers=1_Professional & Other Places=3,Office=2_University=1_Garden=1_College Engineering Building=1_Emergency Room=1_Gym=1,Orrick Silicon Valley=1_Stanford University=1_Googleplex - 1950=1_Gold's Gym=1_Stanford Hospital Emergency Department=1_The Garden=1_Hasso Plattner Institute of Design at Stanford (d.School)=1,Office=37.42205787 -122.08776951_Emergency Room=37.43438564 -122.17462063_College Engineering Building=37.42613125 -122.17179724_Garden=37.450266 -122.206535_University=37.42893314 -122.16981411_Gym=37.41445393 -122.07890929
+Wed Sep 05 08:30:00 UTC 2012,2,8,510,23,3,Shops & Services=1_Professional & Other Places=2,Office=2_Gym / Fitness Center=1,CA Technologies=1_Andreessen Horowitz=1_Core Studio=1,Office=37.4196374 -122.21486449_Gym / Fitness Center=37.43457307 -122.12783217
+Wed Sep 05 09:00:00 UTC 2012,2,9,540,24,3,Outdoors & Recreation=1_Professional & Other Places=2,Other Great Outdoors=1_Office=1_Building=1,Google HQ=1_Downtown Palo Alto=1_BMW Group Technology Office USA=1,Building=37.42199766 -122.08406925_Office=37.42573812 -122.09780216_Other Great Outdoors=37.44602201 -122.16148853
+Wed Sep 05 09:30:00 UTC 2012,2,9,570,38,4,Colleges & Universities=1_Shops & Services=1_Professional & Other Places=1,Automotive Shop=1_University=1_Office=1,Stanford University=1_Googleplex=1_Magnussen's Toyota of Palo Alto=1_Stanford EV Studio 2=1,Office=37.42194653 -122.08385468_University=37.42893314 -122.16981411_Automotive Shop=37.41542718 -122.1026699
+Wed Sep 05 10:00:00 UTC 2012,2,10,600,38,1,Colleges & Universities=1,College Quad=1,The Stanford Oval=1,College Quad=37.42992995 -122.16927767
+Wed Sep 05 10:30:00 UTC 2012,2,10,630,26,4,Professional & Other Places=4,Office=3_Building=1,Googleplex=2_Dreyfus Properties=1_Googleplex - 1600=1,Building=37.42594666 -122.19309877_Office=37.41739422 -122.08406351
+Wed Sep 05 11:00:00 UTC 2012,2,11,660,21,5,Medical Centers=3_Professional & Other Places=4,Hospital=2_Office=1_Doctor's Office=1,Altos Ventures=1_Stanford Orthopedic Specialties Center=1_Stanford Medicine Outpatient Center=1_Stanford Sleep Center=1_AOL West Coast=1,Doctor's Office=37.48619582 -122.20311341_Office=37.4253184 -122.1390671_Hospital=37.485937 -122.20269
+Wed Sep 05 11:30:00 UTC 2012,2,11,690,25,2,Colleges & Universities=1_Food=1,University=1_Coffee Shop=1,Stanford University=1_Starbucks=1,Coffee Shop=37.42420042 -122.17087702_University=37.42893314 -122.16981411
+Wed Sep 05 12:00:00 UTC 2012,2,12,720,25,4,Shops & Services=1_Food=3,Mexican Restaurant=2_Vietnamese Restaurant=1_Drugstore / Pharmacy=1,CVS/pharmacy=1_Chipotle Mexican Grill=1_Hometown Noodle=1_Reposado=1,Mexican Restaurant=37.42179316 -122.0965898_Vietnamese Restaurant=37.472426 -122.204753_Drugstore / Pharmacy=37.44642709 -122.16055445
+Wed Sep 05 12:30:00 UTC 2012,2,12,750,30,3,Offices=1_Food=2_Professional & Other Places=1,Tech Startup=1_Burger Joint=1_Food Truck=1,Facebook HQ=1_Food truck driveway at HighWire=1_In-N-Out Burger=1,Food Truck=37.41603297 -122.14827061_Burger Joint=37.490624 -122.227828_Tech Startup=37.48327006 -122.14953661
+Wed Sep 05 13:00:00 UTC 2012,2,13,780,31,4,Shops & Services=3_Travel & Transport=1_Food & Drink Shops=1_Gyms or Fitness Centers=1,Gym=1_Paper / Office Supplies Store=1_Train Station=1_Grocery Store=1,California Ave Caltrain Station=1_Mollie Stone's Markets=1_Gold's Gym=1_Kelly Paper=1,Grocery Store=37.428832 -122.143294_Train Station=37.42890851 -122.1414368_Paper / Office Supplies Store=37.416466 -122.102525_Gym=37.41445393 -122.07890929
+Wed Sep 05 13:30:00 UTC 2012,2,13,810,4,1,Offices=1_Professional & Other Places=1,Tech Startup=1,DudaMobile=1,Tech Startup=37.42559328 -122.1492362
+Wed Sep 05 14:00:00 UTC 2012,2,14,840,0,0,"","","",""
+Wed Sep 05 14:30:00 UTC 2012,2,14,870,0,0,"","","",""
+Wed Sep 05 15:00:00 UTC 2012,2,15,900,0,0,"","","",""
+Wed Sep 05 15:30:00 UTC 2012,2,15,930,0,0,"","","",""
+Wed Sep 05 16:00:00 UTC 2012,2,16,960,0,0,"","","",""
+Wed Sep 05 16:30:00 UTC 2012,2,16,990,46,2,Shops & Services=1_Food=1,Café=1_Spa / Massage=1,La Boulange de Palo Alto=1_LaBelle Day Spas & Salons=1,Spa / Massage=37.444741 -122.17147171_Café=37.44423304 -122.16332645
+Wed Sep 05 17:00:00 UTC 2012,2,17,1020,47,5,Colleges & Universities=1_Offices=1_Food=2_College Academic Buildings=1_Professional & Other Places=2,Tech Startup=1_New American Restaurant=1_College Engineering Building=1_Post Office=1_Mediterranean Restaurant=1,Mozes=1_Lavanda=1_Hasso Plattner Institute of Design at Stanford (d.School)=1_University Cafe=1_FedEx Office Print & Ship Center=1,Mediterranean Restaurant=37.444732 -122.16309249_Post Office=37.42792798 -122.143264_College Engineering Building=37.42613125 -122.17179724_New American Restaurant=37.44568447 -122.16192938_Tech Startup=37.42603799 -122.140982
+Wed Sep 05 17:30:00 UTC 2012,2,17,1050,28,2,Residences=1_Food=1,Home (private)=1_New American Restaurant=1,UpWest Labs House=1_University Cafe=1,New American Restaurant=37.44568447 -122.16192938_Home (private)=37.47380022 -122.1916328
+Wed Sep 05 18:00:00 UTC 2012,2,18,1080,38,2,Shops & Services=1_Food=1,Asian Restaurant=1_Clothing Store=1,Da Sichuan Restaurant=1_American Apparel=1,Clothing Store=37.444364 -122.162956_Asian Restaurant=37.41790286 -122.13168902
+Wed Sep 05 18:30:00 UTC 2012,2,18,1110,36,6,Colleges & Universities=1_Nightlife Spots=1_Arts & Entertainment=3_Food=2_Travel & Transport=1,Concert Hall=1_Community College=1_Hotel=1_Wine Bar=1_Music Venue=1_Tapas Restaurant=1_Performing Arts Venue=1_Coffee Shop=1,Angelica's Bell Theatre & Bistro=1_Fox Theatre=1_Garden Court Hotel=1_Joya Restaurant & Lounge=1_Starbucks=1_Menlo College=1,Coffee Shop=37.42420042 -122.17087702_Performing Arts Venue=37.48630659 -122.2296003_Tapas Restaurant=37.44654203 -122.16124746_Music Venue=37.48630659 -122.2296003_Wine Bar=37.48544305 -122.22601553_Hotel=37.44792148 -122.15884924_Community College=37.45616183 -122.19222307_Concert Hall=37.48630659 -122.2296003
+Wed Sep 05 19:00:00 UTC 2012,2,19,1140,40,7,Colleges & Universities=1_Shops & Services=1_Outdoors & Recreation=1_Residences=1_Food=1_Professional & Other Places=2,Office=2_Burrito Place=1_College Bookstore=1_Bookstore=1_Plaza=1_Home (private)=1,Stanford University Bookstore=1_The Claw=1_Books Inc.=1_Googleplex=1_Rojoz Gourmet Wraps=1_Startup Embassy (dot) com=1_AOL West Coast=1,Office=37.42533623 -122.1391633_Plaza=37.42520215 -122.16956319_Bookstore=37.43802112 -122.15952268_Burrito Place=37.41924462 -122.11040775_College Bookstore=37.42491006 -122.1689035_Home (private)=37.41775625 -122.12350537
+Wed Sep 05 19:30:00 UTC 2012,2,19,1170,41,1,Colleges & Universities=1,College Academic Building=1,Hoover Tower=1,College Academic Building=37.42781703 -122.16684222
+Wed Sep 05 20:00:00 UTC 2012,2,20,1200,51,3,Food=2_Professional & Other Places=1,Pizza Place=1_Office=1_French Restaurant=1,Bistro Elan on Birch Street=1_California Pizza Kitchen=1_AOL West Coast=1,French Restaurant=37.42771689 -122.14441445_Office=37.42533623 -122.1391633_Pizza Place=37.443514 -122.17223346
+Wed Sep 05 20:30:00 UTC 2012,2,20,1230,38,2,Shops & Services=1_Residences=1_Gyms or Fitness Centers=1,Gym=1_Residential Building (Apartment / Condo)=1,Rellas Palace=1_Googleplex - B40 Gym=1,Residential Building (Apartment / Condo)=37.47075 -122.215521_Gym=37.42237682 -122.08475322
+Wed Sep 05 21:00:00 UTC 2012,2,21,1260,28,1,Food=1,Burger Joint=1,Five Guys Burgers & Fries=1,Burger Joint=37.48634836 -122.22906287
+Wed Sep 05 21:30:00 UTC 2012,2,21,1290,34,1,Professional & Other Places=1,Office=1,Wilson Sonsini Goodrich & Rosati=1,Office=37.42151816 -122.14439782
+Wed Sep 05 22:00:00 UTC 2012,2,22,1320,43,0,"","","",""
+Wed Sep 05 22:30:00 UTC 2012,2,22,1350,28,1,Nightlife Spots=1,Bar=1,Antonio's Nut House=1,Bar=37.427091 -122.143896
+Wed Sep 05 23:00:00 UTC 2012,2,23,1380,34,1,Outdoors & Recreation=1,Neighborhood=1,"Palo Alto, CA=1",Neighborhood=37.44706119 -122.15616703
+Wed Sep 05 23:30:00 UTC 2012,2,23,1410,24,0,"","","",""
+Thu Sep 06 00:00:00 UTC 2012,3,0,0,10,0,"","","",""
+Thu Sep 06 00:30:00 UTC 2012,3,0,30,7,0,"","","",""
+Thu Sep 06 01:00:00 UTC 2012,3,1,60,4,0,"","","",""
+Thu Sep 06 01:30:00 UTC 2012,3,1,90,2,0,"","","",""
+Thu Sep 06 02:00:00 UTC 2012,3,2,120,2,0,"","","",""
+Thu Sep 06 02:30:00 UTC 2012,3,2,150,3,0,"","","",""
+Thu Sep 06 03:00:00 UTC 2012,3,3,180,2,0,"","","",""
+Thu Sep 06 03:30:00 UTC 2012,3,3,210,6,0,"","","",""
+Thu Sep 06 04:00:00 UTC 2012,3,4,240,2,0,"","","",""
+Thu Sep 06 04:30:00 UTC 2012,3,4,270,7,0,"","","",""
+Thu Sep 06 05:00:00 UTC 2012,3,5,300,4,0,"","","",""
+Thu Sep 06 05:30:00 UTC 2012,3,5,330,4,0,"","","",""
+Thu Sep 06 06:00:00 UTC 2012,3,6,360,5,2,Food=2,Greek Restaurant=1_Coffee Shop=1,Evvia Estiatorio=1_Starbucks=1,Coffee Shop=37.42146937 -122.09634304_Greek Restaurant=37.4451873 -122.16376442
+Thu Sep 06 06:30:00 UTC 2012,3,6,390,4,0,"","","",""
+Thu Sep 06 07:00:00 UTC 2012,3,7,420,19,3,Colleges & Universities=1_Food=1_Medical Centers=1_Professional & Other Places=1,Café=1_College Lab=1_Emergency Room=1,Stanford Hospital Emergency Department=1_Googleplex - The Hub=1_SLAC Natioal Accelerator Laboratory Bldg 35=1,Emergency Room=37.43438564 -122.17462063_College Lab=37.41662712 -122.20928688_Café=37.41885397 -122.0824711
+Thu Sep 06 07:30:00 UTC 2012,3,7,450,15,3,Colleges & Universities=1_Food=1_Medical Centers=1_Professional & Other Places=1,Coffee Shop=1_Doctor's Office=1_College Administrative Building=1,Cardiovascular Medicine And Cardiac Arrhythmias=1_Stanford Menlo Park=1_Starbucks=1,College Administrative Building=37.45829822 -122.17582174_Doctor's Office=37.43314914 -122.17535056_Coffee Shop=37.41747209 -122.13055685
+Thu Sep 06 08:00:00 UTC 2012,3,8,480,18,1,Food=1,Coffee Shop=1,Café Venetia=1,Coffee Shop=37.44338141 -122.16496468
+Thu Sep 06 08:30:00 UTC 2012,3,8,510,21,2,Food=2,Coffee Shop=2,Starbucks=2,Coffee Shop=37.42688743 -122.1440374
+Thu Sep 06 09:00:00 UTC 2012,3,9,540,24,2,Professional & Other Places=2,Office=1_Building=1,Dreyfus Properties=1_CA Technologies=1,Building=37.42594666 -122.19309877_Office=37.510884 -122.203781
+Thu Sep 06 09:30:00 UTC 2012,3,9,570,16,1,Professional & Other Places=1,Office=1,Googleplex - 2000=1,Office=37.42273043 -122.08859682
+Thu Sep 06 10:00:00 UTC 2012,3,10,600,23,5,Colleges & Universities=1_Food=1_Offices=1_Professional & Other Places=3,Tech Startup=1_College Bookstore=1_Mexican Restaurant=1_Post Office=1_Building=1,Stanford University Bookstore=1_Tacos El Camino=1_Barnes & Noble=1_US Post Office=1_Mint.com HQ - Intuit Building 3=1,Building=37.44369631 -122.1618573_Post Office=37.424429 -122.16891_Mexican Restaurant=37.472701 -122.216317_College Bookstore=37.42491006 -122.1689035_Tech Startup=37.426807 -122.095695
+Thu Sep 06 10:30:00 UTC 2012,3,10,630,18,0,"","","",""
+Thu Sep 06 11:00:00 UTC 2012,3,11,660,20,0,"","","",""
+Thu Sep 06 11:30:00 UTC 2012,3,11,690,27,4,Shops & Services=1_Food=2_Offices=1_Professional & Other Places=1,Coworking Space=1_Juice Bar=1_Coffee Shop=1_Electronics Store=1,Apple Store=1_AOL First Floor Labs=1_Jamba Juice=1_Starbucks=1,Electronics Store=37.44782779 -122.15984166_Coffee Shop=37.42420042 -122.17087702_Juice Bar=37.43790865 -122.15971828_Coworking Space=37.42530392 -122.13925202
+Thu Sep 06 12:00:00 UTC 2012,3,12,720,21,10,Colleges & Universities=3_Shops & Services=2_Arts & Entertainment=3_Food=2_Museums=1_College Stadiums=1_Gyms or Fitness Centers=1,Gym=1_College Football Field=1_University=1_College Academic Building=1_Italian Restaurant=1_Sandwich Place=1_Art Museum=1_Music Venue=1,Stanford Law School Cafe=1_Stone River Sculpture=1_Stanford University=1_Stanford Shopping Center=1_Laurence Frost Amphitheater=1_The Bar Method - Palo Alto=1_Iris & B. Gerald Cantor Center for Visual Arts=1_Il Fornaio=1_Stanford Stadium=1_Jordan Hall=1,Music Venue=37.43063709 -122.16620922_Art Museum=37.43277112 -122.17043908_Sandwich Place=37.424281 -122.167868_Italian Restaurant=37.447877 -122.159001_College Academic Building=37.42869458 -122.17083335_University=37.42893314 -122.16981411_College Football Field=37.43472641 -122.16101646_Gym=37.43887711 -122.15816493
+Thu Sep 06 12:30:00 UTC 2012,3,12,750,21,3,Food=4,Café=1_Sushi Restaurant=1_Japanese Restaurant=1_American Restaurant=1,Yokohama=1_Bytes Café=1_LYFE Kitchen=1,American Restaurant=37.44365825 -122.16193378_Japanese Restaurant=37.48667658 -122.22784948_Sushi Restaurant=37.48667658 -122.22784948_Café=37.42938698 -122.17356006
+Thu Sep 06 13:00:00 UTC 2012,3,13,780,29,8,Offices=2_Food=3_Professional & Other Places=4,Office=2_Seafood Restaurant=2_Tech Startup=1_Cafeteria=1_Coffee Shop=1,Old Port Lobster Shack=2_Facebook HQ=1_Googleplex - GWC2=1_Cool Cafe @ MBP=1_Googleplex - 43=1_Pacific Shores Cafe=1_Philz Coffee=1,Coffee Shop=37.42950397 -122.12268502_Office=37.42159719 -122.08413363_Tech Startup=37.48327006 -122.14953661_Seafood Restaurant=37.4908213 -122.22828627_Cafeteria=37.51215576 -122.2014065
+Thu Sep 06 13:30:00 UTC 2012,3,13,810,25,3,Food=2_Professional & Other Places=1,Burger Joint=1_Cuban Restaurant=1_Office=1,Dreyfus Properties=1_La Bodeguita del Medio=1_The Counter=1,Office=37.442766 -122.159855_Cuban Restaurant=37.42548033 -122.14530163_Burger Joint=37.42680311 -122.14425919
+Thu Sep 06 14:00:00 UTC 2012,3,14,840,18,1,"","",Ferrari=1,""
+Thu Sep 06 14:30:00 UTC 2012,3,14,870,20,2,Colleges & Universities=1_Shops & Services=1,University=1_Spa / Massage=1,Sense® Spa at Rosewood Sand Hill=1_Stanford Visitor Center=1,Spa / Massage=37.41901537 -122.21365213_University=37.431585 -122.163683
+Thu Sep 06 15:00:00 UTC 2012,3,15,900,15,0,"","","",""
+Thu Sep 06 15:30:00 UTC 2012,3,15,930,37,0,"","","",""
+Thu Sep 06 16:00:00 UTC 2012,3,16,960,45,2,Shops & Services=1_Offices=1_Professional & Other Places=1,Hardware Store=1_Tech Startup=1,Gigya=1_Home Depot=1,Tech Startup=37.42127715 -122.09793262_Hardware Store=37.45907183 -122.13595814
+Thu Sep 06 16:30:00 UTC 2012,3,16,990,55,2,Offices=2_Professional & Other Places=2,Tech Startup=2,StartX=2,Tech Startup=37.4250139 -122.13919401
+Thu Sep 06 17:00:00 UTC 2012,3,17,1020,46,4,Shops & Services=1_Colleges & Universities=1_Offices=1_Professional & Other Places=2,Mobile Phone Shop=1_Tech Startup=1_General College & University=1_Office=1,Frances C. Arrillaga Alumni Center=1_Learning Ally=1_AT&T=1_StartX=1,Office=37.450809 -122.116428_General College & University=37.43061153 -122.16466963_Tech Startup=37.4250139 -122.13919401_Mobile Phone Shop=37.42330458 -122.14156988
+Thu Sep 06 17:30:00 UTC 2012,3,17,1050,43,2,Shops & Services=1_Professional & Other Places=1,Salon / Barbershop=1_Office=1,Great Clips=1_BUILD HQ=1,Office=37.485119 -122.211259_Salon / Barbershop=37.45592117 -122.22902963
+Thu Sep 06 18:00:00 UTC 2012,3,18,1080,26,0,"","","",""
+Thu Sep 06 18:30:00 UTC 2012,3,18,1110,34,6,Arts & Entertainment=1_Offices=2_Food=3_Professional & Other Places=2,Cafeteria=1_Coworking Space=1_Latin American Restaurant=1_American Restaurant=1_Italian Restaurant=1_Performing Arts Venue=1,NestGSV=1_Fox Theatre=1_La Viga=1_Harry's Hofbrau=1_Vero=1_Googleplex - Yoshka's Café=1,Performing Arts Venue=37.48630659 -122.2296003_Italian Restaurant=37.44545387 -122.16108668_American Restaurant=37.47744556 -122.22445305_Latin American Restaurant=37.48692585 -122.22286837_Coworking Space=37.48460292 -122.20324642_Cafeteria=37.42199741 -122.08425769
+Thu Sep 06 19:00:00 UTC 2012,3,19,1140,41,4,Shops & Services=1_Colleges & Universities=1_Food=1_Professional & Other Places=1,College Residence Hall=1_Event Space=1_Mexican Restaurant=1_Department Store=1,TechShop=1_Nordstrom=1_Reposado=1_Donner House=1,Department Store=37.43933389 -122.17365984_Mexican Restaurant=37.4441996 -122.16106451_Event Space=37.48320342 -122.17809_College Residence Hall=37.42430245 -122.16628969
+Thu Sep 06 19:30:00 UTC 2012,3,19,1170,48,2,Shops & Services=1_Professional & Other Places=1,Mall=1_Office=1,Googleplex=1_Town & Country Village=1,Office=37.42194653 -122.08385468_Mall=37.4382359 -122.15917952
+Thu Sep 06 20:00:00 UTC 2012,3,20,1200,53,7,Nightlife Spots=1_Residences=1_Food=3_Travel & Transport=1,Wine Bar=1_Hotel=1_Residential Building (Apartment / Condo)=1_Mexican Restaurant=1_American Restaurant=1_Fast Food Restaurant=1,Rellas Palace=1_Vino Locale=1_The Cheesecake Factory=1_Wendy's=1_Googleplex - Wetlands=1_La Victoria Taqueria=1_Four Seasons Hotel Silicon Valley at East Palo Alto=1,Fast Food Restaurant=37.47759123 -122.22388744_American Restaurant=37.44708 -122.16055958_Mexican Restaurant=37.48572383 -122.226155_Residential Building (Apartment / Condo)=37.47075 -122.215521_Hotel=37.45929173 -122.14148998_Wine Bar=37.44837738 -122.1603715
+Thu Sep 06 20:30:00 UTC 2012,3,20,1230,39,0,"","","",""
+Thu Sep 06 21:00:00 UTC 2012,3,21,1260,22,2,Hotels=1_Travel & Transport=2,Hotel=1_Motel=1,Holiday Inn Express=1_Quality Inn Palo Alto=1,Motel=37.41727858 -122.12904885_Hotel=37.4776 -122.224527
+Thu Sep 06 21:30:00 UTC 2012,3,21,1290,22,0,"","","",""
+Thu Sep 06 22:00:00 UTC 2012,3,22,1320,24,3,Nightlife Spots=1_Residences=2,Home (private)=2_Wine Bar=1,Startup Embassy (dot) com=2_The Living Room=1,Wine Bar=37.486744 -122.227151_Home (private)=37.41775625 -122.12350537
+Thu Sep 06 22:30:00 UTC 2012,3,22,1350,35,1,Nightlife Spots=1,Sports Bar=1,The Old Pro=1,Sports Bar=37.44491245 -122.16125301
+Thu Sep 06 23:00:00 UTC 2012,3,23,1380,24,1,Nightlife Spots=1,Bar=1,Antonio's Nut House=1,Bar=37.427091 -122.143896
+Thu Sep 06 23:30:00 UTC 2012,3,23,1410,21,1,Travel & Transport=1,Hotel=1,Four Seasons Hotel Silicon Valley at East Palo Alto=1,Hotel=37.45929173 -122.14148998
+Fri Sep 07 00:00:00 UTC 2012,4,0,0,23,0,"","","",""
+Fri Sep 07 00:30:00 UTC 2012,4,0,30,8,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Blackbox Mansion=1,Tech Startup=37.46700692 -122.21136494
+Fri Sep 07 01:00:00 UTC 2012,4,1,60,5,0,"","","",""
+Fri Sep 07 01:30:00 UTC 2012,4,1,90,11,0,"","","",""
+Fri Sep 07 02:00:00 UTC 2012,4,2,120,8,0,"","","",""
+Fri Sep 07 02:30:00 UTC 2012,4,2,150,1,0,"","","",""
+Fri Sep 07 03:00:00 UTC 2012,4,3,180,2,0,"","","",""
+Fri Sep 07 03:30:00 UTC 2012,4,3,210,8,0,"","","",""
+Fri Sep 07 04:00:00 UTC 2012,4,4,240,1,0,"","","",""
+Fri Sep 07 04:30:00 UTC 2012,4,4,270,2,0,"","","",""
+Fri Sep 07 05:00:00 UTC 2012,4,5,300,3,0,"","","",""
+Fri Sep 07 05:30:00 UTC 2012,4,5,330,3,0,"","","",""
+Fri Sep 07 06:00:00 UTC 2012,4,6,360,7,1,Professional & Other Places=1,Office=1,Googleplex - 45=1,Office=37.42005493 -122.08213806
+Fri Sep 07 06:30:00 UTC 2012,4,6,390,8,1,Food=1,Coffee Shop=1,Philz Coffee=1,Coffee Shop=37.42950397 -122.12268502
+Fri Sep 07 07:00:00 UTC 2012,4,7,420,32,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Wildfire HQ=1,Tech Startup=37.51222531 -122.20124024
+Fri Sep 07 07:30:00 UTC 2012,4,7,450,24,4,Shops & Services=1_Food=2_Medical Centers=1_Professional & Other Places=1,Coffee Shop=2_Emergency Room=1_Car Dealership=1,Starbucks=2_Stanford Hospital Emergency Department=1_UsedCarsdotcom Headquarters=1,Coffee Shop=37.42688743 -122.1440374_Emergency Room=37.43438564 -122.17462063_Car Dealership=37.48616791 -122.21126556
+Fri Sep 07 08:00:00 UTC 2012,4,8,480,19,1,Professional & Other Places=1,Office=1,Googleplex=1,Office=37.42194653 -122.08385468
+Fri Sep 07 08:30:00 UTC 2012,4,8,510,33,4,Shops & Services=1_Food=1_Professional & Other Places=2,Office=2_Coffee Shop=1_Electronics Store=1,Googleplex - 1098=1_CA Technologies=1_Microsoft Store=1_Starbucks=1,Electronics Store=37.44324946 -122.17127616_Coffee Shop=37.4801956 -122.15111173_Office=37.42038844 -122.08618837
+Fri Sep 07 09:00:00 UTC 2012,4,9,540,28,3,Shops & Services=1_Food=1_Medical Centers=1_Professional & Other Places=1,Hardware Store=1_Restaurant=1_Doctor's Office=1,Palo Alto Medical Foundation=1_Nordstrom Café Bistro=1_Home Depot=1,Doctor's Office=37.4916595 -122.22907395_Restaurant=37.43904306 -122.17358223_Hardware Store=37.45907183 -122.13595814
+Fri Sep 07 09:30:00 UTC 2012,4,9,570,27,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Wildfire HQ=1,Tech Startup=37.51222531 -122.20124024
+Fri Sep 07 10:00:00 UTC 2012,4,10,600,25,6,Shops & Services=1_Spiritual Centers=1_Offices=1_Professional & Other Places=5,Office=3_Church=1_Tech Startup=1_Department Store=1,Googleplex - 43=1_First Baptist Church of Palo Alto=1_Googleplex=1_Kohl's=1_Evernote=1_NSVG / Bullpen Club House=1,Department Store=37.4922023 -122.22422587_Office=37.42194653 -122.08385468_Church=37.43281554 -122.13981763_Tech Startup=37.49200089 -122.22229212
+Fri Sep 07 10:30:00 UTC 2012,4,10,630,28,4,Shops & Services=2_Food=1_Offices=1_Professional & Other Places=1,Tech Startup=1_Gym / Fitness Center=1_Paper / Office Supplies Store=1_Mexican Restaurant=1,10gen Palo Alto=1_Chipotle Mexican Grill=1_Kelly Paper=1_Googleplex - B1900 Gym=1,Mexican Restaurant=37.42179316 -122.0965898_Paper / Office Supplies Store=37.416466 -122.102525_Gym / Fitness Center=37.42277965 -122.08720918_Tech Startup=37.4492 -122.158677
+Fri Sep 07 11:00:00 UTC 2012,4,11,660,18,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Facebook HQ=1,Tech Startup=37.48327006 -122.14953661
+Fri Sep 07 11:30:00 UTC 2012,4,11,690,23,4,Shops & Services=1_Food=3_Food & Drink Shops=1,Fast Food Restaurant=1_Chinese Restaurant=1_Asian Restaurant=1_Grocery Store=1,Jack in the Box=1_Madame Tam Asian Bistro=1_P.F. Chang's=1_Costco=1,Grocery Store=37.42083884 -122.09522724_Asian Restaurant=37.44622362 -122.16120311_Chinese Restaurant=37.44361992 -122.16805995_Fast Food Restaurant=37.4674224 -122.20898764
+Fri Sep 07 12:00:00 UTC 2012,4,12,720,20,8,Shops & Services=2_Nightlife Spots=1_Residences=1_Food=1_Professional & Other Places=3,Office=2_Gift Shop=1_Residential Building (Apartment / Condo)=1_Salon / Barbershop=1_Hotel Bar=1_Mediterranean Restaurant=1_Building=1,Mediterranean Wraps=1_Rellas Palace=1_Madera Lounge @ Rosewood Hotel=1_Googleplex - 1098=1_Google HQ=1_Googleplex=1_Supercuts=1_Googleplex - Google Store=1,Building=37.42199766 -122.08406925_Mediterranean Restaurant=37.42608052 -122.14499112_Office=37.42194653 -122.08385468_Gift Shop=37.422502 -122.08814237_Residential Building (Apartment / Condo)=37.47075 -122.215521_Salon / Barbershop=37.42199242 -122.096452_Hotel Bar=37.419538 -122.212205
+Fri Sep 07 12:30:00 UTC 2012,4,12,750,11,2,Shops & Services=1_Food=1,Miscellaneous Shop=1_Sandwich Place=1,Target=1_Erik's DeliCafe=1,Sandwich Place=37.42184655 -122.09670111_Miscellaneous Shop=37.47530039 -122.2177208
+Fri Sep 07 13:00:00 UTC 2012,4,13,780,19,3,Colleges & Universities=1_Food=2,Café=1_University=1_Caribbean Restaurant=1,Coconuts Caribbean Restaurant & Bar=1_Stanford Visitor Center=1_Googleplex - Nourish Cafe=1,Caribbean Restaurant=37.443928 -122.160166_University=37.431585 -122.163683_Café=37.42220791 -122.08738116
+Fri Sep 07 13:30:00 UTC 2012,4,13,810,26,3,Shops & Services=2_Food=1,Furniture / Home Store=1_Burger Joint=1_Sporting Goods Shop=1,Bed Bath & Beyond=1_REI=1_The Counter=1,Sporting Goods Shop=37.42310745 -122.09664009_Burger Joint=37.42680311 -122.14425919_Furniture / Home Store=37.42310533 -122.09753394
+Fri Sep 07 14:00:00 UTC 2012,4,14,840,29,5,Food=2_Offices=2_Professional & Other Places=3,Tech Startup=2_Parking=1_Pizza Place=1_Mexican Restaurant=1,Chipotle Mexican Grill=1_Chuck E. Cheese's=1_Jive=1_Blue Parking Lot=1_Plug and Play Tech Center - Palo Alto=1,Mexican Restaurant=37.42179316 -122.0965898_Pizza Place=37.47463464 -122.21639646_Parking=37.4484771 -122.15879697_Tech Startup=37.44723368 -122.16272771
+Fri Sep 07 14:30:00 UTC 2012,4,14,870,29,7,Shops & Services=1_Nightlife Spots=1_Food=2_Travel & Transport=1_Food & Drink Shops=1_Professional & Other Places=2,Building=2_Train Station=1_Sandwich Place=1_Mexican Restaurant=1_Wine Bar=1_Grocery Store=1,charles schwab=2_Le Boulanger=1_Beltramos=1_Costco=1_Menlo Park Caltrain Station=1_Sancho's Taqueria & Catering=1,Grocery Store=37.42083884 -122.09522724_Building=37.452788 -122.179932_Mexican Restaurant=37.43353723 -122.12885433_Sandwich Place=37.4516319 -122.184778_Train Station=37.4547944 -122.18251228_Wine Bar=37.45714 -122.18944
+Fri Sep 07 15:00:00 UTC 2012,4,15,900,33,3,Shops & Services=1_Colleges & Universities=4_College Academic Buildings=2,University=1_College Engineering Building=1_Spa / Massage=1_College Administrative Building=1_College Technology Building=1,Watercourse Way=1_Stanford Visitor Center=1_Hasso Plattner Institute of Design at Stanford (d.School)=1,College Technology Building=37.42613125 -122.17179724_College Administrative Building=37.42613125 -122.17179724_Spa / Massage=37.44115391 -122.15840888_College Engineering Building=37.42613125 -122.17179724_University=37.431585 -122.163683
+Fri Sep 07 15:30:00 UTC 2012,4,15,930,21,2,Spiritual Centers=1_Medical Centers=1_Professional & Other Places=2,Hospital=1_Church=1,Stanford University Medical Center=1_First Baptist Church of Palo Alto=1,Church=37.43281554 -122.13981763_Hospital=37.43428658 -122.17550023
+Fri Sep 07 16:00:00 UTC 2012,4,16,960,20,4,Outdoors & Recreation=1_Offices=1_Food=1_Professional & Other Places=2,Farm=1_Tech Startup=1_Burger Joint=1_Office=1,Stanford Community Farm=1_Googleplex - 1875=1_Wildfire HQ=1_The Counter=1,Office=37.421007 -122.08839641_Burger Joint=37.42680311 -122.14425919_Tech Startup=37.51222531 -122.20124024_Farm=37.4298842 -122.18632021
+Fri Sep 07 16:30:00 UTC 2012,4,16,990,32,1,Colleges & Universities=1,College Rec Center=1,Stanford Campus Recreational Association=1,College Rec Center=37.42011593 -122.15716505
+Fri Sep 07 17:00:00 UTC 2012,4,17,1020,37,3,Shops & Services=1_Offices=1_Professional & Other Places=2,Tech Startup=1_Spa / Massage=1_Office=1,Googleplex=1_Facebook HQ=1_Sense® Spa at Rosewood Sand Hill=1,Office=37.42194653 -122.08385468_Spa / Massage=37.41901537 -122.21365213_Tech Startup=37.48327006 -122.14953661
+Fri Sep 07 17:30:00 UTC 2012,4,17,1050,52,9,Shops & Services=1_Arts & Entertainment=5_Athletics & Sports=1_Outdoors & Recreation=1_Food=2,Music Venue=5_Golf Course=1_Miscellaneous Shop=1_Hot Dog Joint=1_Coffee Shop=1,Shoreline Amphitheatre=5_Philz Coffee=1_Gourmet Franks=1_Target=1_Stanford Driving Range=1,Coffee Shop=37.44212016 -122.16134171_Hot Dog Joint=37.442694 -122.171086_Music Venue=37.4268648 -122.08050718_Miscellaneous Shop=37.47530039 -122.2177208_Golf Course=37.42310533 -122.18163729
+Fri Sep 07 18:00:00 UTC 2012,4,18,1080,35,6,Colleges & Universities=1_Arts & Entertainment=4_Athletics & Sports=1_Stadiums=1_Outdoors & Recreation=1_Offices=1_Food=1_College Stadiums=1_Professional & Other Places=1,Music Venue=3_Italian Restaurant=1_Soccer Field=1_College Soccer Field=1_Tech Startup=1_Soccer Stadium=1,Shoreline Amphitheatre=2_Redwood City Music On The Square=1_Buca di Beppo=1_Laird Q. Cagan Stadium at Maloney Field=1_Color Labs HQ=1,Soccer Stadium=37.43300283 -122.1583368_College Soccer Field=37.43300283 -122.1583368_Music Venue=37.48660052 -122.2295726_Soccer Field=37.43300283 -122.1583368_Italian Restaurant=37.443495 -122.16126_Tech Startup=37.44419266 -122.16156347
+Fri Sep 07 18:30:00 UTC 2012,4,18,1110,44,5,Arts & Entertainment=3_Outdoors & Recreation=1_Food=1,Music Venue=3_Park=1_Coffee Shop=1,Shoreline Amphitheatre=3_Henry W. Seale Park=1_Starbucks=1,Coffee Shop=37.44678303 -122.16053228_Music Venue=37.4268648 -122.08050718_Park=37.43587799 -122.11834471
+Fri Sep 07 19:00:00 UTC 2012,4,19,1140,52,7,Outdoors & Recreation=1_Food=5,American Restaurant=2_Burger Joint=1_Mexican Restaurant=1_Tapas Restaurant=1_Campground=1,Milagros Cantina=1_Applebee’s Neighborhood Grill & Bar=1_Five Guys Burgers and Fries=1_Joya Restaurant & Lounge=1_Google Android Camp=1_Google Earth=1_LYFE Kitchen=1,Campground=37.42049267 -122.08369734_Tapas Restaurant=37.44654203 -122.16124746_Mexican Restaurant=37.48424912 -122.22641945_Burger Joint=37.48634836 -122.22906287_American Restaurant=37.48991042 -122.22347975
+Fri Sep 07 19:30:00 UTC 2012,4,19,1170,51,10,Arts & Entertainment=7_Offices=1_Food=2_Professional & Other Places=1,Music Venue=6_Tech Startup=1_BBQ Joint=1_Performing Arts Venue=1_Coffee Shop=1,Shoreline Amphitheatre=6_Facebook HQ=1_Lucie Stern Community Theatre=1_Back A Yard Caribbean American Grill=1_Café Venetia=1,Coffee Shop=37.44338141 -122.16496468_Performing Arts Venue=37.44425399 -122.14543471_Music Venue=37.4268648 -122.08050718_BBQ Joint=37.4726788 -122.154931_Tech Startup=37.48327006 -122.14953661
+Fri Sep 07 20:00:00 UTC 2012,4,20,1200,48,9,Shops & Services=1_Nightlife Spots=1_Arts & Entertainment=3_Food=3_Travel & Transport=1,Music Venue=2_Train Station=1_Burger Joint=1_Lounge=1_Concert Hall=1_Gastropub=1_Asian Restaurant=1_Electronics Store=1,Shoreline Amphitheatre=2_Apple Store=1_Atherton Caltrain Station=1_Five Guys Burgers and Fries=1_Martin's West=1_Asian Box=1_Shoreline Amphitheater=1_Shoreline-VIP Lounge=1,Electronics Store=37.44782779 -122.15984166_Asian Restaurant=37.43864514 -122.15979338_Gastropub=37.485994 -122.2262047_Music Venue=37.4268648 -122.08050718_Burger Joint=37.48634836 -122.22906287_Train Station=37.46470797 -122.19770908_Lounge=37.4268282 -122.0802797_Concert Hall=37.42884794 -122.08318949
+Fri Sep 07 20:30:00 UTC 2012,4,20,1230,34,6,Colleges & Universities=1_Arts & Entertainment=1_Outdoors & Recreation=1_Food=2,Vietnamese Restaurant=1_College Residence Hall=1_Burger Joint=1_Music Venue=1_Neighborhood=1_College & University=1,"Three Seasons Restaurant=1_Palo Alto, CA=1_Stanford Athletic Complex=1_Shoreline Amphitheatre=1_The Counter=1_Burbank House=1",College & University=37.43248335 -122.15535399_Neighborhood=37.44706119 -122.15616703_Music Venue=37.4268648 -122.08050718_Burger Joint=37.42680311 -122.14425919_College Residence Hall=37.42406814 -122.16525435_Vietnamese Restaurant=37.4453482 -122.161442
+Fri Sep 07 21:00:00 UTC 2012,4,21,1260,35,7,Arts & Entertainment=6_Food=1,Music Venue=6_Café=1,Shoreline Amphitheatre=6_Coupa Café=1,Music Venue=37.4268648 -122.08050718_Café=37.4448082 -122.1614778
+Fri Sep 07 21:30:00 UTC 2012,4,21,1290,16,1,Nightlife Spots=1,Wine Bar=1,The Wine Room=1,Wine Bar=37.444992 -122.161891
+Fri Sep 07 22:00:00 UTC 2012,4,22,1320,21,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1,Music Venue=37.4268648 -122.08050718
+Fri Sep 07 22:30:00 UTC 2012,4,22,1350,56,0,"","","",""
+Fri Sep 07 23:00:00 UTC 2012,4,23,1380,54,1,Food=1,Cajun / Creole Restaurant=1,Nola=1,Cajun / Creole Restaurant=37.444991 -122.1614187
+Fri Sep 07 23:30:00 UTC 2012,4,23,1410,27,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1,Music Venue=37.4268648 -122.08050718
+Sat Sep 08 00:00:00 UTC 2012,5,0,0,32,0,"","","",""
+Sat Sep 08 00:30:00 UTC 2012,5,0,30,9,0,"","","",""
+Sat Sep 08 01:00:00 UTC 2012,5,1,60,16,0,"","","",""
+Sat Sep 08 01:30:00 UTC 2012,5,1,90,2,0,"","","",""
+Sat Sep 08 02:00:00 UTC 2012,5,2,120,6,0,"","","",""
+Sat Sep 08 02:30:00 UTC 2012,5,2,150,4,0,"","","",""
+Sat Sep 08 03:00:00 UTC 2012,5,3,180,3,0,"","","",""
+Sat Sep 08 03:30:00 UTC 2012,5,3,210,1,0,"","","",""
+Sat Sep 08 04:00:00 UTC 2012,5,4,240,3,0,"","","",""
+Sat Sep 08 04:30:00 UTC 2012,5,4,270,1,0,"","","",""
+Sat Sep 08 05:00:00 UTC 2012,5,5,300,4,0,"","","",""
+Sat Sep 08 05:30:00 UTC 2012,5,5,330,0,0,"","","",""
+Sat Sep 08 06:00:00 UTC 2012,5,6,360,4,0,"","","",""
+Sat Sep 08 06:30:00 UTC 2012,5,6,390,2,0,"","","",""
+Sat Sep 08 07:00:00 UTC 2012,5,7,420,5,0,"","","",""
+Sat Sep 08 07:30:00 UTC 2012,5,7,450,11,0,"","","",""
+Sat Sep 08 08:00:00 UTC 2012,5,8,480,12,0,"","","",""
+Sat Sep 08 08:30:00 UTC 2012,5,8,510,20,2,Shops & Services=2_Gyms or Fitness Centers=2,Gym=2,Amity CrossFit=2,Gym=37.41867565 -122.13462171
+Sat Sep 08 09:00:00 UTC 2012,5,9,540,21,0,"","","",""
+Sat Sep 08 09:30:00 UTC 2012,5,9,570,23,0,"","","",""
+Sat Sep 08 10:00:00 UTC 2012,5,10,600,14,0,"","","",""
+Sat Sep 08 10:30:00 UTC 2012,5,10,630,27,0,"","","",""
+Sat Sep 08 11:00:00 UTC 2012,5,11,660,25,5,Shops & Services=3_Outdoors & Recreation=2_Food & Drink Shops=1,Hiking Trail=1_Neighborhood=1_Mall=1_Nail Salon=1_Grocery Store=1,"Shoreline Interpretive Trail=1_Stanford Shopping Center=1_La Jolie Nail Spa=1_Palo Alto, CA=1_Costco=1",Grocery Store=37.42083884 -122.09522724_Nail Salon=37.42695576 -122.14460852_Mall=37.44237626 -122.17110157_Neighborhood=37.44706119 -122.15616703_Hiking Trail=37.43363644 -122.09887565
+Sat Sep 08 11:30:00 UTC 2012,5,11,690,16,0,"","","",""
+Sat Sep 08 12:00:00 UTC 2012,5,12,720,18,4,Shops & Services=2_Food=2,Drugstore / Pharmacy=1_Sandwich Place=1_American Restaurant=1_Pet Store=1,Subway=1_The Cheesecake Factory=1_Bow Wow Meow=1_Walgreens=1,Pet Store=37.45233351 -122.18419611_American Restaurant=37.44708 -122.16055958_Sandwich Place=37.433434 -122.129118_Drugstore / Pharmacy=37.45236794 -122.18358206
+Sat Sep 08 12:30:00 UTC 2012,5,12,750,18,6,Shops & Services=3_Clothing Stores=1_Spiritual Centers=1_Food=2_Professional & Other Places=1,Seafood Restaurant=1_Bakery=1_Boutique=1_Mall=1_Church=1_Electronics Store=1,Stanford Shopping Center=1_Apple Store=1_Louis Vuitton=1_Palo Alto Baking Company=1_Old Port Lobster Shack=1_Lord's Grace Christian Church=1,Electronics Store=37.44306624 -122.17149854_Church=37.43046184 -122.09965781_Mall=37.44237626 -122.17110157_Boutique=37.44243258 -122.17233496_Bakery=37.42673477 -122.14435346_Seafood Restaurant=37.4908213 -122.22828627
+Sat Sep 08 13:00:00 UTC 2012,5,13,780,24,4,Shops & Services=1_Arts & Entertainment=1_Residences=1_Food=1,Residential Building (Apartment / Condo)=1_Historic Site=1_Italian Restaurant=1_Clothing Store=1,Mission Palo Alto=1_Valpo Hill=1_Urban Outfitters=1_Tootsies=1,Clothing Store=37.444302 -122.171205_Italian Restaurant=37.437224 -122.173211_Historic Site=37.431544 -122.210391_Residential Building (Apartment / Condo)=37.45607247 -122.13520288
+Sat Sep 08 13:30:00 UTC 2012,5,13,810,22,4,Shops & Services=1_Clothing Stores=1_Outdoors & Recreation=1_Food=2,Sushi Restaurant=1_Burger Joint=1_Park=1_Women's Store=1,Five Guys Burgers and Fries=1_Homma's Brown Rice Sushi=1_Chico's=1_Eucalyptus Grove=1,Women's Store=37.44712806 -122.1603216_Park=37.4363109 -122.165541_Burger Joint=37.48634836 -122.22906287_Sushi Restaurant=37.42782891 -122.14427412
+Sat Sep 08 14:00:00 UTC 2012,5,14,840,28,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Jive=1,Tech Startup=37.44723368 -122.16272771
+Sat Sep 08 14:30:00 UTC 2012,5,14,870,17,2,Food=2,New American Restaurant=1_Coffee Shop=1,Philz Coffee=1_University Cafe=1,Coffee Shop=37.42950397 -122.12268502_New American Restaurant=37.44568447 -122.16192938
+Sat Sep 08 15:00:00 UTC 2012,5,15,900,17,2,Food=2,Café=1_Burger Joint=1,Coupa Café=1_The Counter=1,Burger Joint=37.42680311 -122.14425919_Café=37.4448082 -122.1614778
+Sat Sep 08 15:30:00 UTC 2012,5,15,930,16,4,Colleges & Universities=3_Shops & Services=1_College Stadiums=3,College Football Field=3_Sporting Goods Shop=1,Stanford Stadium=3_REI=1,Sporting Goods Shop=37.42310745 -122.09664009_College Football Field=37.43472641 -122.16101646
+Sat Sep 08 16:00:00 UTC 2012,5,16,960,32,3,Colleges & Universities=2_Shops & Services=1_College Stadiums=1_Gyms or Fitness Centers=1,Gym=1_College Football Field=1_University=1,Stanford University=1_Stanford Stadium=1_Googleplex - GWC5 Gym=1,University=37.42893314 -122.16981411_College Football Field=37.43472641 -122.16101646_Gym=37.42484194 -122.09463193
+Sat Sep 08 16:30:00 UTC 2012,5,16,990,27,1,Shops & Services=1,Mall=1,Stanford Shopping Center=1,Mall=37.44237626 -122.17110157
+Sat Sep 08 17:00:00 UTC 2012,5,17,1020,32,2,Colleges & Universities=1_Food=1,Bakery=1_College Bookstore=1,Stanford University Bookstore=1_Paris Baguette=1,College Bookstore=37.42491006 -122.1689035_Bakery=37.447202 -122.160496
+Sat Sep 08 17:30:00 UTC 2012,5,17,1050,23,4,Shops & Services=1_Athletics & Sports=1_Outdoors & Recreation=1_Food=2,Furniture / Home Store=1_Golf Course=1_Bakery=1_Juice Bar=1,Mayfield Bakery & Cafe=1_IKEA=1_Shoreline Golf Links=1_Jamba Juice=1,Juice Bar=37.424343 -122.170534_Bakery=37.43814253 -122.15874195_Golf Course=37.43041911 -122.08538392_Furniture / Home Store=37.46106312 -122.13891506
+Sat Sep 08 18:00:00 UTC 2012,5,18,1080,24,4,Colleges & Universities=1_Shops & Services=1_Food=2_College Stadiums=1,Furniture / Home Store=1_Bakery=1_College Football Field=1_Japanese Restaurant=1,IKEA=1_Stanford Stadium=1_Paris Baguette=1_Sakura Teppanyaki & Sushi=1,Japanese Restaurant=37.48664466 -122.22894652_College Football Field=37.43472641 -122.16101646_Bakery=37.447202 -122.160496_Furniture / Home Store=37.46106312 -122.13891506
+Sat Sep 08 18:30:00 UTC 2012,5,18,1110,27,3,Colleges & Universities=2_Food=1_College Stadiums=2,College Football Field=2_Fast Food Restaurant=1,Stanford Stadium=2_McDonald's=1,Fast Food Restaurant=37.479278 -122.22429514_College Football Field=37.43472641 -122.16101646
+Sat Sep 08 19:00:00 UTC 2012,5,19,1140,33,4,Colleges & Universities=4_College Stadiums=4,College Football Field=4,Stanford Stadium=4,College Football Field=37.43472641 -122.16101646
+Sat Sep 08 19:30:00 UTC 2012,5,19,1170,53,6,Colleges & Universities=4_Food=1_College Stadiums=4_Professional & Other Places=1,College Football Field=4_Office=1_Mediterranean Restaurant=1,Stanford Stadium=4_Googleplex=1_Cafe 220=1,Mediterranean Restaurant=37.44498518 -122.16238398_Office=37.42194653 -122.08385468_College Football Field=37.43472641 -122.16101646
+Sat Sep 08 20:00:00 UTC 2012,5,20,1200,45,5,Colleges & Universities=3_Food=1_Travel & Transport=1_College Stadiums=3,College Football Field=3_Sushi Restaurant=1_Train Station=1,Stanford Stadium=3_Atherton Caltrain Station=1_Homma's Brown Rice Sushi=1,Train Station=37.46470797 -122.19770908_College Football Field=37.43472641 -122.16101646_Sushi Restaurant=37.42782891 -122.14427412
+Sat Sep 08 20:30:00 UTC 2012,5,20,1230,43,4,Colleges & Universities=1_Food=3_College Stadiums=1,Bakery=1_College Football Field=1_American Restaurant=1_Coffee Shop=1,Stanford Stadium=1_LYFE Kitchen=1_Paris Baguette=1_Starbucks=1,Coffee Shop=37.44678303 -122.16053228_American Restaurant=37.44365825 -122.16193378_College Football Field=37.43472641 -122.16101646_Bakery=37.447202 -122.160496
+Sat Sep 08 21:00:00 UTC 2012,5,21,1260,31,2,Colleges & Universities=1_Food=1_College Stadiums=1,Sushi Restaurant=1_College Football Field=1,Stanford Stadium=1_Kanpai Sushi=1,College Football Field=37.43472641 -122.16101646_Sushi Restaurant=37.447109 -122.162342
+Sat Sep 08 21:30:00 UTC 2012,5,21,1290,44,1,Colleges & Universities=1_College Stadiums=1,College Football Field=1,Stanford Stadium=1,College Football Field=37.43472641 -122.16101646
+Sat Sep 08 22:00:00 UTC 2012,5,22,1320,28,0,"","","",""
+Sat Sep 08 22:30:00 UTC 2012,5,22,1350,27,0,"","","",""
+Sat Sep 08 23:00:00 UTC 2012,5,23,1380,25,0,"","","",""
+Sat Sep 08 23:30:00 UTC 2012,5,23,1410,27,0,"","","",""
+Sun Sep 09 00:00:00 UTC 2012,6,0,0,19,0,"","","",""
+Sun Sep 09 00:30:00 UTC 2012,6,0,30,13,1,Food=1,Cajun / Creole Restaurant=1,Nola=1,Cajun / Creole Restaurant=37.444991 -122.1614187
+Sun Sep 09 01:00:00 UTC 2012,6,1,60,4,0,"","","",""
+Sun Sep 09 01:30:00 UTC 2012,6,1,90,9,1,Colleges & Universities=1,College Residence Hall=1,Burbank House=1,College Residence Hall=37.42406814 -122.16525435
+Sun Sep 09 02:00:00 UTC 2012,6,2,120,4,0,"","","",""
+Sun Sep 09 02:30:00 UTC 2012,6,2,150,16,0,"","","",""
+Sun Sep 09 03:00:00 UTC 2012,6,3,180,10,0,"","","",""
+Sun Sep 09 03:30:00 UTC 2012,6,3,210,5,2,Colleges & Universities=2,General College & University=2,KZSU Stanford 90.1 FM=2,General College & University=37.42934816 -122.1666583
+Sun Sep 09 04:00:00 UTC 2012,6,4,240,0,0,"","","",""
+Sun Sep 09 04:30:00 UTC 2012,6,4,270,2,0,"","","",""
+Sun Sep 09 05:00:00 UTC 2012,6,5,300,0,0,"","","",""
+Sun Sep 09 05:30:00 UTC 2012,6,5,330,1,0,"","","",""
+Sun Sep 09 06:00:00 UTC 2012,6,6,360,0,0,"","","",""
+Sun Sep 09 06:30:00 UTC 2012,6,6,390,5,0,"","","",""
+Sun Sep 09 07:00:00 UTC 2012,6,7,420,6,0,"","","",""
+Sun Sep 09 07:30:00 UTC 2012,6,7,450,3,0,"","","",""
+Sun Sep 09 08:00:00 UTC 2012,6,8,480,10,0,"","","",""
+Sun Sep 09 08:30:00 UTC 2012,6,8,510,22,4,Food=4,Coffee Shop=2_Donut Shop=1_Bakery=1,Mayfield Bakery & Cafe=1_Happy Donuts=1_Philz Coffee=1_Starbucks=1,Coffee Shop=37.44212016 -122.16134171_Donut Shop=37.416535 -122.12996_Bakery=37.43814253 -122.15874195
+Sun Sep 09 09:00:00 UTC 2012,6,9,540,21,3,Food=1_Spiritual Centers=2_Professional & Other Places=2,Church=2_Coffee Shop=1,First Baptist Church of Palo Alto=2_Starbucks=1,Coffee Shop=37.42688743 -122.1440374_Church=37.43281554 -122.13981763
+Sun Sep 09 09:30:00 UTC 2012,6,9,570,4,1,Nightlife Spots=1,Bar=1,Patio at Rudy's=1,Bar=37.44513411 -122.16389748
+Sun Sep 09 10:00:00 UTC 2012,6,10,600,19,4,Food=3_Professional & Other Places=1,Burger Joint=2_Spiritual Center=1_Breakfast Spot=1,The Dutch Goose=2_Alana's Cafe=1_Unitarian Universalist Church of Palo Alto=1,Burger Joint=37.43203856 -122.20155001_Spiritual Center=37.41950381 -122.11256538_Breakfast Spot=37.483612 -122.226446
+Sun Sep 09 10:30:00 UTC 2012,6,10,630,4,0,"","","",""
+Sun Sep 09 11:00:00 UTC 2012,6,11,660,19,2,Food=1,Burger Joint=1,The Dutch Goose=1_Cal Train=1,Burger Joint=37.43203856 -122.20155001
+Sun Sep 09 11:30:00 UTC 2012,6,11,690,13,1,Shops & Services=1,Electronics Store=1,Apple Store=1,Electronics Store=37.44782779 -122.15984166
+Sun Sep 09 12:00:00 UTC 2012,6,12,720,42,2,Shops & Services=2_Food & Drink Shops=1,Furniture / Home Store=1_Farmers Market=1,California Ave Farmers' Market=1_IKEA=1,Farmers Market=37.42617 -122.14495_Furniture / Home Store=37.46106312 -122.13891506
+Sun Sep 09 12:30:00 UTC 2012,6,12,750,19,6,Shops & Services=1_Arts & Entertainment=1_Outdoors & Recreation=1_Food=1_Offices=1_Food & Drink Shops=1_Professional & Other Places=2,Breakfast Spot=1_Tech Startup=1_Sculpture Garden=1_Parking=1_Music Venue=1_Grocery Store=1,Lucky=1_Redwood City Music On The Square=1_Calafia Cafe=1_Rodin Sculpture Garden=1_Blue Parking Lot=1_Plug and Play Tech Center - Palo Alto=1,Grocery Store=37.45667307 -122.22952827_Music Venue=37.48660052 -122.2295726_Parking=37.4484771 -122.15854748_Sculpture Garden=37.432394 -122.170755_Tech Startup=37.44864347 -122.15876925_Breakfast Spot=37.43847476 -122.1577549
+Sun Sep 09 13:00:00 UTC 2012,6,13,780,8,2,Food=2,Cupcake Shop=1_American Restaurant=1,St Michael's Alley=1_Sprinkles Cupcakes=1,American Restaurant=37.44164 -122.159713_Cupcake Shop=37.442309 -122.17308059
+Sun Sep 09 13:30:00 UTC 2012,6,13,810,20,4,Outdoors & Recreation=1_Food=2_Train Stations=1_Travel & Transport=1,Train=1_Pizza Place=1_Campground=1_French Restaurant=1,Round Table Pizza=1_Caltrain 217=1_Google Android Camp=1_Left Bank=1,French Restaurant=37.452786 -122.183361_Campground=37.42049267 -122.08369734_Pizza Place=37.45433193 -122.18508661_Train=37.45500703 -122.18263423
+Sun Sep 09 14:00:00 UTC 2012,6,14,840,32,2,Colleges & Universities=1_Shops & Services=1,Hardware Store=1_College Academic Building=1,Hoover Tower=1_Home Depot=1,College Academic Building=37.42781703 -122.16684222_Hardware Store=37.45907183 -122.13595814
+Sun Sep 09 14:30:00 UTC 2012,6,14,870,55,7,Shops & Services=1_Food=5_Professional & Other Places=1,Coffee Shop=2_Dessert Shop=2_Event Space=1_Juice Bar=1_Clothing Store=1,Abercrombie & Fitch=1_Fraiche Yogurt=1_Pinkberry=1_Cubberley Community Center & Theatre=1_Peet's Coffee & Tea=1_Jamba Juice=1_Starbucks=1,Clothing Store=37.443818 -122.17174295_Dessert Shop=37.44388185 -122.16150803_Coffee Shop=37.41930509 -122.11049438_Juice Bar=37.44362844 -122.17198133_Event Space=37.41715894 -122.10778415
+Sun Sep 09 15:00:00 UTC 2012,6,15,900,61,5,Shops & Services=2_Colleges & Universities=1_Outdoors & Recreation=1_Food=1_Gyms or Fitness Centers=1,Gym=1_Café=1_University=1_Neighborhood=1_Electronics Store=1,"Coupa Café=1_Stanford University=1_Apple Store=1_Palo Alto Family YMCA=1_Palo Alto, CA=1",Electronics Store=37.44306624 -122.17149854_Neighborhood=37.44706119 -122.15616703_University=37.42893314 -122.16981411_Café=37.4448082 -122.1614778_Gym=37.42835379 -122.11647034
+Sun Sep 09 15:30:00 UTC 2012,6,15,930,28,6,Colleges & Universities=1_Shops & Services=3_Food=1_Travel & Transport=1_Gyms or Fitness Centers=1,Gym=1_New American Restaurant=1_Train Station=1_University=1_Mall=1_Department Store=1,Palo Alto Caltrain Station=1_Stanford Shopping Center=1_Stanford University=1_Macy's Mens Store=1_University Cafe=1_Pacific Shores Club=1,Department Store=37.44489764 -122.17178822_Mall=37.44237626 -122.17110157_University=37.42893314 -122.16981411_Train Station=37.44350067 -122.1649003_New American Restaurant=37.44568447 -122.16192938_Gym=37.51231565 -122.20281415
+Sun Sep 09 16:00:00 UTC 2012,6,16,960,36,2,Colleges & Universities=1_Shops & Services=1,Drugstore / Pharmacy=1_University=1,CVS/pharmacy=1_Stanford University=1,University=37.42893314 -122.16981411_Drugstore / Pharmacy=37.48621583 -122.21564394
+Sun Sep 09 16:30:00 UTC 2012,6,16,990,52,3,Shops & Services=1_Outdoors & Recreation=1,Salon / Barbershop=1_Plaza=1,"Stanford, Computer Science=1_SimplyBe Salon and Spa=1_Frog Fountain=1",Plaza=37.441979 -122.172391_Salon / Barbershop=37.448616 -122.15887579
+Sun Sep 09 17:00:00 UTC 2012,6,17,1020,47,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1,Music Venue=37.4268364 -122.08082897
+Sun Sep 09 17:30:00 UTC 2012,6,17,1050,39,5,Colleges & Universities=2_Arts & Entertainment=2_Food=1,Music Venue=2_Sushi Restaurant=1_University=1_College Bookstore=1,Shoreline Amphitheatre=2_Stanford University=1_Stanford University Bookstore=1_Miyake=1,Music Venue=37.4268364 -122.08082897_University=37.42893314 -122.16981411_Sushi Restaurant=37.44404793 -122.16338388_College Bookstore=37.42491006 -122.1689035
+Sun Sep 09 18:00:00 UTC 2012,6,18,1080,45,7,Arts & Entertainment=4_Outdoors & Recreation=1_Residences=1_Food=1,Music Venue=4_American Restaurant=1_Residential Building (Apartment / Condo)=1_Bridge=1,Shoreline Amphitheatre=4_Max's Restaurant=1_Rellas Palace=1_Dumbarton Bridge=1,Bridge=37.50673003 -122.11681366_Music Venue=37.4268364 -122.08082897_American Restaurant=37.44280217 -122.1730113_Residential Building (Apartment / Condo)=37.47075 -122.215521
+Sun Sep 09 18:30:00 UTC 2012,6,18,1110,44,3,Arts & Entertainment=2_Food=1,Music Venue=2_Sushi Restaurant=1,Shoreline Amphitheatre=2_Koma Sushi Restaurant=1,Music Venue=37.4268364 -122.08082897_Sushi Restaurant=37.448446 -122.17448652
+Sun Sep 09 19:00:00 UTC 2012,6,19,1140,35,9,Arts & Entertainment=8_Food=1,Music Venue=8_Mediterranean Restaurant=1,Shoreline Amphitheatre=8_Oren's Hummus Shop=1,Mediterranean Restaurant=37.44563019 -122.16211081_Music Venue=37.4268364 -122.08082897
+Sun Sep 09 19:30:00 UTC 2012,6,19,1170,33,5,Arts & Entertainment=2_Outdoors & Recreation=1_Food=2,Italian Restaurant=2_Music Venue=2_Dog Run=1,Shoreline Amphitheatre=2_Buca di Beppo=1_La Strada=1_Java Training Center=1,Music Venue=37.42687598 -122.08000229_Dog Run=37.48309335 -122.20909293_Italian Restaurant=37.44637447 -122.161229
+Sun Sep 09 20:00:00 UTC 2012,6,20,1200,30,3,Arts & Entertainment=1_Food=2,Café=1_Sandwich Place=1_Music Venue=1,Coupa Café=1_Subway=1_Shoreline Amphitheatre=1,Music Venue=37.42687598 -122.08000229_Sandwich Place=37.47692943 -122.22342872_Café=37.4448082 -122.1614778
+Sun Sep 09 20:30:00 UTC 2012,6,20,1230,56,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1,Music Venue=37.42687598 -122.08000229
+Sun Sep 09 21:00:00 UTC 2012,6,21,1260,55,0,"","","",""
+Sun Sep 09 21:30:00 UTC 2012,6,21,1290,25,0,"","","",""
+Sun Sep 09 22:00:00 UTC 2012,6,22,1320,30,1,Arts & Entertainment=1,Music Venue=1,Shoreline Amphitheatre=1,Music Venue=37.42687598 -122.08000229
+Sun Sep 09 22:30:00 UTC 2012,6,22,1350,27,1,Nightlife Spots=1,Pub=1,The Rose & Crown Pub=1,Pub=37.44437572 -122.16172979
+Sun Sep 09 23:00:00 UTC 2012,6,23,1380,37,0,"","","",""
+Sun Sep 09 23:30:00 UTC 2012,6,23,1410,38,0,"","","",""

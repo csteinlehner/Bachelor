@@ -1,337 +1,337 @@
-time,day,hour,minute,count,fsq_count,CategorieParents,Categories,Venues
-Mon Sep 03 00:00:00 UTC 2012,0,0,0,2,0,"","",""
-Mon Sep 03 00:30:00 UTC 2012,0,0,30,8,0,"","",""
-Mon Sep 03 01:00:00 UTC 2012,0,1,60,4,0,"","",""
-Mon Sep 03 01:30:00 UTC 2012,0,1,90,0,0,"","",""
-Mon Sep 03 02:00:00 UTC 2012,0,2,120,4,0,"","",""
-Mon Sep 03 02:30:00 UTC 2012,0,2,150,1,0,"","",""
-Mon Sep 03 03:00:00 UTC 2012,0,3,180,0,0,"","",""
-Mon Sep 03 03:30:00 UTC 2012,0,3,210,3,0,"","",""
-Mon Sep 03 04:00:00 UTC 2012,0,4,240,4,0,"","",""
-Mon Sep 03 04:30:00 UTC 2012,0,4,270,1,0,"","",""
-Mon Sep 03 05:00:00 UTC 2012,0,5,300,0,0,"","",""
-Mon Sep 03 05:30:00 UTC 2012,0,5,330,0,0,"","",""
-Mon Sep 03 06:00:00 UTC 2012,0,6,360,0,0,"","",""
-Mon Sep 03 06:30:00 UTC 2012,0,6,390,0,0,"","",""
-Mon Sep 03 07:00:00 UTC 2012,0,7,420,1,0,"","",""
-Mon Sep 03 07:30:00 UTC 2012,0,7,450,0,0,"","",""
-Mon Sep 03 08:00:00 UTC 2012,0,8,480,3,1,Residences=1,Home (private)=1,Sunny View Retirement Community=1
-Mon Sep 03 08:30:00 UTC 2012,0,8,510,1,0,"","",""
-Mon Sep 03 09:00:00 UTC 2012,0,9,540,8,0,"","",""
-Mon Sep 03 09:30:00 UTC 2012,0,9,570,2,0,"","",""
-Mon Sep 03 10:00:00 UTC 2012,0,10,600,1,0,"","",""
-Mon Sep 03 10:30:00 UTC 2012,0,10,630,2,0,"","",""
-Mon Sep 03 11:00:00 UTC 2012,0,11,660,3,1,Food=1,Coffee Shop=1,Starbucks=1
-Mon Sep 03 11:30:00 UTC 2012,0,11,690,5,0,"","",""
-Mon Sep 03 12:00:00 UTC 2012,0,12,720,6,2,Shops & Services=1_Professional & Other Places=1,Electronics Store=1_Office=1,Apple Company Store=1_Apple Inc.=1
-Mon Sep 03 12:30:00 UTC 2012,0,12,750,2,1,Food=1,Japanese Restaurant=1,Curry House=1
-Mon Sep 03 13:00:00 UTC 2012,0,13,780,3,1,Food=1,Fast Food Restaurant=1,Burger King=1
-Mon Sep 03 13:30:00 UTC 2012,0,13,810,5,0,"","",""
-Mon Sep 03 14:00:00 UTC 2012,0,14,840,2,0,"","",""
-Mon Sep 03 14:30:00 UTC 2012,0,14,870,0,0,"","",""
-Mon Sep 03 15:00:00 UTC 2012,0,15,900,0,0,"","",""
-Mon Sep 03 15:30:00 UTC 2012,0,15,930,0,0,"","",""
-Mon Sep 03 16:00:00 UTC 2012,0,16,960,6,0,"","",""
-Mon Sep 03 16:30:00 UTC 2012,0,16,990,16,1,Food=1,Vietnamese Restaurant=1,Pho Minh=1
-Mon Sep 03 17:00:00 UTC 2012,0,17,1020,6,3,Outdoors & Recreation=3,Park=3,Fremont Older Open Space Preserve=2_Stevens Creek County Park=1
-Mon Sep 03 17:30:00 UTC 2012,0,17,1050,8,1,Food=1,Japanese Restaurant=1,Benihana=1
-Mon Sep 03 18:00:00 UTC 2012,0,18,1080,9,0,"","",""
-Mon Sep 03 18:30:00 UTC 2012,0,18,1110,14,0,"","",""
-Mon Sep 03 19:00:00 UTC 2012,0,19,1140,11,0,"","",""
-Mon Sep 03 19:30:00 UTC 2012,0,19,1170,8,0,"","",""
-Mon Sep 03 20:00:00 UTC 2012,0,20,1200,14,2,Shops & Services=1_Food=2,Greek Restaurant=1_Grocery Store=1,Yiassoo=1_Trader Joe's=1
-Mon Sep 03 20:30:00 UTC 2012,0,20,1230,22,1,Arts & Entertainment=1,Bowling Alley=1,Homestead Lanes=1
-Mon Sep 03 21:00:00 UTC 2012,0,21,1260,13,0,"","",""
-Mon Sep 03 21:30:00 UTC 2012,0,21,1290,1,0,"","",""
-Mon Sep 03 22:00:00 UTC 2012,0,22,1320,5,0,"","",""
-Mon Sep 03 22:30:00 UTC 2012,0,22,1350,12,0,"","",""
-Mon Sep 03 23:00:00 UTC 2012,0,23,1380,2,0,"","",""
-Mon Sep 03 23:30:00 UTC 2012,0,23,1410,4,0,"","",""
-Tue Sep 04 00:00:00 UTC 2012,1,0,0,6,1,Food=1,Donut Shop=1,Donut Wheel=1
-Tue Sep 04 00:30:00 UTC 2012,1,0,30,1,0,"","",""
-Tue Sep 04 01:00:00 UTC 2012,1,1,60,2,0,"","",""
-Tue Sep 04 01:30:00 UTC 2012,1,1,90,1,0,"","",""
-Tue Sep 04 02:00:00 UTC 2012,1,2,120,5,0,"","",""
-Tue Sep 04 02:30:00 UTC 2012,1,2,150,1,0,"","",""
-Tue Sep 04 03:00:00 UTC 2012,1,3,180,0,0,"","",""
-Tue Sep 04 03:30:00 UTC 2012,1,3,210,2,0,"","",""
-Tue Sep 04 04:00:00 UTC 2012,1,4,240,6,0,"","",""
-Tue Sep 04 04:30:00 UTC 2012,1,4,270,2,0,"","",""
-Tue Sep 04 05:00:00 UTC 2012,1,5,300,2,0,"","",""
-Tue Sep 04 05:30:00 UTC 2012,1,5,330,1,0,"","",""
-Tue Sep 04 06:00:00 UTC 2012,1,6,360,0,0,"","",""
-Tue Sep 04 06:30:00 UTC 2012,1,6,390,0,0,"","",""
-Tue Sep 04 07:00:00 UTC 2012,1,7,420,2,0,"","",""
-Tue Sep 04 07:30:00 UTC 2012,1,7,450,6,1,Medical Centers=1_Professional & Other Places=1,Doctor's Office=1,Kaiser Permanente Medical Center=1
-Tue Sep 04 08:00:00 UTC 2012,1,8,480,4,0,"","",""
-Tue Sep 04 08:30:00 UTC 2012,1,8,510,2,1,Professional & Other Places=1,Office=1,Panasonic Research=1
-Tue Sep 04 09:00:00 UTC 2012,1,9,540,6,1,Professional & Other Places=1,Office=1,Apple - Infinite Loop 2=1
-Tue Sep 04 09:30:00 UTC 2012,1,9,570,9,1,Food=1,Coffee Shop=1,Starbucks=1
-Tue Sep 04 10:00:00 UTC 2012,1,10,600,6,0,"","",""
-Tue Sep 04 10:30:00 UTC 2012,1,10,630,6,0,"","",""
-Tue Sep 04 11:00:00 UTC 2012,1,11,660,4,0,"","",""
-Tue Sep 04 11:30:00 UTC 2012,1,11,690,6,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Tue Sep 04 12:00:00 UTC 2012,1,12,720,8,3,Medical Centers=1_Professional & Other Places=2_Food=1,Vietnamese Restaurant=1_Doctor's Office=1_Office=1,Apple - Stevens Creek 1=1_Pho Minh=1_Kaiser Radioimaging 104=1
-Tue Sep 04 12:30:00 UTC 2012,1,12,750,18,0,"","",""
-Tue Sep 04 13:00:00 UTC 2012,1,13,780,5,1,Shops & Services=1,Electronics Store=1,Apple Company Store=1
-Tue Sep 04 13:30:00 UTC 2012,1,13,810,11,0,"","",""
-Tue Sep 04 14:00:00 UTC 2012,1,14,840,7,2,Professional & Other Places=1,Office=1,Massage Rescue=1_Apple Inc.=1
-Tue Sep 04 14:30:00 UTC 2012,1,14,870,9,2,Travel & Transport=1_Professional & Other Places=1,Hotel=1_Office=1,Courtyard by Marriott San Jose Cupertino=1_Apple Inc.=1
-Tue Sep 04 15:00:00 UTC 2012,1,15,900,5,0,"","",""
-Tue Sep 04 15:30:00 UTC 2012,1,15,930,9,2,Colleges & Universities=1_Nightlife Spots=1,Bar=1_College Classroom=1,De Anza College Adm 101=1_BJ's Restaurant & Brewhouse=1
-Tue Sep 04 16:00:00 UTC 2012,1,16,960,10,0,"","",""
-Tue Sep 04 16:30:00 UTC 2012,1,16,990,7,0,"","",""
-Tue Sep 04 17:00:00 UTC 2012,1,17,1020,8,2,Shops & Services=2,Cosmetics Shop=2,Glamorous Nail Salon=2
-Tue Sep 04 17:30:00 UTC 2012,1,17,1050,10,0,"","",""
-Tue Sep 04 18:00:00 UTC 2012,1,18,1080,10,3,Outdoors & Recreation=1_Shops & Services=2,Bank=1_Park=1_Convenience Store=1,Saratoga Creek Park=1_7-Eleven=1_Wells Fargo=1
-Tue Sep 04 18:30:00 UTC 2012,1,18,1110,1,0,"","",""
-Tue Sep 04 19:00:00 UTC 2012,1,19,1140,6,2,Shops & Services=1_Food=1,Mall=1_Steakhouse=1,Alexander's Steakhouse=1_Vallco Shopping Mall=1
-Tue Sep 04 19:30:00 UTC 2012,1,19,1170,1,0,"","",""
-Tue Sep 04 20:00:00 UTC 2012,1,20,1200,5,1,Food=1,Coffee Shop=1,Starbucks=1
-Tue Sep 04 20:30:00 UTC 2012,1,20,1230,4,0,"","",""
-Tue Sep 04 21:00:00 UTC 2012,1,21,1260,5,1,Nightlife Spots=1,Pub=1,The Duke of Edinburgh=1
-Tue Sep 04 21:30:00 UTC 2012,1,21,1290,9,0,"","",""
-Tue Sep 04 22:00:00 UTC 2012,1,22,1320,15,0,"","",""
-Tue Sep 04 22:30:00 UTC 2012,1,22,1350,14,0,"","",""
-Tue Sep 04 23:00:00 UTC 2012,1,23,1380,17,1,"","",Home=1
-Tue Sep 04 23:30:00 UTC 2012,1,23,1410,4,0,"","",""
-Wed Sep 05 00:00:00 UTC 2012,2,0,0,9,0,"","",""
-Wed Sep 05 00:30:00 UTC 2012,2,0,30,1,0,"","",""
-Wed Sep 05 01:00:00 UTC 2012,2,1,60,0,0,"","",""
-Wed Sep 05 01:30:00 UTC 2012,2,1,90,2,0,"","",""
-Wed Sep 05 02:00:00 UTC 2012,2,2,120,0,0,"","",""
-Wed Sep 05 02:30:00 UTC 2012,2,2,150,0,0,"","",""
-Wed Sep 05 03:00:00 UTC 2012,2,3,180,0,0,"","",""
-Wed Sep 05 03:30:00 UTC 2012,2,3,210,0,0,"","",""
-Wed Sep 05 04:00:00 UTC 2012,2,4,240,0,0,"","",""
-Wed Sep 05 04:30:00 UTC 2012,2,4,270,2,0,"","",""
-Wed Sep 05 05:00:00 UTC 2012,2,5,300,2,0,"","",""
-Wed Sep 05 05:30:00 UTC 2012,2,5,330,0,0,"","",""
-Wed Sep 05 06:00:00 UTC 2012,2,6,360,1,0,"","",""
-Wed Sep 05 06:30:00 UTC 2012,2,6,390,1,1,Travel & Transport=1,Hotel=1,Courtyard by Marriott San Jose Cupertino=1
-Wed Sep 05 07:00:00 UTC 2012,2,7,420,3,0,"","",""
-Wed Sep 05 07:30:00 UTC 2012,2,7,450,2,0,"","",""
-Wed Sep 05 08:00:00 UTC 2012,2,8,480,1,0,"","",""
-Wed Sep 05 08:30:00 UTC 2012,2,8,510,4,0,"","",""
-Wed Sep 05 09:00:00 UTC 2012,2,9,540,11,0,"","",""
-Wed Sep 05 09:30:00 UTC 2012,2,9,570,16,0,"","",""
-Wed Sep 05 10:00:00 UTC 2012,2,10,600,15,0,"","",""
-Wed Sep 05 10:30:00 UTC 2012,2,10,630,14,0,"","",""
-Wed Sep 05 11:00:00 UTC 2012,2,11,660,22,3,Gyms or Fitness Centers=1_Shops & Services=1_Professional & Other Places=2,Office=2_Gym=1,Apple Inc.=2_Apple Fitness Center=1
-Wed Sep 05 11:30:00 UTC 2012,2,11,690,11,1,Food=1,BBQ Joint=1,Armadillo Willy's=1
-Wed Sep 05 12:00:00 UTC 2012,2,12,720,10,1,Professional & Other Places=1,Office=1,Panasonic Research=1
-Wed Sep 05 12:30:00 UTC 2012,2,12,750,22,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Wed Sep 05 13:00:00 UTC 2012,2,13,780,12,1,Food=1,Brewery=1,Infinite Loop 7=1
-Wed Sep 05 13:30:00 UTC 2012,2,13,810,0,0,"","",""
-Wed Sep 05 14:00:00 UTC 2012,2,14,840,0,0,"","",""
-Wed Sep 05 14:30:00 UTC 2012,2,14,870,0,0,"","",""
-Wed Sep 05 15:00:00 UTC 2012,2,15,900,0,0,"","",""
-Wed Sep 05 15:30:00 UTC 2012,2,15,930,0,0,"","",""
-Wed Sep 05 16:00:00 UTC 2012,2,16,960,1,0,"","",""
-Wed Sep 05 16:30:00 UTC 2012,2,16,990,9,0,"","",""
-Wed Sep 05 17:00:00 UTC 2012,2,17,1020,15,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Wed Sep 05 17:30:00 UTC 2012,2,17,1050,12,3,Food=3_Residences=1,Coffee Shop=1_Sandwich Place=1_Home (private)=1_Ramen /  Noodle House=1,Alotta's Delicatessen=1_Bitter+Sweet=1_Orenchi Ramen=1
-Wed Sep 05 18:00:00 UTC 2012,2,18,1080,6,0,"","",""
-Wed Sep 05 18:30:00 UTC 2012,2,18,1110,6,0,"","",""
-Wed Sep 05 19:00:00 UTC 2012,2,19,1140,1,0,"","",""
-Wed Sep 05 19:30:00 UTC 2012,2,19,1170,19,2,Food=2,Coffee Shop=1_Pizza Place=1,Pizza My Heart=1_Starbucks=1
-Wed Sep 05 20:00:00 UTC 2012,2,20,1200,8,0,"","",""
-Wed Sep 05 20:30:00 UTC 2012,2,20,1230,7,2,Food=1_Residences=1,Falafel Restaurant=1_Home (private)=1,Village Falafel=1_CPT48劇場=1
-Wed Sep 05 21:00:00 UTC 2012,2,21,1260,15,1,Nightlife Spots=1,Bar=1,BJ's Restaurant & Brewhouse=1
-Wed Sep 05 21:30:00 UTC 2012,2,21,1290,1,1,Food=1,Coffee Shop=1,Starbucks=1
-Wed Sep 05 22:00:00 UTC 2012,2,22,1320,6,0,"","",""
-Wed Sep 05 22:30:00 UTC 2012,2,22,1350,22,0,"","",""
-Wed Sep 05 23:00:00 UTC 2012,2,23,1380,8,0,"","",""
-Wed Sep 05 23:30:00 UTC 2012,2,23,1410,3,0,"","",""
-Thu Sep 06 00:00:00 UTC 2012,3,0,0,0,0,"","",""
-Thu Sep 06 00:30:00 UTC 2012,3,0,30,1,0,"","",""
-Thu Sep 06 01:00:00 UTC 2012,3,1,60,0,0,"","",""
-Thu Sep 06 01:30:00 UTC 2012,3,1,90,4,0,"","",""
-Thu Sep 06 02:00:00 UTC 2012,3,2,120,0,0,"","",""
-Thu Sep 06 02:30:00 UTC 2012,3,2,150,0,0,"","",""
-Thu Sep 06 03:00:00 UTC 2012,3,3,180,0,0,"","",""
-Thu Sep 06 03:30:00 UTC 2012,3,3,210,0,0,"","",""
-Thu Sep 06 04:00:00 UTC 2012,3,4,240,0,0,"","",""
-Thu Sep 06 04:30:00 UTC 2012,3,4,270,0,0,"","",""
-Thu Sep 06 05:00:00 UTC 2012,3,5,300,1,0,"","",""
-Thu Sep 06 05:30:00 UTC 2012,3,5,330,0,0,"","",""
-Thu Sep 06 06:00:00 UTC 2012,3,6,360,4,0,"","",""
-Thu Sep 06 06:30:00 UTC 2012,3,6,390,4,0,"","",""
-Thu Sep 06 07:00:00 UTC 2012,3,7,420,10,0,"","",""
-Thu Sep 06 07:30:00 UTC 2012,3,7,450,3,0,"","",""
-Thu Sep 06 08:00:00 UTC 2012,3,8,480,1,0,"","",""
-Thu Sep 06 08:30:00 UTC 2012,3,8,510,3,0,"","",""
-Thu Sep 06 09:00:00 UTC 2012,3,9,540,2,0,"","",""
-Thu Sep 06 09:30:00 UTC 2012,3,9,570,9,1,Outdoors & Recreation=2_Athletics & Sports=1,Other Great Outdoors=1_Golf Course=1,City of Cupertino=1
-Thu Sep 06 10:00:00 UTC 2012,3,10,600,7,1,Professional & Other Places=1_Offices=1,Tech Startup=1,Apple - Infinite Loop 5=1
-Thu Sep 06 10:30:00 UTC 2012,3,10,630,21,1,Food=1,Café=1,Apple Inc. — Lobby Cafe=1
-Thu Sep 06 11:00:00 UTC 2012,3,11,660,12,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Thu Sep 06 11:30:00 UTC 2012,3,11,690,17,1,Food=1,Coffee Shop=1,It's A Grind Coffee House=1
-Thu Sep 06 12:00:00 UTC 2012,3,12,720,13,3,Food=3,BBQ Joint=1_Pizza Place=1_Sandwich Place=1,Armadillo Willy's=1_Ike's Lair=1_Gumbas=1
-Thu Sep 06 12:30:00 UTC 2012,3,12,750,6,1,Professional & Other Places=1,Building=1,Boyenga Team - Intero RE=1
-Thu Sep 06 13:00:00 UTC 2012,3,13,780,5,0,"","",""
-Thu Sep 06 13:30:00 UTC 2012,3,13,810,9,2,Shops & Services=1_Food=2,Korean Restaurant=1_Grocery Store=1,99 Ranch Market 大華超級市場=1_Kong Tofu & BBQ Korean Cuisine=1
-Thu Sep 06 14:00:00 UTC 2012,3,14,840,6,1,Professional & Other Places=1_Offices=1,Tech Startup=1,LiveOps=1
-Thu Sep 06 14:30:00 UTC 2012,3,14,870,6,0,"","",""
-Thu Sep 06 15:00:00 UTC 2012,3,15,900,16,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Thu Sep 06 15:30:00 UTC 2012,3,15,930,6,0,"","",""
-Thu Sep 06 16:00:00 UTC 2012,3,16,960,3,0,"","",""
-Thu Sep 06 16:30:00 UTC 2012,3,16,990,9,1,Food=1,Coffee Shop=1,Starbucks=1
-Thu Sep 06 17:00:00 UTC 2012,3,17,1020,6,0,"","",""
-Thu Sep 06 17:30:00 UTC 2012,3,17,1050,11,1,Shops & Services=1,Bank=1,Wells Fargo=1
-Thu Sep 06 18:00:00 UTC 2012,3,18,1080,9,0,"","",""
-Thu Sep 06 18:30:00 UTC 2012,3,18,1110,7,0,"","",""
-Thu Sep 06 19:00:00 UTC 2012,3,19,1140,9,1,Residences=1,Home (private)=1,CPT48劇場=1
-Thu Sep 06 19:30:00 UTC 2012,3,19,1170,13,2,Outdoors & Recreation=1_Shops & Services=1_Food=1,Park=1_Grocery Store=1,Whole Foods Market=1_Fremont Older Open Space Preserve=1
-Thu Sep 06 20:00:00 UTC 2012,3,20,1200,14,5,Travel & Transport=2_Food=2_Residences=1,Hotel=1_Chinese Restaurant=1_Home (private)=1_Steakhouse=1_Moving Target=1,Marfle Clara=1_かすみ第三仮設拠点=1_Alexander's Steakhouse=1_Courtyard by Marriott San Jose Cupertino=1_Mama Chen's Kitchen=1
-Thu Sep 06 20:30:00 UTC 2012,3,20,1230,11,1,Food=1,Coffee Shop=1,Fantasia Coffee & Tea=1
-Thu Sep 06 21:00:00 UTC 2012,3,21,1260,18,2,Nightlife Spots=1_Food=1,Bar=1_Japanese Restaurant=1,BJ's Restaurant & Brewhouse=1_Gyu-Kaku=1
-Thu Sep 06 21:30:00 UTC 2012,3,21,1290,26,0,"","",""
-Thu Sep 06 22:00:00 UTC 2012,3,22,1320,26,1,Food=1,Mexican Restaurant=1,Taco Bell=1
-Thu Sep 06 22:30:00 UTC 2012,3,22,1350,17,0,"","",""
-Thu Sep 06 23:00:00 UTC 2012,3,23,1380,11,1,Residences=1,Home (private)=1,CPT48劇場=1
-Thu Sep 06 23:30:00 UTC 2012,3,23,1410,20,0,"","",""
-Fri Sep 07 00:00:00 UTC 2012,4,0,0,14,1,Arts & Entertainment=1,Bowling Alley=1,Bowlmor Lanes=1
-Fri Sep 07 00:30:00 UTC 2012,4,0,30,16,0,"","",""
-Fri Sep 07 01:00:00 UTC 2012,4,1,60,9,0,"","",""
-Fri Sep 07 01:30:00 UTC 2012,4,1,90,1,0,"","",""
-Fri Sep 07 02:00:00 UTC 2012,4,2,120,3,0,"","",""
-Fri Sep 07 02:30:00 UTC 2012,4,2,150,0,0,"","",""
-Fri Sep 07 03:00:00 UTC 2012,4,3,180,3,0,"","",""
-Fri Sep 07 03:30:00 UTC 2012,4,3,210,1,0,"","",""
-Fri Sep 07 04:00:00 UTC 2012,4,4,240,0,0,"","",""
-Fri Sep 07 04:30:00 UTC 2012,4,4,270,1,0,"","",""
-Fri Sep 07 05:00:00 UTC 2012,4,5,300,0,0,"","",""
-Fri Sep 07 05:30:00 UTC 2012,4,5,330,1,0,"","",""
-Fri Sep 07 06:00:00 UTC 2012,4,6,360,3,0,"","",""
-Fri Sep 07 06:30:00 UTC 2012,4,6,390,4,0,"","",""
-Fri Sep 07 07:00:00 UTC 2012,4,7,420,3,0,"","",""
-Fri Sep 07 07:30:00 UTC 2012,4,7,450,10,0,"","",""
-Fri Sep 07 08:00:00 UTC 2012,4,8,480,8,0,"","",""
-Fri Sep 07 08:30:00 UTC 2012,4,8,510,4,0,"","",""
-Fri Sep 07 09:00:00 UTC 2012,4,9,540,12,0,"","",""
-Fri Sep 07 09:30:00 UTC 2012,4,9,570,8,2,Food=2,Breakfast Spot=1_Café=1,Bernal Bagel Donut & Sandwich‎=1_Apple Inc. — Lobby Cafe=1
-Fri Sep 07 10:00:00 UTC 2012,4,10,600,4,0,"","",""
-Fri Sep 07 10:30:00 UTC 2012,4,10,630,12,0,"","",""
-Fri Sep 07 11:00:00 UTC 2012,4,11,660,17,0,"","",""
-Fri Sep 07 11:30:00 UTC 2012,4,11,690,14,1,Nightlife Spots=1,Bar=1,BJ's Restaurant & Brewhouse=1
-Fri Sep 07 12:00:00 UTC 2012,4,12,720,15,1,Food=1,Japanese Restaurant=1,Gokaku Restaurant=1
-Fri Sep 07 12:30:00 UTC 2012,4,12,750,13,1,Food=1,Sandwich Place=1,Togo's=1
-Fri Sep 07 13:00:00 UTC 2012,4,13,780,26,2,Professional & Other Places=1_Food=1,Fast Food Restaurant=1_Office=1,McDonald's=1_Apple Inc.=1
-Fri Sep 07 13:30:00 UTC 2012,4,13,810,9,1,Shops & Services=1,Electronics Store=1,Apple Company Store=1
-Fri Sep 07 14:00:00 UTC 2012,4,14,840,10,0,"","",""
-Fri Sep 07 14:30:00 UTC 2012,4,14,870,8,0,"","",""
-Fri Sep 07 15:00:00 UTC 2012,4,15,900,10,1,Food=1,Coffee Shop=1,Bitter+Sweet=1
-Fri Sep 07 15:30:00 UTC 2012,4,15,930,21,0,"","",""
-Fri Sep 07 16:00:00 UTC 2012,4,16,960,5,0,"","",""
-Fri Sep 07 16:30:00 UTC 2012,4,16,990,10,2,Shops & Services=1_Professional & Other Places=1,Electronics Store=1_Office=1,Apple Company Store=1_Apple Inc.=1
-Fri Sep 07 17:00:00 UTC 2012,4,17,1020,14,1,Food=1,Winery=1,Ridge Winery=1
-Fri Sep 07 17:30:00 UTC 2012,4,17,1050,2,1,Nightlife Spots=1,Dive Bar=1,Paul & Eddie's Monta Vista Inn=1
-Fri Sep 07 18:00:00 UTC 2012,4,18,1080,6,0,"","",""
-Fri Sep 07 18:30:00 UTC 2012,4,18,1110,2,2,Food=2,Japanese Restaurant=1_Café=1,Caffè Macs=1_Gyu-Kaku=1
-Fri Sep 07 19:00:00 UTC 2012,4,19,1140,3,1,Food=1,Coffee Shop=1,Starbucks=1
-Fri Sep 07 19:30:00 UTC 2012,4,19,1170,4,0,"","",""
-Fri Sep 07 20:00:00 UTC 2012,4,20,1200,12,1,Food=1,Japanese Restaurant=1,Gyu-Kaku=1
-Fri Sep 07 20:30:00 UTC 2012,4,20,1230,2,0,"","",""
-Fri Sep 07 21:00:00 UTC 2012,4,21,1260,4,0,"","",""
-Fri Sep 07 21:30:00 UTC 2012,4,21,1290,8,1,Residences=1,Home (private)=1,CPT48劇場=1
-Fri Sep 07 22:00:00 UTC 2012,4,22,1320,4,0,"","",""
-Fri Sep 07 22:30:00 UTC 2012,4,22,1350,9,0,"","",""
-Fri Sep 07 23:00:00 UTC 2012,4,23,1380,7,1,Food=1,Café=1,Quickly 快可立=1
-Fri Sep 07 23:30:00 UTC 2012,4,23,1410,10,1,Nightlife Spots=1,Bar=1,Park Lane Lounge=1
-Sat Sep 08 00:00:00 UTC 2012,5,0,0,8,0,"","",""
-Sat Sep 08 00:30:00 UTC 2012,5,0,30,2,0,"","",""
-Sat Sep 08 01:00:00 UTC 2012,5,1,60,6,0,"","",""
-Sat Sep 08 01:30:00 UTC 2012,5,1,90,5,0,"","",""
-Sat Sep 08 02:00:00 UTC 2012,5,2,120,4,0,"","",""
-Sat Sep 08 02:30:00 UTC 2012,5,2,150,6,0,"","",""
-Sat Sep 08 03:00:00 UTC 2012,5,3,180,11,0,"","",""
-Sat Sep 08 03:30:00 UTC 2012,5,3,210,0,0,"","",""
-Sat Sep 08 04:00:00 UTC 2012,5,4,240,6,0,"","",""
-Sat Sep 08 04:30:00 UTC 2012,5,4,270,1,0,"","",""
-Sat Sep 08 05:00:00 UTC 2012,5,5,300,3,0,"","",""
-Sat Sep 08 05:30:00 UTC 2012,5,5,330,0,0,"","",""
-Sat Sep 08 06:00:00 UTC 2012,5,6,360,3,0,"","",""
-Sat Sep 08 06:30:00 UTC 2012,5,6,390,1,1,Outdoors & Recreation=1,Scenic Lookout=1,Rancho San Antonio Park=1
-Sat Sep 08 07:00:00 UTC 2012,5,7,420,2,1,Shops & Services=1,Flea Market=1,Electronics Flea Market @ De Anza=1
-Sat Sep 08 07:30:00 UTC 2012,5,7,450,13,0,"","",""
-Sat Sep 08 08:00:00 UTC 2012,5,8,480,3,1,Outdoors & Recreation=1,Pool=1,Sutton Swim=1
-Sat Sep 08 08:30:00 UTC 2012,5,8,510,2,0,"","",""
-Sat Sep 08 09:00:00 UTC 2012,5,9,540,3,0,"","",""
-Sat Sep 08 09:30:00 UTC 2012,5,9,570,3,2,Food=2,Breakfast Spot=1_Coffee Shop=1,Holder's Country Inn=1_Peet's Coffee & Tea=1
-Sat Sep 08 10:00:00 UTC 2012,5,10,600,2,1,Food=1,Donut Shop=1,Donut Wheel=1
-Sat Sep 08 10:30:00 UTC 2012,5,10,630,2,0,"","",""
-Sat Sep 08 11:00:00 UTC 2012,5,11,660,2,0,"","",""
-Sat Sep 08 11:30:00 UTC 2012,5,11,690,4,1,Food=1,Chinese Restaurant=1,New Port Dimsum & Seafood Restaurant (新港海鮮酒家)=1
-Sat Sep 08 12:00:00 UTC 2012,5,12,720,2,0,"","",""
-Sat Sep 08 12:30:00 UTC 2012,5,12,750,3,0,"","",""
-Sat Sep 08 13:00:00 UTC 2012,5,13,780,5,0,"","",""
-Sat Sep 08 13:30:00 UTC 2012,5,13,810,9,2,Shops & Services=1_Food=2,Grocery Store=1_Café=1,Trader Joe's=1_Verde Tea Cafe=1
-Sat Sep 08 14:00:00 UTC 2012,5,14,840,1,0,"","",""
-Sat Sep 08 14:30:00 UTC 2012,5,14,870,7,2,Gyms or Fitness Centers=1_Shops & Services=1_Food=1,Pizza Place=1_Gym=1,J.T. McHart's Pizza=1_Apple Fitness Center=1
-Sat Sep 08 15:00:00 UTC 2012,5,15,900,6,1,Shops & Services=1_Food=1,Grocery Store=1,Whole Foods Market=1
-Sat Sep 08 15:30:00 UTC 2012,5,15,930,4,0,"","",""
-Sat Sep 08 16:00:00 UTC 2012,5,16,960,4,1,Shops & Services=1,Car Wash=1,Classic Car Wash=1
-Sat Sep 08 16:30:00 UTC 2012,5,16,990,6,0,"","",""
-Sat Sep 08 17:00:00 UTC 2012,5,17,1020,8,0,"","",""
-Sat Sep 08 17:30:00 UTC 2012,5,17,1050,5,2,Shops & Services=1_Professional & Other Places=1_Food=1,Liquor Store=1_Office=1,BevMo!=1_Apple Inc.=1
-Sat Sep 08 18:00:00 UTC 2012,5,18,1080,3,0,"","",""
-Sat Sep 08 18:30:00 UTC 2012,5,18,1110,2,0,"","",""
-Sat Sep 08 19:00:00 UTC 2012,5,19,1140,3,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Sat Sep 08 19:30:00 UTC 2012,5,19,1170,15,0,"","",""
-Sat Sep 08 20:00:00 UTC 2012,5,20,1200,3,0,"","",""
-Sat Sep 08 20:30:00 UTC 2012,5,20,1230,6,1,Food=1,Chinese Restaurant=1,Panda Express=1
-Sat Sep 08 21:00:00 UTC 2012,5,21,1260,5,2,Food=1_Residences=1,Coffee Shop=1_Home (private)=1,CPT48劇場=1_Starbucks=1
-Sat Sep 08 21:30:00 UTC 2012,5,21,1290,7,0,"","",""
-Sat Sep 08 22:00:00 UTC 2012,5,22,1320,4,3,Arts & Entertainment=1_Movie Theaters=1_Nightlife Spots=2,Bar=2_Multiplex=1,Park Lane Lounge=1_BJ's Restaurant & Brewhouse=1_AMC Cupertino Square 16=1
-Sat Sep 08 22:30:00 UTC 2012,5,22,1350,3,0,"","",""
-Sat Sep 08 23:00:00 UTC 2012,5,23,1380,5,0,"","",""
-Sat Sep 08 23:30:00 UTC 2012,5,23,1410,6,0,"","",""
-Sun Sep 09 00:00:00 UTC 2012,6,0,0,1,0,"","",""
-Sun Sep 09 00:30:00 UTC 2012,6,0,30,8,0,"","",""
-Sun Sep 09 01:00:00 UTC 2012,6,1,60,18,0,"","",""
-Sun Sep 09 01:30:00 UTC 2012,6,1,90,16,0,"","",""
-Sun Sep 09 02:00:00 UTC 2012,6,2,120,4,0,"","",""
-Sun Sep 09 02:30:00 UTC 2012,6,2,150,2,0,"","",""
-Sun Sep 09 03:00:00 UTC 2012,6,3,180,1,0,"","",""
-Sun Sep 09 03:30:00 UTC 2012,6,3,210,0,0,"","",""
-Sun Sep 09 04:00:00 UTC 2012,6,4,240,0,0,"","",""
-Sun Sep 09 04:30:00 UTC 2012,6,4,270,0,0,"","",""
-Sun Sep 09 05:00:00 UTC 2012,6,5,300,0,0,"","",""
-Sun Sep 09 05:30:00 UTC 2012,6,5,330,0,0,"","",""
-Sun Sep 09 06:00:00 UTC 2012,6,6,360,0,0,"","",""
-Sun Sep 09 06:30:00 UTC 2012,6,6,390,1,0,"","",""
-Sun Sep 09 07:00:00 UTC 2012,6,7,420,0,0,"","",""
-Sun Sep 09 07:30:00 UTC 2012,6,7,450,1,0,"","",""
-Sun Sep 09 08:00:00 UTC 2012,6,8,480,4,0,"","",""
-Sun Sep 09 08:30:00 UTC 2012,6,8,510,5,0,"","",""
-Sun Sep 09 09:00:00 UTC 2012,6,9,540,4,0,"","",""
-Sun Sep 09 09:30:00 UTC 2012,6,9,570,0,0,"","",""
-Sun Sep 09 10:00:00 UTC 2012,6,10,600,9,0,"","",""
-Sun Sep 09 10:30:00 UTC 2012,6,10,630,6,0,"","",""
-Sun Sep 09 11:00:00 UTC 2012,6,11,660,9,2,Professional & Other Places=1_Food=1,Coffee Shop=1_Office=1,Starbucks=1_Apple Inc.=1
-Sun Sep 09 11:30:00 UTC 2012,6,11,690,22,0,"","",""
-Sun Sep 09 12:00:00 UTC 2012,6,12,720,8,3,Outdoors & Recreation=1_Athletics & Sports=1_Food=2,BBQ Joint=1_Coffee Shop=1_Skating Rink=1,Ice Center=1_Starbucks=1_L & L Hawaiian BBQ=1
-Sun Sep 09 12:30:00 UTC 2012,6,12,750,4,0,"","",""
-Sun Sep 09 13:00:00 UTC 2012,6,13,780,15,1,Professional & Other Places=1,Office=1,Apple Inc.=1
-Sun Sep 09 13:30:00 UTC 2012,6,13,810,15,1,Shops & Services=1_Food=1,Grocery Store=1,Marukai Corporation=1
-Sun Sep 09 14:00:00 UTC 2012,6,14,840,14,1,Food=1,Steakhouse=1,Outback Steakhouse=1
-Sun Sep 09 14:30:00 UTC 2012,6,14,870,2,0,"","",""
-Sun Sep 09 15:00:00 UTC 2012,6,15,900,6,2,Arts & Entertainment=1_Shops & Services=1,Gym / Fitness Center=1_Movie Theater=1,Northwest YMCA=1_Bluelight Cinemas=1
-Sun Sep 09 15:30:00 UTC 2012,6,15,930,6,2,Shops & Services=1_Professional & Other Places=1,Department Store=1_Office=1,Target=1_Apple Inc.=1
-Sun Sep 09 16:00:00 UTC 2012,6,16,960,10,0,"","",""
-Sun Sep 09 16:30:00 UTC 2012,6,16,990,3,1,Arts & Entertainment=1_Movie Theaters=1,Multiplex=1,AMC Cupertino Square 16=1
-Sun Sep 09 17:00:00 UTC 2012,6,17,1020,2,1,Outdoors & Recreation=1,Other Great Outdoors=1,City of Cupertino=1
-Sun Sep 09 17:30:00 UTC 2012,6,17,1050,8,1,Food=1,Chinese Restaurant=1,Happy House Restaurant=1
-Sun Sep 09 18:00:00 UTC 2012,6,18,1080,7,1,Outdoors & Recreation=1,Playground=1,Cupertino Memorial Park=1
-Sun Sep 09 18:30:00 UTC 2012,6,18,1110,7,1,Food=1,BBQ Joint=1,Armadillo Willy's=1
-Sun Sep 09 19:00:00 UTC 2012,6,19,1140,5,1,Food=1,Wings Joint=1,SmokeEaters=1
-Sun Sep 09 19:30:00 UTC 2012,6,19,1170,9,1,Food=1,Steakhouse=1,Park Place=1
-Sun Sep 09 20:00:00 UTC 2012,6,20,1200,8,1,Nightlife Spots=1,Bar=1,Park Lane Lounge=1
-Sun Sep 09 20:30:00 UTC 2012,6,20,1230,4,0,"","",""
-Sun Sep 09 21:00:00 UTC 2012,6,21,1260,11,0,"","",""
-Sun Sep 09 21:30:00 UTC 2012,6,21,1290,7,0,"","",""
-Sun Sep 09 22:00:00 UTC 2012,6,22,1320,7,0,"","",""
-Sun Sep 09 22:30:00 UTC 2012,6,22,1350,5,0,"","",""
-Sun Sep 09 23:00:00 UTC 2012,6,23,1380,4,1,"","",Home=1
-Sun Sep 09 23:30:00 UTC 2012,6,23,1410,0,0,"","",""
+time,day,hour,minute,count,fsq_count,CategorieParents,Categories,Venues,Coord
+Mon Sep 03 00:00:00 UTC 2012,0,0,0,2,0,"","","",""
+Mon Sep 03 00:30:00 UTC 2012,0,0,30,8,0,"","","",""
+Mon Sep 03 01:00:00 UTC 2012,0,1,60,4,0,"","","",""
+Mon Sep 03 01:30:00 UTC 2012,0,1,90,0,0,"","","",""
+Mon Sep 03 02:00:00 UTC 2012,0,2,120,4,0,"","","",""
+Mon Sep 03 02:30:00 UTC 2012,0,2,150,1,0,"","","",""
+Mon Sep 03 03:00:00 UTC 2012,0,3,180,0,0,"","","",""
+Mon Sep 03 03:30:00 UTC 2012,0,3,210,3,0,"","","",""
+Mon Sep 03 04:00:00 UTC 2012,0,4,240,4,0,"","","",""
+Mon Sep 03 04:30:00 UTC 2012,0,4,270,1,0,"","","",""
+Mon Sep 03 05:00:00 UTC 2012,0,5,300,0,0,"","","",""
+Mon Sep 03 05:30:00 UTC 2012,0,5,330,0,0,"","","",""
+Mon Sep 03 06:00:00 UTC 2012,0,6,360,0,0,"","","",""
+Mon Sep 03 06:30:00 UTC 2012,0,6,390,0,0,"","","",""
+Mon Sep 03 07:00:00 UTC 2012,0,7,420,1,0,"","","",""
+Mon Sep 03 07:30:00 UTC 2012,0,7,450,0,0,"","","",""
+Mon Sep 03 08:00:00 UTC 2012,0,8,480,3,1,Residences=1,Home (private)=1,Sunny View Retirement Community=1,Home (private)=37.31969261 -122.06669965
+Mon Sep 03 08:30:00 UTC 2012,0,8,510,1,0,"","","",""
+Mon Sep 03 09:00:00 UTC 2012,0,9,540,8,0,"","","",""
+Mon Sep 03 09:30:00 UTC 2012,0,9,570,2,0,"","","",""
+Mon Sep 03 10:00:00 UTC 2012,0,10,600,1,0,"","","",""
+Mon Sep 03 10:30:00 UTC 2012,0,10,630,2,0,"","","",""
+Mon Sep 03 11:00:00 UTC 2012,0,11,660,3,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.32199665 -122.03273177
+Mon Sep 03 11:30:00 UTC 2012,0,11,690,5,0,"","","",""
+Mon Sep 03 12:00:00 UTC 2012,0,12,720,6,2,Professional & Other Places=1_Shops & Services=1,Office=1_Electronics Store=1,Apple Company Store=1_Apple Inc.=1,Electronics Store=37.33143672 -122.03050554_Office=37.331653 -122.03072304
+Mon Sep 03 12:30:00 UTC 2012,0,12,750,2,1,Food=1,Japanese Restaurant=1,Curry House=1,Japanese Restaurant=37.31801975 -122.03208296
+Mon Sep 03 13:00:00 UTC 2012,0,13,780,3,1,Food=1,Fast Food Restaurant=1,Burger King=1,Fast Food Restaurant=37.30919459 -121.99378783
+Mon Sep 03 13:30:00 UTC 2012,0,13,810,5,0,"","","",""
+Mon Sep 03 14:00:00 UTC 2012,0,14,840,2,0,"","","",""
+Mon Sep 03 14:30:00 UTC 2012,0,14,870,0,0,"","","",""
+Mon Sep 03 15:00:00 UTC 2012,0,15,900,0,0,"","","",""
+Mon Sep 03 15:30:00 UTC 2012,0,15,930,0,0,"","","",""
+Mon Sep 03 16:00:00 UTC 2012,0,16,960,6,0,"","","",""
+Mon Sep 03 16:30:00 UTC 2012,0,16,990,16,1,Food=1,Vietnamese Restaurant=1,Pho Minh=1,Vietnamese Restaurant=37.324392 -122.03320202
+Mon Sep 03 17:00:00 UTC 2012,0,17,1020,6,3,Outdoors & Recreation=3,Park=3,Fremont Older Open Space Preserve=2_Stevens Creek County Park=1,Park=37.28618471 -122.05528777
+Mon Sep 03 17:30:00 UTC 2012,0,17,1050,8,1,Food=1,Japanese Restaurant=1,Benihana=1,Japanese Restaurant=37.32720526 -122.01355934
+Mon Sep 03 18:00:00 UTC 2012,0,18,1080,9,0,"","","",""
+Mon Sep 03 18:30:00 UTC 2012,0,18,1110,14,0,"","","",""
+Mon Sep 03 19:00:00 UTC 2012,0,19,1140,11,0,"","","",""
+Mon Sep 03 19:30:00 UTC 2012,0,19,1170,8,0,"","","",""
+Mon Sep 03 20:00:00 UTC 2012,0,20,1200,14,2,Food & Drink Shops=1_Shops & Services=1_Food=1,Grocery Store=1_Greek Restaurant=1,Trader Joe's=1_Yiassoo=1,Greek Restaurant=37.31345714 -122.031988_Grocery Store=37.31193247 -122.03116536
+Mon Sep 03 20:30:00 UTC 2012,0,20,1230,22,1,Arts & Entertainment=1,Bowling Alley=1,Homestead Lanes=1,Bowling Alley=37.33634683 -122.04026987
+Mon Sep 03 21:00:00 UTC 2012,0,21,1260,13,0,"","","",""
+Mon Sep 03 21:30:00 UTC 2012,0,21,1290,1,0,"","","",""
+Mon Sep 03 22:00:00 UTC 2012,0,22,1320,5,0,"","","",""
+Mon Sep 03 22:30:00 UTC 2012,0,22,1350,12,0,"","","",""
+Mon Sep 03 23:00:00 UTC 2012,0,23,1380,2,0,"","","",""
+Mon Sep 03 23:30:00 UTC 2012,0,23,1410,4,0,"","","",""
+Tue Sep 04 00:00:00 UTC 2012,1,0,0,6,1,Food=1,Donut Shop=1,Donut Wheel=1,Donut Shop=37.32640571 -122.03193309
+Tue Sep 04 00:30:00 UTC 2012,1,0,30,1,0,"","","",""
+Tue Sep 04 01:00:00 UTC 2012,1,1,60,2,0,"","","",""
+Tue Sep 04 01:30:00 UTC 2012,1,1,90,1,0,"","","",""
+Tue Sep 04 02:00:00 UTC 2012,1,2,120,5,0,"","","",""
+Tue Sep 04 02:30:00 UTC 2012,1,2,150,1,0,"","","",""
+Tue Sep 04 03:00:00 UTC 2012,1,3,180,0,0,"","","",""
+Tue Sep 04 03:30:00 UTC 2012,1,3,210,2,0,"","","",""
+Tue Sep 04 04:00:00 UTC 2012,1,4,240,6,0,"","","",""
+Tue Sep 04 04:30:00 UTC 2012,1,4,270,2,0,"","","",""
+Tue Sep 04 05:00:00 UTC 2012,1,5,300,2,0,"","","",""
+Tue Sep 04 05:30:00 UTC 2012,1,5,330,1,0,"","","",""
+Tue Sep 04 06:00:00 UTC 2012,1,6,360,0,0,"","","",""
+Tue Sep 04 06:30:00 UTC 2012,1,6,390,0,0,"","","",""
+Tue Sep 04 07:00:00 UTC 2012,1,7,420,2,0,"","","",""
+Tue Sep 04 07:30:00 UTC 2012,1,7,450,6,1,Medical Centers=1_Professional & Other Places=1,Doctor's Office=1,Kaiser Permanente Medical Center=1,Doctor's Office=37.33665747 -121.997509
+Tue Sep 04 08:00:00 UTC 2012,1,8,480,4,0,"","","",""
+Tue Sep 04 08:30:00 UTC 2012,1,8,510,2,1,Professional & Other Places=1,Office=1,Panasonic Research=1,Office=37.335153 -122.00483
+Tue Sep 04 09:00:00 UTC 2012,1,9,540,6,1,Professional & Other Places=1,Office=1,Apple - Infinite Loop 2=1,Office=37.3325553 -122.03050101
+Tue Sep 04 09:30:00 UTC 2012,1,9,570,9,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.322468 -121.994078
+Tue Sep 04 10:00:00 UTC 2012,1,10,600,6,0,"","","",""
+Tue Sep 04 10:30:00 UTC 2012,1,10,630,6,0,"","","",""
+Tue Sep 04 11:00:00 UTC 2012,1,11,660,4,0,"","","",""
+Tue Sep 04 11:30:00 UTC 2012,1,11,690,6,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Tue Sep 04 12:00:00 UTC 2012,1,12,720,8,3,Medical Centers=1_Professional & Other Places=2_Food=1,Doctor's Office=1_Office=1_Vietnamese Restaurant=1,Apple - Stevens Creek 1=1_Pho Minh=1_Kaiser Radioimaging 104=1,Vietnamese Restaurant=37.324392 -122.03320202_Office=37.323445 -122.022035_Doctor's Office=37.335593 -121.998329
+Tue Sep 04 12:30:00 UTC 2012,1,12,750,18,0,"","","",""
+Tue Sep 04 13:00:00 UTC 2012,1,13,780,5,1,Shops & Services=1,Electronics Store=1,Apple Company Store=1,Electronics Store=37.33143672 -122.03050554
+Tue Sep 04 13:30:00 UTC 2012,1,13,810,11,0,"","","",""
+Tue Sep 04 14:00:00 UTC 2012,1,14,840,7,2,Professional & Other Places=1,Office=1,Massage Rescue=1_Apple Inc.=1,Office=37.331653 -122.03072304
+Tue Sep 04 14:30:00 UTC 2012,1,14,870,9,2,Professional & Other Places=1_Travel & Transport=1,Office=1_Hotel=1,Courtyard by Marriott San Jose Cupertino=1_Apple Inc.=1,Hotel=37.33227906 -122.01528539_Office=37.331653 -122.03072304
+Tue Sep 04 15:00:00 UTC 2012,1,15,900,5,0,"","","",""
+Tue Sep 04 15:30:00 UTC 2012,1,15,930,9,2,Nightlife Spots=1_Colleges & Universities=1,Bar=1_College Classroom=1,BJ's Restaurant & Brewhouse=1_De Anza College Adm 101=1,College Classroom=37.32027769 -122.045439_Bar=37.331305 -122.03180909
+Tue Sep 04 16:00:00 UTC 2012,1,16,960,10,0,"","","",""
+Tue Sep 04 16:30:00 UTC 2012,1,16,990,7,0,"","","",""
+Tue Sep 04 17:00:00 UTC 2012,1,17,1020,8,2,Shops & Services=2,Cosmetics Shop=2,Glamorous Nail Salon=2,Cosmetics Shop=37.34018658 -122.04258
+Tue Sep 04 17:30:00 UTC 2012,1,17,1050,10,0,"","","",""
+Tue Sep 04 18:00:00 UTC 2012,1,18,1080,10,3,Outdoors & Recreation=1_Shops & Services=2,Park=1_Bank=1_Convenience Store=1,Saratoga Creek Park=1_7-Eleven=1_Wells Fargo=1,Convenience Store=37.309259 -121.993035_Bank=37.31918876 -122.03192754_Park=37.30157251 -121.99600697
+Tue Sep 04 18:30:00 UTC 2012,1,18,1110,1,0,"","","",""
+Tue Sep 04 19:00:00 UTC 2012,1,19,1140,6,2,Shops & Services=1_Food=1,Mall=1_Steakhouse=1,Alexander's Steakhouse=1_Vallco Shopping Mall=1,Steakhouse=37.32826314 -122.01394558_Mall=37.32599386 -122.01536866
+Tue Sep 04 19:30:00 UTC 2012,1,19,1170,1,0,"","","",""
+Tue Sep 04 20:00:00 UTC 2012,1,20,1200,5,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.32199665 -122.03273177
+Tue Sep 04 20:30:00 UTC 2012,1,20,1230,4,0,"","","",""
+Tue Sep 04 21:00:00 UTC 2012,1,21,1260,5,1,Nightlife Spots=1,Pub=1,The Duke of Edinburgh=1,Pub=37.33490655 -122.01486903
+Tue Sep 04 21:30:00 UTC 2012,1,21,1290,9,0,"","","",""
+Tue Sep 04 22:00:00 UTC 2012,1,22,1320,15,0,"","","",""
+Tue Sep 04 22:30:00 UTC 2012,1,22,1350,14,0,"","","",""
+Tue Sep 04 23:00:00 UTC 2012,1,23,1380,17,1,"","",Home=1,""
+Tue Sep 04 23:30:00 UTC 2012,1,23,1410,4,0,"","","",""
+Wed Sep 05 00:00:00 UTC 2012,2,0,0,9,0,"","","",""
+Wed Sep 05 00:30:00 UTC 2012,2,0,30,1,0,"","","",""
+Wed Sep 05 01:00:00 UTC 2012,2,1,60,0,0,"","","",""
+Wed Sep 05 01:30:00 UTC 2012,2,1,90,2,0,"","","",""
+Wed Sep 05 02:00:00 UTC 2012,2,2,120,0,0,"","","",""
+Wed Sep 05 02:30:00 UTC 2012,2,2,150,0,0,"","","",""
+Wed Sep 05 03:00:00 UTC 2012,2,3,180,0,0,"","","",""
+Wed Sep 05 03:30:00 UTC 2012,2,3,210,0,0,"","","",""
+Wed Sep 05 04:00:00 UTC 2012,2,4,240,0,0,"","","",""
+Wed Sep 05 04:30:00 UTC 2012,2,4,270,2,0,"","","",""
+Wed Sep 05 05:00:00 UTC 2012,2,5,300,2,0,"","","",""
+Wed Sep 05 05:30:00 UTC 2012,2,5,330,0,0,"","","",""
+Wed Sep 05 06:00:00 UTC 2012,2,6,360,1,0,"","","",""
+Wed Sep 05 06:30:00 UTC 2012,2,6,390,1,1,Travel & Transport=1,Hotel=1,Courtyard by Marriott San Jose Cupertino=1,Hotel=37.33227906 -122.01528539
+Wed Sep 05 07:00:00 UTC 2012,2,7,420,3,0,"","","",""
+Wed Sep 05 07:30:00 UTC 2012,2,7,450,2,0,"","","",""
+Wed Sep 05 08:00:00 UTC 2012,2,8,480,1,0,"","","",""
+Wed Sep 05 08:30:00 UTC 2012,2,8,510,4,0,"","","",""
+Wed Sep 05 09:00:00 UTC 2012,2,9,540,11,0,"","","",""
+Wed Sep 05 09:30:00 UTC 2012,2,9,570,16,0,"","","",""
+Wed Sep 05 10:00:00 UTC 2012,2,10,600,15,0,"","","",""
+Wed Sep 05 10:30:00 UTC 2012,2,10,630,14,0,"","","",""
+Wed Sep 05 11:00:00 UTC 2012,2,11,660,22,3,Gyms or Fitness Centers=1_Professional & Other Places=2_Shops & Services=1,Office=2_Gym=1,Apple Inc.=2_Apple Fitness Center=1,Gym=37.331686 -122.034872_Office=37.331653 -122.03072304
+Wed Sep 05 11:30:00 UTC 2012,2,11,690,11,1,Food=1,BBQ Joint=1,Armadillo Willy's=1,BBQ Joint=37.321548 -122.031964
+Wed Sep 05 12:00:00 UTC 2012,2,12,720,10,1,Professional & Other Places=1,Office=1,Panasonic Research=1,Office=37.335153 -122.00483
+Wed Sep 05 12:30:00 UTC 2012,2,12,750,22,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Wed Sep 05 13:00:00 UTC 2012,2,13,780,12,1,Food=1,Brewery=1,Infinite Loop 7=1,Brewery=37.33123879 -122.0315945
+Wed Sep 05 13:30:00 UTC 2012,2,13,810,0,0,"","","",""
+Wed Sep 05 14:00:00 UTC 2012,2,14,840,0,0,"","","",""
+Wed Sep 05 14:30:00 UTC 2012,2,14,870,0,0,"","","",""
+Wed Sep 05 15:00:00 UTC 2012,2,15,900,0,0,"","","",""
+Wed Sep 05 15:30:00 UTC 2012,2,15,930,0,0,"","","",""
+Wed Sep 05 16:00:00 UTC 2012,2,16,960,1,0,"","","",""
+Wed Sep 05 16:30:00 UTC 2012,2,16,990,9,0,"","","",""
+Wed Sep 05 17:00:00 UTC 2012,2,17,1020,15,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Wed Sep 05 17:30:00 UTC 2012,2,17,1050,12,3,Residences=1_Food=3,Sandwich Place=1_Ramen /  Noodle House=1_Coffee Shop=1_Home (private)=1,Alotta's Delicatessen=1_Bitter+Sweet=1_Orenchi Ramen=1,Home (private)=37.31837694 -122.03150569_Coffee Shop=37.31837694 -122.03150569_Ramen /  Noodle House=37.33635038 -121.99422598_Sandwich Place=37.34069212 -122.07085827
+Wed Sep 05 18:00:00 UTC 2012,2,18,1080,6,0,"","","",""
+Wed Sep 05 18:30:00 UTC 2012,2,18,1110,6,0,"","","",""
+Wed Sep 05 19:00:00 UTC 2012,2,19,1140,1,0,"","","",""
+Wed Sep 05 19:30:00 UTC 2012,2,19,1170,19,2,Food=2,Pizza Place=1_Coffee Shop=1,Pizza My Heart=1_Starbucks=1,Coffee Shop=37.32199665 -122.03273177_Pizza Place=37.32195825 -122.03298926
+Wed Sep 05 20:00:00 UTC 2012,2,20,1200,8,0,"","","",""
+Wed Sep 05 20:30:00 UTC 2012,2,20,1230,7,2,Residences=1_Food=1,Falafel Restaurant=1_Home (private)=1,Village Falafel=1_CPT48劇場=1,Home (private)=37.32037181 -122.03260194_Falafel Restaurant=37.32255583 -122.023501
+Wed Sep 05 21:00:00 UTC 2012,2,21,1260,15,1,Nightlife Spots=1,Bar=1,BJ's Restaurant & Brewhouse=1,Bar=37.331305 -122.03180909
+Wed Sep 05 21:30:00 UTC 2012,2,21,1290,1,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.32199665 -122.03273177
+Wed Sep 05 22:00:00 UTC 2012,2,22,1320,6,0,"","","",""
+Wed Sep 05 22:30:00 UTC 2012,2,22,1350,22,0,"","","",""
+Wed Sep 05 23:00:00 UTC 2012,2,23,1380,8,0,"","","",""
+Wed Sep 05 23:30:00 UTC 2012,2,23,1410,3,0,"","","",""
+Thu Sep 06 00:00:00 UTC 2012,3,0,0,0,0,"","","",""
+Thu Sep 06 00:30:00 UTC 2012,3,0,30,1,0,"","","",""
+Thu Sep 06 01:00:00 UTC 2012,3,1,60,0,0,"","","",""
+Thu Sep 06 01:30:00 UTC 2012,3,1,90,4,0,"","","",""
+Thu Sep 06 02:00:00 UTC 2012,3,2,120,0,0,"","","",""
+Thu Sep 06 02:30:00 UTC 2012,3,2,150,0,0,"","","",""
+Thu Sep 06 03:00:00 UTC 2012,3,3,180,0,0,"","","",""
+Thu Sep 06 03:30:00 UTC 2012,3,3,210,0,0,"","","",""
+Thu Sep 06 04:00:00 UTC 2012,3,4,240,0,0,"","","",""
+Thu Sep 06 04:30:00 UTC 2012,3,4,270,0,0,"","","",""
+Thu Sep 06 05:00:00 UTC 2012,3,5,300,1,0,"","","",""
+Thu Sep 06 05:30:00 UTC 2012,3,5,330,0,0,"","","",""
+Thu Sep 06 06:00:00 UTC 2012,3,6,360,4,0,"","","",""
+Thu Sep 06 06:30:00 UTC 2012,3,6,390,4,0,"","","",""
+Thu Sep 06 07:00:00 UTC 2012,3,7,420,10,0,"","","",""
+Thu Sep 06 07:30:00 UTC 2012,3,7,450,3,0,"","","",""
+Thu Sep 06 08:00:00 UTC 2012,3,8,480,1,0,"","","",""
+Thu Sep 06 08:30:00 UTC 2012,3,8,510,3,0,"","","",""
+Thu Sep 06 09:00:00 UTC 2012,3,9,540,2,0,"","","",""
+Thu Sep 06 09:30:00 UTC 2012,3,9,570,9,1,Athletics & Sports=1_Outdoors & Recreation=2,Golf Course=1_Other Great Outdoors=1,City of Cupertino=1,Other Great Outdoors=37.32252989 -122.03338623_Golf Course=37.32252989 -122.03338623
+Thu Sep 06 10:00:00 UTC 2012,3,10,600,7,1,Offices=1_Professional & Other Places=1,Tech Startup=1,Apple - Infinite Loop 5=1,Tech Startup=37.33190564 -122.0308063
+Thu Sep 06 10:30:00 UTC 2012,3,10,630,21,1,Food=1,Café=1,Apple Inc. — Lobby Cafe=1,Café=37.331657 -122.029901
+Thu Sep 06 11:00:00 UTC 2012,3,11,660,12,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Thu Sep 06 11:30:00 UTC 2012,3,11,690,17,1,Food=1,Coffee Shop=1,It's A Grind Coffee House=1,Coffee Shop=37.32252191 -122.01800004
+Thu Sep 06 12:00:00 UTC 2012,3,12,720,13,3,Food=3,Sandwich Place=1_Pizza Place=1_BBQ Joint=1,Ike's Lair=1_Armadillo Willy's=1_Gumbas=1,BBQ Joint=37.321548 -122.031964_Pizza Place=37.322747 -122.05366198_Sandwich Place=37.3225286 -122.04088039
+Thu Sep 06 12:30:00 UTC 2012,3,12,750,6,1,Professional & Other Places=1,Building=1,Boyenga Team - Intero RE=1,Building=37.32671081 -122.03279899
+Thu Sep 06 13:00:00 UTC 2012,3,13,780,5,0,"","","",""
+Thu Sep 06 13:30:00 UTC 2012,3,13,810,9,2,Food & Drink Shops=1_Shops & Services=1_Food=1,Korean Restaurant=1_Grocery Store=1,99 Ranch Market 大華超級市場=1_Kong Tofu & BBQ Korean Cuisine=1,Grocery Store=37.336706 -122.01513646_Korean Restaurant=37.322375 -122.017829
+Thu Sep 06 14:00:00 UTC 2012,3,14,840,6,1,Offices=1_Professional & Other Places=1,Tech Startup=1,LiveOps=1,Tech Startup=37.32358701 -122.00458711
+Thu Sep 06 14:30:00 UTC 2012,3,14,870,6,0,"","","",""
+Thu Sep 06 15:00:00 UTC 2012,3,15,900,16,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Thu Sep 06 15:30:00 UTC 2012,3,15,930,6,0,"","","",""
+Thu Sep 06 16:00:00 UTC 2012,3,16,960,3,0,"","","",""
+Thu Sep 06 16:30:00 UTC 2012,3,16,990,9,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.32199665 -122.03273177
+Thu Sep 06 17:00:00 UTC 2012,3,17,1020,6,0,"","","",""
+Thu Sep 06 17:30:00 UTC 2012,3,17,1050,11,1,Shops & Services=1,Bank=1,Wells Fargo=1,Bank=37.31918876 -122.03192754
+Thu Sep 06 18:00:00 UTC 2012,3,18,1080,9,0,"","","",""
+Thu Sep 06 18:30:00 UTC 2012,3,18,1110,7,0,"","","",""
+Thu Sep 06 19:00:00 UTC 2012,3,19,1140,9,1,Residences=1,Home (private)=1,CPT48劇場=1,Home (private)=37.32037181 -122.03260194
+Thu Sep 06 19:30:00 UTC 2012,3,19,1170,13,2,Outdoors & Recreation=1_Food & Drink Shops=1_Shops & Services=1,Park=1_Grocery Store=1,Whole Foods Market=1_Fremont Older Open Space Preserve=1,Grocery Store=37.32354945 -122.039904_Park=37.28618471 -122.05528777
+Thu Sep 06 20:00:00 UTC 2012,3,20,1200,14,5,Residences=1_Travel & Transport=2_Food=2,Chinese Restaurant=1_Hotel=1_Moving Target=1_Steakhouse=1_Home (private)=1,Marfle Clara=1_Courtyard by Marriott San Jose Cupertino=1_Mama Chen's Kitchen=1_Alexander's Steakhouse=1_かすみ第三仮設拠点=1,Home (private)=37.33065455 -121.99849356_Steakhouse=37.32826314 -122.01394558_Moving Target=37.320388 -122.023586_Hotel=37.33227906 -122.01528539_Chinese Restaurant=37.3227004 -122.00573083
+Thu Sep 06 20:30:00 UTC 2012,3,20,1230,11,1,Food=1,Coffee Shop=1,Fantasia Coffee & Tea=1,Coffee Shop=37.33591685 -122.015892
+Thu Sep 06 21:00:00 UTC 2012,3,21,1260,18,2,Nightlife Spots=1_Food=1,Bar=1_Japanese Restaurant=1,Gyu-Kaku=1_BJ's Restaurant & Brewhouse=1,Japanese Restaurant=37.32242104 -122.01676208_Bar=37.331305 -122.03180909
+Thu Sep 06 21:30:00 UTC 2012,3,21,1290,26,0,"","","",""
+Thu Sep 06 22:00:00 UTC 2012,3,22,1320,26,1,Food=1,Mexican Restaurant=1,Taco Bell=1,Mexican Restaurant=37.312635 -122.031836
+Thu Sep 06 22:30:00 UTC 2012,3,22,1350,17,0,"","","",""
+Thu Sep 06 23:00:00 UTC 2012,3,23,1380,11,1,Residences=1,Home (private)=1,CPT48劇場=1,Home (private)=37.32037181 -122.03260194
+Thu Sep 06 23:30:00 UTC 2012,3,23,1410,20,0,"","","",""
+Fri Sep 07 00:00:00 UTC 2012,4,0,0,14,1,Arts & Entertainment=1,Bowling Alley=1,Bowlmor Lanes=1,Bowling Alley=37.32689356 -122.0137254
+Fri Sep 07 00:30:00 UTC 2012,4,0,30,16,0,"","","",""
+Fri Sep 07 01:00:00 UTC 2012,4,1,60,9,0,"","","",""
+Fri Sep 07 01:30:00 UTC 2012,4,1,90,1,0,"","","",""
+Fri Sep 07 02:00:00 UTC 2012,4,2,120,3,0,"","","",""
+Fri Sep 07 02:30:00 UTC 2012,4,2,150,0,0,"","","",""
+Fri Sep 07 03:00:00 UTC 2012,4,3,180,3,0,"","","",""
+Fri Sep 07 03:30:00 UTC 2012,4,3,210,1,0,"","","",""
+Fri Sep 07 04:00:00 UTC 2012,4,4,240,0,0,"","","",""
+Fri Sep 07 04:30:00 UTC 2012,4,4,270,1,0,"","","",""
+Fri Sep 07 05:00:00 UTC 2012,4,5,300,0,0,"","","",""
+Fri Sep 07 05:30:00 UTC 2012,4,5,330,1,0,"","","",""
+Fri Sep 07 06:00:00 UTC 2012,4,6,360,3,0,"","","",""
+Fri Sep 07 06:30:00 UTC 2012,4,6,390,4,0,"","","",""
+Fri Sep 07 07:00:00 UTC 2012,4,7,420,3,0,"","","",""
+Fri Sep 07 07:30:00 UTC 2012,4,7,450,10,0,"","","",""
+Fri Sep 07 08:00:00 UTC 2012,4,8,480,8,0,"","","",""
+Fri Sep 07 08:30:00 UTC 2012,4,8,510,4,0,"","","",""
+Fri Sep 07 09:00:00 UTC 2012,4,9,540,12,0,"","","",""
+Fri Sep 07 09:30:00 UTC 2012,4,9,570,8,2,Food=2,Café=1_Breakfast Spot=1,Bernal Bagel Donut & Sandwich‎=1_Apple Inc. — Lobby Cafe=1,Breakfast Spot=37.337102 -121.994171_Café=37.331657 -122.029901
+Fri Sep 07 10:00:00 UTC 2012,4,10,600,4,0,"","","",""
+Fri Sep 07 10:30:00 UTC 2012,4,10,630,12,0,"","","",""
+Fri Sep 07 11:00:00 UTC 2012,4,11,660,17,0,"","","",""
+Fri Sep 07 11:30:00 UTC 2012,4,11,690,14,1,Nightlife Spots=1,Bar=1,BJ's Restaurant & Brewhouse=1,Bar=37.331305 -122.03180909
+Fri Sep 07 12:00:00 UTC 2012,4,12,720,15,1,Food=1,Japanese Restaurant=1,Gokaku Restaurant=1,Japanese Restaurant=37.311337 -122.023747
+Fri Sep 07 12:30:00 UTC 2012,4,12,750,13,1,Food=1,Sandwich Place=1,Togo's=1,Sandwich Place=37.3233881 -122.04798997
+Fri Sep 07 13:00:00 UTC 2012,4,13,780,26,2,Professional & Other Places=1_Food=1,Fast Food Restaurant=1_Office=1,McDonald's=1_Apple Inc.=1,Office=37.331653 -122.03072304_Fast Food Restaurant=37.29188543 -121.99670434
+Fri Sep 07 13:30:00 UTC 2012,4,13,810,9,1,Shops & Services=1,Electronics Store=1,Apple Company Store=1,Electronics Store=37.33143672 -122.03050554
+Fri Sep 07 14:00:00 UTC 2012,4,14,840,10,0,"","","",""
+Fri Sep 07 14:30:00 UTC 2012,4,14,870,8,0,"","","",""
+Fri Sep 07 15:00:00 UTC 2012,4,15,900,10,1,Food=1,Coffee Shop=1,Bitter+Sweet=1,Coffee Shop=37.31837694 -122.03150569
+Fri Sep 07 15:30:00 UTC 2012,4,15,930,21,0,"","","",""
+Fri Sep 07 16:00:00 UTC 2012,4,16,960,5,0,"","","",""
+Fri Sep 07 16:30:00 UTC 2012,4,16,990,10,2,Professional & Other Places=1_Shops & Services=1,Office=1_Electronics Store=1,Apple Company Store=1_Apple Inc.=1,Electronics Store=37.33143672 -122.03050554_Office=37.331653 -122.03072304
+Fri Sep 07 17:00:00 UTC 2012,4,17,1020,14,1,Food=1,Winery=1,Ridge Winery=1,Winery=37.29969211 -122.07778854
+Fri Sep 07 17:30:00 UTC 2012,4,17,1050,2,1,Nightlife Spots=1,Dive Bar=1,Paul & Eddie's Monta Vista Inn=1,Dive Bar=37.32319701 -122.05162506
+Fri Sep 07 18:00:00 UTC 2012,4,18,1080,6,0,"","","",""
+Fri Sep 07 18:30:00 UTC 2012,4,18,1110,2,2,Food=2,Café=1_Japanese Restaurant=1,Gyu-Kaku=1_Caffè Macs=1,Japanese Restaurant=37.32242104 -122.01676208_Café=37.332284 -122.029572
+Fri Sep 07 19:00:00 UTC 2012,4,19,1140,3,1,Food=1,Coffee Shop=1,Starbucks=1,Coffee Shop=37.32199665 -122.03273177
+Fri Sep 07 19:30:00 UTC 2012,4,19,1170,4,0,"","","",""
+Fri Sep 07 20:00:00 UTC 2012,4,20,1200,12,1,Food=1,Japanese Restaurant=1,Gyu-Kaku=1,Japanese Restaurant=37.32242104 -122.01676208
+Fri Sep 07 20:30:00 UTC 2012,4,20,1230,2,0,"","","",""
+Fri Sep 07 21:00:00 UTC 2012,4,21,1260,4,0,"","","",""
+Fri Sep 07 21:30:00 UTC 2012,4,21,1290,8,1,Residences=1,Home (private)=1,CPT48劇場=1,Home (private)=37.32037181 -122.03260194
+Fri Sep 07 22:00:00 UTC 2012,4,22,1320,4,0,"","","",""
+Fri Sep 07 22:30:00 UTC 2012,4,22,1350,9,0,"","","",""
+Fri Sep 07 23:00:00 UTC 2012,4,23,1380,7,1,Food=1,Café=1,Quickly 快可立=1,Café=37.33574792 -122.01559648
+Fri Sep 07 23:30:00 UTC 2012,4,23,1410,10,1,Nightlife Spots=1,Bar=1,Park Lane Lounge=1,Bar=37.3089 -121.993671
+Sat Sep 08 00:00:00 UTC 2012,5,0,0,8,0,"","","",""
+Sat Sep 08 00:30:00 UTC 2012,5,0,30,2,0,"","","",""
+Sat Sep 08 01:00:00 UTC 2012,5,1,60,6,0,"","","",""
+Sat Sep 08 01:30:00 UTC 2012,5,1,90,5,0,"","","",""
+Sat Sep 08 02:00:00 UTC 2012,5,2,120,4,0,"","","",""
+Sat Sep 08 02:30:00 UTC 2012,5,2,150,6,0,"","","",""
+Sat Sep 08 03:00:00 UTC 2012,5,3,180,11,0,"","","",""
+Sat Sep 08 03:30:00 UTC 2012,5,3,210,0,0,"","","",""
+Sat Sep 08 04:00:00 UTC 2012,5,4,240,6,0,"","","",""
+Sat Sep 08 04:30:00 UTC 2012,5,4,270,1,0,"","","",""
+Sat Sep 08 05:00:00 UTC 2012,5,5,300,3,0,"","","",""
+Sat Sep 08 05:30:00 UTC 2012,5,5,330,0,0,"","","",""
+Sat Sep 08 06:00:00 UTC 2012,5,6,360,3,0,"","","",""
+Sat Sep 08 06:30:00 UTC 2012,5,6,390,1,1,Outdoors & Recreation=1,Scenic Lookout=1,Rancho San Antonio Park=1,Scenic Lookout=37.33167559 -122.08814621
+Sat Sep 08 07:00:00 UTC 2012,5,7,420,2,1,Shops & Services=1,Flea Market=1,Electronics Flea Market @ De Anza=1,Flea Market=37.32127904 -122.04258984
+Sat Sep 08 07:30:00 UTC 2012,5,7,450,13,0,"","","",""
+Sat Sep 08 08:00:00 UTC 2012,5,8,480,3,1,Outdoors & Recreation=1,Pool=1,Sutton Swim=1,Pool=37.328078 -122.03515649
+Sat Sep 08 08:30:00 UTC 2012,5,8,510,2,0,"","","",""
+Sat Sep 08 09:00:00 UTC 2012,5,9,540,3,0,"","","",""
+Sat Sep 08 09:30:00 UTC 2012,5,9,570,3,2,Food=2,Coffee Shop=1_Breakfast Spot=1,Holder's Country Inn=1_Peet's Coffee & Tea=1,Breakfast Spot=37.310825 -122.031851_Coffee Shop=37.33735696 -122.06620038
+Sat Sep 08 10:00:00 UTC 2012,5,10,600,2,1,Food=1,Donut Shop=1,Donut Wheel=1,Donut Shop=37.32640571 -122.03193309
+Sat Sep 08 10:30:00 UTC 2012,5,10,630,2,0,"","","",""
+Sat Sep 08 11:00:00 UTC 2012,5,11,660,2,0,"","","",""
+Sat Sep 08 11:30:00 UTC 2012,5,11,690,4,1,Food=1,Chinese Restaurant=1,New Port Dimsum & Seafood Restaurant (新港海鮮酒家)=1,Chinese Restaurant=37.33844029 -122.01392412
+Sat Sep 08 12:00:00 UTC 2012,5,12,720,2,0,"","","",""
+Sat Sep 08 12:30:00 UTC 2012,5,12,750,3,0,"","","",""
+Sat Sep 08 13:00:00 UTC 2012,5,13,780,5,0,"","","",""
+Sat Sep 08 13:30:00 UTC 2012,5,13,810,9,2,Food & Drink Shops=1_Shops & Services=1_Food=1,Café=1_Grocery Store=1,Trader Joe's=1_Verde Tea Cafe=1,Grocery Store=37.29311452 -121.994344_Café=37.3222654 -122.01701403
+Sat Sep 08 14:00:00 UTC 2012,5,14,840,1,0,"","","",""
+Sat Sep 08 14:30:00 UTC 2012,5,14,870,7,2,Gyms or Fitness Centers=1_Shops & Services=1_Food=1,Pizza Place=1_Gym=1,Apple Fitness Center=1_J.T. McHart's Pizza=1,Gym=37.331686 -122.034872_Pizza Place=37.32177908 -122.01800644
+Sat Sep 08 15:00:00 UTC 2012,5,15,900,6,1,Food & Drink Shops=1_Shops & Services=1,Grocery Store=1,Whole Foods Market=1,Grocery Store=37.32354945 -122.039904
+Sat Sep 08 15:30:00 UTC 2012,5,15,930,4,0,"","","",""
+Sat Sep 08 16:00:00 UTC 2012,5,16,960,4,1,Shops & Services=1,Car Wash=1,Classic Car Wash=1,Car Wash=37.29185128 -121.99568242
+Sat Sep 08 16:30:00 UTC 2012,5,16,990,6,0,"","","",""
+Sat Sep 08 17:00:00 UTC 2012,5,17,1020,8,0,"","","",""
+Sat Sep 08 17:30:00 UTC 2012,5,17,1050,5,2,Professional & Other Places=1_Food & Drink Shops=1_Shops & Services=1,Office=1_Liquor Store=1,BevMo!=1_Apple Inc.=1,Liquor Store=37.29253596 -121.9928772_Office=37.331653 -122.03072304
+Sat Sep 08 18:00:00 UTC 2012,5,18,1080,3,0,"","","",""
+Sat Sep 08 18:30:00 UTC 2012,5,18,1110,2,0,"","","",""
+Sat Sep 08 19:00:00 UTC 2012,5,19,1140,3,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Sat Sep 08 19:30:00 UTC 2012,5,19,1170,15,0,"","","",""
+Sat Sep 08 20:00:00 UTC 2012,5,20,1200,3,0,"","","",""
+Sat Sep 08 20:30:00 UTC 2012,5,20,1230,6,1,Food=1,Chinese Restaurant=1,Panda Express=1,Chinese Restaurant=37.32239338 -121.99450493
+Sat Sep 08 21:00:00 UTC 2012,5,21,1260,5,2,Residences=1_Food=1,Coffee Shop=1_Home (private)=1,Starbucks=1_CPT48劇場=1,Home (private)=37.32037181 -122.03260194_Coffee Shop=37.32199665 -122.03273177
+Sat Sep 08 21:30:00 UTC 2012,5,21,1290,7,0,"","","",""
+Sat Sep 08 22:00:00 UTC 2012,5,22,1320,4,3,Nightlife Spots=2_Arts & Entertainment=1_Movie Theaters=1,Bar=2_Multiplex=1,AMC Cupertino Square 16=1_BJ's Restaurant & Brewhouse=1_Park Lane Lounge=1,Bar=37.331305 -122.03180909_Multiplex=37.32601085 -122.01519012
+Sat Sep 08 22:30:00 UTC 2012,5,22,1350,3,0,"","","",""
+Sat Sep 08 23:00:00 UTC 2012,5,23,1380,5,0,"","","",""
+Sat Sep 08 23:30:00 UTC 2012,5,23,1410,6,0,"","","",""
+Sun Sep 09 00:00:00 UTC 2012,6,0,0,1,0,"","","",""
+Sun Sep 09 00:30:00 UTC 2012,6,0,30,8,0,"","","",""
+Sun Sep 09 01:00:00 UTC 2012,6,1,60,18,0,"","","",""
+Sun Sep 09 01:30:00 UTC 2012,6,1,90,16,0,"","","",""
+Sun Sep 09 02:00:00 UTC 2012,6,2,120,4,0,"","","",""
+Sun Sep 09 02:30:00 UTC 2012,6,2,150,2,0,"","","",""
+Sun Sep 09 03:00:00 UTC 2012,6,3,180,1,0,"","","",""
+Sun Sep 09 03:30:00 UTC 2012,6,3,210,0,0,"","","",""
+Sun Sep 09 04:00:00 UTC 2012,6,4,240,0,0,"","","",""
+Sun Sep 09 04:30:00 UTC 2012,6,4,270,0,0,"","","",""
+Sun Sep 09 05:00:00 UTC 2012,6,5,300,0,0,"","","",""
+Sun Sep 09 05:30:00 UTC 2012,6,5,330,0,0,"","","",""
+Sun Sep 09 06:00:00 UTC 2012,6,6,360,0,0,"","","",""
+Sun Sep 09 06:30:00 UTC 2012,6,6,390,1,0,"","","",""
+Sun Sep 09 07:00:00 UTC 2012,6,7,420,0,0,"","","",""
+Sun Sep 09 07:30:00 UTC 2012,6,7,450,1,0,"","","",""
+Sun Sep 09 08:00:00 UTC 2012,6,8,480,4,0,"","","",""
+Sun Sep 09 08:30:00 UTC 2012,6,8,510,5,0,"","","",""
+Sun Sep 09 09:00:00 UTC 2012,6,9,540,4,0,"","","",""
+Sun Sep 09 09:30:00 UTC 2012,6,9,570,0,0,"","","",""
+Sun Sep 09 10:00:00 UTC 2012,6,10,600,9,0,"","","",""
+Sun Sep 09 10:30:00 UTC 2012,6,10,630,6,0,"","","",""
+Sun Sep 09 11:00:00 UTC 2012,6,11,660,9,2,Professional & Other Places=1_Food=1,Office=1_Coffee Shop=1,Starbucks=1_Apple Inc.=1,Coffee Shop=37.32199665 -122.03273177_Office=37.331653 -122.03072304
+Sun Sep 09 11:30:00 UTC 2012,6,11,690,22,0,"","","",""
+Sun Sep 09 12:00:00 UTC 2012,6,12,720,8,3,Athletics & Sports=1_Outdoors & Recreation=1_Food=2,Coffee Shop=1_BBQ Joint=1_Skating Rink=1,Ice Center=1_Starbucks=1_L & L Hawaiian BBQ=1,Skating Rink=37.327811 -122.013336_BBQ Joint=37.337666 -121.994642_Coffee Shop=37.32199665 -122.03273177
+Sun Sep 09 12:30:00 UTC 2012,6,12,750,4,0,"","","",""
+Sun Sep 09 13:00:00 UTC 2012,6,13,780,15,1,Professional & Other Places=1,Office=1,Apple Inc.=1,Office=37.331653 -122.03072304
+Sun Sep 09 13:30:00 UTC 2012,6,13,810,15,1,Food & Drink Shops=1_Shops & Services=1,Grocery Store=1,Marukai Corporation=1,Grocery Store=37.3219936 -122.01849411
+Sun Sep 09 14:00:00 UTC 2012,6,14,840,14,1,Food=1,Steakhouse=1,Outback Steakhouse=1,Steakhouse=37.33161587 -122.03326285
+Sun Sep 09 14:30:00 UTC 2012,6,14,870,2,0,"","","",""
+Sun Sep 09 15:00:00 UTC 2012,6,15,900,6,2,Arts & Entertainment=1_Shops & Services=1,Gym / Fitness Center=1_Movie Theater=1,Northwest YMCA=1_Bluelight Cinemas=1,Movie Theater=37.323775 -122.04859385_Gym / Fitness Center=37.32590445 -122.03788324
+Sun Sep 09 15:30:00 UTC 2012,6,15,930,6,2,Professional & Other Places=1_Shops & Services=1,Department Store=1_Office=1,Apple Inc.=1_Target=1,Office=37.331653 -122.03072304_Department Store=37.32394154 -122.03642903
+Sun Sep 09 16:00:00 UTC 2012,6,16,960,10,0,"","","",""
+Sun Sep 09 16:30:00 UTC 2012,6,16,990,3,1,Arts & Entertainment=1_Movie Theaters=1,Multiplex=1,AMC Cupertino Square 16=1,Multiplex=37.32601085 -122.01519012
+Sun Sep 09 17:00:00 UTC 2012,6,17,1020,2,1,Outdoors & Recreation=1,Other Great Outdoors=1,City of Cupertino=1,Other Great Outdoors=37.32252989 -122.03338623
+Sun Sep 09 17:30:00 UTC 2012,6,17,1050,8,1,Food=1,Chinese Restaurant=1,Happy House Restaurant=1,Chinese Restaurant=37.30736 -122.0320611
+Sun Sep 09 18:00:00 UTC 2012,6,18,1080,7,1,Outdoors & Recreation=1,Playground=1,Cupertino Memorial Park=1,Playground=37.32444103 -122.04501629
+Sun Sep 09 18:30:00 UTC 2012,6,18,1110,7,1,Food=1,BBQ Joint=1,Armadillo Willy's=1,BBQ Joint=37.32156079 -122.03194974
+Sun Sep 09 19:00:00 UTC 2012,6,19,1140,5,1,Food=1,Wings Joint=1,SmokeEaters=1,Wings Joint=37.31365711 -122.03186648
+Sun Sep 09 19:30:00 UTC 2012,6,19,1170,9,1,Food=1,Steakhouse=1,Park Place=1,Steakhouse=37.32211183 -122.03180909
+Sun Sep 09 20:00:00 UTC 2012,6,20,1200,8,1,Nightlife Spots=1,Bar=1,Park Lane Lounge=1,Bar=37.3089 -121.993671
+Sun Sep 09 20:30:00 UTC 2012,6,20,1230,4,0,"","","",""
+Sun Sep 09 21:00:00 UTC 2012,6,21,1260,11,0,"","","",""
+Sun Sep 09 21:30:00 UTC 2012,6,21,1290,7,0,"","","",""
+Sun Sep 09 22:00:00 UTC 2012,6,22,1320,7,0,"","","",""
+Sun Sep 09 22:30:00 UTC 2012,6,22,1350,5,0,"","","",""
+Sun Sep 09 23:00:00 UTC 2012,6,23,1380,4,1,"","",Home=1,""
+Sun Sep 09 23:30:00 UTC 2012,6,23,1410,0,0,"","","",""

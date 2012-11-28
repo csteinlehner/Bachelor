@@ -2,6 +2,7 @@ package citiygrid.drawManager;
 
 import java.util.HashMap;
 
+import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
 import citygrid.FsqNameHelper;
 
@@ -28,7 +29,7 @@ public class SatelliteDrawManager implements DrawManager{
 		categoryParents = FsqNameHelper.CATEGORY_PARENTS;
 	}
 	
-	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize, FsqData entry){
 		String path = satellitePictures.get(categoryParents.get(catName));
 		PImage tile = CityGrid.p5.loadImage(path);
 		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;

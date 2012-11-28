@@ -3,15 +3,10 @@ package citygrid;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
-import javax.security.auth.callback.TextOutputCallback;
-
 import org.gicentre.handy.HandyRenderer;
 
-import citiygrid.drawManager.DrawManager;
-import citiygrid.drawManager.PatternDrawManager;
-import citiygrid.drawManager.SatelliteDrawManager;
-import citiygrid.drawManager.SketchDrawManager;
-
+import citiygrid.dataObjects.FsqData;
+import citiygrid.drawManager.*;
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -31,8 +26,10 @@ public class HouseDrawer {
 			dm = new PatternDrawManager();
 		}else if(CityGrid.DRAW_TYPE==CityGrid.DrawType.SATELLITE){
 			dm = new SatelliteDrawManager();
-		}else{
+		}else if(CityGrid.DRAW_TYPE==CityGrid.DrawType.SKETCH){
 			dm = new SketchDrawManager();
+		}else{
+			dm = new Satellite2DrawManager();
 		}
 		symbolManager = new SymbolManager();
 //		houseColors.put("Food",TColor.newRandom());
@@ -379,16 +376,20 @@ public class HouseDrawer {
 		houseFunctions.put("Juice Bar", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 		System.out.println(houseFunctions.keySet());
 	}
-	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName){
+	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName, FsqData entry){
 		PGraphics citymapBG = CityGrid.p5.citymapBG;
 		
 		PVector origin = PVectorCalc.calcOrigin(bl, br, tr, tl);
 		PVector size = PVectorCalc.calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
-		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
-		citymapBG.image(pattern, origin.x, origin.y);
 		citymapBG.pushStyle();
+		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR), entry);
+		TColor c = new TColor(ColorsHelper.ICON_COLORS.get(FsqNameHelper.CATEGORY_PARENTS.get(catName)));
+		//c.alpha=0.5f;
+		citymapBG.tint(c.toARGB());
+		citymapBG.image(pattern, origin.x, origin.y);
+		
 		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
 		//citymapBG.stroke(255);
 		//citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
@@ -600,14 +601,21 @@ public class HouseDrawer {
 		PVector tbr = PVectorCalc.interpolateTo(br, mid, scaleF);
 		PVector ttr = PVectorCalc.interpolateTo(tr, mid, scaleF);
 		PVector ttl = PVectorCalc.interpolateTo(tl, mid, scaleF);
-		HandyRenderer h = CityGrid.SKETCH_RENDER;
-		h.setGraphics(target);
-		h.setFillGap(0.5f);
-		h.setFillWeight(0.1f);
-		//h.setFillColour(TColor.newGray(2).toARGB());
-//		target.fill(255,0,0);
-		target.stroke(255);
-		h.quad(tbl.x, tbl.y, tbr.x, tbr.y, ttr.x, ttr.y, ttl.x, ttl.y);
+		if(CityGrid.DRAW_TYPE == CityGrid.DrawType.SKETCH){
+			HandyRenderer h = CityGrid.SKETCH_RENDER;
+			h.setGraphics(target);
+			h.setFillGap(0.5f);
+			h.setFillWeight(0.1f);
+			//h.setFillColour(TColor.newGray(2).toARGB());
+	//		target.fill(255,0,0);
+			target.stroke(255);
+			h.quad(tbl.x, tbl.y, tbr.x, tbr.y, ttr.x, ttr.y, ttl.x, ttl.y);
+		}else{
+			target.noFill();
+			target.stroke(255);
+			//target.quad(tbl.x, tbl.y, tbr.x, tbr.y, ttr.x, ttr.y, ttl.x, ttl.y);
+		}
+		
 //		target.beginShape();
 //		target.vertex(tbl.x, tbl.y);
 //		target.vertex(tbr.x, tbr.y);

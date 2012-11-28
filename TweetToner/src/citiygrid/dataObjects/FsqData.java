@@ -11,8 +11,10 @@ public class FsqData {
 	public HashMap<String, Integer> categoryParents;
 	public HashMap<String, Float> categoryParentsPercent = new HashMap<String, Float>();
 	public HashMap<String, Float> categoryPercent = new HashMap<String, Float>();
+	public HashMap<String, String> coords = new HashMap<String, String>();
 	public Boolean hasCategories = false;
 	public Boolean hasCategoryParents = false;
+	public Boolean hasCoords = false;
 	public FsqData(int day, int minute, int hour, int t_count, int f_count){
 		this.day = day;
 		this.minute = minute;
@@ -43,5 +45,9 @@ public class FsqData {
 		}
 	}
 	
+	public void setCoords(HashMap<String, String> coords){
+		this.coords = coords;
+		hasCoords = true;
+	}
 	
 }

@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 import org.gicentre.handy.HandyRenderer;
 
+import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
 import citygrid.FsqNameHelper;
 import citygrid.PVectorCalc;
@@ -36,7 +37,7 @@ public class SketchDrawManager implements DrawManager{
 		createColors();
 	}
 	
-	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize, FsqData entry){
 		String name = convertCatNameToFileName(catName);
 		String path = iconPaths.get(name);
 		PImage tile = CityGrid.p5.loadImage(path);

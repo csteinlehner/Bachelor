@@ -29,22 +29,23 @@ import toxi.color.TColor;
 
 public class CityGrid extends PApplet{
 	public enum DrawType{
-		PATTERN, SATELLITE, SKETCH;
+		PATTERN, SATELLITE, SKETCH, SATELLITE2;
 	}
 
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
-	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
-	static final DrawType DRAW_TYPE = DrawType.SKETCH;
+	static final Boolean SAVE_GRAPHIC = true;  // true to save this as png
+	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
 	
 	public static HandyRenderer SKETCH_RENDER;
 	
-	public static final float SIZE_FACTOR = 1f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final Boolean SMALL = true;
 	
 	public static final int ICON_SIZE = 44;
 	public static final int ICON_SIZE_SKETCH = 140;
 	
-	protected static final String CITY = "berlin";
+	public static final String CITY = "berlin";
 	
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
 	private static String fsqCsvPath = "data/fsq_timecount_30_"+CITY+".csv";
@@ -100,11 +101,15 @@ public class CityGrid extends PApplet{
 
 	Vector<HouseCoordinate> houseCoordinates = new Vector<HouseCoordinate>();
 	
+	HashMap<String, String> tSatellitePictures2 = new HashMap<String, String>();
+	
 	public void setup(){
 		p5 = this;
 		size(1200,900, JAVA2D);
 		frameRate(30);
-		SKETCH_RENDER = new HandyRenderer(this);
+		if(DRAW_TYPE==DrawType.SKETCH){
+			SKETCH_RENDER = new HandyRenderer(this);
+		}
 		houseDrawer = new HouseDrawer();
 		
 		zoom = 1.0f;
@@ -172,6 +177,7 @@ public class CityGrid extends PApplet{
 					int f_count = Integer.parseInt(fsqData.get("fsq_count"));
 					String catString = fsqData.get("Categories");
 					String catParentString = fsqData.get("CategorieParents");
+					String coordString = fsqData.get("Coord");
 					
 					fsqCount.put(day,minute,new FsqData(day, minute, hour, t_count, f_count));
 					
@@ -195,6 +201,17 @@ public class CityGrid extends PApplet{
 							categoryParents.put(tCatSplit[0], Integer.parseInt(tCatSplit[1]));
 						}
 						fsqCount.get(day, minute).setCategoryParents(categoryParents);
+					}
+					
+					//// set satellitePictures
+					if(!coordString.isEmpty()){
+						HashMap<String, String> coords = new HashMap<String, String>();
+						String[] coordSplit = coordString.split("_");
+						for(int i = 0; i < coordSplit.length; i++){
+							String[] tCoordSplit = coordSplit[i].split("=");
+							coords.put(tCoordSplit[0], tCoordSplit[1]);
+						}
+						fsqCount.get(day, minute).setCoords(coords);
 					}
 				}
 				fsqData.close();
@@ -263,16 +280,16 @@ public class CityGrid extends PApplet{
 		citymapBG.background(255);
 		citymapBG.smooth();
 		citymapBG.noFill();
-//		for(HouseCoordinate c : houseCoordinates){
-//			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
-//		}
+		for(HouseCoordinate c : houseCoordinates){
+			drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
+		}
 		citymapBG.endDraw();
 		if(SAVE_BACKGROUND){
 			citymapBG.save("citygrid_shots/"+CITY+"_background_"+year()+month()+day()+"__"+hour()+"_"+minute()+"_"+second()+".png");
 			println("saved background!");
 			exit();
 		}
-//		citymap.image(citymapBG,0,0);
+		citymap.image(citymapBG,0,0);
 		
 		
 		//// draw Streets
@@ -455,7 +472,7 @@ public class CityGrid extends PApplet{
 		for( String key : entry.categories.keySet()){
 			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
 			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
-			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key);
+			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key, entry);
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
 			oTly = ttl.y;
@@ -492,50 +509,54 @@ public class CityGrid extends PApplet{
 		citymap.stroke(color);
 		citymap.strokeWeight(thickness);
 		citymap.strokeCap(PROJECT);
-//		for (int h = 0; h < 24; h++) {
+
+		if(DRAW_TYPE == DrawType.SKETCH){
+			SKETCH_RENDER.setGraphics(citymap);
+			SKETCH_RENDER.setRoughness(2);
+		
+			for (int h = 0; h < 24; h++) {
+				float[] xCoords = new float[8];
+				float[] yCoords = new float[8];
+				xCoords[0] = h*hourSize;
+				yCoords[0] = bottomPoint;
+				
+				for (int d = 0; d < 7; d++) {
+					PVector p1 = coordinates.get(d, h);
+					xCoords[d+1] = p1.x;
+					yCoords[d+1] = p1.y;
+	//				if(h==24){
+	//					PVector p1 = coordinates.get(d, h-1);
+	//					xCoords[h] = p1.x+hourSize;
+	//					yCoords[h] = p1.y;
+	//				}else{
+	//					PVector p1 = coordinates.get(d, h);
+	//					xCoords[h] = p1.x;
+	//					yCoords[h] = p1.y;
+	//				}
+					SKETCH_RENDER.polyLine(xCoords, yCoords);
+				}
+			}
+		}else{
+			for (int h = 0; h < 24; h++) {
 //			map.beginShape();
 //			map.vertex(h*hourSize,bottomPoint);
 //			println(tweetCountAdded.get(0,1));
 //			println("--"+i);
-//			for (int d = 0; d < 7; d++) {
-//				if(d>0){
-//					PVector p1 = coordinates.get(d-1,h);
-//					PVector p2 = coordinates.get(d,h);
-//					citymap.line(p1.x,p1.y,p2.x,p2.y);
-//				}else{
-//					PVector p2 = coordinates.get(d,h);
-//					citymap.line(p2.x,bottomPoint,p2.x,p2.y);
-//				}
-////				println(tweetCountAdded.get(i,j));
-////				PVector p = coordinates.get(d, h);
-////				map.vertex(p.x, p.y);
-//			}	
-////			map.endShape();
-//		}
-		SKETCH_RENDER.setGraphics(citymap);
-		SKETCH_RENDER.setRoughness(2);
-		
-		for (int h = 0; h < 24; h++) {
-			float[] xCoords = new float[8];
-			float[] yCoords = new float[8];
-			xCoords[0] = h*hourSize;
-			yCoords[0] = bottomPoint;
-			
 			for (int d = 0; d < 7; d++) {
-				PVector p1 = coordinates.get(d, h);
-				xCoords[d+1] = p1.x;
-				yCoords[d+1] = p1.y;
-//				if(h==24){
-//					PVector p1 = coordinates.get(d, h-1);
-//					xCoords[h] = p1.x+hourSize;
-//					yCoords[h] = p1.y;
-//				}else{
-//					PVector p1 = coordinates.get(d, h);
-//					xCoords[h] = p1.x;
-//					yCoords[h] = p1.y;
-//				}
-			}
-			SKETCH_RENDER.polyLine(xCoords, yCoords);
+				if(d>0){
+					PVector p1 = coordinates.get(d-1,h);
+					PVector p2 = coordinates.get(d,h);
+					citymap.line(p1.x,p1.y,p2.x,p2.y);
+				}else{
+					PVector p2 = coordinates.get(d,h);
+					citymap.line(p2.x,bottomPoint,p2.x,p2.y);
+				}
+//				println(tweetCountAdded.get(i,j));
+//				PVector p = coordinates.get(d, h);
+//				map.vertex(p.x, p.y);
+			}	
+//			map.endShape();
+		}
 		}
 		citymap.popStyle();
 	}
@@ -602,27 +623,41 @@ public class CityGrid extends PApplet{
 		citymap.stroke(color);
 		citymap.strokeWeight(thickness);
 		citymap.strokeCap(SQUARE);
-		SKETCH_RENDER.setGraphics(citymap);
-		SKETCH_RENDER.setRoughness(3);
+		if(DRAW_TYPE == DrawType.SKETCH){
+			SKETCH_RENDER.setGraphics(citymap);
+			SKETCH_RENDER.setRoughness(3);
 		
-		for (int d = 0; d < 7; d++) {
-			float[] xCoords = new float[25];
-			float[] yCoords = new float[25];
-			for (int h = 0; h <= 24; h++) {
-
-				if(h==24){
-					PVector p1 = coordinates.get(d, h-1);
-					xCoords[h] = p1.x+hourSize;
-					yCoords[h] = p1.y;
-				}else{
-					PVector p1 = coordinates.get(d, h);
-					xCoords[h] = p1.x;
-					yCoords[h] = p1.y;
+			for (int d = 0; d < 7; d++) {
+				float[] xCoords = new float[25];
+				float[] yCoords = new float[25];
+				for (int h = 0; h <= 24; h++) {
+	
+					if(h==24){
+						PVector p1 = coordinates.get(d, h-1);
+						xCoords[h] = p1.x+hourSize;
+						yCoords[h] = p1.y;
+					}else{
+						PVector p1 = coordinates.get(d, h);
+						xCoords[h] = p1.x;
+						yCoords[h] = p1.y;
+					}
+				}
+					SKETCH_RENDER.polyLine(xCoords, yCoords);
+			}
+		}else{
+			for (int d = 0; d < 7; d++) {
+				for (int h = 0; h <= 24; h++) {
+					if(h==24){
+						PVector p2 = coordinates.get(d, h-1);
+						citymap.line(p2.x,p2.y,p2.x+hourSize,p2.y);
+					}else if(h>0){
+						PVector p1 = coordinates.get(d, h-1);
+						PVector p2 = coordinates.get(d, h);
+						citymap.line(p1.x,p1.y,p2.x,p2.y);
+					}
 				}
 			}
-			SKETCH_RENDER.polyLine(xCoords, yCoords);
 		}
-		
 		citymap.popStyle();
 	}
 	
