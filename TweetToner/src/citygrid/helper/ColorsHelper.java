@@ -1,4 +1,4 @@
-package citygrid;
+package citygrid.helper;
 
 import java.util.HashMap;
 

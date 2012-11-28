@@ -9,8 +9,8 @@ import org.gicentre.handy.HandyRenderer;
 
 import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
-import citygrid.FsqNameHelper;
 import citygrid.PVectorCalc;
+import citygrid.helper.FsqNameHelper;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;

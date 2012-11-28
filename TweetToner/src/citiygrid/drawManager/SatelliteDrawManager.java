@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
-import citygrid.FsqNameHelper;
+import citygrid.helper.FsqNameHelper;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;

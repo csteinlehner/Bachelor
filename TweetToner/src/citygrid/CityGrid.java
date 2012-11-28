@@ -34,16 +34,18 @@ public class CityGrid extends PApplet{
 
 	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
-	static final Boolean SAVE_GRAPHIC = true;  // true to save this as png
+	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
 	
 	public static HandyRenderer SKETCH_RENDER;
 	
 	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
-	public static final Boolean SMALL = true;
+	public static final Boolean SMALL = true;       // use small satelitte pictures in SATELLITE2
 	
 	public static final int ICON_SIZE = 44;
 	public static final int ICON_SIZE_SKETCH = 140;
+	public static final int OVERLAY_TRANSPARENCY = 100;		// for SATELLITE2
+	public static final int ICON_TRANPARENCY = 140;			// for SATELLITE2
 	
 	public static final String CITY = "berlin";
 	
@@ -55,9 +57,9 @@ public class CityGrid extends PApplet{
 	
 	private PFont font;
 
-	static final float DAY_STREET_SIZE = 14f;
-	static final float HOUR_STREET_SIZE = 8f;
-	static final float BLOCK_STREET_SIZE = 4f;
+	static final float DAY_STREET_SIZE = 56f/SIZE_FACTOR;
+	static final float HOUR_STREET_SIZE = 32f/SIZE_FACTOR;
+	static final float BLOCK_STREET_SIZE = 16f/SIZE_FACTOR;
 	
 	
 	

@@ -7,6 +7,8 @@ import org.gicentre.handy.HandyRenderer;
 
 import citiygrid.dataObjects.FsqData;
 import citiygrid.drawManager.*;
+import citygrid.helper.ColorsHelper;
+import citygrid.helper.FsqNameHelper;
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -385,9 +387,7 @@ public class HouseDrawer {
 		size.y = (int)Math.ceil(size.y);
 		citymapBG.pushStyle();
 		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR), entry);
-		TColor c = new TColor(ColorsHelper.ICON_COLORS.get(FsqNameHelper.CATEGORY_PARENTS.get(catName)));
-		//c.alpha=0.5f;
-		citymapBG.tint(c.toARGB());
+
 		citymapBG.image(pattern, origin.x, origin.y);
 		
 		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
