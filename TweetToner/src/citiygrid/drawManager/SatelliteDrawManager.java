@@ -49,4 +49,8 @@ public class SatelliteDrawManager implements DrawManager{
 		tile.mask(piMask);
 		return tile;
 	}
+	public PImage createEmptyPattern(int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+		// NOTE IMPLEMENTED YET
+		return new PImage();
+	}
 }

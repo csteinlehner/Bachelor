@@ -1,4 +1,4 @@
-package citygrid;
+package citygrid.helper;
 
 import processing.core.PVector;
 
@@ -29,19 +29,40 @@ public class PVectorCalc {
 		float y = br.y-tr.y;
 		return new PVector(x,y);
 	}
-	public static PVector calcCompleteSize(PVector bl, PVector br, PVector tr, PVector tl){
-		
+	public static PVector calcCompleteSize(PVector bl, PVector br, PVector tr, PVector tl){	
 		float x = br.x-bl.x;
-		float y1 = bl.y-tr.y;
-		float y2 = br.y-tl.y;
-		
-		return new PVector(x,Math.max(y1,y2));
+		Float[] ys = new Float[4];
+		ys[0] = bl.y-tr.y;
+		ys[1] = br.y-tl.y;
+		ys[2] = br.y-tr.y;
+		ys[3] = bl.y-tl.y;
+		float yMax = Integer.MIN_VALUE;
+		for (float f : ys) if (f > yMax) yMax = f;
+		return new PVector(x,yMax);
 	}
-	
+		
 	public static PVector calcOrigin(PVector bl, PVector br, PVector tr, PVector tl){
 		float x = Math.min(bl.x, tl.x);
 		float y = Math.min(tl.y, tr.y);
 		return new PVector(x, y);
+	}
+	
+	public static PVector calcOriginMidMove(PVector bl, PVector br, PVector tr, PVector tl, int sizeX, int sizeY){
+		float x = Math.min(bl.x, tl.x);
+		float y = Math.min(tl.y, tr.y);
+		if(sizeX < sizeY){	// move left
+			
+		}else{	// move top
+			
+		}
+		return new PVector(x, y);
+	}
+	
+	public static int calcMaxHeight(PVector bl, PVector br, PVector tr, PVector tl){
+		float ySize = bl.y-tl.y;
+		float xSize = br.y-tr.y;
+		int max = (int)((ySize > xSize) ? xSize : ySize);
+		return max;
 	}
 	
 }

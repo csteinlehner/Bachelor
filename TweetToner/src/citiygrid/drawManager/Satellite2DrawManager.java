@@ -1,16 +1,12 @@
 package citiygrid.drawManager;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
-import citygrid.PVectorCalc;
 import citygrid.helper.ColorsHelper;
 import citygrid.helper.FsqNameHelper;
 import citygrid.helper.IconsHelper;
+import citygrid.helper.PVectorCalc;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
@@ -20,15 +16,10 @@ import toxi.color.TColor;
 
 public class Satellite2DrawManager implements DrawManager{
 	private String satellitePicturePath = "nokia_img/"+CityGrid.CITY+"/";
-	private HashMap<String, String> categoryParents = new HashMap<String, String>();
 	
-	
-	public Satellite2DrawManager() {
-		categoryParents = FsqNameHelper.CATEGORY_PARENTS;
-	}
-	
+
 	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize, FsqData entry){
-		System.out.println(this.getClass().getName()+" : "+catName);
+		System.out.println(this.getClass().getName()+" "+entry.day+" "+entry.hour+" : "+catName);
 		String filename = "";
 		if(CityGrid.SMALL){
 			filename = entry.coords.get(catName).replace(" ", "_")+"_s.png";
@@ -40,6 +31,8 @@ public class Satellite2DrawManager implements DrawManager{
 		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
 		satellitePic.resize(maxSize, maxSize);
 		
+		PVector mid = PVectorCalc.calcMid(maskShape[1], maskShape[3]);
+		
 		PGraphics mask = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		
 		mask.beginDraw();
@@ -48,6 +41,7 @@ public class Satellite2DrawManager implements DrawManager{
 		mask.fill(255);
 		mask.beginShape();
 		for (int i = 0; i < maskShape.length; i++) {
+			//PVector tPoint = PVectorCalc.interpolateTo(maskShape[i], mid, -0.1f);
 			mask.vertex(maskShape[i].x,maskShape[i].y);
 		}
 		mask.endShape();
@@ -63,8 +57,7 @@ public class Satellite2DrawManager implements DrawManager{
 		PGraphics tile = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		tile.beginDraw();
 		tile.smooth();
-		tile.image(satellitePic,0,0);
-		
+		tile.image(satellitePic,-((maxSize-sizeX)/2),-((maxSize-sizeY)/2));		// move to center drawing
 		TColor c = new TColor(ColorsHelper.ICON_COLORS.get(FsqNameHelper.CATEGORY_PARENTS.get(catName)));
 		PGraphics overlay = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		overlay.beginDraw();
@@ -83,18 +76,19 @@ public class Satellite2DrawManager implements DrawManager{
 		
 		PImage icon= CityGrid.p5.loadImage(iconPath);
 		int iconSize = (int)(CityGrid.ICON_SIZE_SKETCH/CityGrid.SIZE_FACTOR);
-		
+		int maxHeight = PVectorCalc.calcMaxHeight(maskShape[0], maskShape[1], maskShape[2], maskShape[3]);
+		iconSize = (iconSize < maxHeight) ? iconSize : maxHeight;
 		icon.resize(iconSize, iconSize);
-		PVector br = maskShape[1];
-		PVector tl = maskShape[3];
-		PVector mid = PVectorCalc.calcMid(br, tl);
+		
 		PGraphics overlayMask = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		overlayMask.beginDraw();
 		overlayMask.smooth();
 		// overlay.background(0,150);
 		overlayMask.fill(CityGrid.OVERLAY_TRANSPARENCY);
-		overlayMask.rect(0,0,overlayMask.width, overlayMask.height);
+		overlayMask.stroke(CityGrid.OVERLAY_TRANSPARENCY);
+		overlayMask.rect(-1,-1,overlayMask.width+2, overlayMask.height+2);
 		overlayMask.fill(0);
+		overlayMask.noStroke();
 		overlayMask.ellipse(mid.x, mid.y, iconSize, iconSize);
 		overlayMask.tint(255,CityGrid.ICON_TRANPARENCY);
 		overlayMask.image(icon,mid.x-icon.width/2,mid.y-icon.height/2);
@@ -104,6 +98,45 @@ public class Satellite2DrawManager implements DrawManager{
 		overlayImg.mask(overlayMaskImg);
 		//tile.tint(255,120);
 		tile.image(overlayImg,0,0);
+		tile.endDraw();
+		//c.alpha=0.5f;
+		//satellitePic.tint(c.toARGB());
+		
+		PImage tileImg = CityGrid.p5.createImage(tile.width, tile.height, PApplet.ARGB);
+		tileImg.set(0, 0, tile);
+		tileImg.mask(piMask);
+		return tileImg;
+	}
+	
+	public PImage createEmptyPattern(int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+		String path = "data/nokia_img/blank_clouds.png";
+		PImage satellitePic = CityGrid.p5.loadImage(path);
+		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
+		satellitePic.resize(maxSize, maxSize);
+		
+		//PVector mid = PVectorCalc.calcMid(maskShape[1], maskShape[3]);
+		
+		PGraphics mask = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
+		
+		mask.beginDraw();
+		mask.smooth();
+		mask.background(0);
+		mask.fill(255);
+		mask.beginShape();
+		for (int i = 0; i < maskShape.length; i++) {
+			//PVector tPoint = PVectorCalc.interpolateTo(maskShape[i], mid, -0.1f);
+			mask.vertex(maskShape[i].x,maskShape[i].y);
+		}
+		mask.endShape();
+		mask.endDraw();		
+		PImage piMask = CityGrid.p5.createImage(satellitePic.width, satellitePic.height, PApplet.ARGB);
+		piMask.set(0, 0, mask);
+		//satellitePic.mask(piMask);
+		
+		PGraphics tile = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
+		tile.beginDraw();
+		tile.smooth();
+		tile.image(satellitePic,0,0);
 		tile.endDraw();
 		//c.alpha=0.5f;
 		//satellitePic.tint(c.toARGB());

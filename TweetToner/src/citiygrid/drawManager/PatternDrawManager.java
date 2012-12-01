@@ -90,7 +90,10 @@ public class PatternDrawManager implements DrawManager{
 		piPattern.mask(piMask);
 		return piPattern;
 	}
-	
+	public PImage createEmptyPattern(int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+		// NOTE IMPLEMENTED YET
+		return new PImage();
+	}
 	private String convertCatNameToFileName(String catName){
 		Matcher matcher = pattern.matcher(catName);
 		StringBuffer sb = new StringBuffer();

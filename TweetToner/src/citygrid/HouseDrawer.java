@@ -9,6 +9,7 @@ import citiygrid.dataObjects.FsqData;
 import citiygrid.drawManager.*;
 import citygrid.helper.ColorsHelper;
 import citygrid.helper.FsqNameHelper;
+import citygrid.helper.PVectorCalc;
 import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
@@ -376,11 +377,11 @@ public class HouseDrawer {
 		houseFunctions.put("Food Court", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 		houseFunctions.put("Seafood Restaurant", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
 		houseFunctions.put("Juice Bar", new DrawDescription(DrawingType.NEUTRAL, DrawingType.FOOD));
-		System.out.println(houseFunctions.keySet());
+		System.out.println(this.getClass().getName()+ " : " +houseFunctions.keySet());
 	}
 	public void drawHouseBackground(PVector bl, PVector br, PVector tr, PVector tl, String catName, FsqData entry){
 		PGraphics citymapBG = CityGrid.p5.citymapBG;
-		
+		citymapBG.beginDraw();
 		PVector origin = PVectorCalc.calcOrigin(bl, br, tr, tl);
 		PVector size = PVectorCalc.calcCompleteSize(bl, br, tr, tl);
 		size.x = (int)Math.ceil(size.x);
@@ -393,8 +394,9 @@ public class HouseDrawer {
 		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
 		//citymapBG.stroke(255);
 		//citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
-		drawQuad(citymapBG, bl, br, tr, tl, 0);
+		//drawQuad(citymapBG, bl, br, tr, tl, 0);
 		citymapBG.popStyle();
+		citymapBG.endDraw();
 //		try {
 ////				DrawDescription d = new DrawDescription(DrawingType.OTHER, DrawingType.NONE); 
 ////			try{
@@ -420,6 +422,41 @@ public class HouseDrawer {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
+	}
+	
+	public void drawEmptyHouse(PVector bl, PVector br, PVector tr, PVector tl){
+//		PGraphics citymapBG = CityGrid.p5.citymapBG;
+//		citymapBG.beginDraw();
+//		citymapBG.pushStyle();
+//		citymapBG.noStroke();
+//		citymapBG.fill(122);
+//		citymapBG.beginShape();
+//		
+//		citymapBG.vertex(bl.x, bl.y);
+//		citymapBG.vertex(br.x, br.y);
+//		citymapBG.vertex(tr.x, tr.y);
+//		citymapBG.vertex(tl.x, tl.y);
+//		
+//		citymapBG.endShape();
+//		citymapBG.popStyle();
+//		citymapBG.endDraw();
+		PGraphics citymapBG = CityGrid.p5.citymapBG;
+		citymapBG.beginDraw();
+		PVector size = PVectorCalc.calcCompleteSize(bl, br, tr, tl);
+		size.x = (int)Math.ceil(size.x);
+		size.y = (int)Math.ceil(size.y);
+		PVector origin = PVectorCalc.calcOrigin(bl, br, tr, tl);
+		citymapBG.pushStyle();
+		PImage pattern = dm.createEmptyPattern((int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl),(int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR));
+
+		citymapBG.image(pattern, origin.x, origin.y);
+		
+		//citymapBG.stroke(TColor.newHex("F2E7E9").toARGB());
+		//citymapBG.stroke(255);
+		//citymapBG.strokeWeight(CityGrid.BLOCK_STREET_SIZE);
+		//drawQuad(citymapBG, bl, br, tr, tl, 0);
+		citymapBG.popStyle();
+		citymapBG.endDraw();
 	}
 	
 	public void drawHouseOverlay(PVector bl, PVector br, PVector tr, PVector tl, String catName, int size){

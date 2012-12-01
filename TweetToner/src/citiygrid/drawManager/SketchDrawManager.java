@@ -9,8 +9,8 @@ import org.gicentre.handy.HandyRenderer;
 
 import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
-import citygrid.PVectorCalc;
 import citygrid.helper.FsqNameHelper;
+import citygrid.helper.PVectorCalc;
 
 import processing.core.PApplet;
 import processing.core.PGraphics;
@@ -100,7 +100,10 @@ public class SketchDrawManager implements DrawManager{
 		piPattern.mask(piMask);
 		return piPattern;
 	}
-	
+	public PImage createEmptyPattern(int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
+		// NOTE IMPLEMENTED YET
+		return new PImage();
+	}
 	private String convertCatNameToFileName(String catName){
 		Matcher matcher = pattern.matcher(catName);
 		StringBuffer sb = new StringBuffer();
