@@ -3,6 +3,7 @@ package citiygrid.drawManager;
 
 import citiygrid.dataObjects.FsqData;
 import citygrid.CityGrid;
+import citygrid.CloudGenerator;
 import citygrid.helper.ColorsHelper;
 import citygrid.helper.FsqNameHelper;
 import citygrid.helper.IconsHelper;
@@ -16,6 +17,7 @@ import toxi.color.TColor;
 
 public class Satellite2DrawManager implements DrawManager{
 	private String satellitePicturePath = "nokia_img/"+CityGrid.CITY+"/";
+	private CloudGenerator cg = new CloudGenerator();
 	
 
 	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize, FsqData entry){
@@ -109,8 +111,14 @@ public class Satellite2DrawManager implements DrawManager{
 	}
 	
 	public PImage createEmptyPattern(int sizeX, int sizeY,  PVector[] maskShape, int tileSize){
-		String path = "data/nokia_img/blank_clouds.png";
-		PImage satellitePic = CityGrid.p5.loadImage(path);
+		String path;
+		if(CityGrid.SMALL){
+			path = "data/nokia_img/blank_clouds_s.png";
+		}else{
+			path = "data/nokia_img/blank_clouds.png";
+		}
+		//PImage satellitePic = CityGrid.p5.loadImage(path);
+		PImage satellitePic = cg.createCloudImage(5);
 		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
 		satellitePic.resize(maxSize, maxSize);
 		

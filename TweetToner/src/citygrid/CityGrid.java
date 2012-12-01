@@ -33,10 +33,10 @@ public class CityGrid extends PApplet{
 	
 	public static final String CITY = "munchen";
 
-	static final Boolean SAVE_PDF = false;		// true to save this as pdf
+	static final Boolean SAVE_PDF = true;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
-	static final Boolean DRAW_BACKGROUND = false;
+	static final Boolean DRAW_BACKGROUND = true;
 	static final Boolean UTC = false;
 	static final Boolean DRAW_DOWN = true;
 	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
@@ -138,6 +138,7 @@ public class CityGrid extends PApplet{
 	
 	public void setup(){
 		p5 = this;
+		randomSeed(23);
 		size(1200,900, JAVA2D);
 		frameRate(30);
 		if(DRAW_TYPE==DrawType.SKETCH){
@@ -291,11 +292,11 @@ public class CityGrid extends PApplet{
 			println(mapWidth);
 			bottomPoint = mapHeight-50;
 			
-//			if(DRAW_DOWN){
-//				createDownCoordinates();
-//			}else{
+			if(DRAW_DOWN){
+				createDownCoordinates();
+			}else{
 				createCoordinates();
-//			}
+			}
 			drawMap();
 	}
 	
@@ -424,7 +425,7 @@ public class CityGrid extends PApplet{
 		for (int d = 0; d < 7; d++) {
 			for (int h = 0; h < 24; h++) {
 //				if(d>0){
-					coordinates.put(d,h, new PVector(h*HOUR_SIZE,tweetCountAdded.get(h, d)*heightFactor/SIZE_FACTOR-DAY_STREET_SIZE*2*d));
+					coordinates.put(d,h, new PVector(h*HOUR_SIZE,tweetCountAdded.get(h, d)*heightFactor/SIZE_FACTOR+DAY_STREET_SIZE*2*d));
 //				}else{
 //					coordinates.put(d,h, new PVector(h*hourSize,bottomPoint));
 //				}
@@ -461,7 +462,11 @@ public class CityGrid extends PApplet{
 							if(d>0){
 								bl_y = coordinates.get(d-1, entry.hour).y;
 							}else{
-								bl_y = bottomPoint;
+								if (DRAW_DOWN) {
+									bl_y = 0;
+								}else{
+									bl_y = bottomPoint;
+								}
 							}
 							bl = new PVector(bl_x,bl_y);
 							
@@ -484,7 +489,11 @@ public class CityGrid extends PApplet{
 							}else if (d>0 && h==t_hourMove){
 						 		br_y = coordinates.get(d-1, entry.hour).y;
 							}else{
-								br_y = bottomPoint;
+								if(DRAW_DOWN){
+									br_y = 0;
+								}else{
+									br_y = bottomPoint;
+								}
 							}
 							br = new PVector(br_x,br_y);
 							
@@ -553,7 +562,11 @@ public class CityGrid extends PApplet{
 		for( String key : entry.categories.keySet()){
 			ttl.y = oTly - entry.categoryPercent.get(key)*lLength;
 			ttr.y = oTry - entry.categoryPercent.get(key)*rLength;
-			houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key, entry);
+			if(DRAW_DOWN){
+				houseDrawer.drawHouseBackground(ttl, ttr, tbr, tbl, key, entry);
+			}else{
+				houseDrawer.drawHouseBackground(tbl, tbr, ttr, ttl, key, entry);
+			}
 			tbl.y = ttl.y;
 			tbr.y = ttr.y;
 			oTly = ttl.y;
@@ -571,7 +584,11 @@ public class CityGrid extends PApplet{
 //		System.out.println(entry.categoryParents + " : " + lLength + " / " + lPart);
 		float oTly = tbl.y;
 		float oTry = tbr.y;
-		houseDrawer.drawEmptyHouse(tbl, tbr, ttr, ttl);
+		if(DRAW_DOWN){
+			houseDrawer.drawEmptyHouse(ttl, ttr, tbr, tbl);
+		}else{
+			houseDrawer.drawEmptyHouse(tbl, tbr, ttr, ttl);
+		}
 		tbl.y = ttl.y;
 		tbr.y = ttr.y;
 		oTly = ttl.y;
@@ -679,7 +696,11 @@ public class CityGrid extends PApplet{
 					citymap.line(p1.x,p1.y,p2.x,p2.y);
 				}else{
 					PVector p2 = coordinates.get(d,h);
-					citymap.line(p2.x,bottomPoint,p2.x,p2.y);
+					if(DRAW_DOWN){
+						citymap.line(p2.x,0,p2.x,p2.y);
+					}else{
+						citymap.line(p2.x,bottomPoint,p2.x,p2.y);
+					}
 				}
 //				println(tweetCountAdded.get(i,j));
 //				PVector p = coordinates.get(d, h);
@@ -713,6 +734,10 @@ public class CityGrid extends PApplet{
 				}else{
 					PVector p2 = coordinates.get(d,h);
 					PVector p1 = new PVector(p2.x, bottomPoint);
+					if(DRAW_DOWN){
+						p1 = new PVector(p2.x, 0);
+					}
+					
 					PVector mid = PVector.add(p1,PVector.div(PVector.sub(p2, p1),2f));
 					mid.x+=HOUR_STREET_SIZE/2;
 					String streetName = streetNameDrawer.getStreetName(d, h*60);
@@ -733,6 +758,10 @@ public class CityGrid extends PApplet{
 		citymap.pushMatrix();
 		citymap.translate(drawPoint.x, drawPoint.y);
 		citymap.rotate(-HALF_PI);
+		if(DRAW_DOWN){
+			citymap.rotate(PI);
+			citymap.translate(0, (HOUR_STREET_SIZE/2));
+		}
 		citymap.text(streetName,0,0);
 //		drawTextWBackground(streetName, TColor.newRGB(0, 0, 0), TColor.newRGB(1, 1, 1), 2f);
 		citymap.popMatrix();
@@ -779,7 +808,7 @@ public class CityGrid extends PApplet{
 				for (int h = 0; h <= 24; h++) {
 					if(h==24){
 						PVector p2 = coordinates.get(d, h-1);
-						citymap.line(p2.x,p2.y,p2.x+HOUR_SIZE,p2.y);
+							citymap.line(p2.x,p2.y,p2.x+HOUR_SIZE,p2.y);
 					}else if(h>0){
 						PVector p1 = coordinates.get(d, h-1);
 						PVector p2 = coordinates.get(d, h);
@@ -835,7 +864,11 @@ public class CityGrid extends PApplet{
 				float tY = coordinates.get(tweet.day-1, tweet.hour).y;
 				yMove = (coord.y-tY)/2; 
 			}else{
-				yMove = (coord.y-bottomPoint)/2;
+				if(DRAW_DOWN){
+					yMove = (coord.y)/2;
+				}else{
+					yMove = (coord.y-bottomPoint)/2;
+				}
 			}
 			//float minuteMove = HOUR_SIZE/60*(tweet.minute-tweet.hour*60);
 			citymap.pushMatrix();

@@ -387,6 +387,7 @@ public class HouseDrawer {
 		size.x = (int)Math.ceil(size.x);
 		size.y = (int)Math.ceil(size.y);
 		citymapBG.pushStyle();
+//		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR), entry);
 		PImage pattern = dm.createPattern(catName, (int)size.x, (int)size.y, PVectorCalc.calcNormalizedQuad(bl, br, tr, tl), (int)(CityGrid.ICON_SIZE/CityGrid.SIZE_FACTOR), entry);
 
 		citymapBG.image(pattern, origin.x, origin.y);
