@@ -24,6 +24,7 @@ import com.google.common.collect.TreeBasedTable;
 import processing.core.PApplet;
 import processing.core.PFont;
 import processing.core.PGraphics;
+import processing.core.PImage;
 import processing.core.PVector;
 import toxi.color.TColor;
 
@@ -34,7 +35,7 @@ public class CityGrid extends PApplet{
 	
 	public static final String CITY = "london";
 
-	static final Boolean SAVE_PDF = true;		// true to save this as pdf
+	static final Boolean SAVE_PDF = false;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final Boolean DRAW_BACKGROUND = true;
@@ -43,13 +44,13 @@ public class CityGrid extends PApplet{
 	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
 	
 	
-	public static final float SIZE_FACTOR = 1.5f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
-	public static final Boolean SMALL = false;       // use small satelitte pictures in SATELLITE2
+	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final Boolean SMALL = true;       // use small satelitte pictures in SATELLITE2
 	
 	
 	public static final int ICON_SIZE = 44;
 	public static final int ICON_SIZE_SKETCH = 140;
-	public static final int OVERLAY_TRANSPARENCY = 50;		// for SATELLITE2
+	//public static final int OVERLAY_TRANSPARENCY = 50;		// for SATELLITE2
 	public static final int ICON_TRANSPARENCY = 200;			// for SATELLITE2
 	public static final int ICON_BG_TRANSPARENCY = 50;			// for SATELLITE2
 	public static int MAX_HOUSE_SIZE = 0;
@@ -66,7 +67,7 @@ public class CityGrid extends PApplet{
 	private static final float BLOCK_STREET_SIZE = 12f/SIZE_FACTOR;
 	private static final int DAYSTREET_FONT_SIZE = (int)(40/SIZE_FACTOR);
 	private static final int HOURSTREET_FONT_SIZE = (int)(30/SIZE_FACTOR);
-	private static final int TWEET_FONT_SIZE = (int)(20/SIZE_FACTOR);
+	private static final int TWEET_FONT_SIZE = (int)(24/SIZE_FACTOR);
 	private static final int TWEET_FONT_LEADING = (int)((TWEET_FONT_SIZE*1.5f));
 	private static final int TWEET_BOX_BORDER = (int)(20/SIZE_FACTOR);
 	
@@ -165,8 +166,8 @@ public class CityGrid extends PApplet{
 //		font = createFont("Akkurat-Mono",20);
 		dayStreetFont = createFont("data/fonts/museo_slab_500.ttf",DAYSTREET_FONT_SIZE);
 		hourStreetFont = createFont("data/fonts/museo_slab_500.ttf",HOURSTREET_FONT_SIZE);
-		tweetUserFont = createFont("data/fonts/museo_slab_500.ttf",TWEET_FONT_SIZE);
-		tweetFont = createFont("data/fonts/museo_slab_500italic.ttf",TWEET_FONT_SIZE);
+		tweetUserFont = createFont("data/fonts/museo_slab_300.ttf",TWEET_FONT_SIZE);
+		tweetFont = createFont("data/fonts/museo_slab_300italic.ttf",TWEET_FONT_SIZE);
 		
 			try {
 			String path = (UTC) ? csvPathUTC : csvPath;
@@ -899,16 +900,29 @@ public class CityGrid extends PApplet{
 			numLines = (numLines==0) ? 1 : numLines;
 			//citymap.stroke(0);
 			citymap.noStroke();
+			int tW = (int)citymap.textWidth(tweetText);
+//			int bgBorder = 100;
+//			PGraphics tweetBG = createGraphics(tW+2*TWEET_BOX_BORDER+bgBorder,(TWEET_FONT_LEADING)*numLines+TWEET_FONT_SIZE+TWEET_FONT_LEADING+TWEET_BOX_BORDER*2+bgBorder,JAVA2D);
+//			tweetBG.beginDraw();
+//			tweetBG.fill(0);
+//			tweetBG.noStroke();
+//			tweetBG.translate(bgBorder/2,bgBorder/2);
+//			tweetBG.rect(0,0,tW+2*TWEET_BOX_BORDER,(TWEET_FONT_LEADING)*numLines+TWEET_FONT_SIZE+TWEET_FONT_LEADING+TWEET_BOX_BORDER*2);
+//			tweetBG.filter(BLUR);
+//			tweetBG.endDraw();
+//			PImage tweetBGImg = createImage(tweetBG.width,tweetBG.height,ARGB);
+//			tweetBGImg.set(0, 0, tweetBG);
+//			citymap.image(tweetBGImg,-TWEET_BOX_BORDER-tW/2-bgBorder/2,-TWEET_FONT_SIZE-TWEET_BOX_BORDER-bgBorder/2);
 			citymap.fill(255,128);
-			citymap.rect(-TWEET_BOX_BORDER,-TWEET_FONT_SIZE-TWEET_BOX_BORDER,citymap.textWidth(tweetText)+TWEET_BOX_BORDER*2,(TWEET_FONT_LEADING)*numLines+TWEET_FONT_SIZE+TWEET_FONT_LEADING+TWEET_BOX_BORDER*2);
+			citymap.rect(-TWEET_BOX_BORDER-tW/2,-TWEET_FONT_SIZE-TWEET_BOX_BORDER,citymap.textWidth(tweetText)+TWEET_BOX_BORDER*2,(TWEET_FONT_LEADING)*numLines+TWEET_FONT_SIZE+TWEET_FONT_LEADING+TWEET_BOX_BORDER*2);
 			citymap.fill(0);
 			citymap.textFont(tweetUserFont);
 			citymap.textLeading(TWEET_FONT_LEADING);
-			citymap.text(tweet.user,0,0);
+			citymap.text(tweet.user,-tW/2,0);
 			citymap.translate(0,TWEET_FONT_SIZE+TWEET_FONT_LEADING);
 			citymap.textFont(tweetFont);
 			citymap.textLeading(TWEET_FONT_LEADING);
-			citymap.text(tweetText,0,0);
+			citymap.text(tweetText,-tW/2,0);
 			citymap.popMatrix();
 			
 		}

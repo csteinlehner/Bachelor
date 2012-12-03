@@ -3,6 +3,9 @@ package citygrid.test;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+
 import citygrid.CityGrid;
 
 import processing.core.PApplet;
@@ -18,7 +21,7 @@ private static final Boolean EXPORT = true;
 		}else{
 			size(2124,2124,JAVA2D);
 		}
-		HashMap<String, TColor> iconColors = new HashMap<String, TColor>();
+		BiMap<String, TColor> iconColors = HashBiMap.create();
 		iconColors.put("Arts & Entertainment", TColor.newHex("E62733"));
 		iconColors.put("College & University", TColor.newHex("E0006D"));
 		iconColors.put("Food", TColor.newHex("917A2C"));
@@ -29,6 +32,18 @@ private static final Boolean EXPORT = true;
 		iconColors.put("Shop & Service", TColor.newHex("0067B2"));
 		iconColors.put("Travel & Transport", TColor.newHex("F39200"));
 		TColor[] colors = iconColors.values().toArray(new TColor[0]);
+		
+		HashMap<String, Integer> overlayAlpha = new HashMap<String, Integer>();
+		overlayAlpha.put("Arts & Entertainment", 100);
+		overlayAlpha.put("College & University", 75);
+		overlayAlpha.put("Food", 100);
+		overlayAlpha.put("Nightlife Spot", 100);
+		overlayAlpha.put("Outdoors & Recreation", 75);
+		overlayAlpha.put("Professional & Other Places", 100);
+		overlayAlpha.put("Residence", 75);
+		overlayAlpha.put("Shop & Service", 100);
+		overlayAlpha.put("Travel & Transport",75);
+		
 		PImage img = loadImage("data/nokia_img/berlin/52.513_13.320402.png");
 		img.resize(236, 236);
 		for (int i = 0; i < 9; i++) {
@@ -48,7 +63,8 @@ private static final Boolean EXPORT = true;
 				PGraphics maskG = createGraphics(236, 236, JAVA2D);
 				maskG.beginDraw();
 				maskG.noStroke();
-				int maskFill = (int)map(0.1f*(i+1),0,1,0,255);
+				// int maskFill = (int)map(0.1f*(i+1),0,1,0,255);
+				int maskFill = overlayAlpha.get(iconColors.inverse().get(colors[j]));
 				println(i+" : "+maskFill);
 				maskG.fill(maskFill);
 				maskG.rect(0,0,236,236);

@@ -7,6 +7,7 @@ import toxi.color.TColor;
 
 public class ColorsHelper {
 	public static final HashMap<String, TColor> ICON_COLORS = createColors();
+	public static final HashMap<String, Integer> OVERLAY_ALPHAS = createOverlayAlphas(); 
 	private static HashMap<String, TColor> createColors(){
 //		TColor c_default = TColor.newRGBA(1,0,0,1);
 		HashMap<String, TColor> iconColors = new HashMap<String, TColor>();
@@ -23,5 +24,19 @@ public class ColorsHelper {
 //			e.getValue().saturate(0.15f);
 //		}
 		return iconColors;
+	}
+	
+	private static HashMap<String, Integer> createOverlayAlphas(){
+		HashMap<String, Integer> overlayAlpha = new HashMap<String, Integer>();
+		overlayAlpha.put("Arts & Entertainment", 100);
+		overlayAlpha.put("College & University", 75);
+		overlayAlpha.put("Food", 100);
+		overlayAlpha.put("Nightlife Spot", 100);
+		overlayAlpha.put("Outdoors & Recreation", 75);
+		overlayAlpha.put("Professional & Other Places", 100);
+		overlayAlpha.put("Residence", 75);
+		overlayAlpha.put("Shop & Service", 100);
+		overlayAlpha.put("Travel & Transport",75);
+		return overlayAlpha;
 	}
 }

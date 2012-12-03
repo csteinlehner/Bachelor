@@ -92,7 +92,8 @@ public class Satellite2DrawManager implements DrawManager{
 		overlayMask.beginDraw();
 		overlayMask.smooth();
 		// overlay.background(0,150);
-		overlayMask.fill(CityGrid.OVERLAY_TRANSPARENCY);
+//		overlayMask.fill(CityGrid.OVERLAY_TRANSPARENCY);
+		overlayMask.fill(ColorsHelper.OVERLAY_ALPHAS.get(FsqNameHelper.CATEGORY_PARENTS.get(catName)));
 		overlayMask.noStroke();
 		//overlayMask.stroke(CityGrid.OVERLAY_TRANSPARENCY);
 		overlayMask.rect(-1,-1,overlayMask.width+2, overlayMask.height+2);
