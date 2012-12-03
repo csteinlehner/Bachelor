@@ -30,9 +30,10 @@ public class Satellite2DrawManager implements DrawManager{
 		}
 		String path = satellitePicturePath+filename;
 		PImage satellitePic = CityGrid.p5.loadImage(path);
-		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
+//		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
+		int maxSize = CityGrid.MAX_HOUSE_SIZE;
 		satellitePic.resize(maxSize, maxSize);
-		
+
 		PVector mid = PVectorCalc.calcMid(maskShape[1], maskShape[3]);
 		
 		PGraphics mask = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
@@ -40,6 +41,7 @@ public class Satellite2DrawManager implements DrawManager{
 		mask.beginDraw();
 		mask.smooth();
 		mask.background(0);
+		mask.noStroke();
 		mask.fill(255);
 		mask.beginShape();
 		for (int i = 0; i < maskShape.length; i++) {
@@ -55,11 +57,18 @@ public class Satellite2DrawManager implements DrawManager{
 		PImage piMask = CityGrid.p5.createImage(satellitePic.width, satellitePic.height, PApplet.ARGB);
 		piMask.set(0, 0, mask);
 		//satellitePic.mask(piMask);
-		
+		int iconSize = (int)(CityGrid.ICON_SIZE_SKETCH/CityGrid.SIZE_FACTOR);
+		int maxHeight = PVectorCalc.calcMaxHeight(maskShape[0], maskShape[1], maskShape[2], maskShape[3]);
+		iconSize = (iconSize < maxHeight) ? iconSize : maxHeight;
+
 		PGraphics tile = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		tile.beginDraw();
 		tile.smooth();
 		tile.image(satellitePic,-((maxSize-sizeX)/2),-((maxSize-sizeY)/2));		// move to center drawing
+		tile.ellipseMode(PApplet.CENTER);
+		tile.noStroke();
+		tile.fill(255,CityGrid.ICON_BG_TRANSPARENCY);
+		tile.ellipse(mid.x,mid.y, iconSize, iconSize);
 		TColor c = new TColor(ColorsHelper.ICON_COLORS.get(FsqNameHelper.CATEGORY_PARENTS.get(catName)));
 		PGraphics overlay = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		overlay.beginDraw();
@@ -77,9 +86,6 @@ public class Satellite2DrawManager implements DrawManager{
 		
 		
 		PImage icon= CityGrid.p5.loadImage(iconPath);
-		int iconSize = (int)(CityGrid.ICON_SIZE_SKETCH/CityGrid.SIZE_FACTOR);
-		int maxHeight = PVectorCalc.calcMaxHeight(maskShape[0], maskShape[1], maskShape[2], maskShape[3]);
-		iconSize = (iconSize < maxHeight) ? iconSize : maxHeight;
 		icon.resize(iconSize, iconSize);
 		
 		PGraphics overlayMask = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
@@ -87,12 +93,12 @@ public class Satellite2DrawManager implements DrawManager{
 		overlayMask.smooth();
 		// overlay.background(0,150);
 		overlayMask.fill(CityGrid.OVERLAY_TRANSPARENCY);
-		overlayMask.stroke(CityGrid.OVERLAY_TRANSPARENCY);
+		overlayMask.noStroke();
+		//overlayMask.stroke(CityGrid.OVERLAY_TRANSPARENCY);
 		overlayMask.rect(-1,-1,overlayMask.width+2, overlayMask.height+2);
 		overlayMask.fill(0);
-		overlayMask.noStroke();
 		overlayMask.ellipse(mid.x, mid.y, iconSize, iconSize);
-		overlayMask.tint(255,CityGrid.ICON_TRANPARENCY);
+		overlayMask.tint(255,CityGrid.ICON_TRANSPARENCY);
 		overlayMask.image(icon,mid.x-icon.width/2,mid.y-icon.height/2);
 		overlayMask.endDraw();
 		PImage overlayMaskImg = CityGrid.p5.createImage(overlayMask.width, overlayMask.height, PApplet.ARGB);
@@ -119,7 +125,8 @@ public class Satellite2DrawManager implements DrawManager{
 		}
 		//PImage satellitePic = CityGrid.p5.loadImage(path);
 		PImage satellitePic = cg.createCloudImage(5);
-		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
+//		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
+		int maxSize = CityGrid.MAX_HOUSE_SIZE;
 		satellitePic.resize(maxSize, maxSize);
 		
 		//PVector mid = PVectorCalc.calcMid(maskShape[1], maskShape[3]);
@@ -144,7 +151,7 @@ public class Satellite2DrawManager implements DrawManager{
 		PGraphics tile = CityGrid.p5.createGraphics(satellitePic.width, satellitePic.height, PApplet.JAVA2D);
 		tile.beginDraw();
 		tile.smooth();
-		tile.image(satellitePic,0,0);
+		tile.image(satellitePic,-((maxSize-sizeX)/2),-((maxSize-sizeY)/2));		// move to center drawing
 		tile.endDraw();
 		//c.alpha=0.5f;
 		//satellitePic.tint(c.toARGB());

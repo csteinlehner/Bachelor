@@ -40,6 +40,11 @@ public class PVectorCalc {
 		for (float f : ys) if (f > yMax) yMax = f;
 		return new PVector(x,yMax);
 	}
+	
+	public static int calcLongestSide(PVector bl, PVector br, PVector tr, PVector tl){
+		PVector completeSize = calcCompleteSize(bl, br, tr, tl);
+		return (int)Math.ceil((completeSize.x > completeSize.y) ? completeSize.x : completeSize.y);
+	}
 		
 	public static PVector calcOrigin(PVector bl, PVector br, PVector tr, PVector tl){
 		float x = Math.min(bl.x, tl.x);

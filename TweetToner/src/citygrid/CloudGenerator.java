@@ -18,9 +18,9 @@ public class CloudGenerator {
 		  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_3_s.png"));
 		}else{
 			  bg = CityGrid.p5.loadImage("data/clouds/bg.png");
-			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_1_s.png"));
-			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_2_s.png"));
-			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_3_s.png"));
+			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_1.png"));
+			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_2.png"));
+			  clouds.add(CityGrid.p5.loadImage("data/clouds/cloud_3.png"));
 			
 		}
 	} 

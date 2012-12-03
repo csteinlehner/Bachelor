@@ -1,6 +1,7 @@
 package citygrid.helper;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 import toxi.color.TColor;
 
@@ -9,15 +10,18 @@ public class ColorsHelper {
 	private static HashMap<String, TColor> createColors(){
 //		TColor c_default = TColor.newRGBA(1,0,0,1);
 		HashMap<String, TColor> iconColors = new HashMap<String, TColor>();
-		iconColors.put("Arts & Entertainment", TColor.newHex("F18B8E"));
-		iconColors.put("College & University", TColor.newHex("E2B8D7"));
-		iconColors.put("Food", TColor.newHex("FFF7B2"));
-		iconColors.put("Nightlife Spot", TColor.newHex("505297"));
-		iconColors.put("Outdoors & Recreation", TColor.newHex("4DB05B"));
-		iconColors.put("Professional & Other Places", TColor.newHex("83D0F5"));
-		iconColors.put("Residence", TColor.newHex("BFD2BE"));
-		iconColors.put("Shop & Service", TColor.newHex("83D0F5"));
-		iconColors.put("Travel & Transport", TColor.newHex("F5A057"));
+		iconColors.put("Arts & Entertainment", TColor.newHex("E62733"));
+		iconColors.put("College & University", TColor.newHex("E0006D"));
+		iconColors.put("Food", TColor.newHex("917A2C"));
+		iconColors.put("Nightlife Spot", TColor.newHex("582583"));
+		iconColors.put("Outdoors & Recreation", TColor.newHex("00A44B"));
+		iconColors.put("Professional & Other Places", TColor.newHex("00A385"));
+		iconColors.put("Residence", TColor.newHex("FFED00"));
+		iconColors.put("Shop & Service", TColor.newHex("0067B2"));
+		iconColors.put("Travel & Transport", TColor.newHex("F39200"));
+//		for(Entry<String, TColor> e: iconColors.entrySet()){
+//			e.getValue().saturate(0.15f);
+//		}
 		return iconColors;
 	}
 }

@@ -14,6 +14,7 @@ import org.gicentre.handy.HandyRenderer;
 
 import citiygrid.dataObjects.FsqData;
 import citiygrid.dataObjects.TweetData;
+import citygrid.helper.PVectorCalc;
 
 import com.csvreader.CsvReader;
 import com.google.common.collect.HashBasedTable;
@@ -31,25 +32,27 @@ public class CityGrid extends PApplet{
 		PATTERN, SATELLITE, SKETCH, SATELLITE2;
 	}
 	
-	public static final String CITY = "munchen";
+	public static final String CITY = "london";
 
 	static final Boolean SAVE_PDF = true;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final Boolean DRAW_BACKGROUND = true;
 	static final Boolean UTC = false;
-	static final Boolean DRAW_DOWN = true;
+	static final Boolean DRAW_DOWN = false;
 	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
 	
 	
-	public static final float SIZE_FACTOR = 5f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
-	public static final Boolean SMALL = true;       // use small satelitte pictures in SATELLITE2
+	public static final float SIZE_FACTOR = 1.5f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final Boolean SMALL = false;       // use small satelitte pictures in SATELLITE2
 	
 	
 	public static final int ICON_SIZE = 44;
 	public static final int ICON_SIZE_SKETCH = 140;
 	public static final int OVERLAY_TRANSPARENCY = 50;		// for SATELLITE2
-	public static final int ICON_TRANPARENCY = 140;			// for SATELLITE2
+	public static final int ICON_TRANSPARENCY = 200;			// for SATELLITE2
+	public static final int ICON_BG_TRANSPARENCY = 50;			// for SATELLITE2
+	public static int MAX_HOUSE_SIZE = 0;
 	
 
 	private static String csvPath = "data/tweetcount_matrix_60_"+CITY+".csv";
@@ -160,8 +163,8 @@ public class CityGrid extends PApplet{
 		//font = createFont("Axel-Bold",20);
 //		font = createFont("NanumPen",20);
 //		font = createFont("Akkurat-Mono",20);
-		dayStreetFont = createFont("data/fonts/museo_slab_700.ttf",DAYSTREET_FONT_SIZE);
-		hourStreetFont = createFont("data/fonts/museo_slab_700.ttf",HOURSTREET_FONT_SIZE);
+		dayStreetFont = createFont("data/fonts/museo_slab_500.ttf",DAYSTREET_FONT_SIZE);
+		hourStreetFont = createFont("data/fonts/museo_slab_500.ttf",HOURSTREET_FONT_SIZE);
 		tweetUserFont = createFont("data/fonts/museo_slab_500.ttf",TWEET_FONT_SIZE);
 		tweetFont = createFont("data/fonts/museo_slab_500italic.ttf",TWEET_FONT_SIZE);
 		
@@ -331,6 +334,20 @@ public class CityGrid extends PApplet{
 			citymapBG.smooth();
 			citymapBG.noFill();
 			
+			
+			/// get longest side
+			PVector longTime = new PVector();
+			for(HouseCoordinate c : houseCoordinates){
+				PVector[] norm = PVectorCalc.calcNormalizedQuad(c.bl, c.br, c.tr, c.tl);
+				int tHouseSize = PVectorCalc.calcLongestSide(norm[0], norm[1], norm[2], norm[3]);
+//				MAX_HOUSE_SIZE = (tHouseSize > MAX_HOUSE_SIZE) ? tHouseSize : MAX_HOUSE_SIZE;
+				if(tHouseSize > MAX_HOUSE_SIZE){
+					MAX_HOUSE_SIZE = tHouseSize;
+					longTime = new PVector(c.entry.day, c.entry.hour);
+				}
+			}
+			System.out.println("CityGrid.MAX_HOUSE_SIZE : "+longTime.x+" "+longTime.y+" "+MAX_HOUSE_SIZE);
+			
 			for(HouseCoordinate c : houseCoordinates){
 				if(c.entry.hasCategories){
 					drawHousesBackground(c.bl, c.br, c.tr, c.tl, c.entry);
@@ -353,7 +370,8 @@ public class CityGrid extends PApplet{
 		//// draw HouseStreets
 		for(HouseCoordinate c : houseCoordinates){
 			if(c.entry.hasCategories){
-				drawBlockStreets(c.bl, c.br, c.tr, c.tl, TColor.newHex("CFE5CF").toARGB(), BLOCK_STREET_SIZE, c.entry);
+				// CFE5CF
+				drawBlockStreets(c.bl, c.br, c.tr, c.tl, TColor.newHex("9D9D9C").toARGB(), BLOCK_STREET_SIZE, c.entry);
 			}
 		}
 		
@@ -365,8 +383,10 @@ public class CityGrid extends PApplet{
 //		drawDayStreets(TColor.newHex("38382E").toARGB(), DAY_STREET_SIZE);
 //		drawHourStreets(TColor.newHex("F3E4E7").toARGB(), HOUR_STREET_SIZE-2f);
 //		drawDayStreets(TColor.newHex("DECFD1").toARGB(), DAY_STREET_SIZE-2f);
-		drawHourStreets(TColor.newHex("C3D8C3").toARGB(), HOUR_STREET_SIZE);
-		drawDayStreets(TColor.newHex("B8CCB8").toARGB(), DAY_STREET_SIZE);
+		// C3D8C3
+		drawHourStreets(TColor.newHex("DADADA").toARGB(), HOUR_STREET_SIZE);
+		// B8CCB8
+		drawDayStreets(TColor.newHex("C6C6C6").toARGB(), DAY_STREET_SIZE);
 		
 		
 		
