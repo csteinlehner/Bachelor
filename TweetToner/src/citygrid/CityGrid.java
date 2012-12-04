@@ -33,9 +33,9 @@ public class CityGrid extends PApplet{
 		PATTERN, SATELLITE, SKETCH, SATELLITE2;
 	}
 	
-	public static final String CITY = "london";
+	public static final String CITY = "berlin";
 
-	static final Boolean SAVE_PDF = false;		// true to save this as pdf
+	static final Boolean SAVE_PDF = true;		// true to save this as pdf
 	static final Boolean SAVE_BACKGROUND = false; // export just background as png
 	static final Boolean SAVE_GRAPHIC = false;  // true to save this as png
 	static final Boolean DRAW_BACKGROUND = true;
@@ -44,15 +44,16 @@ public class CityGrid extends PApplet{
 	static final DrawType DRAW_TYPE = DrawType.SATELLITE2;
 	
 	
-	public static final float SIZE_FACTOR = 4f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
-	public static final Boolean SMALL = true;       // use small satelitte pictures in SATELLITE2
+	public static final float SIZE_FACTOR = 2f;		// skalierung der karte insgesamt, je größer, desto kleiner die karte
+	public static final Boolean SMALL = false;       // use small satelitte pictures in SATELLITE2
+	public static final Boolean BIG_IMG = true;
 	
 	
 	public static final int ICON_SIZE = 44;
 	public static final int ICON_SIZE_SKETCH = 140;
 	//public static final int OVERLAY_TRANSPARENCY = 50;		// for SATELLITE2
-	public static final int ICON_TRANSPARENCY = 200;			// for SATELLITE2
-	public static final int ICON_BG_TRANSPARENCY = 50;			// for SATELLITE2
+	public static final int ICON_TRANSPARENCY = 220;			// for SATELLITE2
+	public static final int ICON_BG_TRANSPARENCY = 75;			// for SATELLITE2
 	public static int MAX_HOUSE_SIZE = 0;
 	
 
@@ -110,12 +111,12 @@ public class CityGrid extends PApplet{
 	
 	private static HashMap<String, Float> createHeightFactors(){
 		HashMap<String, Float> heightFactors = new HashMap<String, Float>();
-		heightFactors.put("berlin", 6.5f);
-		heightFactors.put("cupertino", 67f);
 		heightFactors.put("london", 0.33f);
-		heightFactors.put("menlopark", 16f);
-		heightFactors.put("munchen", 11.5f);
 		heightFactors.put("newyork", 0.33f);
+		heightFactors.put("berlin", 6.5f);
+		heightFactors.put("munchen", 11.5f);
+		heightFactors.put("cupertino", 67f);
+		heightFactors.put("menlopark", 16f);
 		heightFactors.put("potsdam", 300f);
 		heightFactors.put("rosenheim", 300f);
 		heightFactors.put("sanfrancisco", 1f);
@@ -145,9 +146,9 @@ public class CityGrid extends PApplet{
 		randomSeed(23);
 		size(1200,900, JAVA2D);
 		frameRate(30);
-		if(DRAW_TYPE==DrawType.SKETCH){
+//		if(DRAW_TYPE==DrawType.SKETCH){
 			SKETCH_RENDER = new HandyRenderer(this);
-		}
+//		}
 		houseDrawer = new HouseDrawer();
 		
 		zoom = 1.0f;
@@ -164,9 +165,9 @@ public class CityGrid extends PApplet{
 		//font = createFont("Axel-Bold",20);
 //		font = createFont("NanumPen",20);
 //		font = createFont("Akkurat-Mono",20);
-		dayStreetFont = createFont("data/fonts/museo_slab_500.ttf",DAYSTREET_FONT_SIZE);
-		hourStreetFont = createFont("data/fonts/museo_slab_500.ttf",HOURSTREET_FONT_SIZE);
-		tweetUserFont = createFont("data/fonts/museo_slab_300.ttf",TWEET_FONT_SIZE);
+		dayStreetFont = createFont("data/fonts/Axel-Regular.ttf",DAYSTREET_FONT_SIZE);
+		hourStreetFont = createFont("data/fonts/Axel-Regular.ttf",HOURSTREET_FONT_SIZE);
+		tweetUserFont = createFont("data/fonts/Axel-Regular.ttf",TWEET_FONT_SIZE);
 		tweetFont = createFont("data/fonts/museo_slab_300italic.ttf",TWEET_FONT_SIZE);
 		
 			try {

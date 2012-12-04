@@ -16,10 +16,19 @@ import processing.core.PVector;
 import toxi.color.TColor;
 
 public class Satellite2DrawManager implements DrawManager{
-	private String satellitePicturePath = "nokia_img/"+CityGrid.CITY+"/";
+	private static String satellitePicturePath = createPath();
 	private CloudGenerator cg = new CloudGenerator();
 	
 
+	private static String createPath(){
+		String path;
+		if(CityGrid.BIG_IMG && !CityGrid.SMALL){
+			path = "nokia_img2000/"+CityGrid.CITY+"/";
+		}else{
+			path = "nokia_img/"+CityGrid.CITY+"/";
+		}
+		return path;
+	} 
 	public PImage createPattern(String catName, int sizeX, int sizeY,  PVector[] maskShape, int tileSize, FsqData entry){
 		System.out.println(this.getClass().getName()+" "+entry.day+" "+entry.hour+" : "+catName);
 		String filename = "";
@@ -125,7 +134,7 @@ public class Satellite2DrawManager implements DrawManager{
 			path = "data/nokia_img/blank_clouds.png";
 		}
 		//PImage satellitePic = CityGrid.p5.loadImage(path);
-		PImage satellitePic = cg.createCloudImage(5);
+		PImage satellitePic = cg.createCloudImage(3);
 //		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
 		int maxSize = CityGrid.MAX_HOUSE_SIZE;
 		satellitePic.resize(maxSize, maxSize);
