@@ -7,7 +7,7 @@ public class FsqData {
 	public int t_count, t_count_added, f_count;
 	public float categoryParentsParts = 0;
 	public float categoryParts = 0;
-	public HashMap<String, Integer> categories;
+	public HashMap<String, Integer> categories = new HashMap<String, Integer>();;
 	public HashMap<String, Integer> categoryParents;
 	public HashMap<String, Float> categoryParentsPercent = new HashMap<String, Float>();
 	public HashMap<String, Float> categoryPercent = new HashMap<String, Float>();
@@ -21,6 +21,9 @@ public class FsqData {
 		this.hour = hour;
 		this.t_count = t_count;
 		this.f_count = f_count;
+		
+		categories.put("Empty", 100);
+		categoryPercent.put("Empty",1f);
 	}
 	public void setCategories(HashMap<String, Integer> categories) {
 		this.categories = categories;
@@ -28,6 +31,7 @@ public class FsqData {
 		for( int val : categories.values()){
 			categoryParts+=Math.sqrt((float)val);
 		}
+		categoryPercent.clear();
 		for(String key : categories.keySet()){
 			float p = (float)Math.sqrt(categories.get(key))/(float)categoryParts;
 			categoryPercent.put(key,p);

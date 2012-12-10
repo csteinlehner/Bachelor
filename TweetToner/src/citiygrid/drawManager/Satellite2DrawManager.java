@@ -134,6 +134,7 @@ public class Satellite2DrawManager implements DrawManager{
 			path = "data/nokia_img/blank_clouds.png";
 		}
 		//PImage satellitePic = CityGrid.p5.loadImage(path);
+		System.out.println(this.getClass().getName()+": and a little puffy cloud.");
 		PImage satellitePic = cg.createCloudImage(3);
 //		int maxSize = (sizeX > sizeY) ? sizeX : sizeY;
 		int maxSize = CityGrid.MAX_HOUSE_SIZE;

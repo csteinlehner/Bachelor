@@ -1,5 +1,7 @@
 package citygrid.helper;
 
+import citygrid.CityGrid;
+import processing.core.PApplet;
 import processing.core.PVector;
 
 public class PVectorCalc {
@@ -31,13 +33,28 @@ public class PVectorCalc {
 	}
 	public static PVector calcCompleteSize(PVector bl, PVector br, PVector tr, PVector tl){	
 		float x = br.x-bl.x;
-		Float[] ys = new Float[4];
+		Float[] ys = new Float[6];
+		if(!CityGrid.DRAW_DOWN){
 		ys[0] = bl.y-tr.y;
 		ys[1] = br.y-tl.y;
-		ys[2] = br.y-tr.y;
+		//ys[2] = br.y-tr.y;
+		ys[2] = tr.y-br.y;
 		ys[3] = bl.y-tl.y;
+		ys[4] = bl.y-tl.y;
+		ys[5] = tl.y-br.y;
+		}else{
+			ys[0] = tr.y-br.y;
+			//ys[0] = br.y-tr.y;
+			ys[1] = bl.y-tr.y;
+			//ys[1] = tr.y-bl.y;
+			ys[2] = br.y-tr.y;
+			ys[3] = bl.y-tl.y;
+			ys[4] = br.y-tl.y;
+			ys[5] = tl.y-br.y;
+		}
 		float yMax = Integer.MIN_VALUE;
 		for (float f : ys) if (f > yMax) yMax = f;
+//		PApplet.println(ys);
 		return new PVector(x,yMax);
 	}
 	
