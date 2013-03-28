@@ -1,4 +1,10 @@
 *.pdf
+TweetToner/data/nokia_img/
+TweetToner/data/nokia_img2000/
+TweetToner/citygrid_shots
+TweetToner/data/photopatterns
+TweetToner/data/satellit 
+TweetToner/colorgrid 
 citygrid_shots/
 .DS_Store
 data/nokia_img/
@@ -7,3 +13,4 @@ data/nokia_img2000/
 satellit/
 photopatterns/
 TweetToner/bin/
+
